@@ -104,13 +104,13 @@ export default function FixedAddBuyButtons({
 const FixedPurchaseBar = styled.div`
   position: fixed;
 
-  left: 0;
+
   right: 0;
   bottom: 0;
 
   z-index: 1000;
 
-  width: 100%;
+  width: 40%;
 
   padding: 12px 20px;
 
@@ -123,6 +123,10 @@ const FixedPurchaseBar = styled.div`
   backdrop-filter: blur(10px);
 
   box-sizing: border-box;
+
+   @media (max-width: 1120px) {
+    width:100%;
+  }
 `;
 
 
