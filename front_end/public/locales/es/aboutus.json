@@ -1,0 +1,26 @@
+{
+  "about": {
+    "title": "Sobre Nosotros",
+    "metaDescription": "Descubre las lámparas de lujo Enouza, iluminación de diseño y lámparas premium para interiores. Mejora tu hogar con lámparas de suelo modernas, elegantes lámparas de mesa y luminarias decorativas únicas.",
+
+    "intro": "En Enouza, creemos que la iluminación es más que luz: es una experiencia.",
+    "passion": "Nuestra pasión es crear espacios cálidos, elegantes y atemporales. Por eso seleccionamos cuidadosamente lámparas de lujo que combinan diseño moderno, materiales premium y una artesanía excepcional. Cada pieza de nuestra colección está pensada para elevar tu hogar, no solo iluminarlo.",
+    "visionTitle": "Nuestra Visión",
+    "visionText": "Buscamos redefinir la iluminación cotidiana ofreciendo piezas protagonistas que aportan elegancia, confort y carácter a cualquier ambiente. Desde dormitorios acogedores hasta salas sofisticadas, nuestras lámparas transforman atmósferas.",
+    "qualityTitle": "Calidad en la que Puedes Confiar",
+    "qualityText": "Colaboramos con fabricantes y diseñadores de confianza que comparten nuestro compromiso con la calidad. Cada lámpara es elegida por su durabilidad, valor estético y atención al detalle — porque el lujo debe sentirse, no solo verse.",
+    "whyTitle": "¿Por qué Elegir Enouza?",
+    "why": {
+      "items": [
+        "Diseños de lujo cuidadosamente seleccionados",
+        "Materiales premium y estilos atemporales",
+        "Experiencia de compra segura",
+        "Embalaje cuidadoso y entrega confiable",
+        "Atención al cliente dedicada"
+      ]
+    },
+    "modernTitle": "Diseñadas para la Vida Moderna",
+    "modernText": "Nuestra colección combina tendencias contemporáneas con elegancia clásica, ideal para hogares modernos, apartamentos y espacios de lujo. Ya sea una lámpara protagonista o una luz ambiental sutil, Enouza ofrece iluminación que refleja tu estilo.",
+    "closing": "Gracias por elegir Enouza — donde la luz se encuentra con el lujo."
+  }
+}

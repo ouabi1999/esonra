@@ -1,0 +1,1237 @@
+{
+  "header": {},
+  "menu": {
+    "login": "تسجيل الدخول",
+    "searchPlaceholder": "ابحث...",
+    "cart": "السلة",
+    "wishlist": "المفضلة",
+    "profile": "الملف الشخصي",
+    "logout": "تسجيل الخروج",
+    "dashboard": "لوحة التحكم",
+    "adminDashboard": "الإدارة",
+    "userDashboard": "لوحتي",
+    "home": "الرئيسية",
+    "contactUs": "اتصل بنا",
+    "aboutUs": "من نحن",
+    "privacyPolicy": "الخصوصية",
+    "termsOfService": "الشروط",
+    "refundPolicy": "سياسة الاسترجاع",
+    "shippingPolicy": "الشحن",
+    "helpCenter": "المساعدة",
+    "myOrders": "طلباتي",
+    "notifications": "الإشعارات",
+    "shoppingCart": "السلة",
+    "checkout": "إتمام الشراء",
+    "orderSuccess": "تم الطلب"
+  },
+  "shoppingCart": {
+  "freeExpressTo": "شحن سريع مجاني إلى"
+},
+  "homePage": {
+    "new":"جديد",
+    "mayAlsoLike": "قد يعجبك أيضًا",
+    "newArrival": "وصل حديثًا",
+    "welcomeMessage": "مرحباً بك في متجرنا",
+    "featuredProducts": "منتجات مميزة",
+    "newArrivals": "وصل حديثاً",
+    "bestSellers": "الأكثر مبيعاً",
+    "specialOffers": "عروض خاصة",
+    "buyerTrustServices": "خدماتنا",
+    "freeShipping_offer": "شحن مجاني فوق 50$",
+    "support_24_7": "دعم 24/7",
+    "money_Back": "ضمان استرجاع المال",
+    "secure_Payment": "دفع آمن",
+    "easy_Returns": "إرجاع سهل",
+    "safe_reliable_payments": "دفع موثوق",
+    "More_to_love":"المزيد مما تحب",
+    "more_products":"المزيد من المنتجات",
+    "best_sellers":"الأكثر مبيعاً"
+  },
+  "mainSlider":{
+    "title": "إضاءة مختارة برؤية مختلفة.",
+    "description": "مجموعة مختارة بعناية من قطع الإضاءة النحتية، صُممت لتحوّل أجواء كل مساحة.",
+    "welcome": "مرحبًا بكم في ENOUZA."
+  },
+
+
+  "productPage": {
+    "addToCart": "أضف للسلة",
+    "buyNow": "اشتري الآن",
+    "productDescription": "الوصف",
+    "customerReviews": "التقييمات",
+    "ratings": "الدرجات",
+    "specifications": "المواصفات",
+    "relatedProducts": "منتجات مشابهة",
+    "stockAvailability": "التوفر",
+    "quantity": "الكمية",
+    "outOfStock": "غير متوفر",
+    "inStock": "متوفر",
+     "soldOut": "نفد من المخزون"
+  },
+  "purchaseOptions": {
+      "business_days": "أيام العمل",
+
+    "Ship_to": "الشحن إلى",
+    "Language": "اللغة",
+    "Currency": "العملة",
+    "Help_Center": "المساعدة",
+    "Sell_on_OurPlatform": "بع معنا",
+    "Download_Our_App": "حمّل التطبيق",
+    "Follow_Us": "تابعنا",
+    "Contact_Us": "اتصل بنا",
+    "free_Shipping": "شحن مجاني",
+    "available": "متوفرة الآن",
+    "Delivrey": "التوصيل",
+    "Quantity": "الكمية",
+    "max-order-warning": "الحد الأقصى للطلب هو 5",
+    "available_shipping_methods": "طرق الشحن المتاحة",
+    "item_has_been_added": "تمت إضافة المنتج إلى السلة",
+    "item_already_in_cart": "المنتج موجود بالفعل في السلة",
+    "item_has_been_removed": "تمت إزالة المنتج من السلة",
+    "days": "أيام",
+    "Security_&_Privacy": {
+      "header": "الأمان والخصوصية",
+      "text": "لا نشارك بياناتك الشخصية مع أي طرف ثالث بدون موافقتك. نحن نحمي خصوصيتك ونبقي بياناتك الشخصية آمنة ومحمية."
+    }
+  },
+  
+  
+  "heroSection": {
+    "title": "إضاءة صُممت لتنسجم.",
+    "description": "إضاءة مختارة بعناية تضفي العمق والدفء والطابع المميز على المساحات التي تنتمي إليها.",
+    "ctaLabel": "اكتشف المجموعة",
+    "detailDesign": "حيث تلتقي التفاصيل بالتصميم",
+     "curated": "منتقى",
+  "curated_description": "مختار بعناية لمساحات مدروسة التفاصيل.",
+
+  "refined": "متقن",
+  "refined_description": "أشكال أنيقة صُقلت حتى جوهرها.",
+
+  "atmospheric": "آسر",
+  "atmospheric_description": "إضاءة صُممت لتشكّل أجواء المكان.",
+
+  "distinctive": "متفرّد",
+  "distinctive_description": "قطع تحمل طابعًا يتجاوز المألوف.",
+    "stats": {
+      "rated": {
+        "value": "4.9★",
+        "label": "بتقييم عملائنا"
+      },
+      "satisfaction": {
+        "value": "98%",
+        "label": "رضا العملاء"
+      },
+      "reviews": {
+        "value": "100+",
+        "label": "مراجعات موثقة"
+      }
+    }
+  },
+
+
+ "matricsSection": {
+  "why_us": "تميّز ENOUZA",
+  "title": "كل قطعة، مختارة بعناية.",
+  "description": "نختار كل قطعة من ENOUZA بعناية لما تتميز به من تصميم وخامات وقدرتها على إضافة الدفء والطابع المميز إلى المساحات التي نعيش فيها."
+   },
+  
+  "ctaSection": {
+    "eyebrow": "خدمة عملاء ENOUZA",
+    "titleLeft": "نحن هنا لمساعدتك.",
+    "description": "هل لديك سؤال حول أحد المنتجات أو طلبك أو التوصيل؟ فريق خدمة العملاء لدينا هنا لمساعدتك.",
+    "button": "تواصل معنا",
+    "supportEyebrow": "دعم العملاء",
+    "titleRight": "نقدم لك المساعدة عندما تحتاج إليها.",
+    "supportDescription": "إذا كانت لديك أي أسئلة حول طلبك أو مجموعتنا، تواصل معنا وسيسعد فريقنا بمساعدتك.",
+    "contact": {
+      "email": {
+        "title": "البريد الإلكتروني",
+        "description": "للاستفسارات والأسئلة العامة."
+      },
+      "support": {
+        "title": "خدمة العملاء عبر الإنترنت",
+        "details": "دعم العملاء",
+        "description": "نحن هنا لمساعدتك وتوفير تجربة تسوق مميزة."
+      }
+    }
+  },
+
+"collectionSection": {
+  "title": "اكتشف مجموعتنا.",
+  "catlabel":"اكتشف",
+
+  "categories": {
+    "wall_lamps": {
+      "title": "مصابيح الجدار",
+      "description": "إضاءة أنيقة صُممت لتضيف العمق والدفء والشخصية إلى جدران منزلك."
+    },
+    "pendant_lights": {
+      "title": "المصابيح المعلّقة",
+      "description": "قطع مميزة صُممت لتكون نقطة محورية راقية فوق طاولات الطعام وجزر المطبخ ومساحات المعيشة."
+    },
+    "table_lamps": {
+      "title": "مصابيح الطاولة",
+      "description": "إضاءة ذات طابع فني تضيف الدفء والأجواء والأناقة الهادئة إلى مساحتك."
+    },
+    "ceiling_lamps": {
+      "title": "مصابيح السقف",
+      "description": "إضاءة راقية من الأعلى صُممت لتشكّل أجواء الغرفة وتكمل طابعها."
+    }
+  }
+},
+"inspirationPage": {
+  "hero": {
+    "catlabel": "مجلة ENOUZA",
+    "title": "عالم من الضوء الجميل.",
+    "description": "اكتشف تصاميم داخلية وأفكارًا للإضاءة ولحظات هادئة تلهم أسلوب حياتنا."
+  },
+
+  "intro": {
+    "catlabel": "اكتشف إلهامك",
+    "title": "مساحات تصنعها الإضاءة.",
+    "description": "يمكن للإضاءة المناسبة أن تغيّر إحساس المكان بالكامل. اكتشف مجموعة من المساحات الداخلية وأفكارًا مدروسة لإضافة الدفء والأجواء والشخصية إلى منزلك."
+  },
+
+  "spaces": {
+    "catlabel": "اكتشف حسب المساحة",
+    "title": "إضاءة لكل غرفة.",
+    "items": {
+      "livingRoom": {
+        "title": "غرف المعيشة",
+        "description": "اصنع أجواءً دافئة وترحيبية مع إضاءة مصممة للحياة اليومية."
+      },
+      "diningRoom": {
+        "title": "غرف الطعام",
+        "description": "اصنع الأجواء المناسبة مع إضاءة مدروسة فوق الطاولة وفي مختلف أنحاء الغرفة."
+      },
+      "bedroom": {
+        "title": "غرف النوم",
+        "description": "إضاءة ناعمة وحميمية مصممة لتمنح غرفة النوم أجواءً هادئة ومريحة."
+      }
+    }
+  },
+
+  "explore": "استكشف",
+
+  "statement": {
+    "catlabel": "فن الإضاءة",
+    "title": "الضوء هو ما يمنح المكان إحساسه الخاص.",
+    "description": "من زاوية هادئة إلى مساحة مخصصة للاجتماع، تشكل الإضاءة الطريقة التي نعيش بها المساحات من حولنا."
+  },
+
+  "ideas": {
+    "catlabel": "أفكار للإضاءة",
+    "title": "طرق لإضاءة منزلك بجمال.",
+    "items": {
+      "ambientLighting": {
+        "title": "الإضاءة المحيطية",
+        "description": "اصنع قاعدة من الضوء الناعم التي تمنح الغرفة إحساسًا بالدفء والتوازن والترحيب."
+      },
+      "statementLighting": {
+        "title": "الإضاءة المميزة",
+        "description": "اجعل قطعة مميزة جزءًا من هندسة المكان وشخصيته."
+      },
+      "layeredLighting": {
+        "title": "الإضاءة متعددة الطبقات",
+        "description": "اجمع بين مصادر مختلفة للضوء لخلق العمق والأجواء والمرونة."
+      }
+    }
+  },
+
+  "editorial": {
+    "catlabel": "مجلة ENOUZA",
+    "title": "مصممة للحظات التي تستحق.",
+    "description": "اكتشف إضاءة تضيف الدفء والشخصية إلى المساحات اليومية التي نسميها منزلًا.",
+    "link": "تسوق الإضاءة"
+  },
+
+  "newsletter": {
+    "catlabel": "ابقَ مستوحى",
+    "title": "أضف المزيد من الجمال إلى منزلك.",
+    "description": "اكتشف أحدث الإضاءات والتصاميم الداخلية وأفكار الإلهام من Enouza.",
+    "button": "انضم إلى Enouza"
+  }
+},
+
+"aboutus": {
+  "seo": {
+    "title": "عن Enouza | إضاءة راقية وتصميم داخلي",
+    "description": "اكتشف Enouza، علامة متخصصة في الإضاءة المختارة بعناية، تقدم قطعًا راقية ومميزة لمساحات داخلية متناسقة."
+  },
+
+  "hero": {
+    "eyebrow": "اكتشف ENOUZA",
+    "title": "ضوءٌ يجد مكانه.",
+    "description": "إضاءة راقية لمساحات دافئة ومتناسقة بعناية."
+  },
+
+  "story": {
+    "eyebrow": "قصتنا",
+    "title": "إضاءة تحمل إحساسًا بالمكان.",
+    "lead": "نؤمن بأن الإضاءة أكثر من مجرد إنارة.",
+    "text": "فهي تشكل أجواء الغرفة، وتلفت الانتباه إلى التفاصيل التي تستحق الاهتمام، وتغيّر الطريقة التي نشعر بها تجاه المكان.",
+    "text2": "نشأت Enouza من هذه الفكرة — لاكتشاف وجمع قطع إضاءة تبدو مدروسة، مميزة، ومنسجمة بطبيعتها مع المساحات التي تحتضنها."
+  },
+
+  "statement": {
+    "title": "نؤمن بأن الإضاءة المناسبة تغيّر كل شيء.",
+    "description": "قد يضفي الضوء الهادئ نعومة على الغرفة. وقد يصبح التصميم النحتي نقطة محورية فيها. وأحيانًا، تكفي القطعة المناسبة لتجعل المكان أكثر تعبيرًا عنك."
+  },
+
+  "approach": {
+    "eyebrow": "نهج ENOUZA",
+    "title": "مصمّم بعناية وهدف.",
+
+    "curated": {
+      "title": "منتقاة",
+      "description": "مختارة بعناية للمساحات المتناسقة والمدروسة."
+    },
+
+    "refined": {
+      "title": "راقية",
+      "description": "أشكال أنيقة صُقلت لتصل إلى جوهرها."
+    },
+
+    "atmospheric": {
+      "title": "حالمة",
+      "description": "إضاءة مصممة لتشكيل الأجواء والمزاج."
+    },
+
+    "distinctive": {
+      "title": "مميزة",
+      "description": "قطع تحمل طابعًا خاصًا يتجاوز المألوف."
+    }
+  },
+
+  "selection": {
+    "eyebrow": "ما يوجّه اختياراتنا",
+    "title": "نختارها لأكثر من مجرد مظهرها.",
+
+    "form": {
+      "title": "الشكل",
+      "description": "نسب متوازنة وتصاميم مميزة تنسجم بشكل طبيعي مع المساحات الداخلية."
+    },
+
+    "material": {
+      "title": "الخامة",
+      "description": "رخام، زجاج، معدن، أقمشة وتشطيبات نختارها لما تتميز به من حضور بصري وملمس خاص."
+    },
+
+    "light": {
+      "title": "الضوء",
+      "description": "إضاءة تضفي الدفء والعمق والأجواء، بدلًا من مجرد ملء الغرفة بالضوء."
+    }
+  },
+
+  "promise": {
+    "eyebrow": "وعد ENOUZA",
+    "title": "مختارة بعناية. مقدّمة بجمال.",
+    "description": "نختار بعناية كل قطعة نقدمها في Enouza، مع اهتمام خاص بالتصميم والخامات والنسب والأجواء التي تخلقها."
+  },
+
+  "final": {
+    "eyebrow": "المجموعة",
+    "title": "اكتشف الضوء الذي ينتمي إلى مساحتك.",
+    "description": "استكشف مجموعة Enouza واكتشف قطعًا مختارة لتنسجم مع أسلوب حياتك.",
+    "cta": "اكتشف المجموعة"
+  }
+},
+
+"designSection": {
+  "title": "فن الإضاءة",
+"catlabel": "اكتشف العلامة التجارية",
+
+  "principles": {
+  "minimalism": {
+    "title": "بساطة مدروسة",
+    "description": "خطوط نظيفة، ونِسَب متوازنة، وأشكال هادئة تتيح لكل قطعة أن تنسجم طبيعيًا مع محيطها."
+  },
+  "materials": {
+    "title": "مواد تحمل طابعًا مميزًا",
+    "description": "نختار الرخام والزجاج والمعادن والأقمشة لما تضيفه من طابع وعمق إلى المكان."
+  },
+  "ambient": {
+    "title": "إضاءة تصنع الأجواء",
+    "description": "نرى الضوء جزءًا من التصميم الداخلي؛ وسيلة لتلطيف المكان، وإضافة العمق، وصناعة إحساسه."
+  }
+}
+},
+
+"customersFeedback": {
+  "eyebrow": "تجربة ENOUZA",
+  "title": "محبوب من أصحاب المنازل حول العالم.",
+  "description": "منازل حقيقية. تجارب حقيقية.",
+  "ratingText": "بناءً على تقييمات العملاء",
+  "verifiedPurchase": "عملية شراء موثّقة",
+
+  "back": "رجوع",
+  "review": "تقييم",
+  "reviews": "تقييمات",
+  "noReviews": "لا توجد تقييمات بعد",
+  "noReviewsDescription": "لا توجد حالياً تقييمات من العملاء لعرضها.",
+  "previousPage": "الصفحة السابقة",
+  "nextPage": "الصفحة التالية",
+  "viewAllReviews": "عرض جميع التقييمات"
+},
+"filterPage":{
+  "clear_all": "مسح الكل",
+    "apply_filters": "تطبيق الفلاتر",
+    "price_range": "نطاق السعر",
+    "brand": "العلامة",
+    "category": "القسم",
+    "rating": "التقييم",
+    "availability": "التوفر",
+    "sort_by": "ترتيب حسب",
+    "reset_filters": "إعادة تعيين الفلاتر",
+    "search_did_not_match": "عذراً، بحثك لم يطابق أي منتجات. حاول مرة أخرى.",
+   "collection_description": "اكتشف إضاءة راقية صُممت لتضفي الدفء والشخصية والأناقة الخالدة على كل مساحة.",
+   "collection": "مجموعة ENOUZA",
+   "discover": "اكتشف"
+ },
+"customer_reviews": {
+      "enouza_review": "تقييم ENOUZA",
+      "title": "آراء العملاء",
+      "verified_purchase": "شراء موثّق",
+      "no_reviews": "لا توجد تقييمات بعد",
+      "image_unavailable": "الصورة غير متاحة",
+      "customer": "عميل",
+      "review_image": "صورة التقييم",
+      "previous_image": "الصورة السابقة",
+      "next_image": "الصورة التالية",
+      "close": "إغلاق",
+      "view_image": "عرض الصورة",
+      "rating": "التقييم",
+      "reviews": "التقييمات",
+      "description": "وصف المنتج",
+      "customer_rating": "تقييم العملاء",
+  "customer_reviews": "آراء العملاء",
+  "customer_review": "تقييم العميل"
+
+    },
+  "productInfo": {
+    "view_full_image": "عرض الصورة كاملة",
+    "product_details": "تفاصيل المنتج",
+    "purchase_information": "معلومات الشراء",
+    "secure_purchase_premium_quality": "شراء آمن وجودة فاخرة",
+    "save": "وفّر",
+    "Lampshade Color":"لون غطاء المصباح",
+    "Body Color" : "لون الهيكل",
+    "Color": "اللون",
+    "Color Name": "اللون",
+    "Emitting Color":"لون باعث للضوء",
+    "Colour": "اللون",
+    "Color Classification": "تصنيف اللون",
+
+    "Size": "المقاس",
+    "Sizes": "المقاسات",
+    "Item Length": "الطول",
+    "Item Width": "العرض",
+    "Item Height": "الارتفاع",
+    "Dimensions": "الأبعاد",
+
+    "Sd Card Memory": "سعة بطاقة الذاكرة",
+    "Memory": "الذاكرة",
+    "Memory Size": "حجم الذاكرة",
+    "Storage": "سعة التخزين",
+    "Internal Storage": "التخزين الداخلي",
+    "ROM": "ذاكرة ROM",
+    "RAM": "ذاكرة RAM",
+    "Capacity": "السعة",
+
+    "Plug Type": "نوع القابس",
+    "Power Plug": "قابس الطاقة",
+    "Socket Type": "نوع المقبس",
+    "Power Specification": "مواصفات الطاقة",
+    "Voltage": "الجهد الكهربائي",
+    "Wattage": "القدرة الكهربائية",
+    "is Customized":"مُخصّص",
+     "Color Temperature": "درجة حرارة اللون",
+    
+    "Ships From": "الشحن من",
+    "Ship From": "يُشحن من",
+    "Warehouse": "المستودع",
+    "Origin": "بلد المنشأ",
+
+    "Bundle": "حزمة",
+    "Sale by Pack": "يباع بالحزمة",
+    "Pack": "عبوة",
+    "Set": "طقم",
+    "Package": "العبوة",
+    "Quantity": "الكمية",
+
+    
+    "Model": "الموديل",
+    "Compatible Model": "الموديلات المتوافقة",
+    "Version": "الإصدار",
+    "Edition": "النسخة",
+    "Variant": "النوع",
+
+    
+    "Material": "الخامة",
+    "Fabric": "القماش",
+    "Fit": "القياس",
+    "Pattern": "النقشة",
+    "Sleeve Length": "طول الكم",
+
+    "Frequency": "التردد",
+    "Resolution": "الدقة",
+    "Interface": "الواجهة",
+    "Speed": "السرعة",
+    "Power": "الطاقة",
+    "description": "الوصف",
+    "specifications": "المواصفات",
+    "reviews": "التقييمات",
+    "CostumerReviews": "تقييمات العملاء",
+    "noReviews": "لا توجد تقييمات بعد",
+    "writeReview": "اكتب تقييم",
+    "submitReview": "إرسال التقييم",
+    "rating": "التقييم",
+    "comment": "التعليق",
+    "reviewSubmitted": "تم إرسال تقييمك",
+    "reviewPending": "تقييمك قيد المراجعة",
+    "size": "المقاس",
+    "color": "اللون",
+    "material": "المادة",
+    "brand": "العلامة",
+    "model": "الموديل",
+    "order": "طلب",
+    "all_from_verified_purchases": "جميع التقييمات من مشتريات موثوقة",
+    "stars": "نجوم",
+    "star": "نجمة",
+    "one_star": "نجمة واحدة",
+    "two_stars": "نجمتان",
+    "give_us_your_feedback": "أعطنا رأيك",
+    "led_ambient_lighting": "الإضاءة المحيطية",
+  "phone_mounts_holders":"حوامل الهواتف",
+  "organizers_storage": "منظمات التخزين ",
+  "comfort_accessories": "الراحة والإكسسوارات",
+  "air_fresheners_scents": "معطرات الهواء ",
+   "table_lamps": "مصابيح الطاولة",
+    "floor_lamps": "مصابيح الأرضية",
+    "wall_lamps": "مصابيح الجدران",
+    "pendant_lights": "المصابيح المعلقة",
+    "ceiling_lights": "مصابيح السقف",
+    "bedside_lamps": "مصابيح بجانب السرير",
+    "desk_office_lamps": "مصابيح المكتب والعمل",
+    "outdoor_lighting": "الإضاءة الخارجية"
+  },
+  "buyerTrustServices": {
+    "freeShipping": {
+      "title": "شحن مجاني",
+      "description": "استمتع بالشحن المجاني على الطلبات التي تزيد عن 50$."
+    },
+    "support24_7": {
+      "title": "دعم 24/7",
+      "description": "فريق دعم العملاء لدينا متاح على مدار الساعة لمساعدتك."
+    },
+    "moneyBack": {
+      "title": "ضمان استرجاع المال",
+      "description": "رضاك مضمون مع سياسة استرجاع سهلة خلال 30 يومًا."
+    },
+    "safe_Payment": {
+      "title": "دفع آمن",
+      "description": "نستخدم تقنيات التشفير المتقدمة لضمان أمان معاملاتك."
+    },
+    "easyReturns": {
+      "title": "إرجاع سهل",
+      "description": "عملية إرجاع بسيطة وخالية من المتاعب في غضون 30 يومًا من الشراء."
+    },
+    "safeReliablePayments": {
+      "title": "دفع موثوق",
+      "description": "طرق دفع آمنة وموثوقة لحماية معلوماتك المالية."
+    },
+    "worldwide_shipping": {
+      "title": "شحن عالمي",
+      "description": "توصيل سريع وموثوق إلى باب منزلك، في أي مكان في العالم."
+    },
+    "help_center": {
+      "title": "مركز المساعدة",
+      "description": "مساعدة على مدار الساعة لتجربة تسوق سلسة."
+    },
+    "Shop_with_confidence": {
+      "title": "تسوق بثقة",
+      "description": "رضاك هو أولويتنا. استمتع بتجربة تسوق آمنة وإرجاع سهل."
+    }
+  },
+  "profile": {
+    "my_profile": "ملفي",
+    "edit_your_name": "تعديل اسمك",
+    "edit_your_email": "تعديل بريدك الإلكتروني",
+    "enouza_faq": "الأسئلة الشائعة",
+    "edit_your_profile": "تعديل ملفك الشخصي",
+    "change_your_password": "تغيير كلمة المرور",
+    "edit_your_gender": "تعديل الجنس",
+    "edit_your_birthdate": "تعديل تاريخ الميلاد",
+    "update_your_address": "تحديث العنوان",
+    "manage_your_orders": "إدارة طلباتك",
+    "view_your_wishlist": "عرض المفضلة",
+    "start_shopping": "ابدأ التسوق",
+    "you_havent_placed_any_orders_yet": "لم تقم بأي طلبات بعد",
+    "processing": "قيد المعالجة",
+    "order_take_between": "قد يستغرق الطلب بين",
+    "tracking_number": "رقم التتبع",
+    "not_available": "غير متاح",
+    "shippingMethod": "طريقة الشحن",
+    "order_placed_on": "تم الطلب في",
+    "order_id": "رقم الطلب",
+    "payment_method": "طريقة الدفع",
+    "Credit_Debit_card": "بطاقة ائتمان/خصم",
+    "subtotal": "المجموع الفرعي",
+    "shipping": "الشحن",
+    "total": "الإجمالي"
+  },
+  "footer": {
+    "payment": { "secure": "دفع آمن" },
+    "newsletter": {
+      "title": "النشرة الإخبارية",
+      "description": "اشترك للحصول على آخر التحديثات والعروض الخاصة.",
+      "placeholder": "أدخل بريدك الإلكتروني",
+      "subscribeButton": "اشترك",
+      "all_rights_reserved": "جميع الحقوق محفوظة",
+      "copyright": ".حقوق النشر",
+      "successMessage": "تم الاشتراك بنجاح!",
+      "errorMessage": "حدث خطأ أثناء الاشتراك. حاول مرة أخرى.",
+      "eyebrow": "مجموعة ENOUZA"
+    },
+    "brand": {
+      "description": "قطع مختارة بعناية لتضفي الدفء والأناقة والطابع المميز على مساحتك."
+    },
+    "followUs": {
+      "title": "تابعنا",
+      "facebook": "فايسبوك",
+      "instagram": "إنستغرام",
+      "twitter": "تويتر",
+      "tiktok": "تيك توك"
+    },
+    "policies": {
+      "title": "السياسات",
+      "privacyPolicy": "سياسة الخصوصية",
+      "termsOfService": "شروط الخدمة",
+      "refundPolicy": "سياسة الاسترجاع",
+      "shippingPolicy": "سياسة الشحن"
+    },
+    "help": {
+      "title": "المساعدة",
+      "faq": "الأسئلة الشائعة",
+      "contactUs": "اتصل بنا",
+      "aboutUs": "من نحن",
+      "shipping": "الشحن",
+      "returns": "الاسترجاع",
+      "contact_note": "يسعدنا مساعدتك. تواصل مع فريقنا وسنكون هنا لخدمتك.",
+      "enouza_faq_description": "اعثر على إجابات للأسئلة التي نتلقاها بشكل متكرر."
+     }
+  },
+  
+"trust": {
+  "secureCheckout": "دفع آمن",
+
+  "freeShipping": {
+    "title": "شحن مجاني",
+    "text": "شحن مجاني على جميع الطلبات"
+  },
+
+  "fastDelivery": {
+    "title": "توصيل دولي",
+    "text": "توصيل دولي خلال 5–15 يومًا"
+  },
+
+  "returns": {
+    "title": "إرجاع خلال 100 يوم",
+    "text": "إرجاع سهل خلال 100 يوم"
+  },
+
+  "warranty": {
+    "title": "ضمان لمدة 3 سنوات",
+    "text": "مصمم بجودة تدوم طويلاً"
+  },
+
+  "shopWithConfidence": "تسوّق بثقة"
+},
+
+  "orderSuccess": {
+    "orderPlacedSuccessfully": "🎉 تم تقديم طلبك بنجاح! 🎉",
+    "orderProcessingMessage": "شكرًا لتسوقك معنا. طلبك قيد المعالجة.",
+    "backToHome": "العودة إلى الصفحة الرئيسية"
+  },
+  "checkout": {
+    "loggedInContinue": "حسابك جاهز. تابع لإدخال تفاصيل الفوترة الخاصة بك."
+  },
+  "common": {
+    "phoneNumber": "رقم الهاتف",
+    "selectShippingMethod": "اختر طريقة الشحن",
+    "discoverCollection": "اكتشف المجموعة",
+    "days": "أيام",
+    "day": "يوم",
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ، حاول مرة أخرى",
+    "success": "تم بنجاح",
+    "submit": "إرسال",
+    "cancel": "إلغاء",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "next": "التالي",
+    "previous": "السابق",
+    "confirm": "تأكيد",
+    "yes": "نعم",
+    "no": "لا",
+    "saveChanges": "حفظ التغييرات",
+    "checkout_as_guest": "الدفع كضيف. لا حاجة لتسجيل الدخول.",
+    "update": "تحديث",
+    "view": "عرض",
+    "search": "بحث",
+    "filter": "تصفية",
+    "sortBy": "ترتيب حسب:",
+    "resetFilters": "إعادة تعيين الفلاتر",
+    "category": "التصنيف",
+    "bestMatch": "الأفضل تطابقاً",
+    "priceLowToHigh": "السعر: من الأقل للأعلى",
+    "priceHighToLow": "السعر: من الأعلى للأقل",
+    "newestFirst": "الأحدث أولاً",
+    "oldestFirst": "الأقدم أولاً",
+    "buyNow": "اشتري الآن",
+    "payNow": "ادفع الآن",
+    "addToCart": "أضف للسلة",
+    "addToWishlist": "أضف للمفضلة",
+    "removeFromWishlist": "إزالة من المفضلة",
+    "viewDetails": "التفاصيل",
+    "checkout": "إتمام الشراء",
+    "placeOrder": "إتمام الطلب",
+    "orderSummary": "ملخص الطلب",
+    "total": "المجموع",
+    "subtotal": "المجموع الفرعي",
+    "shipping": "الشحن",
+    "tax": "الضريبة",
+    "grandTotal": "المجموع الكلي",
+    "continueShopping": "متابعة التسوق",
+    "shopping_cart": "السلة",
+    "proceedToCheckout": "إتمام الشراء",
+    "noItemsInCart": "السلة فارغة",
+    "noItemsInWishlist": "المفضلة فارغة",
+    "viewCart": "عرض السلة",
+    "viewWishlist": "عرض المفضلة",
+    "myAccount": "حسابي",
+    "logout": "تسجيل الخروج",
+    "login": "تسجيل الدخول",
+    "you_are_logged_in": "أنت مسجل الدخول",
+    "signin": "تسجيل",
+    "payment": "الدفع",
+    "register": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "address": "العنوان",
+    "city": "المدينة",
+    "state": "المنطقة",
+    "zipCode": "الرمز البريدي",
+    "country": "الدولة",
+    "phone": "الهاتف",
+    "save": "حفظ",
+    "reset": "إعادة تعيين",
+    "saving_address": "استخدم هذا العنوان لتفاصيل الدفع",
+    "changePassword": "تغيير كلمة المرور",
+    "oldPassword": "كلمة المرور القديمة",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmNewPassword": "تأكيد الجديدة",
+    "dashboard": "لوحة التحكم",
+    "orders": "الطلبات",
+    "orderDetails": "تفاصيل الطلب",
+    "accountDetails": "معلومات الحساب",
+    "editAccount": "تعديل الحساب",
+    "myOrders": "طلباتي",
+    "orderHistory": "سجل الطلبات",
+    "trackOrder": "تتبع الطلب",
+    "orderStatus": "حالة الطلب",
+    "pending": "قيد الانتظار",
+    "processing": "جارٍ المعالجة",
+    "shipped": "تم الشحن",
+    "delivered": "تم التسليم",
+    "cancelled": "أُلغيت",
+    "returnRequested": "طلب استرجاع",
+    "returned": "تم الإرجاع",
+    "reviewProduct": "أضف تقييم",
+    "writeAReview": "اكتب مراجعة",
+    "rating": "التقييم",
+    "comment": "التعليق",
+    "submitReview": "إرسال المراجعة",
+    "noReviewsYet": "لا توجد مراجعات",
+    "relatedProducts": "منتجات مشابهة",
+    "continue": "متابعة",
+    "back": "رجوع",
+    "home": "الرئيسية",
+    "shop": "المتجر",
+    "categories": "الأقسام",
+    "allCategories": "جميع الأقسام",
+    "brands": "العلامات",
+    "allBrands": "كل العلامات",
+    "price": "السعر",
+    "apply": "تطبيق",
+    "clear": "مسح",
+    "viewMore": "المزيد",
+    "viewLess": "أقل",
+    "noResultsFound": "لا توجد نتائج",
+    "tryDifferentKeywords": "جرّب كلمات أخرى",
+    "items": "منتجات",
+    "item": "منتج",
+    "of": "من",
+    "results": "نتائج",
+    "perPage": "لكل صفحة",
+    "page": "صفحة",
+    "loadingMore": "جاري التحميل...",
+    "noMoreItems": "لا مزيد من المنتجات",
+    "welcome": "مرحباً",
+    "thankYou": "شكراً لك",
+    "forVisiting": "لزيارتك",
+    "seeYouSoon": "نراك قريباً",
+    "contactSupport": "اتصل بالدعم",
+    "needHelp": "تحتاج مساعدة؟",
+    "faq": "الأسئلة الشائعة",
+    "terms": "الشروط",
+    "privacy": "الخصوصية",
+    "cookies": "الكوكيز",
+    "rightsReserved": "جميع الحقوق محفوظة",
+    "developedBy": "تم التطوير بواسطة",
+    "version": "الإصدار",
+    "language": "اللغة",
+    "currency": "العملة",
+    "selectLanguage": "اختر اللغة",
+    "selectCurrency": "اختر العملة",
+    "darkMode": "الوضع الداكن",
+    "lightMode": "الوضع الفاتح",
+    "autoMode": "وضع تلقائي",
+    "theme": "السمة",
+    "notifications": "الإشعارات",
+    "markAllAsRead": "تحديد الكل كمقروء",
+    "viewAll": "عرض الكل",
+    "noNewNotifications": "! لا إشعارات جديدة",
+    "new": "جديد",
+    "discover": "اكتشف",
+    "view_more": "عرض المزيد",
+    "read": "مقروء",
+    "unread": "غير مقروء",
+    "profile": "الملف الشخصي",
+    "editProfile": "تعديل الملف",
+    "changeAvatar": "تغيير الصورة",
+    "myWishlist": "مفضلتي",
+    "myCart": "سلتي",
+    "checkoutNow": "ادفع الآن",
+    "applyCoupon": "استخدام كوبون",
+    "enterCouponCode":"أدخل رمز الخصم",
+    "removeCoupon": "إزالة الكوبون",
+    "couponApplied": "تم تطبيق الكوبون",
+    "invalidCoupon": "كوبون غير صالح",
+    "shippingAddress": "عنوان الشحن",
+    "billingAddress": "العنوان",
+    "sameAsShipping": "مثل الشحن",
+    "paymentMethod": "طريقة الدفع",
+    "selectPaymentMethod": "اختر طريقة الدفع",
+    "placeYourOrder": "إتمام الطلب",
+    "orderPlaced": "تم الطلب",
+    "thankYouForYourOrder": "شكراً لطلبك!",
+    "orderNumber": "رقم الطلب",
+    "trackYourOrder": "تتبع طلبك",
+    "Hello": "مرحباً",
+    "create_an_account": "إنشاء حساب",
+    "already_have_an_account": "هل لديك حساب؟",
+    "forgot_password": "نسيت كلمة المرور؟",
+    "gender": "الجنس",
+    "male": "ذكر",
+    "female": "أنثى",
+    "By_clicking_Sign_up_I_agree_to_the": "بالضغط على تسجيل، أوافق على",
+    "password_reset_text": "أدخل بريدك المسجل وسنرسل لك رابط إعادة تعيين كلمة المرور.",
+    "send_password_reset_link": "إرسال",
+    "reset_your_password": "إعادة تعيين كلمة المرور",
+    "reset_password": "إعادة تعيين",
+    "reset_password_text": "قم بتغيير كلمة المرور هنا.",
+    "new_password": "كلمة المرور الجديدة",
+    "old_password": "كلمة المرور القديمة",
+    "confirm_password": "تأكيد كلمة المرور",
+    "free_shipping": "الشحن المجاني",
+    
+    "select_country": "اختر الدولة",
+    "text": "نص",
+    "text_field_required": "حقل النص مطلوب",
+    "send": "إرسال",
+    "enter_message": "أدخل الرسالة",
+    "message_sent": "تم إرسال الرسالة",
+    "message": "الرسالة",
+    "myProfile": "ملفي",
+    "chat": "الدردشة مع الدعم",
+    "helpCenter": "المساعدة",
+    "from": "من",
+    "member_since": "عضو منذ",
+    "tryAgain": "حاول مرة أخرى",
+      "pleaseSelectShippingMethod": "يرجى اختيار طريقة الشحن",
+
+    "please_confirm_your_password": "أكّد كلمة المرور",
+    "please_enter_your_new_password": "أدخل كلمة المرور الجديدة",
+    "please_enter_your_email": "أدخل بريدك",
+    "please_enter_your_password": "أدخل كلمة المرور",
+    "please_enter_your_first_name": "أدخل الاسم الشخصي",
+    "please_enter_your_last_name": "أدخل الاسم العائلي",
+    "please_enter_your_address": "أدخل العنوان",
+    "please_enter_your_city": "أدخل المدينة",
+    "please_enter_your_state": "أدخل المنطقة",
+    "please_enter_your_country": "أدخل الدولة",
+    "please_enter_your_zip_code": "أدخل الرمز البريدي",
+    "please_enter_your_phone": "أدخل رقم الهاتف",
+    "please_enter_your_birthdate": "أدخل تاريخ الميلاد",
+    "please_enter_coupon_code": "يرجى إدخال رمز الخصم",
+    "invalid_discount_code": "رمز الخصم غير صالح",
+    "discount_code_applied": "تم تطبيق رمز الخصم",
+    "discount": "الخصم"
+    
+  },
+  "success": {
+    "subscribed_to_newsletter": "شكرًا لاشتراكك في النشرة الإخبارية!",
+    "message_sent_successfully": "تم إرسال رسالتك بنجاح!",
+    "profile_updated_successfully": "تم تحديث ملفك الشخصي بنجاح!",
+    "password_changed_successfully": "تم تغيير كلمة المرور بنجاح!",
+    "order_placed_successfully": "تم تقديم طلبك بنجاح!",
+    "review_submitted_successfully": "شكرًا على تقييمك!",
+    "item_added_to_cart": "تمت إضافة المنتج إلى السلة!",
+    "item_removed_from_cart": "تمت إزالة المنتج من السلة!",
+    "item_added_to_wishlist": "تمت إضافة المنتج إلى قائمة الرغبات!",
+    "item_removed_from_wishlist": "تمت إزالة المنتج من قائمة الرغبات!",
+    "coupon_applied_successfully": "تم تطبيق القسيمة بنجاح!",
+    "coupon_removed_successfully": "تمت إزالة القسيمة بنجاح!",
+    "saved": "تم الحفظ",
+    "deleted": "تم الحذف",
+    "updated": "تم التحديث",
+    "submitted": "تم الإرسال",
+    "logged_in": "تم تسجيل الدخول",
+    "logged_out": "تم تسجيل الخروج",
+    "registered": "تم التسجيل",
+    "password_reset_link_sent": "تم إرسال رابط إعادة تعيين كلمة المرور",
+    "password_reset_successful": "تمت إعادة تعيين كلمة المرور بنجاح",
+    "success_logged_in": "تم تسجيل الدخول",
+    "success_account_created": "تم إنشاء الحساب",
+    "success_password_reset_link_sent": "تم الإرسال",
+    "success_password_reset": "تم التغيير",
+    "success_profile_updated": "تم التحديث",
+    "success_password_changed": "تم تغيير كلمة المرور"
+  },
+  "errors": {
+
+    "error_old_password_incorrect": "كلمة المرور القديمة خاطئة",
+    "text_field_required": "حقل النص مطلوب",
+    "error_password_dont_match": "كلمات المرور غير متطابقة",
+    "error_email_already_exists": "البريد مسجل مسبقاً",
+    "error_email_not_exists": "البريد غير موجود",
+    "error_invalid_credentials": "بيانات غير صحيحة",
+    "error_account_disabled": "الحساب معطل",
+    "error_too_many_requests": "محاولات كثيرة، حاول لاحقاً",
+    "error_weak_password": "كلمة المرور ضعيفة",
+    "error_invalid_email": "البريد غير صحيح",
+    "error_user_not_found": "المستخدم غير موجود",
+    "error_network_request_failed": "فشل الاتصال",
+    "error_something_went_wrong": "حدث خطأ",
+    "error_invalid_verification_code": "رمز غير صحيح",
+    "error_verification_code_expired": "الرمز منتهي",
+    "error_no_internet_connection": "لا يوجد اتصال",
+    "network_error": "خطأ في الشبكة. يرجى التحقق من الاتصال.",
+    "unknown_error": "خطأ غير معروف. يرجى المحاولة مرة أخرى.",
+    "form_error": "خطأ في النموذج. يرجى مراجعة الحقول.",
+    "unauthorized": "غير مصرح. يرجى تسجيل الدخول.",
+    "forbidden": "ممنوع. ليس لديك إذن للقيام بهذا الإجراء.",
+    "not_found": "غير موجود. المورد المطلوب غير متاح.",
+    "server_error": "خطأ في الخادم. يرجى المحاولة لاحقًا.",
+    "timeout": "انتهت مهلة الطلب. يرجى المحاولة مرة أخرى.",
+    "conflict": "تعارض. المورد موجود بالفعل.",
+    "bad_request": "طلب غير صالح. يرجى التحقق من البيانات المرسلة.",
+    "validation_error": "خطأ في التحقق. يرجى تصحيح الأخطاء في النموذج.",
+    "item_out_of_stock": "المنتج غير متوفر. لا يمكن إضافته إلى السلة.",
+    "error_invalid_birthdate": "تاريخ الميلاد غير صحيح",
+    "error_max_name_characters": "الاسم طويل جداً",
+    "error_min_password_characters": "كلمة المرور قصيرة جداً",
+    "error_required_gender": "الجنس مطلوب",
+    "error_gender_must_be_defined": "يجب تحديد الجنس",
+    "required": "مطلوب",
+    "please_confirm_your_password": "أكّد كلمة المرور",
+    "please_enter_your_new_password": "أدخل كلمة المرور الجديدة",
+    "please_enter_your_email": "أدخل بريدك",
+    "please_enter_your_password": "أدخل كلمة المرور",
+    "please_enter_your_first_name": "أدخل الاسم الشخصي",
+    "please_enter_your_last_name": "أدخل الاسم العائلي",
+    "please_enter_your_address": "أدخل العنوان",
+    "please_enter_your_city": "أدخل المدينة",
+    "please_enter_your_state": "أدخل المنطقة",
+    "please_enter_your_country": "أدخل الدولة",
+    "please_enter_your_zip_code": "أدخل الرمز البريدي",
+    "please_enter_your_phone": "أدخل الهاتف",
+    "please_enter_your_birthdate": "أدخل تاريخ الميلاد",
+    
+  "page_not_found": "الصفحة غير موجودة",
+  "page_not_found_description": "الصفحة التي تبحث عنها غير موجودة."
+
+
+  },
+  
+  "languages": {
+    "en": "الإنجليزية",
+    "ar": "العربية",
+    "es": "الإسبانية",
+    "fr": "الفرنسية",
+    "de": "الألمانية",
+    "it": "الإيطالية",
+    "pt": "البرتغالية",
+    "ru": "الروسية",
+    "zh": "الصينية",
+    "ja": "اليابانية",
+    "ko": "الكورية",
+    "hi": "الهندية"
+  },
+  "countries": {
+    "AF": "أفغانستان",
+    "AX": "جزر آلاند",
+    "AL": "ألبانيا",
+    "DZ": "الجزائر",
+    "AS": "ساموا الأمريكية",
+    "AD": "أندورا",
+    "AO": "أنغولا",
+    "AI": "أنغويلا",
+    "AQ": "أنتاركتيكا",
+    "AG": "أنتيغوا وبربودا",
+    "AR": "الأرجنتين",
+    "AM": "أرمينيا",
+    "AW": "أروبا",
+    "AU": "أستراليا",
+    "AT": "النمسا",
+    "AZ": "أذربيجان",
+    "BS": "جزر البهاما",
+    "BH": "البحرين",
+    "BD": "بنغلاديش",
+    "BB": "بربادوس",
+    "BY": "بيلاروس",
+    "BE": "بلجيكا",
+    "BZ": "بليز",
+    "BJ": "بنين",
+    "BM": "برمودا",
+    "BT": "بوتان",
+    "BO": "بوليفيا",
+    "BQ": "هولندا الكاريبية",
+    "BA": "البوسنة والهرسك",
+    "BW": "بوتسوانا",
+    "BV": "جزيرة بوفيه",
+    "BR": "البرازيل",
+    "IO": "الإقليم البريطاني في المحيط الهندي",
+    "BN": "بروناي",
+    "BG": "بلغاريا",
+    "BF": "بوركينا فاسو",
+    "BI": "بوروندي",
+    "CV": "الرأس الأخضر",
+    "KH": "كمبوديا",
+    "CM": "الكاميرون",
+    "CA": "كندا",
+    "KY": "جزر كايمان",
+    "CF": "جمهورية أفريقيا الوسطى",
+    "TD": "تشاد",
+    "CL": "تشيلي",
+    "CN": "الصين",
+    "CX": "جزيرة كريسماس",
+    "CC": "جزر كوكوس (كيلينغ)",
+    "CO": "كولومبيا",
+    "KM": "جزر القمر",
+    "CG": "الكونغو - برازافيل",
+    "CD": "الكونغو - كينشاسا",
+    "CK": "جزر كوك",
+    "CR": "كوستاريكا",
+    "HR": "كرواتيا",
+    "CU": "كوبا",
+    "CW": "كوراساو",
+    "CY": "قبرص",
+    "CZ": "التشيك",
+    "CI": "ساحل العاج",
+    "DK": "الدانمرك",
+    "DJ": "جيبوتي",
+    "DM": "دومينيكا",
+    "DO": "جمهورية الدومينيكان",
+    "EC": "الإكوادور",
+    "EG": "مصر",
+    "SV": "السلفادور",
+    "GQ": "غينيا الاستوائية",
+    "ER": "إريتريا",
+    "EE": "إستونيا",
+    "SZ": "إسواتيني",
+    "ET": "إثيوبيا",
+    "FK": "جزر فوكلاند",
+    "FO": "جزر فارو",
+    "FJ": "فيجي",
+    "FI": "فنلندا",
+    "FR": "فرنسا",
+    "GF": "غويانا الفرنسية",
+    "PF": "بولينيزيا الفرنسية",
+    "TF": "الأقاليم الجنوبية الفرنسية",
+    "GA": "الغابون",
+    "GM": "غامبيا",
+    "GE": "جورجيا",
+    "DE": "ألمانيا",
+    "GH": "غانا",
+    "GI": "جبل طارق",
+    "GR": "اليونان",
+    "GL": "غرينلاند",
+    "GD": "غرينادا",
+    "GP": "غوادلوب",
+    "GU": "غوام",
+    "GT": "غواتيمالا",
+    "GG": "غيرنزي",
+    "GN": "غينيا",
+    "GW": "غينيا بيساو",
+    "GY": "غيانا",
+    "HT": "هايتي",
+    "HM": "جزيرة هيرد وجزر ماكدونالد",
+    "VA": "الفاتيكان",
+    "HN": "هندوراس",
+    "HK": "هونغ كونغ الصينية (منطقة إدارية خاصة)",
+    "HU": "هنغاريا",
+    "IS": "آيسلندا",
+    "IN": "الهند",
+    "ID": "إندونيسيا",
+    "IR": "إيران",
+    "IQ": "العراق",
+    "IE": "أيرلندا",
+    "IM": "جزيرة مان",
+    "IL": "إسرائيل",
+    "IT": "إيطاليا",
+    "JM": "جامايكا",
+    "JP": "اليابان",
+    "JE": "جيرسي",
+    "JO": "الأردن",
+    "KZ": "كازاخستان",
+    "KE": "كينيا",
+    "KI": "كيريباتي",
+    "KP": "كوريا الشمالية",
+    "KR": "كوريا الجنوبية",
+    "KW": "الكويت",
+    "KG": "قيرغيزستان",
+    "LA": "لاوس",
+    "LV": "لاتفيا",
+    "LB": "لبنان",
+    "LS": "ليسوتو",
+    "LR": "ليبيريا",
+    "LY": "ليبيا",
+    "LI": "ليختنشتاين",
+    "LT": "ليتوانيا",
+    "LU": "لوكسمبورغ",
+    "MO": "منطقة ماكاو الإدارية الخاصة",
+    "MG": "مدغشقر",
+    "MW": "ملاوي",
+    "MY": "ماليزيا",
+    "MV": "جزر المالديف",
+    "ML": "مالي",
+    "MT": "مالطا",
+    "MH": "جزر مارشال",
+    "MQ": "جزر المارتينيك",
+    "MR": "موريتانيا",
+    "MU": "موريشيوس",
+    "YT": "مايوت",
+    "MX": "المكسيك",
+    "FM": "ميكرونيزيا",
+    "MD": "مولدوفا",
+    "MC": "موناكو",
+    "MN": "منغوليا",
+    "ME": "الجبل الأسود",
+    "MS": "مونتسرات",
+    "MA": "المغرب",
+    "MZ": "موزمبيق",
+    "MM": "ميانمار (بورما)",
+    "NA": "ناميبيا",
+    "NR": "ناورو",
+    "NP": "نيبال",
+    "NL": "هولندا",
+    "NC": "كاليدونيا الجديدة",
+    "NZ": "نيوزيلندا",
+    "NI": "نيكاراغوا",
+    "NE": "النيجر",
+    "NG": "نيجيريا",
+    "NU": "نيوي",
+    "NF": "جزيرة نورفولك",
+    "MK": "مقدونيا الشمالية",
+    "MP": "جزر ماريانا الشمالية",
+    "NO": "النرويج",
+    "OM": "عُمان",
+    "PK": "باكستان",
+    "PW": "بالاو",
+    "PS": "الأراضي الفلسطينية",
+    "PA": "بنما",
+    "PG": "بابوا غينيا الجديدة",
+    "PY": "باراغواي",
+    "PE": "بيرو",
+    "PH": "الفلبين",
+    "PN": "جزر بيتكيرن",
+    "PL": "بولندا",
+    "PT": "البرتغال",
+    "PR": "بورتوريكو",
+    "QA": "قطر",
+    "RO": "رومانيا",
+    "RU": "روسيا",
+    "RW": "رواندا",
+    "RE": "روينيون",
+    "BL": "سان بارتليمي",
+    "SH": "سانت هيلينا",
+    "KN": "سانت كيتس ونيفيس",
+    "LC": "سانت لوسيا",
+    "MF": "سان مارتن",
+    "PM": "سان بيير ومكويلون",
+    "VC": "سانت فنسنت وجزر غرينادين",
+    "WS": "ساموا",
+    "SM": "سان مارينو",
+    "ST": "ساو تومي وبرينسيبي",
+    "SA": "المملكة العربية السعودية",
+    "SN": "السنغال",
+    "RS": "صربيا",
+    "SC": "سيشل",
+    "SL": "سيراليون",
+    "SG": "سنغافورة",
+    "SX": "سانت مارتن",
+    "SK": "سلوفاكيا",
+    "SI": "سلوفينيا",
+    "SB": "جزر سليمان",
+    "SO": "الصومال",
+    "ZA": "جنوب أفريقيا",
+    "GS": "جورجيا الجنوبية وجزر ساندويتش الجنوبية",
+    "SS": "جنوب السودان",
+    "ES": "إسبانيا",
+    "LK": "سريلانكا",
+    "SD": "السودان",
+    "SR": "سورينام",
+    "SJ": "سفالبارد وجان ماين",
+    "SE": "السويد",
+    "CH": "سويسرا",
+    "SY": "سوريا",
+    "TW": "تايوان",
+    "TJ": "طاجيكستان",
+    "TZ": "تنزانيا",
+    "TH": "تايلاند",
+    "TL": "تيمور - ليشتي",
+    "TG": "توغو",
+    "TK": "توكيلاو",
+    "TO": "تونغا",
+    "TT": "ترينيداد وتوباغو",
+    "TN": "تونس",
+    "TR": "تركيا",
+    "TM": "تركمانستان",
+    "TC": "جزر توركس وكايكوس",
+    "TV": "توفالو",
+    "UG": "أوغندا",
+    "UA": "أوكرانيا",
+    "AE": "الإمارات العربية المتحدة",
+    "GB": "المملكة المتحدة",
+    "UM": "جزر الولايات المتحدة النائية",
+    "US": "الولايات المتحدة",
+    "UY": "أورغواي",
+    "UZ": "أوزبكستان",
+    "VU": "فانواتو",
+    "VE": "فنزويلا",
+    "VN": "فيتنام",
+    "VG": "جزر فيرجن البريطانية",
+    "VI": "جزر فيرجن الأمريكية",
+    "WF": "جزر والس وفوتونا",
+    "EH": "الصحراء الغربية",
+    "YE": "اليمن",
+    "ZM": "زامبيا",
+    "ZW": "زيمبابوي"
+  }
+ 
+}

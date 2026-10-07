@@ -1,0 +1,79 @@
+{"shippingFaq":[
+  {
+    "id": 1,
+    "question": "How much does shipping cost?",
+    "answer": {
+      "paragraphe": [
+        "International shipping costs vary depending on the destination. Here is a breakdown of shipping costs for each destination:"
+      ],
+      "list": [
+        "Canada: $0 - $19.99",
+        "Europe: $0 - $40",
+        "Australia: $0 - $43.99",
+        "Worldwide: Free shipping for some products"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "question": "What happens if my package is lost in transit?",
+    "answer": {
+      "paragraphe": [
+        "If a package is shown as delivered but you have not received it, please contact the carrier and notify us within 30 days of the delivery date.",
+        "If it is determined that the package was lost due to a delivery error by the carrier, we will replace your order.",
+        "If the package is lost due to an incomplete or incorrect address, we cannot offer a refund or exchange—customers are responsible for ensuring their shipping address is correct at the time of purchase. If the package is returned to us, you will need to pay an additional shipping fee for resending it.",
+        "If you find that your shipping address is incorrect or has changed since placing your order, please notify us with your order number/ID and the updated address."
+      ],
+      "list": []
+    }
+  },
+  {
+    "id": 3,
+    "question": "When will my order ship?",
+    "answer": {
+      "paragraphe": [
+        "Your order will be processed during normal business days (Monday to Friday, excluding holidays).",
+        "If an item is in stock, your order will be processed within 1 to 5 business days. Delivery time after processing will vary based on the shipping address. Currently, delivery times range between 5 to 15 business days.",
+        "Once an item ships, you will receive an email with tracking information. In some special cases, tracking numbers may not be available."
+      ],
+      "list": []
+    }
+  },
+  {
+    "id": 4,
+    "question": "Will I receive my order in multiple packages?",
+    "answer": {
+      "paragraphe": [
+        "If you purchase in-stock items shipped from different warehouses, you will receive multiple shipments."
+      ],
+      "list": []
+    }
+  },
+  {
+    "id": 5,
+    "question": "How are shipping prices calculated?",
+    "answer": {
+      "paragraphe": [
+        "Shipping charges are calculated during checkout. You can add items to your cart, proceed to checkout, and enter your shipping address to see the shipping cost for your order."
+      ],
+      "list": []
+    }
+  },
+  {
+    "id": 6,
+    "question": "What is your refund policy?",
+    "answer": {
+      "paragraphe": [],
+      "list": [
+        "After an order is canceled or a return is processed, a refund will be issued to the original payment method.",
+        "Once the return process is complete, the refund will be processed within 1-5 business days.",
+        "After the refund is processed, please allow 3-5 business days for PayPal refunds, and 3-10 business days for all other payment methods.",
+        "We will notify you via email once the refund has been issued.",
+        "A full refund will be issued even if an Enouza Store Digital Gift Card was used as full or partial payment for the order.",
+        "An order can be canceled and immediately refunded if the package has not yet begun processing for shipment.",
+        "Once a package begins processing for shipment, it must be delivered to its destination and returned to Enouza before a refund can be issued. Please contact our Customer Service team for more detailed information."
+      ]
+    }
+  }
+]
+}

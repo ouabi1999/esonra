@@ -1,0 +1,34 @@
+{
+  "returnPolicy": {
+    "seoTitle": "Enouza - Return Policy",
+    "title": "Return and Refund Policy",
+    "returns": {
+      "heading": "Returns:",
+      "text": "Simply put, you can return merchandise for a refund ONLY if the item is in BRAND NEW, UNOPENED CONDITION, including its original packaging and accessories. We know this seems a little extreme, but without this stipulation, we would not be able to offer our amazing prices. We will honor refunds for unopened items up until 15 - 25 days from when you have received your product. All refunds will be issued back to your original payment method and can take up to 7-10 business days to apply."
+    },
+    "rejectedRefunds": {
+      "heading": "Your refund will be rejected if your items are returned due to the following issues:",
+      "items": [
+        "If you want to return your product due to damage to the item’s original box.",
+        "If the product you returned has been opened and unsealed.",
+        "Items with minor cosmetic paint problems for prize figures as these are expected."
+      ]
+    },
+    "exceptions": {
+      "heading": "Exceptions / Non-Returnable items:",
+      "text": "Pre-orders are final sales and are non-returnable once shipped. If you receive a defective product, please contact us for information on contacting the manufacturer. Items with box imperfections and general flaws. Please contact us if you have questions or concerns about your specific item."
+    },
+    "returnShipping": {
+      "heading": "Return Shipping:",
+      "text": "To return a product, please contact our customer support with your order number and reason for return. You will be provided with a return label if your return request is approved."
+    },
+    "damagesIssues": {
+      "heading": "Damages and Issues",
+      "text": "Please inspect your order upon reception and contact us immediately if the item is defective, damaged, or if you received the wrong item so that we can evaluate the issue and make it right."
+    },
+    "refunds": {
+      "heading": "Refunds",
+      "text": "We will notify you once we’ve received and inspected your return, and let you know if the refund was approved. If approved, you’ll be automatically refunded on your original payment method. Please remember it can take some time for your bank or credit card company to process and post the refund."
+    }
+  }
+}

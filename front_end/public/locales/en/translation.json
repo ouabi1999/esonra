@@ -1,0 +1,1234 @@
+{
+  "header": {},
+  "menu": {
+    "login": "Log In",
+    "searchPlaceholder": "Search...",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "profile": "Profile",
+    "logout": "Log Out",
+    "dashboard": "Dashboard",
+    "adminDashboard": "Admin",
+    "userDashboard": "My Dashboard",
+    "home": "Home",
+    "contactUs": "Contact",
+    "aboutUs": "About",
+    "privacyPolicy": "Privacy",
+    "termsOfService": "Terms",
+    "refundPolicy": "Refunds",
+    "shippingPolicy": "Shipping",
+    "helpCenter": "Help",
+    "myOrders": "My Orders",
+    "notifications": "Alerts",
+    "shoppingCart": "Cart",
+    "checkout": "Checkout",
+    "orderSuccess": "Order Placed"
+  },
+
+ "shoppingCart": {
+  "freeExpressTo": "Free Express to"
+},
+
+  "homePage": {
+    "new":"New",
+    "welcomeMessage": "Welcome to our store",
+    "featuredProducts": "Featured",
+    "mayAlsoLike": "You May Also Like",
+    "newArrival": "New Arrivals",
+    "bestSellers": "Bestseller",
+    "specialOffers": "Deals",
+    "buyerTrustServices": "Our Services",
+    "freeShipping_offer": "Free shipping over $50",
+    "support_24_7": "24/7 Help",
+    "money_Back": "Money Back",
+    "secure_Payment": "Secure Pay",
+    "easy_Returns": "Easy Returns",
+    "safe_reliable_payments": "Safe Payments",
+    "More_to_love": "More to Love",
+    "more_products": "More Products",
+    "best_sellers": "Bestsellers"
+  },
+  "mainSlider":{
+    "title": "Lighting, Curated Differently.",
+    "description": "A considered collection of sculptural lighting, created to transform the atmosphere of every space.",
+    "welcome": "Welcome to ENOUZA."
+  },
+  "productPage": {
+    "addToCart": "Add to Cart",
+    "buyNow": "Buy Now",
+    "productDescription": "Details",
+    "customerReviews": "Reviews",
+    "ratings": "Ratings",
+    "specifications": "Specs",
+    "relatedProducts": "You May Like",
+    "stockAvailability": "Stock",
+    "quantity": "Qty",
+    "outOfStock": "Out of Stock",
+    "inStock": "In Stock",
+    "soldOut":"Sold Out"
+  },
+  "purchaseOptions": {
+    "business_days": "Business Days",
+    "Ship_to": "Ship to",
+    "Language": "Language",
+    "Currency": "Currency",
+    "Help_Center": "Help",
+    "Sell_on_OurPlatform": "Sell with Us",
+    "Download_Our_App": "Get Our App",
+    "Follow_Us": "Follow Us",
+    "Contact_Us": "Contact",
+    "free_Shipping": "Free Shipping",
+    "available": "Available",
+    "Delivrey": "Delivery",
+    "Quantity": "Quantity",
+    "max-order-warning": "Max order limit reached",
+    "available_shipping_methods": "Shipping Methods",
+    "item_has_been_added": "Item added to cart",
+    "item_already_in_cart": "Item already in cart",
+    "item_has_been_removed": "Item removed from cart",
+    "days": "Days",
+    "Security_&_Privacy": {
+      "header": "Privacy",
+      "text": "We do not share your personal details with any third parties without your consent. We protect your privacy and keep your personal details safe and secure."
+    }
+  },
+
+ 
+  "heroSection": {
+    "title": "Light, Made to Belong",
+    "description": "Thoughtfully selected lighting that brings depth, warmth, and character to the spaces you call home.",
+    "ctaLabel": "Explore the Collection",
+    "detailDesign": "Where Detail Meets Design",
+    "curated": "CURATED",
+  "curated_description": "Thoughtfully selected for considered spaces.",
+
+  "refined": "REFINED",
+  "refined_description": "Elegant forms, refined to the essential.",
+
+  "atmospheric": "ATMOSPHERIC",
+  "atmospheric_description": "Light designed to shape the mood.",
+
+  "distinctive": "DISTINCTIVE",
+  "distinctive_description": "Pieces with character beyond the ordinary.",
+    "stats": {
+      "rated": {
+        "value": "4.9★",
+        "label": "Rated by Customers"
+      },
+      "satisfaction": {
+        "value": "98%",
+        "label": "Customer Satisfaction"
+      },
+      "reviews": {
+        "value": "100+",
+        "label": "Verified Reviews"
+      }
+    }
+  },
+
+
+  
+  
+  "ctaSection": {
+    "eyebrow": "ENOUZA CUSTOMER CARE",
+    "titleLeft": "We are here to help.",
+    "description": "Have a question about a product, your order, or delivery? Our customer care team is here to assist you.",
+    "button": "Contact us",
+    "supportEyebrow": "CUSTOMER SUPPORT",
+    "titleRight": "A little help, when you need it.",
+    "supportDescription": "For questions about your order or our collection, contact us and our team will be happy to assist.",
+    "contact": {
+      "email": {
+        "title": "Email",
+        "description": "For general questions and enquiries."
+      },
+      "support": {
+        "title": "Online Customer Care",
+        "details": "Customer Support",
+        "description": "We're here to help with your shopping experience."
+      }
+    }
+  
+},
+
+ 
+"matricsSection": {
+  "why_us": "THE ENOUZA DIFFERENCE",
+  "title": "Every piece, thoughtfully chosen.",
+  "description": "Every ENOUZA piece is selected for its form, materials, and ability to bring warmth and character to the spaces we live in."
+},
+  "inspirationPage": {
+  "hero": {
+    "catlabel": "THE ENOUZA JOURNAL",
+    "title": "A world of beautiful light.",
+    "description": "Discover interiors, lighting ideas, and quiet moments that inspire the way we live."
+  },
+
+  "intro": {
+    "catlabel": "FIND YOUR INSPIRATION",
+    "title": "Spaces shaped by light.",
+    "description": "The right light can change the feeling of a room. Explore our collection of interiors and discover thoughtful ways to bring warmth, atmosphere, and character into your home."
+  },
+
+  "spaces": {
+    "catlabel": "EXPLORE BY SPACE",
+    "title": "Light for every room.",
+    "items": {
+      "livingRoom": {
+        "title": "Living Rooms",
+        "description": "Create a warm and inviting atmosphere with lighting designed for everyday living."
+      },
+      "diningRoom": {
+        "title": "Dining Rooms",
+        "description": "Set the mood with considered lighting above the table and throughout the room."
+      },
+      "bedroom": {
+        "title": "Bedrooms",
+        "description": "Soft, intimate illumination designed to make the bedroom feel calm and effortless."
+      }
+    }
+  },
+
+  "explore": "Explore",
+
+  "statement": {
+    "catlabel": "THE ART OF LIGHT",
+    "title": "Light is what gives a space its feeling.",
+    "description": "From a quiet corner to a room made for gathering, lighting shapes how we experience the spaces around us."
+  },
+
+  "ideas": {
+    "catlabel": "LIGHTING IDEAS",
+    "title": "Ways to illuminate beautifully.",
+    "items": {
+      "ambientLighting": {
+        "title": "Ambient Lighting",
+        "description": "Create a soft foundation of light that makes a room feel warm, balanced, and welcoming."
+      },
+      "statementLighting": {
+        "title": "Statement Lighting",
+        "description": "Let a distinctive fixture become part of the architecture and character of the room."
+      },
+      "layeredLighting": {
+        "title": "Layered Lighting",
+        "description": "Combine different sources of light to create depth, atmosphere, and flexibility."
+      }
+    }
+  },
+
+  "editorial": {
+    "catlabel": "ENOUZA EDITORIAL",
+    "title": "Designed for the moments that matter.",
+    "description": "Explore lighting that brings warmth and character to the everyday spaces we call home.",
+    "link": "Shop Lighting"
+  },
+
+  "newsletter": {
+    "catlabel": "STAY INSPIRED",
+    "title": "Bring more beauty home.",
+    "description": "Discover new lighting, interiors, and inspiration from Enouza.",
+    "button": "Join Enouza"
+  }
+},
+  
+"designSection": {
+  "title": "The Art of Light",
+"catlabel": "DISCOVER THE BRAND",
+  "principles": {
+     "minimalism": {
+    "title": "Quietly Considered",
+    "description": "Clean lines, balanced proportions, and restrained silhouettes allow each piece to belong naturally within its surroundings."
+  },
+  "materials": {
+    "title": "Chosen for Character",
+    "description": "Marble, glass, metal, and fabric are selected for the character and depth they bring to a space."
+  },
+  "ambient": {
+    "title": "Light With Atmosphere",
+    "description": "We see light as part of the interior — a way to soften a room, create depth, and shape how a space feels."
+  }
+  }
+},
+  "collectionSection": {
+  "title": "Discover Our Collection.",
+  "catlabel": "EXPLORE",
+
+  "categories": {
+    "wall_lamps": {
+      "title": "Wall Lamps",
+      "description": "Elegant lighting designed to add depth, warmth, and character to your walls."
+    },
+    "pendant_lights": {
+      "title": "Pendant Lights",
+      "description": "Distinctive pieces designed to create a refined focal point above dining tables, kitchen islands, and living spaces."
+    },
+    "table_lamps": {
+      "title": "Table Lamps",
+      "description": "Sculptural lighting that brings warmth, atmosphere, and understated elegance to your interior."
+    },
+    "ceiling_lamps": {
+      "title": "Ceiling Lamps",
+      "description": "Refined overhead lighting created to shape the atmosphere and complete the character of a room."
+    }
+  }
+},
+
+ "customersFeedback": {
+  "eyebrow": "THE ENOUZA EXPERIENCE",
+  "title": "Loved by homeowners worldwide.",
+  "description": "Real homes. Real experiences.",
+  "ratingText": "Based on customer reviews",
+  "verifiedPurchase": "Verified Purchase",
+
+  "back": "Back",
+  "review": "review",
+  "reviews": "reviews",
+  "noReviews": "No reviews yet",
+  "noReviewsDescription": "There are currently no customer reviews to display.",
+  "previousPage": "Previous page",
+  "nextPage": "Next page",
+  "viewAllReviews": "View All Reviews"
+},
+
+  "filterPage":{
+    "category": "Category",
+    "brand": "Brand",
+    "priceRange": "Price Range",
+    "rating": "Rating",
+    "applyFilters": "Apply Filters",
+    "clearFilters": "Clear Filters",
+    "search_did_not_match": "Sorry, your search did not match any products.",
+    "collection_description": "Discover refined lighting designed to bring warmth, character and timeless elegance to every space.",
+    "collection": "ENOUZA COLLECTION",
+    "discover": "DISCOVER"
+  },
+  "customer_reviews": {
+      "title": "Customer Reviews",
+      "verified_purchase": "Verified Purchase",
+      "no_reviews": "No reviews yet",
+      "image_unavailable": "Image unavailable",
+      "customer": "Customer",
+      "review_image": "Review image",
+      "previous_image": "Previous image",
+      "next_image": "Next image",
+      "close": "Close",
+      "view_image": "View image",
+      "rating": "Rating",
+      "reviews": "Reviews",
+      "enouza_review": "ENOUZA REVIEW",
+      "description": "Product Description",
+      "customer_rating": "Customer Rating",
+      "customer_reviews": "Customer Reviews",
+       "customer_review": "Customer Review"
+    },
+  "productInfo": {
+    "product_details": "Product details",
+     
+    "view_full_image": "VIEW FULL IMAGE",
+    "purchase_information": "Purchase information",
+    "secure_purchase_premium_quality": "Secure purchase & premium quality",
+    "save":"save",
+    "Emitting Color":"Emitting Color",
+    "Lampshade Color": "Lampshade Color",
+    "Body Color": "Body Color",
+    "Color": "Color",
+    "Color Name": "Color",
+    "Colour": "Color",
+    "Color Classification": "Color Classification",
+    "Size": "Size",
+    "Sizes": "Sizes",
+    "Item Length": "Item Length",
+    "Item Width": "Item Width",
+    "Item Height": "Item Height",
+    "Dimensions": "Dimensions",
+    "Is Customized": "Is Customized",
+    "Sd Card Memory": "SD Card Memory",
+    "Color Temperature": "Color Temperature",
+    "Memory": "Memory",
+    "Memory Size": "Memory Size",
+    "Storage": "Storage",
+    "Internal Storage": "Internal Storage",
+    "ROM": "ROM",
+    "RAM": "RAM",
+    "Capacity": "Capacity",
+    "Plug Type": "Plug Type",
+    "Power Plug": "Power Plug",
+    "Socket Type": "Socket Type",
+    "Power Specification": "Power Specification",
+    "Voltage": "Voltage",
+    "Wattage": "Wattage",
+    "Ships From": "Ships From",
+    "Ship From": "Ship From",
+    "Warehouse": "Warehouse",
+    "Origin": "Origin",
+    "Bundle": "Bundle",
+    "Sale by Pack": "Sale by Pack",
+    "Pack": "Pack",
+    "Set": "Set",
+    "Package": "Package",
+    "Quantity": "Quantity",
+    "Model": "Model",
+    "Compatible Model": "Compatible Model",
+    "Version": "Version",
+    "Edition": "Edition",
+    "Variant": "Variant",
+    "Material": "Material",
+    "Fabric": "Fabric",
+    "Fit": "Fit",
+    "Pattern": "Pattern",
+    "Sleeve Length": "Sleeve Length",
+    "Frequency": "Frequency",
+    "Resolution": "Resolution",
+    "Interface": "Interface",
+    "Speed": "Speed",
+    "Power": "Power",
+    "description": "Description",
+    "specifications": "Specifications",
+    "reviews": "Reviews",
+    "CostumerReviews": "Customer Reviews",
+    "noReviews": "No reviews yet",
+    "writeReview": "Write a Review",
+    "submitReview": "Submit Review",
+    "rating": "Rating",
+    "comment": "Comment",
+    "reviewSubmitted": "Review submitted",
+    "reviewPending": "Your review is pending approval",
+    "size": "Size",
+    "color": "Color",
+    "material": "Material",
+    "brand": "Brand",
+    "model": "Model",
+    "order": "Order",
+    "all_from_verified_purchases": "All from verified purchases",
+    "star": "star",
+    "stars": "stars",
+    "one_star": "star",
+    "two_stars": "stars",
+    "give_us_your_feedback": "Give us your feedback",
+    "led_ambient_lighting": "Ambient Lighting",
+    "phone_mounts_holders": "Phone  Holders",
+    "organizers_storage": "Organizers Storage",
+    "comfort_accessories": "Comfort & Accessories",
+    "air_fresheners_scents": "Air Fresheners",
+     "table_lamps": "Table Lamps",
+    "floor_lamps": "Floor Lamps",
+    "wall_lamps": "Wall Lamps",
+    "pendant_lights": "Pendant Lights",
+    "ceiling_lights": "Ceiling Lights",
+    "bedside_lamps": "Bedside Lamps",
+    "desk_office_lamps": "Desk & Office Lamps",
+    "outdoor_lighting": "Outdoor Lighting"
+  },
+  "buyerTrustServices": {
+    "freeShipping": {
+      "title": "Free Shipping",
+      "description": "On orders over $50"
+    },
+    "support24_7": {
+      "title": "24/7 Support",
+      "description": "We're here to help"
+    },
+    "moneyBack": {
+      "title": "Money Back",
+      "description": "30-day guarantee"
+    },
+    "safe_Payment": {
+      "title": "Secure Payment",
+      "description": "Pay with the world’s most popular and secure payment methods."
+    },
+    "easyReturns": {
+      "title": "Easy Returns",
+      "description": "Hassle-free returns"
+    },
+    "help_center": {
+      "title": "Help Center",
+      "description": "Round-the-clock assistance for a smooth shopping experience."
+    },
+    "worldwide_shipping": {
+      "title": "Worldwide Shipping",
+      "description": "Fast and reliable delivery to your doorstep, anywhere in the world."
+    },
+    "Shop_with_confidence": {
+      "title": "Shop with Confidence",
+      "description": "Your satisfaction is our priority. Enjoy secure shopping and easy returns."
+    }
+  },
+
+  "profile": {
+    "my_profile": "My Profile",
+    "enouza_faq": "FAQ",
+    "edit_your_name": "Edit Name",
+    "edit_your_email": "Edit Email",
+    "edit_your_profile": "Edit Profile",
+    "change_your_password": "Change Password",
+    "edit_your_gender": "Edit Gender",
+    "edit_your_birthdate": "Edit Birthdate",
+    "update_your_address": "Update Address",
+    "manage_your_orders": "Manage Orders",
+    "view_your_wishlist": "View Wishlist",
+    "start_shopping": "Start Shopping",
+    "you_havent_placed_any_orders_yet": "You haven't placed any orders yet",
+    "processing": "Processing",
+    "order_take_between": "Order may take between",
+    "tracking_number": "Tracking number",
+    "not_available": "Not available",
+    "shippingMethod": "Shipping Method",
+    "order_placed_on": "Order placed on",
+    "order_id": "Order ID",
+    "payment_method": "Payment Method",
+    "Credit_Debit_card": "Credit/Debit card",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total"
+  },
+  "footer": {
+    "brand": {
+      "description": "Thoughtfully selected pieces designed to bring warmth, elegance and character to your space."
+    },
+    "payment": { "secure": "Secure payments" },
+    "followUs": {
+      "title": "Follow us",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "tiktok": "TikTok"
+    },
+    "policies": {
+      "title": "Policies",
+      "privacyPolicy": "Privacy policy",
+      "termsOfService": "Terms of service",
+      "refundPolicy": "Refunds policy",
+      "shippingPolicy": "Shipping policy"
+    },
+    "help": {
+      "enouza_faq_description": "Find answers to the questions we receive most often.",
+      "title": "Help",
+      "faq": "FAQ",
+      "contactUs": "Contact us",
+      "aboutUs": "About us",
+      "shipping": "Shipping",
+      "returns": "Returns",
+      "contact_note": "We're here to assist you. Reach out with any questions or concerns."
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Subscribe for updates on new products and offers",
+      "placeholder": "Enter your email",
+      "subscribeButton": "Subscribe",
+      "successMessage": "Subscribed successfully",
+      "errorMessage": "Subscription failed",
+      "copyright": "copyright",
+      "all_rights_reserved": "All rights reserved.",
+      "eyebrow": "ENOUZA COLLECTION"
+    }
+  },
+  "policies": {
+    "title": "Policies",
+    "privacyPolicy": {
+      "title": "Privacy"
+    },
+    "termsOfService": {
+      "title": "Terms"
+    },
+    "refundPolicy": {
+      "title": "Refunds"
+    },
+    "shippingPolicy": {
+      "title": "Shipping"
+    },
+    "aboutUs": {
+      "title": "About"
+    }
+  },
+  
+ "trust": {
+  "secureCheckout": "Secure Checkout",
+
+  "freeShipping": {
+    "title": "Free Shipping",
+    "text": "Free Shipping on All Orders"
+  },
+
+  "fastDelivery": {
+    "title": "Worldwide Delivery",
+    "text": "International Delivery in 5–15 Days"
+  },
+
+  "returns": {
+    "title": "100-Day Returns",
+    "text": "Easy Returns Within 100 Days"
+  },
+
+  "warranty": {
+    "title": "3-Year Warranty",
+    "text": "Crafted for Lasting Quality"
+  },
+
+  "shopWithConfidence": "Shop With Confidence"
+},
+  
+  "orderSuccess": {
+    "orderPlacedSuccessfully": "🎉 Order Placed Successfully! 🎉",
+    "orderProcessingMessage": "Thank you for shopping with us. Your order is being processed.",
+    "backToHome": "Back to Home"
+  },
+   "checkout": {
+    "loggedInContinue": "Your account is ready. Continue to enter your billing details."
+  },
+
+"aboutus": {
+  "seo": {
+    "title": "About Enouza | Refined Lighting & Interior Design",
+    "description": "Discover Enouza, a curated lighting brand bringing refined, distinctive pieces to considered interiors."
+  },
+
+  "hero": {
+    "eyebrow": "DISCOVER ENOUZA",
+    "title": "Light, Made to Belong.",
+    "description": "Refined lighting for warm, considered spaces."
+  },
+
+  "story": {
+    "eyebrow": "OUR STORY",
+    "title": "Lighting with a sense of place.",
+    "lead": "We believe lighting is more than illumination.",
+    "text": "It shapes the atmosphere of a room, draws attention to the details that matter, and changes how a space feels.",
+    "text2": "Enouza was created around this idea — to discover and bring together lighting pieces that feel considered, distinctive, and naturally at home within their surroundings."
+  },
+
+  "statement": {
+    "title": "We believe the right light changes everything.",
+    "description": "A quiet glow can soften a room. A sculptural form can become a focal point. The right piece can simply make a space feel more like your own."
+  },
+
+  "approach": {
+    "eyebrow": "THE ENOUZA APPROACH",
+    "title": "Designed with intention.",
+    "curated": {
+      "title": "Curated",
+      "description": "Thoughtfully selected for considered spaces."
+    },
+    "refined": {
+      "title": "Refined",
+      "description": "Elegant forms, refined to the essential."
+    },
+    "atmospheric": {
+      "title": "Atmospheric",
+      "description": "Light designed to shape the mood."
+    },
+    "distinctive": {
+      "title": "Distinctive",
+      "description": "Pieces with character beyond the ordinary."
+    }
+  },
+
+  "selection": {
+    "eyebrow": "WHAT GUIDES OUR SELECTION",
+    "title": "Chosen for more than appearance.",
+    "form": {
+      "title": "Form",
+      "description": "Balanced proportions and distinctive silhouettes that feel natural within an interior."
+    },
+    "material": {
+      "title": "Material",
+      "description": "Marble, glass, metal, fabric, and finishes chosen for their visual and tactile character."
+    },
+    "light": {
+      "title": "Light",
+      "description": "Illumination that creates warmth, depth, and atmosphere rather than simply filling a room."
+    }
+  },
+
+  "promise": {
+    "eyebrow": "THE ENOUZA PROMISE",
+    "title": "Thoughtfully chosen. Beautifully presented.",
+    "description": "We carefully select each piece we bring to Enouza, with attention to design, materials, proportions, and the atmosphere it creates."
+  },
+
+  "final": {
+    "eyebrow": "THE COLLECTION",
+    "title": "Find the light that belongs in your space.",
+    "description": "Explore the Enouza collection and discover pieces chosen to complement the way you live.",
+    "cta": "Explore the Collection"
+  }
+},
+
+  "common": {
+    "phoneNumber": "Phone Number",
+    "selectShippingMethod": "Select Shipping Method",
+    "discoverCollection": "DISCOVER COLLECTION",
+    "payNow": "Pay Now",
+    "days": "days",
+    "day": "day",
+    "loading": "Loading...",
+    "error": "Oops! Something went wrong.",
+    "tryAgain": "Try Again",
+    "success": "Done!",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "update": "Update",
+    "view": "View",
+    "free_shipping": "Free Shipping",
+    "search": "Search",
+    "filter": "Filter",
+    "sortBy": "Sort by:",
+    "view_more": "View More",
+    "discover": "Discover",
+    "bestMatch": "Best Match",
+    "resetFilters": "Reset Filters",
+    "category": "Category",
+    "priceLowToHigh": "Price: Low to High",
+    "priceHighToLow": "Price: High to Low",
+    "newestFirst": "Newest",
+    "oldestFirst": "Oldest",
+    "buyNow": "Buy Now",
+    "addToCart": "Add to Cart",
+    "shopping_cart": "Shopping Cart",
+    "addToWishlist": "Add to Wishlist",
+    "removeFromWishlist": "Remove from Wishlist",
+    "viewDetails": "Details",
+    "checkout": "Checkout",
+    "placeOrder": "Place Order",
+    "orderSummary": "Summary",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "tax": "Tax",
+    "grandTotal": "Grand Total",
+    "continueShopping": "Continue Shopping",
+    "proceedToCheckout": "Checkout",
+    "noItemsInCart": "Your cart is empty",
+    "noItemsInWishlist": "Your wishlist is empty",
+    "viewCart": "View Cart",
+    "viewWishlist": "View Wishlist",
+    "myAccount": "My Account",
+    "logout": "Log Out",
+    "login": "Login",
+    "you_are_logged_in": "You are logged in",
+    "register": "Register",
+    "signin": "Sign In",
+    "payment": "Payment",
+    "next": "Next",
+    "previous": "Previous",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "checkout_as_guest": "checkout as guest no login required.",
+    "saving_address": "Use this address for payment details",
+    "saveChanges": "Save Changes",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "zipCode": "ZIP",
+    "country": "Country",
+    "phone": "Phone",
+    "save": "Save",
+    "reset": "Reset",
+    "changePassword": "Change Password",
+    "oldPassword": "Old Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "dashboard": "Dashboard",
+    "orders": "Orders",
+    "orderDetails": "Order Details",
+    "accountDetails": "Account",
+    "editAccount": "Edit Account",
+    "myOrders": "My Orders",
+    "orderHistory": "Order History",
+    "trackOrder": "Track Order",
+    "orderStatus": "Status",
+    "pending": "Pending",
+    "processing": "Processing",
+    "shipped": "Shipped",
+    "delivered": "Delivered",
+    "cancelled": "Cancelled",
+    "returnRequested": "Return Requested",
+    "returned": "Returned",
+    "reviewProduct": "Review Product",
+    "writeAReview": "Write a Review",
+    "rating": "Rating",
+    "comment": "Comment",
+    "submitReview": "Submit Review",
+    "noReviewsYet": "No reviews yet",
+    "relatedProducts": "You May Like",
+    "continue": "Continue",
+    "back": "Back",
+    "home": "Home",
+    "shop": "Shop",
+    "categories": "Categories",
+    "allCategories": "All Categories",
+    "brands": "Brands",
+    "allBrands": "All Brands",
+    "price": "Price",
+    "apply": "Apply",
+    "clear": "Clear",
+    "viewMore": "More",
+    "viewLess": "Less",
+    "noResultsFound": "No results",
+    "tryDifferentKeywords": "Try another search",
+    "items": "Items",
+    "item": "Item",
+    "of": "of",
+    "results": "Results",
+    "perPage": "Per Page",
+    "page": "Page",
+    "loadingMore": "Loading...",
+    "noMoreItems": "No more items",
+    "welcome": "Welcome",
+    "thankYou": "Thank you",
+    "forVisiting": "for visiting",
+    "seeYouSoon": "See you soon",
+    "contactSupport": "Contact Support",
+    "needHelp": "Need help?",
+    "faq": "FAQ",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "rightsReserved": "All rights reserved",
+    "developedBy": "Built by",
+    "version": "Version",
+    "language": "Language",
+    "currency": "Currency",
+    "selectLanguage": "Choose Language",
+    "selectCurrency": "Choose Currency",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "autoMode": "Auto Mode",
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "markAllAsRead": "Mark all read",
+    "viewAll": "View All",
+    "noNewNotifications": "You have no notifications !",
+    "NewNotifications": "You have new notification",
+    "new": "New",
+    "read": "Read",
+    "unread": "Unread",
+    "profile": "Profile",
+    "editProfile": "Edit Profile",
+    "changeAvatar": "Change Avatar",
+    "myWishlist": "My Wishlist",
+    "myCart": "My Cart",
+    "checkoutNow": "Checkout Now",
+    "applyCoupon": "Apply Coupon",
+    "enterCouponCode": "Enter coupon",
+    "removeCoupon": "Remove Coupon",
+    "couponApplied": "Coupon applied",
+    "invalidCoupon": "Invalid coupon",
+    "shippingAddress": "Shipping Address",
+    "billingAddress": "Address",
+    "sameAsShipping": "Same as shipping",
+    "paymentMethod": "Payment",
+    "selectPaymentMethod": "Choose payment",
+    "placeYourOrder": "Place Order",
+    "orderPlaced": "Order Placed",
+    "thankYouForYourOrder": "Thanks for your order!",
+    "orderNumber": "Order #",
+    "trackYourOrder": "Track Order",
+    "Hello": "Hi",
+    "create_an_account": "Create Account",
+    "already_have_an_account": "Have an account?",
+    "forgot_password": "Forgot Password?",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "By_clicking_Sign_up_I_agree_to_the": "By signing up, you agree to",
+    "password_reset_text": "Enter your user account's verified email address and we will send you a password reset link.",
+    "send_password_reset_link": "Send",
+    "reset_your_password": "Reset Password",
+    "reset_password": "Reset Password",
+    "reset_password_text": "Update your password here.",
+    "new_password": "New Password",
+    "old_password": "Old Password",
+    "confirm_password": "Confirm Password",
+    "error_old_password_incorrect": "Old password is wrong",
+    "select_country": "Select Country",
+    "please_confirm_your_password": "Confirm your password",
+    "please_enter_your_new_password": "Enter new password",
+    "please_enter_your_email": "Enter your email",
+    "please_enter_your_password": "Enter your password",
+    "please_enter_your_first_name": "Enter first name",
+    "please_enter_your_last_name": "Enter last name",
+    "please_enter_your_address": "Enter address",
+    "please_enter_your_city": "Enter city",
+    "please_enter_your_state": "Enter state",
+    "please_enter_your_country": "Select country",
+    "please_enter_your_zip_code": "Enter ZIP",
+    "please_enter_your_phone": "Enter phone number",
+    "please_enter_your_birthdate": "Enter birthdate",
+    "pleaseSelectShippingMethod": "Please select a shipping method.",
+     "please_enter_coupon_code": "Please enter a coupon code",
+    "invalid_discount_code": "Invalid discount code",
+    "discount_code_applied": "Discount code applied",
+    "discount": "Discount",
+    "error_invalid_birthdate": "Birthdate can't be in future",
+    "error_max_name_characters": "Name too long",
+    "error_min_password_characters": "Password too short",
+    "error_required_gender": "Gender is required",
+    "required": "Required",
+    "text_field_required": "This field is required",
+    "send": "Send",
+    "enter_message": "Enter message",
+    "message_sent": "Message sent",
+    "message":"Message",
+    "myProfile": "My Profile",
+    "chat": "Chat",
+    "helpCenter": "Help Center",
+    "member_since": "Member since",
+    "from": "From"
+
+  },
+  "success": {
+    "subscribed_to_newsletter": "Thank you for subscribing to our newsletter!",
+    "message_sent_successfully": "Your message has been sent successfully!",
+    "profile_updated_successfully": "Your profile has been updated successfully!",
+    "password_changed_successfully": "Your password has been changed successfully!",
+    "order_placed_successfully": "Your order has been placed successfully!",
+    "review_submitted_successfully": "Thank you for your review!",
+    "item_added_to_cart": "Item added to cart!",
+    "item_removed_from_cart": "Item removed from cart!",
+    "item_added_to_wishlist": "Item added to wishlist!",
+    "item_removed_from_wishlist": "Item removed from wishlist!",
+    "coupon_applied_successfully": "Coupon applied successfully!",
+    "coupon_removed_successfully": "Coupon removed successfully!",
+    "saved": "Saved",
+    "deleted": "Deleted",
+    "updated": "Updated",
+    "submitted": "Submitted",
+    "logged_in": "Logged in",
+    "logged_out": "Logged out",
+    "registered": "Registered",
+    "password_reset_link_sent": "Password reset link sent",
+    "password_reset_successful": "Password reset successful",
+    "success_logged_in": "Logged in",
+    "success_account_created": "Account created",
+    "success_password_reset_link_sent": "Reset link sent",
+    "success_password_reset": "Password reset",
+    "success_profile_updated": "Profile updated",
+    "success_password_changed": "Password changed"
+  },
+  "errors": {
+    "network_error": "Network error. Please check your connection.",
+    "unknown_error": "Unknown error. Please try again.",
+    "form_error": "Form error. Please check the fields.",
+    "unauthorized": "Unauthorized. Please log in.",
+    "forbidden": "Forbidden. You do not have permission for this action.",
+    "not_found": "Not found. The requested resource does not exist.",
+    "server_error": "Server error. Please try again later.",
+    "timeout": "Request timed out. Please try again.",
+    "conflict": "Conflict. The resource already exists.",
+    "bad_request": "Bad request. Please check the submitted data.",
+    "validation_error": "Validation error. Please correct the errors in the form.",
+    "item_out_of_stock": "Item out of stock. Cannot add to cart.",
+    "error_password_dont_match": "Passwords don't match",
+    "error_email_already_exists": "Email already exists",
+    "error_email_not_exists": "Email not found",
+    "error_invalid_credentials": "Invalid email or password",
+    "error_account_disabled": "Account disabled",
+    "error_too_many_requests": "Too many attempts. Try later",
+    "error_weak_password": "Password too weak",
+    "error_invalid_email": "Invalid email",
+    "error_user_not_found": "User not found",
+    "error_network_request_failed": "Network error",
+    "error_something_went_wrong": "Something went wrong",
+    "error_invalid_verification_code": "Invalid code",
+    "error_verification_code_expired": "Code expired",
+    "error_no_internet_connection": "No internet",
+    "error_old_password_incorrect": "Old password is wrong",
+    "error_gender_must_be_defined": "gender must be defined",
+    "please_confirm_your_password": "Confirm your password",
+    "please_enter_your_new_password": "Enter new password",
+    "please_enter_your_email": "Enter your email",
+    "please_enter_your_password": "Enter your password",
+    "please_enter_your_first_name": "Enter first name",
+    "please_enter_your_last_name": "Enter last name",
+    "please_enter_your_address": "Enter address",
+    "please_enter_your_city": "Enter city",
+    "please_enter_your_state": "Enter state",
+    "please_enter_your_country": "Select country",
+    "please_enter_your_zip_code": "Enter ZIP",
+    "please_enter_your_phone": "Enter phone",
+    "please_enter_your_birthdate": "Enter birthdate",
+    "error_invalid_birthdate": "Birthdate can't be in future",
+    "error_max_name_characters": "Name too long",
+    "error_min_password_characters": "Password too short",
+    "error_required_gender": "Gender is required",
+    "required": "Required",
+
+  "page_not_found": "Page Not Found",
+  "page_not_found_description": "The page you’re looking for doesn’t exist."
+
+  },
+  "languages": {
+    "en": "English",
+    "es": "Spanish",
+    "fr": "French",
+    "de": "German",
+    "it": "Italian",
+    "pt": "Portuguese",
+    "zh": "Chinese",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "ru": "Russian",
+    "ar": "Arabic",
+    "hi": "Hindi"
+  },
+  "countries": {
+    "AF": "Afghanistan",
+    "AX": "Åland Islands",
+    "AL": "Albania",
+    "DZ": "Algeria",
+    "AS": "American Samoa",
+    "AD": "Andorra",
+    "AO": "Angola",
+    "AI": "Anguilla",
+    "AQ": "Antarctica",
+    "AG": "Antigua & Barbuda",
+    "AR": "Argentina",
+    "AM": "Armenia",
+    "AW": "Aruba",
+    "AU": "Australia",
+    "AT": "Austria",
+    "AZ": "Azerbaijan",
+    "BS": "Bahamas",
+    "BH": "Bahrain",
+    "BD": "Bangladesh",
+    "BB": "Barbados",
+    "BY": "Belarus",
+    "BE": "Belgium",
+    "BZ": "Belize",
+    "BJ": "Benin",
+    "BM": "Bermuda",
+    "BT": "Bhutan",
+    "BO": "Bolivia",
+    "BQ": "Caribbean Netherlands",
+    "BA": "Bosnia & Herzegovina",
+    "BW": "Botswana",
+    "BV": "Bouvet Island",
+    "BR": "Brazil",
+    "IO": "British Indian Ocean Territory",
+    "BN": "Brunei",
+    "BG": "Bulgaria",
+    "BF": "Burkina Faso",
+    "BI": "Burundi",
+    "CV": "Cape Verde",
+    "KH": "Cambodia",
+    "CM": "Cameroon",
+    "CA": "Canada",
+    "KY": "Cayman Islands",
+    "CF": "Central African Republic",
+    "TD": "Chad",
+    "CL": "Chile",
+    "CN": "China",
+    "CX": "Christmas Island",
+    "CC": "Cocos (Keeling) Islands",
+    "CO": "Colombia",
+    "KM": "Comoros",
+    "CG": "Congo - Brazzaville",
+    "CD": "Congo - Kinshasa",
+    "CK": "Cook Islands",
+    "CR": "Costa Rica",
+    "HR": "Croatia",
+    "CU": "Cuba",
+    "CW": "Curaçao",
+    "CY": "Cyprus",
+    "CZ": "Czechia",
+    "CI": "Côte d’Ivoire",
+    "DK": "Denmark",
+    "DJ": "Djibouti",
+    "DM": "Dominica",
+    "DO": "Dominican Republic",
+    "EC": "Ecuador",
+    "EG": "Egypt",
+    "SV": "El Salvador",
+    "GQ": "Equatorial Guinea",
+    "ER": "Eritrea",
+    "EE": "Estonia",
+    "SZ": "Eswatini",
+    "ET": "Ethiopia",
+    "FK": "Falkland Islands",
+    "FO": "Faroe Islands",
+    "FJ": "Fiji",
+    "FI": "Finland",
+    "FR": "France",
+    "GF": "French Guiana",
+    "PF": "French Polynesia",
+    "TF": "French Southern Territories",
+    "GA": "Gabon",
+    "GM": "Gambia",
+    "GE": "Georgia",
+    "DE": "Germany",
+    "GH": "Ghana",
+    "GI": "Gibraltar",
+    "GR": "Greece",
+    "GL": "Greenland",
+    "GD": "Grenada",
+    "GP": "Guadeloupe",
+    "GU": "Guam",
+    "GT": "Guatemala",
+    "GG": "Guernsey",
+    "GN": "Guinea",
+    "GW": "Guinea-Bissau",
+    "GY": "Guyana",
+    "HT": "Haiti",
+    "HM": "Heard & McDonald Islands",
+    "VA": "Vatican City",
+    "HN": "Honduras",
+    "HK": "Hong Kong SAR China",
+    "HU": "Hungary",
+    "IS": "Iceland",
+    "IN": "India",
+    "ID": "Indonesia",
+    "IR": "Iran",
+    "IQ": "Iraq",
+    "IE": "Ireland",
+    "IM": "Isle of Man",
+    "IL": "Israel",
+    "IT": "Italy",
+    "JM": "Jamaica",
+    "JP": "Japan",
+    "JE": "Jersey",
+    "JO": "Jordan",
+    "KZ": "Kazakhstan",
+    "KE": "Kenya",
+    "KI": "Kiribati",
+    "KP": "North Korea",
+    "KR": "South Korea",
+    "KW": "Kuwait",
+    "KG": "Kyrgyzstan",
+    "LA": "Laos",
+    "LV": "Latvia",
+    "LB": "Lebanon",
+    "LS": "Lesotho",
+    "LR": "Liberia",
+    "LY": "Libya",
+    "LI": "Liechtenstein",
+    "LT": "Lithuania",
+    "LU": "Luxembourg",
+    "MO": "Macao SAR China",
+    "MG": "Madagascar",
+    "MW": "Malawi",
+    "MY": "Malaysia",
+    "MV": "Maldives",
+    "ML": "Mali",
+    "MT": "Malta",
+    "MH": "Marshall Islands",
+    "MQ": "Martinique",
+    "MR": "Mauritania",
+    "MU": "Mauritius",
+    "YT": "Mayotte",
+    "MX": "Mexico",
+    "FM": "Micronesia",
+    "MD": "Moldova",
+    "MC": "Monaco",
+    "MN": "Mongolia",
+    "ME": "Montenegro",
+    "MS": "Montserrat",
+    "MA": "Morocco",
+    "MZ": "Mozambique",
+    "MM": "Myanmar (Burma)",
+    "NA": "Namibia",
+    "NR": "Nauru",
+    "NP": "Nepal",
+    "NL": "Netherlands",
+    "NC": "New Caledonia",
+    "NZ": "New Zealand",
+    "NI": "Nicaragua",
+    "NE": "Niger",
+    "NG": "Nigeria",
+    "NU": "Niue",
+    "NF": "Norfolk Island",
+    "MK": "North Macedonia",
+    "MP": "Northern Mariana Islands",
+    "NO": "Norway",
+    "OM": "Oman",
+    "PK": "Pakistan",
+    "PW": "Palau",
+    "PS": "Palestinian Territories",
+    "PA": "Panama",
+    "PG": "Papua New Guinea",
+    "PY": "Paraguay",
+    "PE": "Peru",
+    "PH": "Philippines",
+    "PN": "Pitcairn Islands",
+    "PL": "Poland",
+    "PT": "Portugal",
+    "PR": "Puerto Rico",
+    "QA": "Qatar",
+    "RO": "Romania",
+    "RU": "Russia",
+    "RW": "Rwanda",
+    "RE": "Réunion",
+    "BL": "St. Barthélemy",
+    "SH": "St. Helena",
+    "KN": "St. Kitts & Nevis",
+    "LC": "St. Lucia",
+    "MF": "St. Martin",
+    "PM": "St. Pierre & Miquelon",
+    "VC": "St. Vincent & Grenadines",
+    "WS": "Samoa",
+    "SM": "San Marino",
+    "ST": "São Tomé & Príncipe",
+    "SA": "Saudi Arabia",
+    "SN": "Senegal",
+    "RS": "Serbia",
+    "SC": "Seychelles",
+    "SL": "Sierra Leone",
+    "SG": "Singapore",
+    "SX": "Sint Maarten",
+    "SK": "Slovakia",
+    "SI": "Slovenia",
+    "SB": "Solomon Islands",
+    "SO": "Somalia",
+    "ZA": "South Africa",
+    "GS": "South Georgia & South Sandwich Islands",
+    "SS": "South Sudan",
+    "ES": "Spain",
+    "LK": "Sri Lanka",
+    "SD": "Sudan",
+    "SR": "Suriname",
+    "SJ": "Svalbard & Jan Mayen",
+    "SE": "Sweden",
+    "CH": "Switzerland",
+    "SY": "Syria",
+    "TW": "Taiwan",
+    "TJ": "Tajikistan",
+    "TZ": "Tanzania",
+    "TH": "Thailand",
+    "TL": "Timor-Leste",
+    "TG": "Togo",
+    "TK": "Tokelau",
+    "TO": "Tonga",
+    "TT": "Trinidad & Tobago",
+    "TN": "Tunisia",
+    "TR": "Türkiye",
+    "TM": "Turkmenistan",
+    "TC": "Turks & Caicos Islands",
+    "TV": "Tuvalu",
+    "UG": "Uganda",
+    "UA": "Ukraine",
+    "AE": "United Arab Emirates",
+    "GB": "United Kingdom",
+    "UM": "U.S. Outlying Islands",
+    "US": "United States",
+    "UY": "Uruguay",
+    "UZ": "Uzbekistan",
+    "VU": "Vanuatu",
+    "VE": "Venezuela",
+    "VN": "Vietnam",
+    "VG": "British Virgin Islands",
+    "VI": "U.S. Virgin Islands",
+    "WF": "Wallis & Futuna",
+    "EH": "Western Sahara",
+    "YE": "Yemen",
+    "ZM": "Zambia",
+    "ZW": "Zimbabwe"
+  }
+  
+}

@@ -1,0 +1,80 @@
+{
+  "shippingFaq": [
+    {
+      "id": 1,
+      "question": "¿Cuánto cuesta el envío?",
+      "answer": {
+        "paragraphe": [
+          "Los costos de envío internacional varían según el destino. Aquí hay un desglose del costo de envío por destino:"
+        ],
+        "list": [
+          "Canadá: $0 - $19.99",
+          "Europa: $0 - $40",
+          "Australia: $0 - $43.99",
+          "Mundial: Envío gratuito para algunos productos"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "question": "¿Qué sucede si mi paquete se pierde durante el envío?",
+      "answer": {
+        "paragraphe": [
+          "Si un paquete aparece como entregado pero no lo ha recibido, comuníquese con la empresa de transporte y notifíquenos dentro de los 30 días posteriores a la fecha de entrega.",
+          "Si se determina que el paquete se perdió debido a un error de entrega por parte del transportista, reemplazaremos su pedido.",
+          "Si el paquete se pierde debido a una dirección incompleta o incorrecta, no podemos ofrecer reembolso ni cambio; los clientes son responsables de asegurar que la dirección de envío sea correcta al momento de la compra. Si el paquete nos es devuelto, deberá pagar una tarifa de envío adicional para reenviarlo.",
+          "Si descubre que su dirección de envío es incorrecta o ha cambiado desde que realizó su pedido, notifíquenos con el número/ID del pedido y la dirección actualizada."
+        ],
+        "list": []
+      }
+    },
+    {
+      "id": 3,
+      "question": "¿Cuándo se enviará mi pedido?",
+      "answer": {
+        "paragraphe": [
+          "Su pedido se procesará durante los días hábiles normales (lunes a viernes, excluyendo días festivos).",
+          "Si un artículo está en stock, su pedido se procesará dentro de 1 a 5 días hábiles. El tiempo de entrega después del procesamiento variará según la dirección de envío. Actualmente, los tiempos de entrega oscilan entre 5 y 15 días hábiles.",
+          "Una vez que se envíe un artículo, recibirá un correo electrónico con la información de seguimiento. En algunos casos especiales, es posible que no haya números de seguimiento disponibles."
+        ],
+        "list": []
+      }
+    },
+    {
+      "id": 4,
+      "question": "¿Recibiré mi pedido en varios paquetes?",
+      "answer": {
+        "paragraphe": [
+          "Si compra artículos en stock que se envían desde diferentes almacenes, recibirá varios envíos."
+        ],
+        "list": []
+      }
+    },
+    {
+      "id": 5,
+      "question": "¿Cómo se calculan los precios de envío?",
+      "answer": {
+        "paragraphe": [
+          "Los cargos de envío se calculan durante el pago. Puede agregar artículos a su carrito, proceder al pago e ingresar su dirección de envío para ver el costo de envío de su pedido."
+        ],
+        "list": []
+      }
+    },
+    {
+      "id": 6,
+      "question": "¿Cuál es su política de reembolso?",
+      "answer": {
+        "paragraphe": [],
+        "list": [
+          "Después de cancelar un pedido o procesar una devolución, se emitirá un reembolso al método de pago original.",
+          "Una vez completado el proceso de devolución, el reembolso se procesará dentro de 1 a 5 días hábiles.",
+          "Después de procesar el reembolso, espere de 3 a 5 días hábiles para reembolsos por PayPal y de 3 a 10 días hábiles para todos los demás métodos de pago.",
+          "Le notificaremos por correo electrónico cuando se haya emitido el reembolso.",
+          "Se emitirá un reembolso completo incluso si se utilizó una tarjeta de regalo digital de Enouza Store como pago total o parcial del pedido.",
+          "Un pedido puede cancelarse y reembolsarse de inmediato si el paquete aún no ha comenzado a procesarse para el envío.",
+          "Una vez que un paquete comience a procesarse para el envío, debe entregarse a su destino y devolverse a Enouza antes de que se pueda emitir un reembolso. Comuníquese con nuestro equipo de servicio al cliente para obtener información más detallada."
+        ]
+      }
+    }
+  ]
+}

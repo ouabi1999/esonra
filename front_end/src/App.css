@@ -1,0 +1,37 @@
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@-webkit-keyframes skeleton-loading {
+    0% {
+        background-color: #c2cfd6;
+    }
+
+    100% {
+        background-color: #f0f3f5;
+    }
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: #c2cfd6;
+    }
+
+    100% {
+        background-color: #f0f3f5;
+    }
+}

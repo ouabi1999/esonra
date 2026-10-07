@@ -1,0 +1,34 @@
+{
+  "returnPolicy": {
+    "seoTitle": "Enouza - Política de Devoluciones",
+    "title": "POLÍTICA DE DEVOLUCIÓN Y REEMBOLSO",
+    "returns": {
+      "heading": "Devoluciones:",
+      "text": "En pocas palabras, puede devolver mercancía para un reembolso SÓLO si el artículo está en CONDICIÓN NUEVA, SIN ABRIR, incluyendo su embalaje y accesorios originales. Sabemos que esto puede parecer extremo, pero sin esta estipulación, no podríamos ofrecer nuestros increíbles precios. Respetaremos los reembolsos para artículos sin abrir hasta 15 - 25 días desde que haya recibido su producto. Todos los reembolsos se emitirán a su método de pago original y pueden tardar hasta 7-10 días hábiles en aplicarse nuevamente."
+    },
+    "rejectedRefunds": {
+      "heading": "Su reembolso será rechazado si los artículos se devuelven debido a los siguientes problemas:",
+      "items": [
+        "Si desea devolver su producto debido a daños en la caja original del artículo.",
+        "Si el producto que ha devuelto ha sido abierto y desprecintado.",
+        "Artículos con problemas cosméticos menores de pintura en figuras de premio, ya que se esperan."
+      ]
+    },
+    "exceptions": {
+      "heading": "Excepciones / Artículos no retornables:",
+      "text": "Los pedidos anticipados son ventas finales y no se pueden devolver una vez enviados. Si recibe un producto defectuoso, comuníquese con nosotros para obtener información sobre cómo contactar al fabricante. Artículos con imperfecciones en la caja y defectos generales. Comuníquese con nosotros si tiene preguntas o inquietudes sobre su artículo específico."
+    },
+    "returnShipping": {
+      "heading": "Envío de devolución:",
+      "text": "Para devolver un producto, comuníquese con nuestro servicio de atención al cliente con su número de pedido y el motivo de la devolución. Se le proporcionará una etiqueta de devolución si su solicitud es aprobada."
+    },
+    "damagesIssues": {
+      "heading": "Daños y problemas",
+      "text": "Por favor, inspeccione su pedido al recibirlo y contáctenos de inmediato si el artículo está defectuoso, dañado o si recibió el artículo equivocado para que podamos evaluar el problema y solucionarlo."
+    },
+    "refunds": {
+      "heading": "Reembolsos",
+      "text": "Le notificaremos una vez que hayamos recibido e inspeccionado su devolución y le informaremos si el reembolso fue aprobado o no. Si se aprueba, se le reembolsará automáticamente a su método de pago original. Tenga en cuenta que puede tardar un tiempo en que su banco o compañía de tarjeta de crédito procese y publique el reembolso."
+    }
+  }
+}

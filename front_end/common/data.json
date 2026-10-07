@@ -1,0 +1,100 @@
+
+{
+    "id": 1,
+    "name": "Intelligent Timer Shoe Dryer Telescopic Adjustable Dryer Quick Drying Deodorizing Sterilizing Shoe Dryer",
+    "description": {},
+    "brand": "FashionCo",
+    "SKU": "SKU123456",
+    "orders" : 550,
+    "price":20.99,
+    "discount": 10, 
+    "size": ["S", "M", "L", "XL"],
+    "color": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S6c659fc768bb43218940ba2d01a93e582/Upgrade-Your-Bathroom-with-This-1pc-Toothpaste-Squeezer-and-Storage-Rack-Automatic-Toothpaste-Refills-Made-Easy.jpg_350x350xz.jpg_.webp",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S6c659fc768bb43218940ba2d01a93e582/Upgrade-Your-Bathroom-with-This-1pc-Toothpaste-Squeezer-and-Storage-Rack-Automatic-Toothpaste-Refills-Made-Easy.jpg_350x350xz.jpg_.webp",
+        "https://ae01.alicdn.com/kf/S9ec6e6e7cd104076bda6746798304f29G.jpg",
+        "https://ae01.alicdn.com/kf/S227a00e2e3084025a016880fdeaa90efj.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S3401a1f45de445cfa876f9d3156ea6a7a/18650-USB-Single-Charger-For-14650-16340-16650-18350-3-7V-Rechargeable-Lithium-Battery-Smart-Charger.jpg_350x350xz.jpg_.webp"
+    ],
+    "specifications":{
+         "material": "Polyester",
+        " weight": "1.5 lbs",
+         "dimensions": {
+            "length": "28 inches",
+            "width": "20 inches"
+        }
+    },
+    
+    "images": {
+        "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S6c659fc768bb43218940ba2d01a93e582/Upgrade-Your-Bathroom-with-This-1pc-Toothpaste-Squeezer-and-Storage-Rack-Automatic-Toothpaste-Refills-Made-Easy.jpg_350x350xz.jpg_.webp",
+        "additionalImages": [
+            "https://ae-pic-a1.aliexpress-media.com/kf/S6c659fc768bb43218940ba2d01a93e582/Upgrade-Your-Bathroom-with-This-1pc-Toothpaste-Squeezer-and-Storage-Rack-Automatic-Toothpaste-Refills-Made-Easy.jpg_350x350xz.jpg_.webp",
+            "https://ae-pic-a1.aliexpress-media.com/kf/S6c659fc768bb43218940ba2d01a93e582/Upgrade-Your-Bathroom-with-This-1pc-Toothpaste-Squeezer-and-Storage-Rack-Automatic-Toothpaste-Refills-Made-Easy.jpg_350x350xz.jpg_.webp",
+            "https://ae01.alicdn.com/kf/S9ec6e6e7cd104076bda6746798304f29G.jpg",
+            "https://ae01.alicdn.com/kf/S227a00e2e3084025a016880fdeaa90efj.jpg",
+            "https://ae-pic-a1.aliexpress-media.com/kf/S3401a1f45de445cfa876f9d3156ea6a7a/18650-USB-Single-Charger-For-14650-16340-16650-18350-3-7V-Rechargeable-Lithium-Battery-Smart-Charger.jpg_350x350xz.jpg_.webp"
+
+        ]
+    },
+    "quantity": 50,
+    "inStock": true,
+   
+   
+    "ratings": [
+        
+        {   "id" : "4555mm",
+            "userId": "Bob", "comment": "A bit tight on the arms.", "stars": 3, "images":[
+            "https://ae-pic-a1.aliexpress-media.com/kf/S6c659fc768bb43218940ba2d01a93e582/Upgrade-Your-Bathroom-with-This-1pc-Toothpaste-Squeezer-and-Storage-Rack-Automatic-Toothpaste-Refills-Made-Easy.jpg_350x350xz.jpg_.webp",
+            "https://ae-pic-a1.aliexpress-media.com/kf/S6c659fc768bb43218940ba2d01a93e582/Upgrade-Your-Bathroom-with-This-1pc-Toothpaste-Squeezer-and-Storage-Rack-Automatic-Toothpaste-Refills-Made-Easy.jpg_350x350xz.jpg_.webp",
+            "https://ae01.alicdn.com/kf/S9ec6e6e7cd104076bda6746798304f29G.jpg",
+            "https://ae01.alicdn.com/kf/S227a00e2e3084025a016880fdeaa90efj.jpg",
+            "https://ae-pic-a1.aliexpress-media.com/kf/S3401a1f45de445cfa876f9d3156ea6a7a/18650-USB-Single-Charger-For-14650-16340-16650-18350-3-7V-Rechargeable-Lithium-Battery-Smart-Charger.jpg_350x350xz.jpg_.webp"
+
+        ] },
+        {    "id" : "554bbb",
+            "userId": "Bob", "comment": "A bit tight on the arms.", "stars": 3,  "images":[
+            "https://ae01.alicdn.com/kf/S9ec6e6e7cd104076bda6746798304f29G.jpg",
+            "https://ae01.alicdn.com/kf/S227a00e2e3084025a016880fdeaa90efj.jpg",
+            "https://ae-pic-a1.aliexpress-media.com/kf/S3401a1f45de445cfa876f9d3156ea6a7a/18650-USB-Single-Charger-For-14650-16340-16650-18350-3-7V-Rechargeable-Lithium-Battery-Smart-Charger.jpg_350x350xz.jpg_.webp"
+
+        ] },
+
+        {    "id" : "24mmmm",
+            "userId": "Bob", "comment": "A bit tight on the arms.", "stars": 3,  "images":[
+            "https://ae-pic-a1.aliexpress-media.com/kf/S6c659fc768bb43218940ba2d01a93e582/Upgrade-Your-Bathroom-with-This-1pc-Toothpaste-Squeezer-and-Storage-Rack-Automatic-Toothpaste-Refills-Made-Easy.jpg_350x350xz.jpg_.webp",
+            "https://ae-pic-a1.aliexpress-media.com/kf/S6c659fc768bb43218940ba2d01a93e582/Upgrade-Your-Bathroom-with-This-1pc-Toothpaste-Squeezer-and-Storage-Rack-Automatic-Toothpaste-Refills-Made-Easy.jpg_350x350xz.jpg_.webp",
+           
+            "https://ae-pic-a1.aliexpress-media.com/kf/S3401a1f45de445cfa876f9d3156ea6a7a/18650-USB-Single-Charger-For-14650-16340-16650-18350-3-7V-Rechargeable-Lithium-Battery-Smart-Charger.jpg_350x350xz.jpg_.webp"
+
+        ] },
+        {    "id" : "jbjb",
+            "userId": "Bob", "comment": "A bit tight on the arms.", "stars": 5,  "images":[
+            "https://ae-pic-a1.aliexpress-media.com/kf/S6c659fc768bb43218940ba2d01a93e582/Upgrade-Your-Bathroom-with-This-1pc-Toothpaste-Squeezer-and-Storage-Rack-Automatic-Toothpaste-Refills-Made-Easy.jpg_350x350xz.jpg_.webp",
+            "https://ae-pic-a1.aliexpress-media.com/kf/S6c659fc768bb43218940ba2d01a93e582/Upgrade-Your-Bathroom-with-This-1pc-Toothpaste-Squeezer-and-Storage-Rack-Automatic-Toothpaste-Refills-Made-Easy.jpg_350x350xz.jpg_.webp",
+            "https://ae01.alicdn.com/kf/S9ec6e6e7cd104076bda6746798304f29G.jpg"
+           
+        ] }
+
+
+
+    ],
+    "tags": ["jacket", "winter", "fashion"],
+    "warranty": "2 years",
+    "careInstructions": "Machine wash cold, tumble dry low.",
+    "releaseDate": "2023-10-01",
+    "saleEndDate": "2023-11-01",
+
+    "availableShipping": [
+        {"name" : "E-packet" , "from": 5, "to": 15, "cost": 0 },
+        {"name" : "standard" , "from": 5, "to": 10, "cost": 5.99 },
+        {"name": "express",  "from": 5, "to": 10,"cost": 15.99 }
+    ],
+    "returnPolicy": "30-day return policy",
+    "countryOfOrigin": "Vietnam",
+    "socialMediaLinks": {
+        "facebook": "https://facebook.com/product",
+        "instagram": "https://instagram.com/product"
+    }
+}
+
+

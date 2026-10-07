@@ -1,0 +1,78 @@
+{
+    "privacyPolicy": {
+      "seoTitle": "Enouza - Privacy Policy",
+      "title": "Privacy Policy",
+      "intro": "This Privacy Policy describes how Enouza.com (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.",
+      "collectingPersonalInfo": {
+        "title": "Collecting Personal Information",
+        "description": "When you visit the Site, we collect certain information about your device, your interaction with the Site, and the information necessary to process your purchases. We may also collect additional information if you contact us for customer support. In this Privacy Policy, we refer to any information that can uniquely identify an individual (including the information below) as 'Personal Information'."
+      },
+      "deviceInfo": {
+        "title": "Device Information",
+        "examples": "Examples of Personal Information collected: web browser version, IP address, time zone, cookie information, sites or products you view, search terms, and how you interact with the Site.",
+        "purpose": "Purpose of collection: to load the Site accurately for you and to perform analytics on Site usage to optimize our Site.",
+        "source": "Source of collection: Collected automatically when you access our Site using cookies, log files, web beacons, tags, or pixels.",
+        "disclosure": "Disclosure for a business purpose: shared with our processor Enouza."
+      },
+      "orderInfo": {
+        "title": "Order Information",
+        "examples": "Examples of Personal Information collected: name, billing address, shipping address, payment information, email address, and phone number.",
+        "purpose": "Purpose of collection: to provide products or services to you, process payment information, arrange shipping, provide invoices or order confirmations, communicate with you, screen orders for risk or fraud, and provide advertising or information in line with your preferences.",
+        "source": "Source of collection: collected from you.",
+        "disclosure": "Disclosure for a business purpose: shared with our processor Enouza."
+      },
+      "customerSupportInfo": {
+        "title": "Customer Support Information",
+        "examples": "Examples of Personal Information collected: name, billing address, shipping address, payment information, email address, and phone number.",
+        "purpose": "Purpose of collection: to provide customer support.",
+        "source": "Source of collection: collected from you."
+      },
+      "sharingPersonalInfo": {
+        "title": "Sharing Personal Information",
+        "text": "We share your Personal Information with service providers to help us provide our services and fulfill our contracts with you, as described above. For example, we may share your Personal Information to comply with applicable laws and regulations, respond to subpoenas, search warrants, or other lawful requests, or to otherwise protect our rights."
+      },
+      "behavioralAdvertising": {
+        "title": "Behavioral Advertising",
+        "text": "We use your Personal Information to provide you with targeted advertisements or marketing communications we believe may be of interest to you. For example, we use Google Analytics to understand how customers use the Site. More about Google's use of Personal Information: https://policies.google.com/privacy. Opt-out: https://tools.google.com/dlpage/gaoptout. We also share information about your use of the Site and ads with advertising partners."
+      },
+      "usingPersonalInfo": {
+        "title": "Using Personal Information",
+        "text": "We use your Personal Information to provide our services, including offering products for sale, processing payments, shipping and fulfilling orders, and keeping you updated on new products, services, and offers."
+      },
+      "lawfulBasis": {
+        "title": "Lawful Basis",
+        "text": "If you are a resident of the EEA, we process your personal information under the following lawful bases: your consent, performance of a contract, legal obligations, vital interests, public interest tasks, or legitimate interests not overriding your fundamental rights."
+      },
+      "retention": {
+        "title": "Retention",
+        "text": "When you place an order through the Site, we retain your Personal Information unless and until you ask us to erase it."
+      },
+      "automaticDecisionMaking": {
+        "title": "Automatic Decision-Making",
+        "text": "If you are an EEA resident, you have the right to object to automated decision-making (including profiling) with legal or significant effect. Our processor uses limited automated decisions to prevent fraud, such as temporary deny lists for IPs or credit cards."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "gdpr": "EEA residents have the right to access, port, correct, update, or erase their Personal Information. Contact us to exercise these rights.",
+        "ccpa": "California residents have the right to access ('Right to Know'), port, correct, update, or erase their Personal Information. You may designate an authorized agent to submit requests."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "text": "Cookies are small pieces of information downloaded to your device when visiting our Site. We use functional, performance, advertising, and social media cookies to enhance your browsing experience and remember preferences."
+      },
+      "doNotTrack": {
+        "title": "Do Not Track",
+        "text": "Since there is no consistent industry response to 'Do Not Track' signals, we do not alter our data collection practices if such a signal is detected in your browser."
+      },
+      "changes": {
+        "title": "Changes",
+        "text": "We may update this Privacy Policy from time to time to reflect changes in practices or for legal, regulatory, or operational reasons."
+      },
+      "contact": {
+        "title": "Contact",
+        "text": "For more information about our privacy practices, questions, or complaints, contact us via email at hello@enouza.com."
+      },
+      "lastUpdated": "Last updated: June 15, 2022"
+    }
+  }
+  
