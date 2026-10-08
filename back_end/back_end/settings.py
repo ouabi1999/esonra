@@ -34,7 +34,7 @@ if ENVIRONMENT == "production":
         "esonra.com",
         "www.esonra.com",
         "https://shark-app-chnag.ondigitalocean.app/",
-        "enouza-h0mx.onrender.com",
+        "https://esonra.onrender.com/",
     ]
 
     CSRF_TRUSTED_ORIGINS = [
