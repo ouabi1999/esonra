@@ -33,33 +33,38 @@ if ENVIRONMENT == "production":
     ALLOWED_HOSTS = [
         "esonra.com",
         "www.esonra.com",
-        "https://shark-app-chnag.ondigitalocean.app",
-        "https://esonra.onrender.com",
+        "shark-app-chnag.ondigitalocean.app",
+        "esonra.onrender.com",
     ]
 
     CSRF_TRUSTED_ORIGINS = [
         "https://esonra.com",
         "https://www.esonra.com",
-        "https://esonra.onrender.com",  # frontend on render
-        "https://shark-app-chnag.ondigitalocean.app",  # server
+        "https://esonra.onrender.com",
+        "https://shark-app-chnag.ondigitalocean.app",
     ]
 
     CORS_ALLOWED_ORIGINS = [
         "https://esonra.com",
         "https://www.esonra.com",
-        "https://esonra.onrender.com",  # frontend on render
-        "https://shark-app-chnag.ondigitalocean.app",  # server
+        "https://esonra.onrender.com",
+        "https://shark-app-chnag.ondigitalocean.app",
     ]
 
-    # Security settings for HTTPS
     SECURE_SSL_REDIRECT = True
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
     SECURE_HSTS_SECONDS = 31536000
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
     SECURE_HSTS_PRELOAD = True
+
 else:
-    ALLOWED_HOSTS = ["localhost", "127.0.0.1", "esonra.com", 'www.esonra.com' ]
+    ALLOWED_HOSTS = [
+        "localhost",
+        "127.0.0.1",
+        "esonra.com",
+        "www.esonra.com",
+    ]
 
     CSRF_TRUSTED_ORIGINS = [
         "http://localhost:5173",
