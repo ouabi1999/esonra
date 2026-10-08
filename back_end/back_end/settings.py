@@ -31,24 +31,24 @@ CORS_ALLOW_CREDENTIALS = True
 # Allowed Hosts
 if ENVIRONMENT == "production":
     ALLOWED_HOSTS = [
-        "enouza.com",
-        "www.enouza.com",
-        "enouza-wlvkc.ondigitalocean.app",
+        "esonra.com",
+        "www.esonra.com",
+        "https://shark-app-chnag.ondigitalocean.app/",
         "enouza-h0mx.onrender.com",
     ]
 
     CSRF_TRUSTED_ORIGINS = [
-        "https://enouza.com",
-        "https://www.enouza.com",
-        "https://enouza-h0mx.onrender.com",  # frontend on render
-        "https://enouza-wlvkc.ondigitalocean.app",  # server
+        "https://esonra.com",
+        "https://www.esonra.com",
+        "https://esonra.onrender.com",  # frontend on render
+        "https://shark-app-chnag.ondigitalocean.app",  # server
     ]
 
     CORS_ALLOWED_ORIGINS = [
-        "https://enouza.com",  # frontend on custom domain
-        "https://www.enouza.com",  # frontend on custom domain
-        "https://enouza-wlvkc.ondigitalocean.app",  # server
-        "https://enouza-h0mx.onrender.com",  # frontend on render
+        "https://esonra.com",
+        "https://www.esonra.com",
+        "https://esonra.onrender.com",  # frontend on render
+        "https://shark-app-chnag.ondigitalocean.app",  # server
     ]
 
     # Security settings for HTTPS
@@ -59,7 +59,7 @@ if ENVIRONMENT == "production":
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
     SECURE_HSTS_PRELOAD = True
 else:
-    ALLOWED_HOSTS = ["localhost", "127.0.0.1", "enouza.com", 'www.enouza.com' ]
+    ALLOWED_HOSTS = ["localhost", "127.0.0.1", "esonra.com", 'www.esonra.com' ]
 
     CSRF_TRUSTED_ORIGINS = [
         "http://localhost:5173",
