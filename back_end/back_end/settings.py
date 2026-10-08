@@ -33,8 +33,8 @@ if ENVIRONMENT == "production":
     ALLOWED_HOSTS = [
         "esonra.com",
         "www.esonra.com",
-        "https://shark-app-chnag.ondigitalocean.app/",
-        "https://esonra.onrender.com/",
+        "https://shark-app-chnag.ondigitalocean.app",
+        "https://esonra.onrender.com",
     ]
 
     CSRF_TRUSTED_ORIGINS = [
