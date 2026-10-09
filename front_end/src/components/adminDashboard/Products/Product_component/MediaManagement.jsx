@@ -136,7 +136,7 @@ const existingImages = formData.multimediaInfo?.image_urls
 
     if (!validFiles.length) return;
 
-    const imagesWithPreview = validFiles.map((file) => ({
+    const imagesWithPreview = validFiles?.map((file) => ({
       file,
       preview: URL.createObjectURL(file),
     }));
@@ -449,7 +449,7 @@ const setExistingImageAsMain = (index) => {
               EXISTING IMAGES
           ================================================== */}
 
-          {existingImages.map((image, index) => (
+          {existingImages?.map((image, index) => (
             <div
               className="image-wrapper"
               key={`existing-${index}`}
@@ -509,7 +509,7 @@ const setExistingImageAsMain = (index) => {
               NEW IMAGES
           ================================================== */}
 
-          {newImages.map((image, index) => (
+          {newImages?.map((image, index) => (
             <div
               className="image-wrapper new-image"
               key={`new-${index}`}
