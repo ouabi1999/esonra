@@ -52,7 +52,7 @@ function Ratings({
   return (
     <Container dir={i18n.language === "ar" ? "rtl" : "ltr"}>
       <RatingsHeader>
-        <Eyebrow>ENSORA</Eyebrow>
+        <Eyebrow>ESONRA</Eyebrow>
         <Title>{t("customer_reviews.customer_reviews", "Customers Reviews")}</Title>
         <HeaderAccent />
       </RatingsHeader>

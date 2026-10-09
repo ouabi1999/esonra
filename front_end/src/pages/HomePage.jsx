@@ -83,8 +83,8 @@ function HomePage() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "Ensora",
-          url: "https://www.ensora.com/",
+          name: "Esonra",
+          url: "https://www.esonra.com/",
         })}
       </script>
 
@@ -92,9 +92,9 @@ function HomePage() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Ensora",
-          url: "https://www.ensora.com/",
-          logo: "https://www.ensora.com/assestLogo.png",
+          name: "Esonra",
+          url: "https://www.esonra.com/",
+          logo: "https://www.esonra.com/assestLogo.png",
         })}
       </script>
 

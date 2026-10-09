@@ -177,7 +177,7 @@ const Footer = () => {
           </PaymentMethodsContainer>
           <CopyrightContainer >
             <Copyright dir="ltr">
-              © {new Date().getFullYear()} ENSORA,{" "}
+              © {new Date().getFullYear()} ESONRA,{" "}
               {t("footer.newsletter.all_rights_reserved")}
             </Copyright>
           </CopyrightContainer>

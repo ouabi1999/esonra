@@ -25,7 +25,7 @@ stripe.api_key = env("STRIPE_SECRET_KEY")
 YOUR_DOMAIN = env("CLIENT_HOST")
 
 endpoint_secret = env("END_POINT_SECRET") # Add your endpoint secret to Django settings
-payment_method_domain = stripe.PaymentMethodDomain.create(domain_name="ensora.com")
+payment_method_domain = stripe.PaymentMethodDomain.create(domain_name="esonra.com")
 
 
    

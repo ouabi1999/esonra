@@ -329,7 +329,7 @@ function ProductInfo({
         <Eyebrow>
           {!productData?.category
             ? t(`productInfo.${productData.category}`)
-            : "ENSORA COLLECTION"}
+            : "ESONRA COLLECTION"}
         </Eyebrow>
 
         <ProductTitle>{productName}</ProductTitle>

@@ -9,8 +9,8 @@ function SEO({
   productData = null,
   type = "website",
 }) {
-  const siteName = "Ensora";
-  const siteUrl = "https://www.ensora.com";
+  const siteName = "Esonra";
+  const siteUrl = "https://www.esonra.com";
 
   // ============================================================
   // HTML → CLEAN TEXT
@@ -47,7 +47,7 @@ function SEO({
 
   const finalDescription =
     cleanDescription(description) ||
-    `Discover ${productName} at Ensora. Explore its design, features, and product details.`;
+    `Discover ${productName} at Esonra. Explore its design, features, and product details.`;
 
   // ============================================================
   // CANONICAL

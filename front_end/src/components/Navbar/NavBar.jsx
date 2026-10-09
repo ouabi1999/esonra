@@ -269,7 +269,7 @@ function NavBar({ outlet, setSearchValue, value }) {
               <img
                     src="../ESONRAWordmark.png"
 
-                alt="ENSORA"
+                alt="ESONRA"
               />
 
 

@@ -26,13 +26,13 @@ function RefundPolicy() {
 
        <SEO
       title="Refund & Return Policy"
-      description="Learn about Ensora's refund and return policy, including eligible returns, refund conditions, return shipping, damaged items, and refund processing."
+      description="Learn about Esonra's refund and return policy, including eligible returns, refund conditions, return shipping, damaged items, and refund processing."
       canonical="/return-policy"
     />
 
       {/* PAGE HEADER */}
       <Header>
-        <Eyebrow>ENSORA</Eyebrow>
+        <Eyebrow>ESONRA</Eyebrow>
 
         <Title>
           {t("returnPolicyPage.title")}

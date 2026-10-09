@@ -47,7 +47,7 @@ export default function HeroSection() {
           <Description>{t("heroSection.description")}</Description>
 
           <QualityTitle>
-            Ensora
+            Esonra
           </QualityTitle>
           <DecorationLine />
 

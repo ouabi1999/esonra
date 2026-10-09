@@ -82,7 +82,7 @@ class ProductView(APIView):
 
                 result = cloudinary.uploader.upload(
                     image_file,
-                    folder="ensora/products"
+                    folder="esonra/products"
                 )
 
                 image_urls.append(result["secure_url"])
@@ -238,7 +238,7 @@ class ProductDetailsView(APIView):
         if additionalImageFiles:
             for image_file in additionalImageFiles:
                 result = cloudinary.uploader.upload(
-                    image_file, folder="ensora/products"
+                    image_file, folder="esonra/products"
                 )
                 image_urls.append(result["secure_url"])
 

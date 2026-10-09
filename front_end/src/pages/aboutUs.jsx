@@ -142,7 +142,7 @@ const AboutUs = () => {
       </StatementSection>
 
       {/* =====================================================
-          Ensora APPROACH
+          Esonra APPROACH
       ===================================================== */}
 
       <ApproachSection>
@@ -668,7 +668,7 @@ const StatementDescription = styled.p`
 `;
 
 /* =========================================================
-   ENsora APPROACH
+   Esonra APPROACH
 ========================================================= */
 
 const ApproachSection = styled.section`

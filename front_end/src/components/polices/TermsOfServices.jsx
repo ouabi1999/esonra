@@ -25,7 +25,7 @@ function TermsOfServices() {
 
     <SEO
       title="Terms of Service"
-      description="Read Ensora's Terms of Service covering purchases, payments, orders, returns, privacy, shipping, and the use of our website."
+      description="Read Esonra's Terms of Service covering purchases, payments, orders, returns, privacy, shipping, and the use of our website."
       canonical="/terms-of-services"
     />
       {/* =================================================

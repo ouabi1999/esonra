@@ -24,7 +24,7 @@ function Description() {
   return (
     <Container dir={i18n.dir() === "rtl" ? "rtl" : "ltr"}>
       <SectionHeader>
-        <Eyebrow>ENSORA</Eyebrow>
+        <Eyebrow>ESONRA</Eyebrow>
 
         <Title>
           {t(
@@ -48,7 +48,7 @@ function Description() {
 export default Description;
 
 /* =========================================================
-   ENSORA — PRODUCT DESCRIPTION
+   ESONRA — PRODUCT DESCRIPTION
 ========================================================= */
 
 const Container = styled.section`

@@ -22,7 +22,7 @@ import { setLanguage } from "../../features/LanguagesSlice";
 import { colors } from "../../utilis/colors";
 
 // ============================================================
-// ENSORA FOOTER PREFERENCES
+// ESONRA FOOTER PREFERENCES
 // ============================================================
 
 function FooterPreferences() {
@@ -211,7 +211,7 @@ function FooterPreferences() {
               {/* HEADER */}
 
               <DropdownHeader>
-                <Eyebrow>ENSORA</Eyebrow>
+                <Eyebrow>ESONRA</Eyebrow>
 
                 <Title>
                   {t("purchaseOptions.Language")}

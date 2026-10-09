@@ -18,7 +18,7 @@ function PrivacyPolicy() {
     <Container dir={isRTL ? "rtl" : "ltr"}>
           <SEO
       title="Privacy Policy"
-      description="Read Ensora's Privacy Policy to learn how we collect, use, protect, and manage your personal information when you use our website."
+      description="Read Esonra's Privacy Policy to learn how we collect, use, protect, and manage your personal information when you use our website."
       canonical="/privacy-policy"
     />
      

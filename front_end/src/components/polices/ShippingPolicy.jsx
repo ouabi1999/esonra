@@ -18,13 +18,13 @@ function ShippingPolicyPolicy() {
     <Container dir={isRTL ? "rtl" : "ltr"}>
       <SEO
       title="Shipping Policy"
-      description="Learn about Ensora shipping Policy options, delivery times, order tracking, customs fees, and what to do if your package is delayed or lost."
+      description="Learn about Esonra shipping Policy options, delivery times, order tracking, customs fees, and what to do if your package is delayed or lost."
       canonical="/shippingPolicy-policy"
     />
 
       {/* PAGE HEADER */}
       <Header>
-        <Eyebrow>ENSORA</Eyebrow>
+        <Eyebrow>ESONRA</Eyebrow>
 
         <Title>
           {t("shippingPolicy.title")}

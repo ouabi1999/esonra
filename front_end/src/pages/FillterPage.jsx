@@ -96,7 +96,7 @@ export default function FilterPageStyled() {
   return (
     <Page dir={i18n.dir()}>
       <SEO
-        title="A considered collection of smart tracking | Ensora"
+        title="A considered collection of smart tracking | Esonra"
         description="Thoughtfully designed tracking essentials that combine refined design, everyday functionality, and peace of mind."
         canonical="/collections"
       />
@@ -200,7 +200,7 @@ export default function FilterPageStyled() {
           </ProductGridWrapper>
         ) : (
           <EmptyState>
-            <EmptyLogo>ENSORA</EmptyLogo>
+            <EmptyLogo>ESONRA</EmptyLogo>
             <EmptyTitle>
               {t("filterPage.search_did_not_match")}
             </EmptyTitle>

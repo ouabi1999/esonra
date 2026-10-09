@@ -16,7 +16,7 @@ const MetricsSection = () => {
   return (
     <Section>
       {/* =========================
-          WHY CHOOSE ENSORA
+          WHY CHOOSE ESONRA
       ========================= */}
       {/*
       <SectionHeader

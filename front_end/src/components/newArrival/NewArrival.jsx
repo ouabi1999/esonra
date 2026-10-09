@@ -136,7 +136,7 @@ function NewArrival({
                 const productName =
                   item.name?.[i18n.language] ||
                   item.name?.en ||
-                  "ENSORA TRACKER";
+                  "ESONRA TRACKER";
 
                 const ratings = item.ratings || [];
 
