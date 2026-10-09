@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 
 import Flag from "react-world-flags";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-
+import { colors } from "../../utilis/colors";
 import {
   setCurrency,
   setCurrencyAutomatically,
@@ -479,7 +479,7 @@ function DropDownMenuLang(props) {
 
             <DropdownHeader>
               <HeaderEyebrow>
-                ENOUZA
+                ESONRA
               </HeaderEyebrow>
 
               <HeaderTitle>
@@ -627,405 +627,239 @@ function DropDownMenuLang(props) {
 
 export default DropDownMenuLang;
 
-/* ============================================================
-   CONTAINER
-============================================================ */
 
+/* CONTAINER */
 const Container = styled.div`
   position: relative;
-
   display: inline-flex;
-
   direction: inherit;
 `;
 
-/* ============================================================
-   TRIGGER
-============================================================ */
-
+/* TRIGGER */
 const Trigger = styled.button`
   appearance: none;
-
   display: inline-flex;
-
   align-items: center;
-
   gap: 9px;
-
   min-height: 38px;
-
   padding: 5px 7px 5px 8px;
-
   margin: 0;
-
-  border: 1px solid transparent;
-
-  border-radius: 2px;
-
+  border: 1px solid #e6e3e3;
+  border-radius: 4px;
   outline: none;
-  background: rgba(179, 154, 118, 0.06);
-
-    border-color: rgba(
-      179,
-      154,
-      118,
-      0.18
-    );
-
-  color: #171615;
-
+  background: ${colors.surface};
+  color: ${colors.text};
   cursor: pointer;
-
-  font-family:
-    "Inter",
-    Arial,
-    sans-serif;
-
+  font-family: "Inter", Arial, sans-serif;
   transition:
     background 0.25s ease,
     border-color 0.25s ease,
     color 0.25s ease;
 
-  
+  &:hover {
+    background: ${colors.background};
+    border-color: ${colors.border};
+  }
 
   &:focus-visible {
-    outline: 1px solid #b39a76;
-
+    outline: 2px solid ${colors.accent};
     outline-offset: 3px;
   }
 
   @media (max-width: 600px) {
     gap: 7px;
-
     min-height: 36px;
-
     padding: 4px 5px 4px 6px;
   }
 `;
 
-/* ============================================================
-   FLAG
-============================================================ */
-
+/* FLAG */
 const TriggerFlag = styled.span`
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   width: 22px;
-
   height: 16px;
-
   flex-shrink: 0;
-
   overflow: hidden;
-
-  border-radius: 1px;
+  border-radius: 2px;
 
   .flag-icon {
     display: block;
-
     width: 22px;
-
     height: 14px;
-
     object-fit: cover;
   }
 
   @media (max-width: 600px) {
     width: 20px;
-
     height: 14px;
 
     .flag-icon {
       width: 20px;
-
       height: 13px;
     }
   }
 `;
 
-/* ============================================================
-   TRIGGER CONTENT
-============================================================ */
-
+/* TRIGGER CONTENT */
 const TriggerContent = styled.span`
   display: flex;
-
   flex-direction: column;
-
   align-items: flex-start;
-
   justify-content: center;
-
   gap: 2px;
-
   min-width: 0;
 `;
 
-/* ============================================================
-   TRIGGER TOP
-============================================================ */
-
+/* LANGUAGE */
 const TriggerTop = styled.span`
-  color: #171615;
-
-  font-family:
-    "Inter",
-    Arial,
-    sans-serif;
-
+  color: ${colors.primary};
+  font-family: "Inter", Arial, sans-serif;
   font-size: 10px;
-
-  font-weight: 500;
-
+  font-weight: 600;
   line-height: 1.1;
-
   letter-spacing: 0.01em;
-
   white-space: nowrap;
-
   overflow: hidden;
-
   text-overflow: ellipsis;
-
   max-width: 120px;
 
   @media (max-width: 600px) {
     font-size: 9px;
-
     max-width: 90px;
   }
 `;
 
-/* ============================================================
-   TRIGGER BOTTOM
-============================================================ */
-
+/* COUNTRY AND CURRENCY */
 const TriggerBottom = styled.span`
-  color: #77716a;
-
-  font-family:
-    "Inter",
-    Arial,
-    sans-serif;
-
+  color: ${colors.textSecondary};
+  font-family: "Inter", Arial, sans-serif;
   font-size: 9px;
-
   font-weight: 500;
-
   line-height: 1;
-
   letter-spacing: 0.08em;
-
   white-space: nowrap;
-
   text-transform: uppercase;
 `;
 
-/* ============================================================
-   DIVIDER
-============================================================ */
-
+/* DIVIDER */
 const TriggerDivider = styled.span`
   margin-inline: 4px;
-
-  color: #b39a76;
+  color: ${colors.accent};
 `;
 
-/* ============================================================
-   ARROW
-============================================================ */
-
+/* DROPDOWN ARROW */
 const ArrowWrapper = styled.span`
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   flex-shrink: 0;
-
-  color: #77716a;
-
+  color: ${colors.textSecondary};
   transition:
     transform 0.25s ease,
     color 0.25s ease;
 
   svg {
     width: 18px;
-
     height: 18px;
   }
 
   &.open {
-    color: #b39a76;
-
+    color: ${colors.accent};
     transform: rotate(180deg);
   }
 `;
 
-/* ============================================================
-   DROPDOWN
-============================================================ */
-
+/* DROPDOWN PANEL */
 const Dropdown = styled.div`
   position: fixed;
-
   top: 70px;
-
   inset-inline-end: 28px;
-
-  z-index: 99999;
-
+  z-index: 3;
   width: 360px;
-
+  max-width: calc(100vw - 30px);
+  box-sizing: border-box;
   overflow: hidden;
-
-  background: #ffffff;
-
-  border: 1px solid #ddd8cf;
-
-  box-shadow:
-    0 24px 70px
-    rgba(27, 24, 21, 0.16);
-
+  background: ${colors.surface};
+  border: 1px solid ${colors.border};
+  box-shadow: 0 24px 70px rgba(7, 27, 27, 0.16);
   animation: dropdownIn 0.22s ease-out;
 
   @keyframes dropdownIn {
     from {
       opacity: 0;
-
-      transform:
-        translateY(-7px)
-        scale(0.985);
+      transform: translateY(-7px) scale(0.985);
     }
 
     to {
       opacity: 1;
-
-      transform:
-        translateY(0)
-        scale(1);
+      transform: translateY(0) scale(1);
     }
   }
 
   @media (max-width: 700px) {
     top: auto;
-
     bottom: 18px;
-
     left: 50%;
-
+    right: auto;
     inset-inline-end: auto;
-
     width: calc(100vw - 30px);
-
     max-width: 390px;
-
     max-height: calc(100vh - 36px);
-
     overflow-y: auto;
-
     transform: translateX(-50%);
-
-    animation: mobileDropdownIn
-      0.22s ease-out;
+    animation: mobileDropdownIn 0.22s ease-out;
 
     @keyframes mobileDropdownIn {
       from {
         opacity: 0;
-
-        transform:
-          translateX(-50%)
-          translateY(10px)
-          scale(0.985);
+        transform: translateX(-50%) translateY(10px) scale(0.985);
       }
 
       to {
         opacity: 1;
-
-        transform:
-          translateX(-50%)
-          translateY(0)
-          scale(1);
+        transform: translateX(-50%) translateY(0) scale(1);
       }
     }
   }
 
   @media (max-width: 420px) {
     width: calc(100vw - 22px);
-
     bottom: 11px;
   }
 `;
 
-/* ============================================================
-   HEADER
-============================================================ */
-
+/* HEADER */
 const DropdownHeader = styled.div`
   padding: 25px 26px 22px;
-
-  background:
-    linear-gradient(
-      135deg,
-      #faf8f4 0%,
-      #f5f1ea 100%
-    );
-
-  border-bottom: 1px solid #e5e0d8;
+  background: ${colors.background};
+  border-bottom: 1px solid ${colors.border};
 
   @media (max-width: 600px) {
     padding: 21px 20px 18px;
   }
 `;
 
-/* ============================================================
-   EYEBROW
-============================================================ */
-
+/* BRAND NAME */
 const HeaderEyebrow = styled.div`
   margin-bottom: 8px;
-
-  color: #a4865c;
-
-  font-family:
-    "Inter",
-    Arial,
-    sans-serif;
-
+  color: ${colors.accent};
+  font-family: "Inter", Arial, sans-serif;
   font-size: 8px;
-
-  font-weight: 600;
-
+  font-weight: 700;
   letter-spacing: 0.24em;
-
   line-height: 1;
-
   text-transform: uppercase;
 `;
 
-/* ============================================================
-   HEADER TITLE
-============================================================ */
-
+/* HEADER TITLE */
 const HeaderTitle = styled.h3`
   margin: 0;
-
-  color: #171615;
-
-  font-family:
-    "Playfair Display",
-    Georgia,
-    serif;
-
+  color: ${colors.text};
+  font-family: "Inter", Arial, sans-serif;
   font-size: 23px;
-
-  font-weight: 400;
-
+  font-weight: 600;
   line-height: 1.25;
 
   @media (max-width: 600px) {
@@ -1033,24 +867,17 @@ const HeaderTitle = styled.h3`
   }
 `;
 
-/* ============================================================
-   CONTENT
-============================================================ */
-
+/* CONTENT */
 const DropdownContent = styled.div`
   padding: 21px 26px 5px;
-
-  background: #ffffff;
+  background: ${colors.surface};
 
   @media (max-width: 600px) {
     padding: 18px 20px 3px;
   }
 `;
 
-/* ============================================================
-   OPTION GROUP
-============================================================ */
-
+/* OPTION GROUP */
 const OptionGroup = styled.div`
   margin-bottom: 20px;
 
@@ -1063,120 +890,70 @@ const OptionGroup = styled.div`
   }
 `;
 
-/* ============================================================
-   OPTION LABEL
-============================================================ */
-
+/* OPTION LABEL */
 const OptionLabel = styled.label`
   display: block;
-
   margin-bottom: 8px;
-
-  color: #3d3934;
-
-  font-family:
-    "Inter",
-    Arial,
-    sans-serif;
-
+  color: ${colors.textSecondary};
+  font-family: "Inter", Arial, sans-serif;
   font-size: 9px;
-
-  font-weight: 600;
-
+  font-weight: 700;
   letter-spacing: 0.14em;
-
   line-height: 1;
-
   text-transform: uppercase;
 `;
 
-/* ============================================================
-   SELECT BOX
-============================================================ */
-
+/* SELECT BOX */
 const SelectBox = styled.div`
   position: relative;
-
   width: 100%;
 
   .field-flag {
     position: absolute;
-
     top: 50%;
-
     left: 14px;
-
     z-index: 2;
-
     width: 20px;
-
     height: 13px;
-
     object-fit: cover;
-
     transform: translateY(-50%);
-
     pointer-events: none;
   }
 
   select {
     appearance: none;
-
     display: block;
-
     width: 100%;
-
     min-width: 0;
-
     height: 45px;
-
     padding: 0 42px 0 13px;
-
-    border: 1px solid #d9d4cc;
-
-    border-radius: 0;
-
+    border: 1px solid ${colors.border};
+    border-radius: 4px;
     outline: none;
-
-    background: #ffffff;
-
-    color: #111111;
-
-    font-family:
-      "Inter",
-      Arial,
-      sans-serif;
-
+    background: ${colors.surface};
+    color: ${colors.text};
+    font-family: "Inter", Arial, sans-serif;
     font-size: 12px;
-
     font-weight: 500;
-
     cursor: pointer;
-
     transition:
       border-color 0.2s ease,
       box-shadow 0.2s ease,
       background 0.2s ease;
 
     &:hover {
-      border-color: #b39a76;
-
-      background: #fdfcf9;
+      border-color: ${colors.secondary};
+      background: ${colors.background};
     }
 
     &:focus {
-      border-color: #b39a76;
-
-      box-shadow:
-        0 0 0 2px
-        rgba(179, 154, 118, 0.1);
+      border-color: ${colors.accent};
+      box-shadow: 0 0 0 2px rgba(24, 200, 120, 0.15);
     }
 
     option {
-      color: #111111;
-
-      background: #ffffff;
-
+      color: ${colors.text};
+      background: ${colors.surface};
       font-size: 12px;
     }
   }
@@ -1186,107 +963,64 @@ const SelectBox = styled.div`
   }
 `;
 
-/* ============================================================
-   SELECT ARROW
-============================================================ */
-
+/* SELECT ARROW */
 const SelectArrow = styled.span`
   position: absolute;
-
   top: 50%;
-
   right: 11px;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
-  color: #77716a;
-
+  color: ${colors.textSecondary};
   pointer-events: none;
-
   transform: translateY(-50%);
 
   svg {
     width: 18px;
-
     height: 18px;
   }
 `;
 
-/* ============================================================
-   FOOTER
-============================================================ */
-
+/* FOOTER */
 const DropdownFooter = styled.div`
   display: flex;
-
   align-items: center;
-
   justify-content: flex-end;
-
   padding: 16px 26px 22px;
-
-  background: #faf8f4;
-
-  border-top: 1px solid #e8e3db;
+  background: ${colors.background};
+  border-top: 1px solid ${colors.border};
 
   @media (max-width: 600px) {
     padding: 14px 20px 18px;
   }
 `;
 
-/* ============================================================
-   SAVE BUTTON
-============================================================ */
-
+/* SAVE BUTTON */
 const SaveButton = styled.button`
   appearance: none;
-
   width: 145px;
-
-  height: 40px;
-
+  min-height: 40px;
   padding: 0 20px;
-
-  border: 1px solid #191816;
-
-  border-radius: 0;
-
+  border: 1px solid ${colors.accent};
+  border-radius: 4px;
   outline: none;
-
-  background: #191816;
-
-  color: #ffffff;
-
-  font-family:
-    "Inter",
-    Arial,
-    sans-serif;
-
-  font-size: 9px;
-
-  font-weight: 600;
-
-  letter-spacing: 0.16em;
-
+  background: ${colors.accent};
+  color: ${colors.surface};
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   line-height: 1;
-
   text-transform: uppercase;
-
   cursor: pointer;
-
   transition:
     background 0.25s ease,
     border-color 0.25s ease,
     transform 0.2s ease;
 
   &:hover {
-    background: #b39a76;
-
-    border-color: #b39a76;
+    background: ${colors.accentHover};
+    border-color: ${colors.accentHover};
   }
 
   &:active {
@@ -1294,14 +1028,12 @@ const SaveButton = styled.button`
   }
 
   &:focus-visible {
-    outline: 1px solid #b39a76;
-
+    outline: 2px solid ${colors.secondary};
     outline-offset: 3px;
   }
 
   @media (max-width: 600px) {
     width: 100%;
-
-    height: 42px;
+    min-height: 42px;
   }
 `;

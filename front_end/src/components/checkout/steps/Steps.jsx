@@ -300,7 +300,8 @@ const Container = styled.div`
 
     color: #ffffff;
 
-    font-family: Georgia, serif;
+    font-family: Arial, sans-serif;
+
 
     font-size: 10px;
 
@@ -352,7 +353,8 @@ const Container = styled.div`
 
     color: #5a534a;
 
-    font-family: Georgia, serif;
+    font-family: Arial, sans-serif;
+
 
     font-size: 10px;
 
@@ -456,7 +458,8 @@ const GuestMessage = styled.div`
 
   color: #3a332d;
 
-  font-family: Georgia, serif;
+  font-family: Arial, sans-serif;
+
 
   font-size: 13px;
 

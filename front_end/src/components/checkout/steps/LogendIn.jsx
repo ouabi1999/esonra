@@ -76,7 +76,8 @@ const Content = styled.div`
 `;
 
 const Title = styled.span`
-  font-family: Georgia, serif;
+    font-family: Arial, sans-serif;
+
 
   font-size: 15px;
   font-weight: 400;

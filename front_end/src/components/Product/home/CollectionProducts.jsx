@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import CurrencyPrice from "../../../../common/CurrencyPrice";
+import { colors } from "../../../utilis/colors";
 
 function CollectionProducts({
   products,
@@ -552,72 +553,20 @@ const Label = styled.span`
 
 const SaveLabel = styled.span`
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
-
   min-height: 25px;
-
   padding: 0 10px;
-
-  background: #ad9270;
-
-  color: #ffffff;
-
+  background: ${colors.accent};
+  color: ${colors.primary};
   font-family: Arial, sans-serif;
-
   font-size: 0.58rem;
-
-  font-weight: 500;
-
+  font-weight: 600;
   letter-spacing: 0.09em;
-
   line-height: 1;
-
   white-space: nowrap;
 `;
 
-/* =========================================================
-   PRODUCT INDEX
-========================================================= */
-
-const ProductIndex = styled.span`
-  position: absolute;
-
-  right: 15px;
-  bottom: 14px;
-
-  z-index: 3;
-
-  color: rgba(
-    255,
-    255,
-    255,
-    0.85
-  );
-
-  font-family: Arial, sans-serif;
-
-  font-size: 0.55rem;
-
-  font-weight: 400;
-
-  letter-spacing: 0.12em;
-
-  mix-blend-mode: difference;
-
-  pointer-events: none;
-
-  transition: opacity 0.3s ease;
-
-  ${ProductCard}:hover & {
-    opacity: 0;
-  }
-
-  @media (max-width: 768px) {
-    opacity: 0.8;
-  }
-`;
 
 /* =========================================================
    PRODUCT INFO
@@ -634,29 +583,17 @@ const ProductInfo = styled.div`
 
   align-items: center;
 `;
-
 const ProductName = styled.h3`
   margin: 0;
-
   max-width: 95%;
-
-  color: #292622;
-
-  font-family:
-    Arial,
-    sans-serif;
-
+  color: ${colors.text};
+  font-family: Arial, sans-serif;
   font-size: 0.82rem;
-
   font-weight: 500;
-
   line-height: 1.5;
-
   letter-spacing: 0.005em;
-
   text-align: center;
 `;
-
 /* =========================================================
    PRICE
 ========================================================= */

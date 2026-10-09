@@ -6,6 +6,7 @@ import NewsLetter from "./NewsLetter";
 import PaymentMethods from "../../../common/PaymentMethods";
 import GppGoodIcon from "@mui/icons-material/GppGood";
 import FooterPreferences from "./FooterPreferences";
+import { colors } from "../../utilis/colors";
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -51,9 +52,8 @@ const Footer = () => {
           <BrandSection>
             <BrandLogo>
             <bdi style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-            <img src="../enouza_logo_black.png" alt="logo" style={{height:"26px"}}/>
+            <img src="../ESONRAWordmark.png" alt="logo" style={{height:"45px"}}/>
            
-            <span > NOUZA</span>
             </bdi>
             </BrandLogo>
 
@@ -177,7 +177,7 @@ const Footer = () => {
           </PaymentMethodsContainer>
           <CopyrightContainer >
             <Copyright dir="ltr">
-              © {new Date().getFullYear()} ENOUZA,{" "}
+              © {new Date().getFullYear()} ENSORA,{" "}
               {t("footer.newsletter.all_rights_reserved")}
             </Copyright>
           </CopyrightContainer>
@@ -311,7 +311,7 @@ const NewsletterEyebrow = styled.span`
 
   margin-bottom: 10px;
 
-  color: #9b7b45;
+  color: #459b6a;
 
   font-size: 9px;
 
@@ -642,7 +642,7 @@ const Copyright = styled.span`
 
   letter-spacing: 0.4px;
 
-  color: #77736b;
+  color: ${colors.secondary};
 
   white-space: nowrap;
 `;
@@ -701,14 +701,15 @@ const SecureText = styled.div`
 
   text-transform: uppercase;
 
-  color: #716c64;
+  color: ${colors.secondary};
 
   white-space: nowrap;
 
   svg {
     flex-shrink: 0;
 
-    color: #b39a76;
+      color: ${colors.secondary};
+
   }
 `;
 

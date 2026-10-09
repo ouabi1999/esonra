@@ -251,6 +251,7 @@ setFormData({
 
     // Append individual fields
     data.append("name", JSON.stringify(formData.name));
+    data.append("slug", formData.slug);
     data.append("description", JSON.stringify(formData.description));
     data.append("multimediaInfo", JSON.stringify(formData.multimediaInfo));
     data.append("brand", formData.brand);

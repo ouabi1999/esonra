@@ -4,9 +4,7 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import SEO from "../../components/SEO/SEO";
 function TermsOfServices() {
-  const { t, i18n } = useTranslation("terms", {
-    returnObjects: true,
-  });
+  const { t, i18n } = useTranslation()
 
   useLayoutEffect(() => {
     window.scrollTo({
@@ -15,10 +13,10 @@ function TermsOfServices() {
     });
   }, []);
 
-  const title = t("terms.title");
-  const seoTitle = t("terms.seoTitle");
-  const overview = t("terms.overview");
-  const sections = t("terms.sections");
+  const title = t("termsOfService.title");
+  const seoTitle = t("termsOfService.seoTitle");
+  const overview = t("termsOfService.overview");
+  const sections = t("termsOfService.sections");
 
   const isRTL = i18n.dir() === "rtl";
 
@@ -27,7 +25,7 @@ function TermsOfServices() {
 
     <SEO
       title="Terms of Service"
-      description="Read Enouza's Terms of Service covering purchases, payments, orders, returns, privacy, shipping, and the use of our website."
+      description="Read Ensora's Terms of Service covering purchases, payments, orders, returns, privacy, shipping, and the use of our website."
       canonical="/terms-of-services"
     />
       {/* =================================================
@@ -35,7 +33,7 @@ function TermsOfServices() {
       ================================================= */}
 
       <Header>
-        <Eyebrow>ENOUZA</Eyebrow>
+        <Eyebrow>ESONRA</Eyebrow>
 
         <Title>
           {title}

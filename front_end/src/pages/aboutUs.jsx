@@ -9,21 +9,9 @@ import LightMode from "@mui/icons-material/LightMode";
 import DiamondOutlined from "@mui/icons-material/DiamondOutlined";
 
 import SEO from "../components/SEO/SEO";
+import { colors } from "../utilis/colors";
 
-/* =========================================================
-   ENOUZA COLORS
-========================================================= */
 
-const COLORS = {
-  background: "#F7F5F0",
-  white: "#FFFFFF",
-  text: "#1D1C1A",
-  muted: "#77736B",
-  gold: "#B39A76",
-  softGold: "#DED4C4",
-  border: "#E4DED4",
-  dark: "#292723",
-};
 
 /* =========================================================
    ABOUT US
@@ -154,7 +142,7 @@ const AboutUs = () => {
       </StatementSection>
 
       {/* =====================================================
-          ENOUZA APPROACH
+          Ensora APPROACH
       ===================================================== */}
 
       <ApproachSection>
@@ -317,8 +305,8 @@ const Page = styled.main`
   width: 100%;
   overflow: hidden;
 
-  background: ${COLORS.background};
-  color: ${COLORS.text};
+  background: ${colors.background};
+  color: ${colors.text};
 
   font-family:
     "Jost",
@@ -474,7 +462,7 @@ const HeroLine = styled.span`
 const StorySection = styled.section`
   padding: 100px 7vw;
 
-  background: ${COLORS.background};
+  background: ${colors.background};
 
   @media (max-width: 768px) {
     padding: 70px 24px;
@@ -600,9 +588,9 @@ const StoryText = styled.p`
 const StatementSection = styled.section`
   padding: 100px 24px;
 
-  background: ${COLORS.dark};
+  background: ${colors.dark};
 
-  color: ${COLORS.background};
+  color: ${colors.background};
 
   text-align: center;
 
@@ -634,7 +622,7 @@ const Statement = styled.h2`
 
   margin: 0 auto;
 
-  color: ${COLORS.background};
+  color: ${colors.background};
 
   font-family:
     "Playfair Display",
@@ -680,13 +668,13 @@ const StatementDescription = styled.p`
 `;
 
 /* =========================================================
-   ENOUZA APPROACH
+   ENsora APPROACH
 ========================================================= */
 
 const ApproachSection = styled.section`
   padding: 100px 7vw 105px;
 
-  background: ${COLORS.background};
+  background: ${colors.background};
 
   @media (max-width: 768px) {
     padding: 72px 22px 78px;
@@ -841,7 +829,7 @@ const FeatureIcon = styled.div`
 const FeatureTitle = styled.h3`
   margin: 0;
 
-  color: ${COLORS.text};
+  color: ${colors.text};
 
   font-family:
     "Playfair Display",
@@ -1053,7 +1041,7 @@ const SelectionText = styled.p`
 const PromiseSection = styled.section`
   padding: 105px 24px;
 
-  background: ${COLORS.background};
+  background: ${colors.background};
 
   text-align: center;
 

@@ -1,12 +1,12 @@
 from django.contrib import admin
 from django.urls import include, path
 
-from .sitemap_view import enouza_sitemap
+from .sitemap_view import ensora_sitemap
 
 urlpatterns = [
     path(
         "sitemap.xml",
-        enouza_sitemap,
+        ensora_sitemap,
         name="django-sitemap",
     ),
     path("admin/", admin.site.urls),

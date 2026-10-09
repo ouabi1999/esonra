@@ -1,6 +1,8 @@
+
 import React from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import { colors } from "../../../utilis/colors";
 
 const InspirationSection = () => {
   const { t } = useTranslation();
@@ -80,7 +82,7 @@ const InspirationSection = () => {
 export default InspirationSection;
 
 const Section = styled.section`
-  background: #f7f5f0;
+  background: ${colors.background};
   padding: 110px 5vw 120px;
 `;
 
@@ -91,7 +93,7 @@ const Header = styled.div`
 `;
 
 const Eyebrow = styled.div`
-  color: #9b815f;
+  color: ${colors.accent};
   font-family: Arial, sans-serif;
   font-size: 10px;
   font-weight: 400;
@@ -101,7 +103,7 @@ const Eyebrow = styled.div`
 
 const Title = styled.h2`
   margin: 0;
-  color: #171614;
+  color: ${colors.primary};
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: clamp(44px, 5vw, 70px);
   font-weight: 500;
@@ -174,9 +176,9 @@ const Overlay = styled.div`
 
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.02) 25%,
-    rgba(0, 0, 0, 0.08) 48%,
-    rgba(0, 0, 0, 0.72) 100%
+    rgba(7, 27, 27, 0.02) 25%,
+    rgba(7, 27, 27, 0.08) 48%,
+    rgba(7, 27, 27, 0.82) 100%
   );
 `;
 
@@ -185,7 +187,7 @@ const CardContent = styled.div`
   left: 32px;
   right: 32px;
   bottom: 32px;
-  color: #fff;
+  color: ${colors.surface};
 `;
 
 const CardNumber = styled.div`

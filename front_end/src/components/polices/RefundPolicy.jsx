@@ -3,9 +3,7 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import SEO from "../../components/SEO/SEO.jsx";
 function RefundPolicy() {
-  const { t, i18n } = useTranslation("refund", {
-    returnObjects: true,
-  });
+  const { t, i18n } = useTranslation();
 
   useLayoutEffect(() => {
     window.scrollTo({
@@ -17,7 +15,7 @@ function RefundPolicy() {
   const isRTL = i18n.dir() === "rtl";
 
   const rejectedRefundItems = t(
-    "returnPolicy.rejectedRefunds.items",
+    "returnPolicyPage.rejectedRefunds.items",
     {
       returnObjects: true,
     }
@@ -28,16 +26,16 @@ function RefundPolicy() {
 
        <SEO
       title="Refund & Return Policy"
-      description="Learn about Enouza's refund and return policy, including eligible returns, refund conditions, return shipping, damaged items, and refund processing."
+      description="Learn about Ensora's refund and return policy, including eligible returns, refund conditions, return shipping, damaged items, and refund processing."
       canonical="/return-policy"
     />
 
       {/* PAGE HEADER */}
       <Header>
-        <Eyebrow>ENOUZA</Eyebrow>
+        <Eyebrow>ENSORA</Eyebrow>
 
         <Title>
-          {t("returnPolicy.title")}
+          {t("returnPolicyPage.title")}
         </Title>
 
         <HeaderLine />
@@ -49,11 +47,11 @@ function RefundPolicy() {
         <SectionNumber>01</SectionNumber>
 
         <Subtitle>
-          {t("returnPolicy.returns.heading")}
+          {t("returnPolicyPage.returns.heading")}
         </Subtitle>
 
         <Text>
-          {t("returnPolicy.returns.text")}
+          {t("returnPolicyPage.returns.text")}
         </Text>
       </Section>
 
@@ -64,7 +62,7 @@ function RefundPolicy() {
 
         <Subtitle>
           {t(
-            "returnPolicy.rejectedRefunds.heading"
+            "returnPolicyPage.rejectedRefunds.heading"
           )}
         </Subtitle>
 
@@ -87,11 +85,11 @@ function RefundPolicy() {
         <SectionNumber>03</SectionNumber>
 
         <Subtitle>
-          {t("returnPolicy.exceptions.heading")}
+          {t("returnPolicyPage.exceptions.heading")}
         </Subtitle>
 
         <Text>
-          {t("returnPolicy.exceptions.text")}
+          {t("returnPolicyPage.exceptions.text")}
         </Text>
       </Section>
 
@@ -102,13 +100,13 @@ function RefundPolicy() {
 
         <Subtitle>
           {t(
-            "returnPolicy.returnShipping.heading"
+            "returnPolicyPage.returnShipping.heading"
           )}
         </Subtitle>
 
         <Text>
           {t(
-            "returnPolicy.returnShipping.text"
+            "returnPolicyPage.returnShipping.text"
           )}
         </Text>
       </Section>
@@ -120,13 +118,13 @@ function RefundPolicy() {
 
         <Subtitle>
           {t(
-            "returnPolicy.damagesIssues.heading"
+            "returnPolicyPage.damagesIssues.heading"
           )}
         </Subtitle>
 
         <Text>
           {t(
-            "returnPolicy.damagesIssues.text"
+            "returnPolicyPage.damagesIssues.text"
           )}
         </Text>
       </Section>
@@ -137,11 +135,11 @@ function RefundPolicy() {
         <SectionNumber>06</SectionNumber>
 
         <Subtitle>
-          {t("returnPolicy.refunds.heading")}
+          {t("returnPolicyPage.refunds.heading")}
         </Subtitle>
 
         <Text>
-          {t("returnPolicy.refunds.text")}
+          {t("returnPolicyPage.refunds.text")}
         </Text>
       </Section>
 

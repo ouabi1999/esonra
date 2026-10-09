@@ -47,7 +47,7 @@ function ProductCart() {
 
       const code = couponCode.trim().toUpperCase();
 
-      if (code === "ENOUZA10") {
+      if (code === "ENSORA10") {
         const discount = Number(total) * 0.1;
 
         setDiscountAmount(discount);
@@ -86,7 +86,7 @@ function ProductCart() {
       <div className="header-container">
         <div>
           <span className="checkout">
-            ENOUZA — {t("common.checkout")}
+            ENSORA — {t("common.checkout")}
           </span>
         </div>
       </div>

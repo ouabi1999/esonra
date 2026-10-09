@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { optimizeCloudinaryImage } from "../../utilis/cloudinary";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import {colors} from "../../utilis/colors"
 import "swiper/css";
 import CurrencyPrice from "../../../common/CurrencyPrice";
 
@@ -136,7 +136,7 @@ function NewArrival({
                 const productName =
                   item.name?.[i18n.language] ||
                   item.name?.en ||
-                  "ENOUZA Lamp";
+                  "ENSORA TRACKER";
 
                 const ratings = item.ratings || [];
 
@@ -339,22 +339,19 @@ function NewArrival({
 export default NewArrival;
 
 
-/* =========================================================
-   SECTION
-========================================================= */
-
+/* SECTION */
 const Section = styled.section`
   width: 100%;
-  background: #f7f5f0;
+  background: ${colors.background};
   padding: 96px 0 105px;
   overflow: hidden;
+
+  @media (max-width: 600px) {
+    padding: 56px 0 64px;
+  }
 `;
 
-
-/* =========================================================
-   CONTAINER
-========================================================= */
-
+/* CONTAINER */
 const Container = styled.div`
   width: min(1440px, calc(100% - 64px));
   margin: 0 auto;
@@ -364,95 +361,74 @@ const Container = styled.div`
   }
 `;
 
-
-/* =========================================================
-   HEADER
-========================================================= */
-
+/* HEADER */
 const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin-bottom: 34px;
+
+  @media (max-width: 600px) {
+    margin-bottom: 24px;
+  }
 `;
 
-
+/* TITLE */
 const Title = styled.h2`
   margin: 0;
+  color: ${colors.primary};
+  font-family: Arial, sans-serif;
 
-  color: #25221f;
-
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
-
-  font-size: clamp(2rem, 3vw, 3.2rem);
-
-  font-weight: 400;
-
-  line-height: 1.05;
-
-  letter-spacing: -0.045em;
-
+  font-size: clamp(1.4rem, 2vw, 3rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
   text-align: center;
+  text-wrap: balance;
 `;
 
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
+/* NAVIGATION */
 const NavigationArea = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
   gap: 8px;
-
   margin-bottom: 20px;
-
   direction: ltr;
 
   button {
     position: relative;
-
     width: 42px;
     height: 42px;
-
     padding: 0;
-
-    border: 1px solid #d4cec5;
-
+    border: 1px solid ${colors.border};
     border-radius: 50%;
-
-    background: transparent;
-
+    background: ${colors.surface};
     display: flex;
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
-
-    color: #25221f;
-
+    color: ${colors.primary};
     transition:
-      background 0.35s ease,
-      border-color 0.35s ease,
-      color 0.35s ease,
-      transform 0.35s ease;
+      background 0.25s ease,
+      border-color 0.25s ease,
+      color 0.25s ease,
+      transform 0.25s ease;
 
     &:hover {
-      background: #25221f;
-      border-color: #25221f;
-      color: #ffffff;
-
+      background: ${colors.accent};
+      border-color: ${colors.accent};
+      color: ${colors.primary};
       transform: translateY(-2px);
     }
 
     &:active {
       transform: translateY(0);
+    }
+
+    &:focus-visible {
+      outline: 2px solid ${colors.accent};
+      outline-offset: 3px;
     }
   }
 
@@ -461,22 +437,15 @@ const NavigationArea = styled.div`
   }
 `;
 
-
-/* =========================================================
-   ARROW
-========================================================= */
-
+/* ARROW */
 const Arrow = styled.span`
   width: 7px;
   height: 7px;
-
   border-top: 1px solid currentColor;
   border-right: 1px solid currentColor;
 
   transform: ${({ $direction }) =>
-    $direction === "prev"
-      ? "rotate(-135deg)"
-      : "rotate(45deg)"};
+    $direction === "prev" ? "rotate(-135deg)" : "rotate(45deg)"};
 
   ${({ $direction }) =>
     $direction === "prev"
@@ -484,11 +453,7 @@ const Arrow = styled.span`
       : "margin-right: 3px;"}
 `;
 
-
-/* =========================================================
-   SWIPER
-========================================================= */
-
+/* SWIPER */
 const SwiperWrapper = styled.div`
   width: 100%;
 
@@ -512,65 +477,43 @@ const SwiperWrapper = styled.div`
   }
 `;
 
-
-/* =========================================================
-   PRODUCT
-========================================================= */
-
+/* PRODUCT CARD */
 const ProductCard = styled.article`
-  width: 100%;
   position: relative;
+  width: 100%;
 `;
 
-
+/* PRODUCT LINK */
 const ProductLink = styled(Link)`
   display: block;
-
   color: inherit;
   text-decoration: none;
 `;
 
-
-/* =========================================================
-   IMAGE
-========================================================= */
-
+/* IMAGE WRAPPER */
 const ImageWrapper = styled.div`
   position: relative;
-
   width: 100%;
-
   aspect-ratio: 0.82;
-
   overflow: hidden;
-
-  background: #ebe7df;
-
+  background: ${colors.surfaceHover || colors.background};
   isolation: isolate;
-
   cursor: pointer;
 `;
 
-
+/* PRODUCT IMAGE */
 const ProductImage = styled.img`
   position: absolute;
-
   inset: 0;
-
   display: block;
-
   width: 100%;
   height: 100%;
-
   object-fit: cover;
-
   transition:
-    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 
-  opacity: ${({ $secondary }) =>
-    $secondary ? 0 : 1};
-
+  opacity: ${({ $secondary }) => ($secondary ? 0 : 1)};
   transform: scale(1);
 
   ${ProductCard}:hover & {
@@ -591,130 +534,81 @@ const ProductImage = styled.img`
 
     ${ProductCard}:hover & {
       transform: none;
-
-      opacity: ${({ $secondary }) =>
-        $secondary ? 0 : 1};
+      opacity: ${({ $secondary }) => ($secondary ? 0 : 1)};
     }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
   }
 `;
 
-
-/* =========================================================
-   PRODUCT LABELS
-========================================================= */
-
+/* PRODUCT LABELS */
 const ProductLabels = styled.div`
   position: absolute;
-
   top: 15px;
 
   ${({ $isArabic }) =>
     $isArabic
-      ? `
-        right: 15px;
-      `
-      : `
-        left: 15px;
-      `}
+      ? "right: 15px;"
+      : "left: 15px;"}
 
   display: flex;
-
   align-items: center;
-
+  flex-wrap: wrap;
   gap: 7px;
-
   z-index: 4;
-
   pointer-events: none;
 `;
 
-
+/* PRODUCT LABEL */
 const Label = styled.span`
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
-
   min-height: 25px;
-
   padding: 0 10px;
-
-  background: rgba(37, 34, 31, 0.94);
-
-  color: #ffffff;
-
-  font-family: Arial, sans-serif;
-
-  font-size: 0.58rem;
-
-  font-weight: 500;
-
-  letter-spacing: 0.11em;
-
+  background: ${colors.primary};
+  color: ${colors.surface};
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   line-height: 1;
-
   text-transform: uppercase;
-
   white-space: nowrap;
 `;
 
-
+/* DISCOUNT LABEL */
 const SaveLabel = styled.span`
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
-
   min-height: 25px;
-
   padding: 0 10px;
-
-  background: #ad9270;
-
-  color: #ffffff;
-
-  font-family: Arial, sans-serif;
-
-  font-size: 0.58rem;
-
-  font-weight: 500;
-
-  letter-spacing: 0.09em;
-
+  background: ${colors.accent};
+  color: ${colors.primary};
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   line-height: 1;
-
   white-space: nowrap;
 `;
 
-
-
-
-/* =========================================================
-   PRODUCT INDEX
-========================================================= */
-
+/* PRODUCT INDEX */
 const ProductIndex = styled.span`
   position: absolute;
-
   right: 15px;
   bottom: 14px;
-
   z-index: 3;
-
-  color: rgba(255, 255, 255, 0.85);
-
-  font-family: Arial, sans-serif;
-
-  font-size: 0.55rem;
-
-  font-weight: 400;
-
+  color: ${colors.surface};
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 500;
   letter-spacing: 0.12em;
-
   mix-blend-mode: difference;
-
   pointer-events: none;
-
   transition: opacity 0.3s ease;
 
   ${ProductCard}:hover & {
@@ -726,129 +620,80 @@ const ProductIndex = styled.span`
   }
 `;
 
-
-/* =========================================================
-   PRODUCT INFO
-========================================================= */
-
+/* PRODUCT INFORMATION */
 const ProductInfo = styled.div`
   padding-top: 20px;
-
   text-align: center;
-
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
 `;
 
-
+/* PRODUCT NAME */
 const ProductName = styled.h3`
   margin: 0;
-
   max-width: 95%;
-
-  color: #292622;
-
-  font-family:
-    Arial,
-    sans-serif;
-
-  font-size: 0.82rem;
-
+  color: ${colors.text};
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.85rem;
   font-weight: 500;
-
   line-height: 1.5;
-
   letter-spacing: 0.005em;
-
   text-align: center;
+  text-wrap: balance;
 `;
 
-
-/* =========================================================
-   PRICE
-========================================================= */
-
+/* PRICE GROUP */
 const PriceGroup = styled.div`
   display: flex;
-
   align-items: baseline;
-
   justify-content: center;
-
+  flex-wrap: wrap;
   gap: 9px;
-
   margin-top: 9px;
 `;
 
-
+/* CURRENT PRICE */
 const CurrentPrice = styled.span`
-  color: #25221f;
-
-  font-family:
-    Arial,
-    sans-serif;
-
-  font-size: 0.82rem;
-
-  font-weight: 600;
-
+  color: ${colors.primary};
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
   letter-spacing: 0.01em;
-
   white-space: nowrap;
 `;
 
-
+/* COMPARE PRICE */
 const ComparePrice = styled.span`
-  color: #aaa39b;
-
-  font-family:
-    Arial,
-    sans-serif;
-
-  font-size: 0.68rem;
-
+  color: ${colors.textSecondary};
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.72rem;
   font-weight: 400;
-
   text-decoration: line-through;
-
   white-space: nowrap;
 `;
 
-
-/* =========================================================
-   RATING
-========================================================= */
-
+/* RATING */
 const Rating = styled.div`
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   gap: 4px;
-
   margin-top: 9px;
-
-  color: #777067;
-
-  font-family: Arial, sans-serif;
-
-  font-size: 0.62rem;
+  color: ${colors.textSecondary};
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.68rem;
 
   svg {
-    width: 11px;
-    height: 11px;
-
-    color: #a58c68;
+    width: 12px;
+    height: 12px;
+    color: ${colors.accent};
   }
 `;
 
-
+/* REVIEW COUNT */
 const ReviewCount = styled.span`
-  color: #aaa29a;
+  color: ${colors.textSecondary};
 
   &::before {
     content: "(";
@@ -859,110 +704,82 @@ const ReviewCount = styled.span`
   }
 `;
 
-
-/* =========================================================
-   SHIPPING
-========================================================= */
-
+/* FREE SHIPPING */
 const Shipping = styled.div`
-  margin-top: 7px;
-
-  color: #918980;
-
-  font-family:
-    Arial,
-    sans-serif;
-
-  font-size: 0.59rem;
-
-  font-weight: 400;
-
-  letter-spacing: 0.045em;
-
+  margin-top: 8px;
+  color: ${colors.success};
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 `;
 
-
-/* =========================================================
-   SKELETON
-========================================================= */
-
+/* SKELETON CARD */
 const SkeletonCard = styled.div`
   width: 100%;
 `;
 
-
+/* SKELETON IMAGE */
 const SkeletonImage = styled.div`
   width: 100%;
-
   aspect-ratio: 0.82;
-
-  background: #e9e5de;
-
+  background: ${colors.border};
   animation: pulse 1.7s ease-in-out infinite;
 
   @keyframes pulse {
-    0% {
+    0%,
+    100% {
       opacity: 0.55;
     }
 
     50% {
       opacity: 1;
     }
+  }
 
-    100% {
-      opacity: 0.55;
-    }
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
   }
 `;
 
-
+/* SKELETON INFORMATION */
 const SkeletonInfo = styled.div`
   padding-top: 20px;
-
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
 `;
 
-
+/* SKELETON NAME */
 const SkeletonName = styled.div`
   width: 62%;
-
   height: 10px;
-
-  background: #e2ddd5;
+  border-radius: 3px;
+  background: ${colors.border};
 `;
 
-
+/* SKELETON PRICE ROW */
 const SkeletonBottom = styled.div`
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 14px;
-
   margin-top: 13px;
 `;
 
-
+/* SKELETON PRICE */
 const SkeletonPrice = styled.div`
   width: 65px;
-
   height: 9px;
-
-  background: #e2ddd5;
+  border-radius: 3px;
+  background: ${colors.border};
 `;
 
-
+/* SKELETON RATING */
 const SkeletonRating = styled.div`
   width: 38px;
-
   height: 9px;
-
-  background: #e2ddd5;
+  border-radius: 3px;
+  background: ${colors.border};
 `;

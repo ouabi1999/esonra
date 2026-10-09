@@ -178,7 +178,8 @@ const Wrapper = styled.div`
     margin-bottom:15px;
     width:100%;
     .font{
-       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
+;
        font-weight:500;
         font-size:0.8rem;
     }
@@ -190,7 +191,7 @@ const Wrapper = styled.div`
 
 
           .order-status{
-              font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              font-family: Arial, sans-serif;
               grid-column: 1/ span 2;
               background:#fff;
               padding:10px;

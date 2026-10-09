@@ -13,7 +13,7 @@ import {useSelector } from "react-redux";
 
 import ProductTrustBanner from "./ProductsTrustBanner";
 import FixedAddBuyButtons from "./FixedAddBuyButtons";
-
+import { colors } from "../../../utilis/colors";
 function SideCart(props) {
   const purchaseRef = useRef(null);
 
@@ -82,49 +82,7 @@ function SideCart(props) {
       <Section>
 
 
-        {/* SHIPPING METHOD */}
-
-        <ShippingRow>
-          <ShippingLeft>
-            <IconBox>
-              <LocalShippingOutlinedIcon />
-            </IconBox>
-
-            <ShippingContent>
-
-
-              <ShippingValue>
-                {productData?.available_shipping?.length > 0 ? (
-                  Number(
-                    productData?.available_shipping[
-                      shippingMethodIndex
-                    ]?.cost
-                  ) === 0
-                    ? t("purchaseOptions.free_Shipping")
-                    : productData?.available_shipping[
-                      shippingMethodIndex
-                    ]?.methodName
-                ) : shippingInfo?.cost <= 0 ? (
-                  t("purchaseOptions.free_Shipping")
-                ) : (
-                  shippingInfo?.methodName
-                )}
-              </ShippingValue>
-            </ShippingContent>
-          </ShippingLeft>
-
-          {/*
-          <ShippingChangeButton 
-            type="button"
-            onClick={() =>
-              setIsPopUpShippingOpen(!isPopUpShippingOpen)
-            }
-            aria-label="Change shipping method"
-          >
-            <ArrowForwardIosOutlinedIcon />
-          </ShippingChangeButton>
-          */}
-        </ShippingRow>
+        
 
 
         {/* DELIVERY DATE */}
@@ -132,7 +90,7 @@ function SideCart(props) {
         <ShippingRow>
           <ShippingLeft>
             <IconBox>
-              <DeliveryDiningIcon />
+             <LocalShippingOutlinedIcon />
             </IconBox>
 
             <ShippingContent>
@@ -177,8 +135,9 @@ function SideCart(props) {
       <QuantitySection>
         <QuantityHeader>
           <QuantityTitle>
+            <IconBox>
             <AutoAwesomeMotionOutlinedIcon />
-
+              </IconBox>
             <span>{t("purchaseOptions.Quantity")}</span>
           </QuantityTitle>
 
@@ -461,13 +420,14 @@ const IconBox = styled.div`
   width: 30px;
   height: 30px;
 
-  border: 1px solid #e6dfd6;
+  border: 1px solid ${colors.border};
 
   border-radius: 50%;
 
-  background: #faf8f5;
+  background: ${colors.background};
 
-  color: #9b815f;
+
+  color: ${colors.accent};
 
   svg {
     font-size: 16px;
@@ -599,9 +559,14 @@ const SecurityIcon = styled.div`
 
   border-radius: 50%;
 
-  background: #faf8f5;
+ border: 1px solid ${colors.border};
 
-  color: #9b815f;
+  border-radius: 50%;
+
+  background: ${colors.background};
+
+
+  color: ${colors.accent};
 
   svg {
     font-size: 17px;
@@ -663,11 +628,11 @@ const QuantityTitle = styled.div`
   font-weight: 600;
 
   color: #292929;
+ 
 
   svg {
     font-size: 18px;
 
-    color: #9b815f;
   }
 `;
 
@@ -837,11 +802,11 @@ const BuyButton = styled.button`
 
   min-height: 50px;
 
-  border: 1px solid #9b815f;
+  border: 1px solid ${colors.border};
 
   border-radius: 3px;
 
-  background: #9b815f;
+  background: ${colors.accent};
 
   color: #fff;
 
@@ -865,9 +830,9 @@ const BuyButton = styled.button`
   }
 
   &:hover {
-    background: #876e50;
+    background: #5a8452;
 
-    border-color: #876e50;
+    border-color: ${colors.accentHover};;
 
     svg {
       transform: translateX(2px);

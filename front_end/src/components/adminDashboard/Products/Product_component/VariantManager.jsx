@@ -666,7 +666,7 @@ export default function VariantManager({
 
       <Header>
         <div>
-          <Eyebrow>ENOUZA PRODUCT SETUP</Eyebrow>
+          <Eyebrow>ENSORA PRODUCT SETUP</Eyebrow>
           <Title>Options & Variations</Title>
           <Subtitle>
             Set the choices customers can select, then manage each combination,

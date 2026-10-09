@@ -2,8 +2,8 @@ import React, { useLayoutEffect } from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import SEO from "../../components/SEO/SEO"
-function ShippingPolicy() {
-  const { t, i18n } = useTranslation("shipping");
+function ShippingPolicyPolicy() {
+  const { t, i18n } = useTranslation();
 
   useLayoutEffect(() => {
     window.scrollTo({
@@ -18,16 +18,16 @@ function ShippingPolicy() {
     <Container dir={isRTL ? "rtl" : "ltr"}>
       <SEO
       title="Shipping Policy"
-      description="Learn about Enouza shipping options, delivery times, order tracking, customs fees, and what to do if your package is delayed or lost."
-      canonical="/shipping-policy"
+      description="Learn about Ensora shipping Policy options, delivery times, order tracking, customs fees, and what to do if your package is delayed or lost."
+      canonical="/shippingPolicy-policy"
     />
 
       {/* PAGE HEADER */}
       <Header>
-        <Eyebrow>ENOUZA</Eyebrow>
+        <Eyebrow>ENSORA</Eyebrow>
 
         <Title>
-          {t("shipping.title")}
+          {t("shippingPolicy.title")}
         </Title>
 
         <HeaderLine />
@@ -39,11 +39,11 @@ function ShippingPolicy() {
         <SectionNumber>01</SectionNumber>
 
         <Subtitle>
-          {t("shipping.title")}
+          {t("shippingPolicy.title")}
         </Subtitle>
 
         <Text>
-          {t("shipping.intro")}
+          {t("shippingPolicy.intro")}
         </Text>
       </Section>
 
@@ -53,11 +53,11 @@ function ShippingPolicy() {
         <SectionNumber>02</SectionNumber>
 
         <Subtitle>
-          {t("shipping.deliveryTime.title")}
+          {t("shippingPolicy.deliveryTime.title")}
         </Subtitle>
 
         <Text>
-          {t("shipping.deliveryTime.description")}
+          {t("shippingPolicy.deliveryTime.description")}
         </Text>
       </Section>
 
@@ -67,11 +67,11 @@ function ShippingPolicy() {
         <SectionNumber>03</SectionNumber>
 
         <Subtitle>
-          {t("shipping.tracking.title")}
+          {t("shippingPolicy.tracking.title")}
         </Subtitle>
 
         <Text>
-          {t("shipping.tracking.description")}
+          {t("shippingPolicy.tracking.description")}
         </Text>
       </Section>
 
@@ -81,11 +81,11 @@ function ShippingPolicy() {
         <SectionNumber>04</SectionNumber>
 
         <Subtitle>
-          {t("shipping.customFees.title")}
+          {t("shippingPolicy.customFees.title")}
         </Subtitle>
 
         <Text>
-          {t("shipping.customFees.description")}
+          {t("shippingPolicy.customFees.description")}
         </Text>
       </Section>
 
@@ -95,12 +95,12 @@ function ShippingPolicy() {
         <SectionNumber>05</SectionNumber>
 
         <Subtitle>
-          {t("shipping.lostOrDelayedPackages.title")}
+          {t("shippingPolicy.lostOrDelayedPackages.title")}
         </Subtitle>
 
         <Text>
           {t(
-            "shipping.lostOrDelayedPackages.description"
+            "shippingPolicy.lostOrDelayedPackages.description"
           )}
         </Text>
       </Section>
@@ -111,11 +111,11 @@ function ShippingPolicy() {
         <SectionNumber>06</SectionNumber>
 
         <Subtitle>
-          {t("shipping.contact.title")}
+          {t("shippingPolicy.contact.title")}
         </Subtitle>
 
         <Text>
-          {t("shipping.contact.description")}
+          {t("shippingPolicy.contact.description")}
         </Text>
       </Section>
 
@@ -123,7 +123,7 @@ function ShippingPolicy() {
   );
 }
 
-export default ShippingPolicy;
+export default ShippingPolicyPolicy;
 
 
 /* =====================================================

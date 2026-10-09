@@ -12,7 +12,7 @@
     "userDashboard": "My Dashboard",
     "home": "Home",
     "contactUs": "Contact",
-    "aboutUs": "About",
+    "aboutUs": "About Us",
     "privacyPolicy": "Privacy",
     "termsOfService": "Terms",
     "refundPolicy": "Refunds",
@@ -24,34 +24,32 @@
     "checkout": "Checkout",
     "orderSuccess": "Order Placed"
   },
-
- "shoppingCart": {
-  "freeExpressTo": "Free Express to"
-},
-
+  "shoppingCart": {
+    "freeExpressTo": "Free Express to"
+  },
   "homePage": {
-    "new":"New",
-    "welcomeMessage": "Welcome to our store",
+    "new": "New",
+    "welcomeMessage": "Welcome to ESONRA",
     "featuredProducts": "Featured",
     "mayAlsoLike": "You May Also Like",
     "newArrival": "New Arrivals",
     "bestSellers": "Bestseller",
     "specialOffers": "Deals",
     "buyerTrustServices": "Our Services",
-    "freeShipping_offer": "Free shipping over $50",
-    "support_24_7": "24/7 Help",
-    "money_Back": "Money Back",
-    "secure_Payment": "Secure Pay",
+    "freeShipping_offer": "Free shipping on eligible orders",
+    "support_24_7": "Customer Support",
+    "money_Back": "Returns & Refunds",
+    "secure_Payment": "Secure Payments",
     "easy_Returns": "Easy Returns",
     "safe_reliable_payments": "Safe Payments",
     "More_to_love": "More to Love",
     "more_products": "More Products",
     "best_sellers": "Bestsellers"
   },
-  "mainSlider":{
-    "title": "Lighting, Curated Differently.",
-    "description": "A considered collection of sculptural lighting, created to transform the atmosphere of every space.",
-    "welcome": "Welcome to ENOUZA."
+  "mainSlider": {
+    "title": "Smart Tracking, Thoughtfully Chosen.",
+    "description": "A considered collection of smart tracking essentials designed to help you keep track of the belongings that matter.",
+    "welcome": "Welcome to ESONRA."
   },
   "productPage": {
     "addToCart": "Add to Cart",
@@ -65,7 +63,7 @@
     "quantity": "Qty",
     "outOfStock": "Out of Stock",
     "inStock": "In Stock",
-    "soldOut":"Sold Out"
+    "soldOut": "Sold Out"
   },
   "purchaseOptions": {
     "business_days": "Business Days",
@@ -92,24 +90,19 @@
       "text": "We do not share your personal details with any third parties without your consent. We protect your privacy and keep your personal details safe and secure."
     }
   },
-
- 
   "heroSection": {
-    "title": "Light, Made to Belong",
-    "description": "Thoughtfully selected lighting that brings depth, warmth, and character to the spaces you call home.",
+    "title": "Your Essentials, Always Within Reach",
+    "description": "Thoughtfully designed tracking essentials that help you find what matters, wherever life takes you.",
     "ctaLabel": "Explore the Collection",
-    "detailDesign": "Where Detail Meets Design",
-    "curated": "CURATED",
-  "curated_description": "Thoughtfully selected for considered spaces.",
-
-  "refined": "REFINED",
-  "refined_description": "Elegant forms, refined to the essential.",
-
-  "atmospheric": "ATMOSPHERIC",
-  "atmospheric_description": "Light designed to shape the mood.",
-
-  "distinctive": "DISTINCTIVE",
-  "distinctive_description": "Pieces with character beyond the ordinary.",
+    "detailDesign": "Where Smart Meets Design",
+    "curated": "THOUGHTFULLY DESIGNED",
+    "curated_description": "Carefully selected tracking essentials for everyday life.",
+    "refined": "REFINED",
+    "refined_description": "Sleek forms, designed with simplicity in mind.",
+    "atmospheric": "EFFORTLESS",
+    "atmospheric_description": "Smart tracking that brings greater peace of mind.",
+    "distinctive": "PURPOSEFUL",
+    "distinctive_description": "Practical essentials that keep what matters closer.",
     "stats": {
       "rated": {
         "value": "4.9★",
@@ -125,172 +118,161 @@
       }
     }
   },
-
-
-  
-  
   "ctaSection": {
-    "eyebrow": "ENOUZA CUSTOMER CARE",
-    "titleLeft": "We are here to help.",
-    "description": "Have a question about a product, your order, or delivery? Our customer care team is here to assist you.",
-    "button": "Contact us",
+    "eyebrow": "ESONRA CUSTOMER CARE",
+    "titleLeft": "We're here to help.",
+    "description": "Have a question about a tracker, your order, or delivery? Our team is here to make your experience simple and seamless.",
+    "button": "Contact Us",
     "supportEyebrow": "CUSTOMER SUPPORT",
-    "titleRight": "A little help, when you need it.",
-    "supportDescription": "For questions about your order or our collection, contact us and our team will be happy to assist.",
+    "titleRight": "A little help, whenever you need it.",
+    "supportDescription": "Whether you need help choosing a tracker or have a question about your order, we're always happy to assist.",
     "contact": {
       "email": {
         "title": "Email",
-        "description": "For general questions and enquiries."
+        "description": "For general enquiries and assistance."
       },
       "support": {
-        "title": "Online Customer Care",
+        "title": "Customer Care",
         "details": "Customer Support",
-        "description": "We're here to help with your shopping experience."
+        "description": "We're here to make your ESONRA experience effortless."
       }
     }
-  
-},
-
- 
-"matricsSection": {
-  "why_us": "THE ENOUZA DIFFERENCE",
-  "title": "Every piece, thoughtfully chosen.",
-  "description": "Every ENOUZA piece is selected for its form, materials, and ability to bring warmth and character to the spaces we live in."
-},
+  },
+  "matricsSection": {
+    "why_us": "THE ESONRA DIFFERENCE",
+    "title": "Every detail, thoughtfully considered.",
+    "description": "Every ESONRA essential is selected for its design, functionality, and ability to make everyday life simpler."
+  },
   "inspirationPage": {
-  "hero": {
-    "catlabel": "THE ENOUZA JOURNAL",
-    "title": "A world of beautiful light.",
-    "description": "Discover interiors, lighting ideas, and quiet moments that inspire the way we live."
+    "hero": {
+      "catlabel": "THE ESONRA JOURNAL",
+      "title": "A smarter way to keep what matters close.",
+      "description": "Discover thoughtful designs, everyday essentials, and new ways to bring simplicity and confidence to your daily life."
+    },
+    "intro": {
+      "catlabel": "FIND YOUR INSPIRATION",
+      "title": "Designed around what matters.",
+      "description": "The right tracking solution can make everyday life feel simpler. Explore our collection and discover thoughtful ways to keep your essentials close and your mind at ease."
+    },
+    "spaces": {
+      "catlabel": "EXPLORE BY LIFESTYLE",
+      "title": "Smart tracking for everyday life.",
+      "items": {
+        "livingRoom": {
+          "title": "Everyday Essentials",
+          "description": "Keep track of the belongings you rely on every day with smart, discreet tracking solutions."
+        },
+        "diningRoom": {
+          "title": "Work & On the Go",
+          "description": "Stay connected to your important belongings, whether you're at work, commuting, or exploring somewhere new."
+        },
+        "bedroom": {
+          "title": "Travel Essentials",
+          "description": "Travel with greater peace of mind by keeping your luggage and travel essentials within reach."
+        }
+      }
+    },
+    "explore": "Explore",
+    "statement": {
+      "catlabel": "THE ESONRA APPROACH",
+      "title": "Technology should make life feel simpler.",
+      "description": "From everyday essentials to journeys further afield, thoughtful tracking helps you stay connected to the things that matter most."
+    },
+    "ideas": {
+      "catlabel": "SMART TRACKING GUIDE",
+      "title": "Smarter ways to stay connected.",
+      "items": {
+        "ambientLighting": {
+          "title": "Key & Everyday Tracking",
+          "description": "Keep your keys and daily essentials easier to find with compact, convenient tracking devices."
+        },
+        "statementLighting": {
+          "title": "Wallet & Personal Tracking",
+          "description": "Choose slim, discreet tracking solutions designed to fit naturally into your everyday carry."
+        },
+        "layeredLighting": {
+          "title": "Travel & Luggage Tracking",
+          "description": "Add confidence to your journeys with tracking solutions designed for luggage and travel essentials."
+        }
+      }
+    },
+    "editorial": {
+      "catlabel": "ESONRA EDITORIAL",
+      "title": "Thoughtfully designed for what matters.",
+      "description": "Discover smart tracking essentials that combine considered design, everyday functionality, and greater peace of mind.",
+      "link": "Explore Trackers"
+    },
+    "newsletter": {
+      "catlabel": "STAY CONNECTED",
+      "title": "A smarter everyday starts here.",
+      "description": "Discover new arrivals, practical guides, and thoughtful ways to keep track of what matters.",
+      "button": "Join ESONRA"
+    }
   },
-
-  "intro": {
-    "catlabel": "FIND YOUR INSPIRATION",
-    "title": "Spaces shaped by light.",
-    "description": "The right light can change the feeling of a room. Explore our collection of interiors and discover thoughtful ways to bring warmth, atmosphere, and character into your home."
-  },
-
-  "spaces": {
-    "catlabel": "EXPLORE BY SPACE",
-    "title": "Light for every room.",
-    "items": {
-      "livingRoom": {
-        "title": "Living Rooms",
-        "description": "Create a warm and inviting atmosphere with lighting designed for everyday living."
+  "designSection": {
+    "title": "Thoughtfully Designed. Effortlessly Found.",
+    "catlabel": "DISCOVER THE ESONRA DIFFERENCE",
+    "principles": {
+      "minimalism": {
+        "title": "Designed for Everyday Life",
+        "description": "Clean lines, refined profiles, and discreet designs that integrate naturally into your everyday essentials."
       },
-      "diningRoom": {
-        "title": "Dining Rooms",
-        "description": "Set the mood with considered lighting above the table and throughout the room."
+      "materials": {
+        "title": "Small Details. Lasting Quality.",
+        "description": "Carefully selected materials and considered finishes bring together durability, functionality, and understated sophistication."
       },
-      "bedroom": {
-        "title": "Bedrooms",
-        "description": "Soft, intimate illumination designed to make the bedroom feel calm and effortless."
+      "ambient": {
+        "title": "Confidence in Every Journey",
+        "description": "We believe technology should simplify life — helping you keep track of what matters and move through each day with greater peace of mind."
       }
     }
   },
-
-  "explore": "Explore",
-
-  "statement": {
-    "catlabel": "THE ART OF LIGHT",
-    "title": "Light is what gives a space its feeling.",
-    "description": "From a quiet corner to a room made for gathering, lighting shapes how we experience the spaces around us."
-  },
-
-  "ideas": {
-    "catlabel": "LIGHTING IDEAS",
-    "title": "Ways to illuminate beautifully.",
-    "items": {
-      "ambientLighting": {
-        "title": "Ambient Lighting",
-        "description": "Create a soft foundation of light that makes a room feel warm, balanced, and welcoming."
-      },
-      "statementLighting": {
-        "title": "Statement Lighting",
-        "description": "Let a distinctive fixture become part of the architecture and character of the room."
-      },
-      "layeredLighting": {
-        "title": "Layered Lighting",
-        "description": "Combine different sources of light to create depth, atmosphere, and flexibility."
-      }
-    }
-  },
-
-  "editorial": {
-    "catlabel": "ENOUZA EDITORIAL",
-    "title": "Designed for the moments that matter.",
-    "description": "Explore lighting that brings warmth and character to the everyday spaces we call home.",
-    "link": "Shop Lighting"
-  },
-
-  "newsletter": {
-    "catlabel": "STAY INSPIRED",
-    "title": "Bring more beauty home.",
-    "description": "Discover new lighting, interiors, and inspiration from Enouza.",
-    "button": "Join Enouza"
-  }
-},
-  
-"designSection": {
-  "title": "The Art of Light",
-"catlabel": "DISCOVER THE BRAND",
-  "principles": {
-     "minimalism": {
-    "title": "Quietly Considered",
-    "description": "Clean lines, balanced proportions, and restrained silhouettes allow each piece to belong naturally within its surroundings."
-  },
-  "materials": {
-    "title": "Chosen for Character",
-    "description": "Marble, glass, metal, and fabric are selected for the character and depth they bring to a space."
-  },
-  "ambient": {
-    "title": "Light With Atmosphere",
-    "description": "We see light as part of the interior — a way to soften a room, create depth, and shape how a space feels."
-  }
-  }
-},
   "collectionSection": {
-  "title": "Discover Our Collection.",
-  "catlabel": "EXPLORE",
-
-  "categories": {
-    "wall_lamps": {
-      "title": "Wall Lamps",
-      "description": "Elegant lighting designed to add depth, warmth, and character to your walls."
-    },
-    "pendant_lights": {
-      "title": "Pendant Lights",
-      "description": "Distinctive pieces designed to create a refined focal point above dining tables, kitchen islands, and living spaces."
-    },
-    "table_lamps": {
-      "title": "Table Lamps",
-      "description": "Sculptural lighting that brings warmth, atmosphere, and understated elegance to your interior."
-    },
-    "ceiling_lamps": {
-      "title": "Ceiling Lamps",
-      "description": "Refined overhead lighting created to shape the atmosphere and complete the character of a room."
+    "title": "Discover Our Collection.",
+    "catlabel": "EXPLORE",
+    "categories": {
+      "keychain_trackers": {
+        "title": "Keychain Trackers",
+        "description": "Compact tracking devices designed to keep your keys close and easy to find wherever life takes you."
+      },
+      "card_trackers": {
+        "title": "Card Trackers",
+        "description": "Slim, discreet tracking devices designed to fit seamlessly into your wallet and help you keep track of what matters."
+      },
+      "necklace_trackers": {
+        "title": "Necklace Trackers",
+        "description": "Wearable tracking devices that combine everyday convenience with a refined, minimalist design."
+      },
+      "tracker_holders": {
+        "title": "Tracker Holders",
+        "description": "Thoughtfully designed holders that keep your tracking devices secure, accessible, and ready for everyday use."
+      },
+      "luggage_trackers": {
+        "title": "Luggage Trackers",
+        "description": "Smart tracking solutions designed to help you keep tabs on your luggage and travel with greater peace of mind."
+      },
+      "tracker_accessories": {
+        "title": "Tracker Accessories",
+        "description": "Practical, carefully selected accessories designed to enhance the versatility and everyday use of your tracking devices."
+      }
     }
-  }
-},
-
- "customersFeedback": {
-  "eyebrow": "THE ENOUZA EXPERIENCE",
-  "title": "Loved by homeowners worldwide.",
-  "description": "Real homes. Real experiences.",
-  "ratingText": "Based on customer reviews",
-  "verifiedPurchase": "Verified Purchase",
-
-  "back": "Back",
-  "review": "review",
-  "reviews": "reviews",
-  "noReviews": "No reviews yet",
-  "noReviewsDescription": "There are currently no customer reviews to display.",
-  "previousPage": "Previous page",
-  "nextPage": "Next page",
-  "viewAllReviews": "View All Reviews"
-},
-
-  "filterPage":{
+  },
+  "customersFeedback": {
+    "eyebrow": "THE ESONRA EXPERIENCE",
+    "title": "Chosen for everyday peace of mind.",
+    "description": "Real customers. Real experiences.",
+    "ratingText": "Based on customer reviews",
+    "verifiedPurchase": "Verified Purchase",
+    "back": "Back",
+    "review": "review",
+    "reviews": "reviews",
+    "noReviews": "No reviews yet",
+    "noReviewsDescription": "There are currently no customer reviews to display.",
+    "previousPage": "Previous page",
+    "nextPage": "Next page",
+    "viewAllReviews": "View All Reviews"
+  },
+  "filterPage": {
     "category": "Category",
     "brand": "Brand",
     "priceRange": "Price Range",
@@ -298,39 +280,38 @@
     "applyFilters": "Apply Filters",
     "clearFilters": "Clear Filters",
     "search_did_not_match": "Sorry, your search did not match any products.",
-    "collection_description": "Discover refined lighting designed to bring warmth, character and timeless elegance to every space.",
-    "collection": "ENOUZA COLLECTION",
+    "collection_description": "Discover thoughtfully designed tracking essentials for keys, wallets, luggage, and everyday life.",
+    "collection": "ESONRA COLLECTION",
     "discover": "DISCOVER"
   },
   "customer_reviews": {
-      "title": "Customer Reviews",
-      "verified_purchase": "Verified Purchase",
-      "no_reviews": "No reviews yet",
-      "image_unavailable": "Image unavailable",
-      "customer": "Customer",
-      "review_image": "Review image",
-      "previous_image": "Previous image",
-      "next_image": "Next image",
-      "close": "Close",
-      "view_image": "View image",
-      "rating": "Rating",
-      "reviews": "Reviews",
-      "enouza_review": "ENOUZA REVIEW",
-      "description": "Product Description",
-      "customer_rating": "Customer Rating",
-      "customer_reviews": "Customer Reviews",
-       "customer_review": "Customer Review"
-    },
+    "title": "Customer Reviews",
+    "verified_purchase": "Verified Purchase",
+    "no_reviews": "No reviews yet",
+    "image_unavailable": "Image unavailable",
+    "customer": "Customer",
+    "review_image": "Review image",
+    "previous_image": "Previous image",
+    "next_image": "Next image",
+    "close": "Close",
+    "view_image": "View image",
+    "rating": "Rating",
+    "reviews": "Reviews",
+    "brand_review": "ESONRA REVIEW",
+    "description": "Product Description",
+    "customer_rating": "Customer Rating",
+    "customer_reviews": "Customer Reviews",
+    "customer_review": "Customer Review"
+  },
   "productInfo": {
     "product_details": "Product details",
-     
     "view_full_image": "VIEW FULL IMAGE",
     "purchase_information": "Purchase information",
     "secure_purchase_premium_quality": "Secure purchase & premium quality",
-    "save":"save",
-    "Emitting Color":"Emitting Color",
-    "Lampshade Color": "Lampshade Color",
-    "Body Color": "Body Color",
+    "save": "save",
+    "Emitting Color": "Tracking Compatibility",
+    "Lampshade Color": "Color",
+    "Body Color": "Color",
     "Color": "Color",
     "Color Name": "Color",
     "Colour": "Color",
@@ -343,7 +324,7 @@
     "Dimensions": "Dimensions",
     "Is Customized": "Is Customized",
     "Sd Card Memory": "SD Card Memory",
-    "Color Temperature": "Color Temperature",
+    "Color Temperature": "Battery Type",
     "Memory": "Memory",
     "Memory Size": "Memory Size",
     "Storage": "Storage",
@@ -351,12 +332,12 @@
     "ROM": "ROM",
     "RAM": "RAM",
     "Capacity": "Capacity",
-    "Plug Type": "Plug Type",
-    "Power Plug": "Power Plug",
-    "Socket Type": "Socket Type",
-    "Power Specification": "Power Specification",
+    "Plug Type": "Connection Type",
+    "Power Plug": "Connection Type",
+    "Socket Type": "Connection Type",
+    "Power Specification": "Power Information",
     "Voltage": "Voltage",
-    "Wattage": "Wattage",
+    "Wattage": "Power Consumption",
     "Ships From": "Ships From",
     "Ship From": "Ship From",
     "Warehouse": "Warehouse",
@@ -405,19 +386,19 @@
     "one_star": "star",
     "two_stars": "stars",
     "give_us_your_feedback": "Give us your feedback",
-    "led_ambient_lighting": "Ambient Lighting",
-    "phone_mounts_holders": "Phone  Holders",
-    "organizers_storage": "Organizers Storage",
-    "comfort_accessories": "Comfort & Accessories",
-    "air_fresheners_scents": "Air Fresheners",
-     "table_lamps": "Table Lamps",
-    "floor_lamps": "Floor Lamps",
-    "wall_lamps": "Wall Lamps",
-    "pendant_lights": "Pendant Lights",
-    "ceiling_lights": "Ceiling Lights",
-    "bedside_lamps": "Bedside Lamps",
-    "desk_office_lamps": "Desk & Office Lamps",
-    "outdoor_lighting": "Outdoor Lighting"
+    "led_ambient_lighting": "keychain_trackers",
+    "phone_mounts_holders": "tracker_holders",
+    "organizers_storage": "tracker_accessories",
+    "comfort_accessories": "tracker_accessories",
+    "air_fresheners_scents": "tracker_accessories",
+    "table_lamps": "keychain_trackers",
+    "floor_lamps": "card_trackers",
+    "wall_lamps": "tracker_holders",
+    "pendant_lights": "necklace_trackers",
+    "ceiling_lights": "tracker_accessories",
+    "bedside_lamps": "card_trackers",
+    "desk_office_lamps": "keychain_trackers",
+    "outdoor_lighting": "luggage_trackers"
   },
   "buyerTrustServices": {
     "freeShipping": {
@@ -453,10 +434,9 @@
       "description": "Your satisfaction is our priority. Enjoy secure shopping and easy returns."
     }
   },
-
   "profile": {
     "my_profile": "My Profile",
-    "enouza_faq": "FAQ",
+    "brand_faq": "FAQ",
     "edit_your_name": "Edit Name",
     "edit_your_email": "Edit Email",
     "edit_your_profile": "Edit Profile",
@@ -483,9 +463,11 @@
   },
   "footer": {
     "brand": {
-      "description": "Thoughtfully selected pieces designed to bring warmth, elegance and character to your space."
+      "description": "Thoughtfully designed tracking essentials that combine refined design, everyday functionality, and peace of mind."
     },
-    "payment": { "secure": "Secure payments" },
+    "payment": {
+      "secure": "Secure payments"
+    },
     "followUs": {
       "title": "Follow us",
       "facebook": "Facebook",
@@ -495,31 +477,31 @@
     },
     "policies": {
       "title": "Policies",
-      "privacyPolicy": "Privacy policy",
-      "termsOfService": "Terms of service",
-      "refundPolicy": "Refunds policy",
-      "shippingPolicy": "Shipping policy"
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "refundPolicy": "Refund Policy",
+      "shippingPolicy": "Shipping Policy"
     },
     "help": {
-      "enouza_faq_description": "Find answers to the questions we receive most often.",
-      "title": "Help",
+      "brand_faq_description": "Find answers to the questions we receive most often.",
+      "title": "Help & Support",
       "faq": "FAQ",
-      "contactUs": "Contact us",
-      "aboutUs": "About us",
-      "shipping": "Shipping",
-      "returns": "Returns",
-      "contact_note": "We're here to assist you. Reach out with any questions or concerns."
+      "contactUs": "Contact Us",
+      "aboutUs": "About Us",
+      "shipping": "Shipping Information",
+      "returns": "Returns & Refunds",
+      "contact_note": "We're here to help. Get in touch with any questions or concerns."
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe for updates on new products and offers",
-      "placeholder": "Enter your email",
+      "title": "Stay Connected",
+      "description": "Be the first to discover new arrivals, useful insights, and exclusive offers.",
+      "placeholder": "Enter your email address",
       "subscribeButton": "Subscribe",
-      "successMessage": "Subscribed successfully",
-      "errorMessage": "Subscription failed",
-      "copyright": "copyright",
+      "successMessage": "You've subscribed successfully.",
+      "errorMessage": "Subscription failed. Please try again.",
+      "copyright": "Copyright",
       "all_rights_reserved": "All rights reserved.",
-      "eyebrow": "ENOUZA COLLECTION"
+      "eyebrow": "THE ESONRA EDIT"
     }
   },
   "policies": {
@@ -537,122 +519,106 @@
       "title": "Shipping"
     },
     "aboutUs": {
-      "title": "About"
+      "title": "About Us"
     }
   },
-  
- "trust": {
-  "secureCheckout": "Secure Checkout",
-
-  "freeShipping": {
-    "title": "Free Shipping",
-    "text": "Free Shipping on All Orders"
+  "trust": {
+    "secureCheckout": "Secure Checkout",
+    "freeShipping": {
+      "title": "Free Shipping",
+      "text": "Free Shipping on All Orders"
+    },
+    "fastDelivery": {
+      "title": "Worldwide Delivery",
+      "text": "International Delivery in 5–15 Days"
+    },
+    "returns": {
+      "title": "100-Day Returns",
+      "text": "Easy Returns Within 100 Days"
+    },
+    "warranty": {
+      "title": "3-Year Warranty",
+      "text": "Crafted for Lasting Quality"
+    },
+    "shopWithConfidence": "Shop With Confidence"
   },
-
-  "fastDelivery": {
-    "title": "Worldwide Delivery",
-    "text": "International Delivery in 5–15 Days"
-  },
-
-  "returns": {
-    "title": "100-Day Returns",
-    "text": "Easy Returns Within 100 Days"
-  },
-
-  "warranty": {
-    "title": "3-Year Warranty",
-    "text": "Crafted for Lasting Quality"
-  },
-
-  "shopWithConfidence": "Shop With Confidence"
-},
-  
   "orderSuccess": {
     "orderPlacedSuccessfully": "🎉 Order Placed Successfully! 🎉",
     "orderProcessingMessage": "Thank you for shopping with us. Your order is being processed.",
     "backToHome": "Back to Home"
   },
-   "checkout": {
+  "checkout": {
     "loggedInContinue": "Your account is ready. Continue to enter your billing details."
   },
-
-"aboutus": {
-  "seo": {
-    "title": "About Enouza | Refined Lighting & Interior Design",
-    "description": "Discover Enouza, a curated lighting brand bringing refined, distinctive pieces to considered interiors."
-  },
-
-  "hero": {
-    "eyebrow": "DISCOVER ENOUZA",
-    "title": "Light, Made to Belong.",
-    "description": "Refined lighting for warm, considered spaces."
-  },
-
-  "story": {
-    "eyebrow": "OUR STORY",
-    "title": "Lighting with a sense of place.",
-    "lead": "We believe lighting is more than illumination.",
-    "text": "It shapes the atmosphere of a room, draws attention to the details that matter, and changes how a space feels.",
-    "text2": "Enouza was created around this idea — to discover and bring together lighting pieces that feel considered, distinctive, and naturally at home within their surroundings."
-  },
-
-  "statement": {
-    "title": "We believe the right light changes everything.",
-    "description": "A quiet glow can soften a room. A sculptural form can become a focal point. The right piece can simply make a space feel more like your own."
-  },
-
-  "approach": {
-    "eyebrow": "THE ENOUZA APPROACH",
-    "title": "Designed with intention.",
-    "curated": {
-      "title": "Curated",
-      "description": "Thoughtfully selected for considered spaces."
+  "aboutus": {
+    "seo": {
+      "title": "About ESONRA | Thoughtful Smart Tracking Essentials",
+      "description": "Discover ESONRA, a considered collection of smart tracking essentials and practical accessories designed to help you keep track of what matters."
     },
-    "refined": {
-      "title": "Refined",
-      "description": "Elegant forms, refined to the essential."
+    "hero": {
+      "eyebrow": "DISCOVER ESONRA",
+      "title": "Keep What Matters Close.",
+      "description": "Thoughtfully chosen tracking essentials for everyday life and every journey."
     },
-    "atmospheric": {
-      "title": "Atmospheric",
-      "description": "Light designed to shape the mood."
+    "story": {
+      "eyebrow": "OUR STORY",
+      "title": "Technology that fits everyday life.",
+      "lead": "We believe technology should make life simpler.",
+      "text": "The right tracking solution can help you spend less time searching and feel more confident about the belongings you rely on.",
+      "text2": "ESONRA was created around this idea: bringing together smart tracking essentials and considered designs that fit naturally into everyday routines."
     },
-    "distinctive": {
-      "title": "Distinctive",
-      "description": "Pieces with character beyond the ordinary."
+    "statement": {
+      "title": "A little more certainty in every day.",
+      "description": "From keys and wallets to luggage and travel essentials, thoughtful tracking can help you stay connected to the things that matter."
+    },
+    "approach": {
+      "eyebrow": "THE ESONRA APPROACH",
+      "title": "Chosen with intention.",
+      "curated": {
+        "title": "Considered",
+        "description": "Useful tracking essentials selected for everyday needs."
+      },
+      "refined": {
+        "title": "Refined",
+        "description": "Discreet, practical designs made to fit your routine."
+      },
+      "atmospheric": {
+        "title": "Reassuring",
+        "description": "Thoughtful technology to help you keep track of what matters."
+      },
+      "distinctive": {
+        "title": "Purposeful",
+        "description": "Everyday essentials chosen for function and thoughtful design."
+      }
+    },
+    "selection": {
+      "eyebrow": "WHAT GUIDES OUR SELECTION",
+      "title": "Chosen for more than appearance.",
+      "form": {
+        "title": "Design",
+        "description": "Practical shapes and considered profiles that fit naturally into daily life."
+      },
+      "material": {
+        "title": "Function",
+        "description": "Useful features and materials selected with everyday handling and convenience in mind."
+      },
+      "light": {
+        "title": "Peace of Mind",
+        "description": "Tracking essentials designed to help you locate important belongings, subject to each product's compatibility and features."
+      }
+    },
+    "promise": {
+      "eyebrow": "THE ESONRA PROMISE",
+      "title": "Thoughtfully chosen for everyday life.",
+      "description": "We select products with attention to design, practical functionality, and how naturally they fit into everyday routines."
+    },
+    "final": {
+      "eyebrow": "THE COLLECTION",
+      "title": "Find a smarter way to keep track.",
+      "description": "Explore ESONRA's tracking essentials for keys, wallets, luggage, and more.",
+      "cta": "Explore the Collection"
     }
   },
-
-  "selection": {
-    "eyebrow": "WHAT GUIDES OUR SELECTION",
-    "title": "Chosen for more than appearance.",
-    "form": {
-      "title": "Form",
-      "description": "Balanced proportions and distinctive silhouettes that feel natural within an interior."
-    },
-    "material": {
-      "title": "Material",
-      "description": "Marble, glass, metal, fabric, and finishes chosen for their visual and tactile character."
-    },
-    "light": {
-      "title": "Light",
-      "description": "Illumination that creates warmth, depth, and atmosphere rather than simply filling a room."
-    }
-  },
-
-  "promise": {
-    "eyebrow": "THE ENOUZA PROMISE",
-    "title": "Thoughtfully chosen. Beautifully presented.",
-    "description": "We carefully select each piece we bring to Enouza, with attention to design, materials, proportions, and the atmosphere it creates."
-  },
-
-  "final": {
-    "eyebrow": "THE COLLECTION",
-    "title": "Find the light that belongs in your space.",
-    "description": "Explore the Enouza collection and discover pieces chosen to complement the way you live.",
-    "cta": "Explore the Collection"
-  }
-},
-
   "common": {
     "phoneNumber": "Phone Number",
     "selectShippingMethod": "Select Shipping Method",
@@ -863,7 +829,7 @@
     "please_enter_your_phone": "Enter phone number",
     "please_enter_your_birthdate": "Enter birthdate",
     "pleaseSelectShippingMethod": "Please select a shipping method.",
-     "please_enter_coupon_code": "Please enter a coupon code",
+    "please_enter_coupon_code": "Please enter a coupon code",
     "invalid_discount_code": "Invalid discount code",
     "discount_code_applied": "Discount code applied",
     "discount": "Discount",
@@ -876,13 +842,12 @@
     "send": "Send",
     "enter_message": "Enter message",
     "message_sent": "Message sent",
-    "message":"Message",
+    "message": "Message",
     "myProfile": "My Profile",
     "chat": "Chat",
     "helpCenter": "Help Center",
     "member_since": "Member since",
     "from": "From"
-
   },
   "success": {
     "subscribed_to_newsletter": "Thank you for subscribing to our newsletter!",
@@ -960,10 +925,8 @@
     "error_min_password_characters": "Password too short",
     "error_required_gender": "Gender is required",
     "required": "Required",
-
-  "page_not_found": "Page Not Found",
-  "page_not_found_description": "The page you’re looking for doesn’t exist."
-
+    "page_not_found": "Page Not Found",
+    "page_not_found_description": "The page you’re looking for doesn’t exist."
   },
   "languages": {
     "en": "English",
@@ -1229,6 +1192,420 @@
     "YE": "Yemen",
     "ZM": "Zambia",
     "ZW": "Zimbabwe"
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "metaDescription": "Discover ESONRA's smart tracking essentials, including keychain trackers, card trackers, luggage trackers, and practical accessories. Combine thoughtful design with smart technology to keep your important belongings close.",
+    "intro": "At ESONRA, we believe technology should make everyday life simpler and more reassuring.",
+    "passion": "Our passion is bringing together intelligent tracking, thoughtful design, and everyday functionality. We carefully select products that help you keep track of what matters, with designs that fit naturally into your lifestyle. Every piece in our collection is chosen to make finding your essentials easier and your daily routine more effortless.",
+    "visionTitle": "Our Vision",
+    "visionText": "We aim to make smart tracking a simple and practical part of everyday life. Through carefully selected products, we help people keep track of their essential belongings with greater confidence. From keys and wallets to luggage and travel essentials, our goal is to make finding what matters easier.",
+    "qualityTitle": "Quality You Can Trust",
+    "qualityText": "We focus on products that bring together practical design, dependable functionality, and attention to detail. We believe good technology should be intuitive, reliable, and designed around the needs of everyday life.",
+    "whyTitle": "Why ESONRA?",
+    "why": {
+      "items": [
+        "Carefully selected tracking essentials",
+        "Refined and practical designs",
+        "A secure shopping experience",
+        "Reliable delivery options",
+        "Dedicated customer support"
+      ]
+    },
+    "modernTitle": "Designed for Modern Living",
+    "modernText": "Our collection combines smart technology with clean, considered design to complement modern lifestyles. Whether you're looking for a tracker for your keys, wallet, or luggage, ESONRA offers practical solutions to help you stay connected to the belongings that matter most.",
+    "closing": "Thank you for choosing ESONRA — thoughtful technology for a simpler everyday life."
+  },
+  "privacyPolicyPage": {
+    "seoTitle": "ESONRA - Privacy Policy",
+    "title": "Privacy Policy",
+    "intro": "This Privacy Policy describes how ESONRA.com (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.",
+    "collectingPersonalInfo": {
+      "title": "Collecting Personal Information",
+      "description": "When you visit the Site, we collect certain information about your device, your interaction with the Site, and the information necessary to process your purchases. We may also collect additional information if you contact us for customer support. In this Privacy Policy, we refer to any information that can uniquely identify an individual (including the information below) as 'Personal Information'."
+    },
+    "deviceInfo": {
+      "title": "Device Information",
+      "examples": "Examples of Personal Information collected: web browser version, IP address, time zone, cookie information, sites or products you view, search terms, and how you interact with the Site.",
+      "purpose": "Purpose of collection: to load the Site accurately for you and to perform analytics on Site usage to optimize our Site.",
+      "source": "Source of collection: Collected automatically when you access our Site using cookies, log files, web beacons, tags, or pixels.",
+      "disclosure": "Disclosure for a business purpose: shared with our processor ESONRA."
+    },
+    "orderInfo": {
+      "title": "Order Information",
+      "examples": "Examples of Personal Information collected: name, billing address, shipping address, payment information, email address, and phone number.",
+      "purpose": "Purpose of collection: to provide products or services to you, process payment information, arrange shipping, provide invoices or order confirmations, communicate with you, screen orders for risk or fraud, and provide advertising or information in line with your preferences.",
+      "source": "Source of collection: collected from you.",
+      "disclosure": "Disclosure for a business purpose: shared with our processor ESONRA."
+    },
+    "customerSupportInfo": {
+      "title": "Customer Support Information",
+      "examples": "Examples of Personal Information collected: name, billing address, shipping address, payment information, email address, and phone number.",
+      "purpose": "Purpose of collection: to provide customer support.",
+      "source": "Source of collection: collected from you."
+    },
+    "sharingPersonalInfo": {
+      "title": "Sharing Personal Information",
+      "text": "We share your Personal Information with service providers to help us provide our services and fulfill our contracts with you, as described above. For example, we may share your Personal Information to comply with applicable laws and regulations, respond to subpoenas, search warrants, or other lawful requests, or to otherwise protect our rights."
+    },
+    "behavioralAdvertising": {
+      "title": "Behavioral Advertising",
+      "text": "We use your Personal Information to provide you with targeted advertisements or marketing communications we believe may be of interest to you. For example, we use Google Analytics to understand how customers use the Site. More about Google's use of Personal Information: https://policies.google.com/privacy. Opt-out: https://tools.google.com/dlpage/gaoptout. We also share information about your use of the Site and ads with advertising partners."
+    },
+    "usingPersonalInfo": {
+      "title": "Using Personal Information",
+      "text": "We use your Personal Information to provide our services, including offering products for sale, processing payments, shipping and fulfilling orders, and keeping you updated on new products, services, and offers."
+    },
+    "lawfulBasis": {
+      "title": "Lawful Basis",
+      "text": "If you are a resident of the EEA, we process your personal information under the following lawful bases: your consent, performance of a contract, legal obligations, vital interests, public interest tasks, or legitimate interests not overriding your fundamental rights."
+    },
+    "retention": {
+      "title": "Retention",
+      "text": "When you place an order through the Site, we retain your Personal Information unless and until you ask us to erase it."
+    },
+    "automaticDecisionMaking": {
+      "title": "Automatic Decision-Making",
+      "text": "If you are an EEA resident, you have the right to object to automated decision-making (including profiling) with legal or significant effect. Our processor uses limited automated decisions to prevent fraud, such as temporary deny lists for IPs or credit cards."
+    },
+    "yourRights": {
+      "title": "Your Rights",
+      "gdpr": "EEA residents have the right to access, port, correct, update, or erase their Personal Information. Contact us to exercise these rights.",
+      "ccpa": "California residents have the right to access ('Right to Know'), port, correct, update, or erase their Personal Information. You may designate an authorized agent to submit requests."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "text": "Cookies are small pieces of information downloaded to your device when visiting our Site. We use functional, performance, advertising, and social media cookies to enhance your browsing experience and remember preferences."
+    },
+    "doNotTrack": {
+      "title": "Do Not Track",
+      "text": "Since there is no consistent industry response to 'Do Not Track' signals, we do not alter our data collection practices if such a signal is detected in your browser."
+    },
+    "changes": {
+      "title": "Changes",
+      "text": "We may update this Privacy Policy from time to time to reflect changes in practices or for legal, regulatory, or operational reasons."
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "For more information about our privacy practices, questions, or complaints, contact us via email at support@esonra.com."
+    },
+    "lastUpdated": "Last updated: June 15, 2022"
+  },
+  "returnPolicyPage": {
+    "seoTitle": "ESONRA - Return Policy",
+    "title": "Return and Refund Policy",
+    "returns": {
+      "heading": "Returns:",
+      "text": "Simply put, you can return merchandise for a refund ONLY if the item is in BRAND NEW, UNOPENED CONDITION, including its original packaging and accessories. We know this seems a little extreme, but without this stipulation, we would not be able to offer our amazing prices. We will honor refunds for unopened items up until 15 - 25 days from when you have received your product. All refunds will be issued back to your original payment method and can take up to 7-10 business days to apply."
+    },
+    "rejectedRefunds": {
+      "heading": "Your refund will be rejected if your items are returned due to the following issues:",
+      "items": [
+        "If you want to return your product due to damage to the item’s original box.",
+        "If the product you returned has been opened and unsealed.",
+        "Items with minor cosmetic paint problems for prize figures as these are expected."
+      ]
+    },
+    "exceptions": {
+      "heading": "Exceptions / Non-Returnable items:",
+      "text": "Pre-orders are final sales and are non-returnable once shipped. If you receive a defective product, please contact us for information on contacting the manufacturer. Items with box imperfections and general flaws. Please contact us if you have questions or concerns about your specific item."
+    },
+    "returnShipping": {
+      "heading": "Return Shipping:",
+      "text": "To return a product, please contact our customer support with your order number and reason for return. You will be provided with a return label if your return request is approved."
+    },
+    "damagesIssues": {
+      "heading": "Damages and Issues",
+      "text": "Please inspect your order upon reception and contact us immediately if the item is defective, damaged, or if you received the wrong item so that we can evaluate the issue and make it right."
+    },
+    "refunds": {
+      "heading": "Refunds",
+      "text": "We will notify you once we’ve received and inspected your return, and let you know if the refund was approved. If approved, you’ll be automatically refunded on your original payment method. Please remember it can take some time for your bank or credit card company to process and post the refund."
+    }
+  },
+  "returnFaq": [
+    {
+      "id": 1,
+      "question": "What's your return policy?",
+      "answer": {
+        "paragraphe": [
+          "If you’re looking to return your order for whatever reason, we're here to help with no hassle! We offer returns within 30 days of purchase. You can return your product for a refund to the original payment method if the product did not meet your expectations. The refund will be processed back to its original form of payment within 5-7 business days."
+        ],
+        "list": [
+          "Clearance items are final sale and cannot be returned or exchanged.",
+          "Returned items must include identifying information and be returned in the original product packaging.",
+          "Returned items must have no visible signs of wear or use.",
+          "The shipping cost will not be refunded unless you were sent a wrong or damaged item.",
+          "A prepaid return label will not be provided unless the wrong item was sent, or the item was damaged in transit.",
+          "We do not process apparel exchanges. If the item you purchased doesn't fit, please return it for a refund. You may then place a new order for your desired size. For more information and RMA labels, please contact our Customer Service Team."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "question": "How do you return a product?",
+      "answer": {
+        "paragraphe": [],
+        "list": [
+          "Log in to your ESONRA account and contact our Customer Service Team.",
+          "Provide as much information as possible about the products you wish to return or exchange from your order.",
+          "Returned items must have no visible signs of wear or use.",
+          "Print the prepaid shipping label that you will receive by email.",
+          "Please note that a prepaid return label will not be provided unless the wrong item was sent, or the item was damaged in transit.",
+          "Send all items back to us using the label provided."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "question": "My product arrived damaged! What should I do?",
+      "answer": {
+        "paragraphe": [
+          "Sorry collectors! We understand how disappointing it is to receive a damaged item - especially an item you have waited months for! Unfortunately, mistakes happen and products may get damaged during transit. In the event that this happens, please contact us with pictures of the damaged item and we will replace or issue a partial or full refund. Your satisfaction is our #1 priority!"
+        ],
+        "list": []
+      }
+    },
+    {
+      "id": 4,
+      "question": "What products are excluded from the return policy?",
+      "answer": {
+        "paragraphe": [],
+        "list": [
+          "Digital products, including memberships and gift cards, are not eligible for refunds or returns. If you experience any issue accessing or using a digital product, please contact us and we will be happy to assist you.",
+          "Products purchased as part of clearance or final-sale promotions may not be eligible for return, except where required by law.",
+          "Products that have been used, installed, or modified after delivery may not be eligible for return, depending on the condition of the product and our return policy.",
+          "If your product arrives damaged or has a defect, please contact us as soon as possible so we can assist you and find an appropriate solution.",
+          "Additional conditions may apply to certain products and will be indicated on the relevant product page where applicable."
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "question": "My product has a defect / missing parts. What should I do?",
+      "answer": {
+        "paragraphe": [
+          "Contact us directly with pictures and explanation of the defect.",
+          "Please note: home video products are not guaranteed to come with a slipcover."
+        ],
+        "list": []
+      }
+    },
+    {
+      "id": 6,
+      "question": "What's your refund policy?",
+      "answer": {
+        "paragraphe": [],
+        "list": [
+          "After an order is cancelled or a return is processed, your refund will be issued to its original form of payment.",
+          "Upon completion of your return, a refund will be processed within 1-5 business days.",
+          "After a refund has been processed, please allow 3-5 business days for PayPal refunds and 3-10 business days for all other payment methods.",
+          "We will notify you via email when your refund has been issued.",
+          "A full refund will be issued even if an ESONRA Store Digital Gift Card was used as full or partial payment on the order.",
+          "An order can be cancelled and immediately refunded if the package has not yet begun processing for shipment.",
+          "Once a package begins processing for shipment, it will have to be delivered to its destination and returned to ESONRA before a refund can be issued. Please contact our Customer Service Team for more detailed information."
+        ]
+      }
+    }
+  ],
+  "shippingPolicy": {
+    "seoTitle": "ESONRA - Shipping Policy",
+    "title": "Shipping Policy",
+    "intro": "We offer worldwide free shipping on all our products, and deliver to almost every country in the world.",
+    "deliveryTime": {
+      "title": "Estimated Delivery Time",
+      "description": "Delivery typically takes 5-15 business days, with a maximum of 30 business days depending on the destination."
+    },
+    "tracking": {
+      "title": "Tracking Your Order",
+      "description": "Upon shipment, you will receive an email with a tracking number. Items may be shipped separately for logistical reasons."
+    },
+    "customFees": {
+      "title": "Custom Fees",
+      "description": "Any customs fees incurred upon shipment are not our responsibility."
+    },
+    "lostOrDelayedPackages": {
+      "title": "Lost or Delayed Packages",
+      "description": "If your package is lost or delayed, please contact us with your order information."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "If you have any further questions about shipping, contact us at support@esonra.com"
+    }
+  },
+  "shippingFaq": [
+    {
+      "id": 1,
+      "question": "How much does shipping cost?",
+      "answer": {
+        "paragraphe": [
+          "International shipping costs vary depending on the destination. Here is a breakdown of shipping costs for each destination:"
+        ],
+        "list": [
+          "Canada: $0 - $19.99",
+          "Europe: $0 - $40",
+          "Australia: $0 - $43.99",
+          "Worldwide: Free shipping for some products"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "question": "What happens if my package is lost in transit?",
+      "answer": {
+        "paragraphe": [
+          "If a package is shown as delivered but you have not received it, please contact the carrier and notify us within 30 days of the delivery date.",
+          "If it is determined that the package was lost due to a delivery error by the carrier, we will replace your order.",
+          "If the package is lost due to an incomplete or incorrect address, we cannot offer a refund or exchange—customers are responsible for ensuring their shipping address is correct at the time of purchase. If the package is returned to us, you will need to pay an additional shipping fee for resending it.",
+          "If you find that your shipping address is incorrect or has changed since placing your order, please notify us with your order number/ID and the updated address."
+        ],
+        "list": []
+      }
+    },
+    {
+      "id": 3,
+      "question": "When will my order ship?",
+      "answer": {
+        "paragraphe": [
+          "Your order will be processed during normal business days (Monday to Friday, excluding holidays).",
+          "If an item is in stock, your order will be processed within 1 to 5 business days. Delivery time after processing will vary based on the shipping address. Currently, delivery times range between 5 to 15 business days.",
+          "Once an item ships, you will receive an email with tracking information. In some special cases, tracking numbers may not be available."
+        ],
+        "list": []
+      }
+    },
+    {
+      "id": 4,
+      "question": "Will I receive my order in multiple packages?",
+      "answer": {
+        "paragraphe": [
+          "If you purchase in-stock items shipped from different warehouses, you will receive multiple shipments."
+        ],
+        "list": []
+      }
+    },
+    {
+      "id": 5,
+      "question": "How are shipping prices calculated?",
+      "answer": {
+        "paragraphe": [
+          "Shipping charges are calculated during checkout. You can add items to your cart, proceed to checkout, and enter your shipping address to see the shipping cost for your order."
+        ],
+        "list": []
+      }
+    },
+    {
+      "id": 6,
+      "question": "What is your refund policy?",
+      "answer": {
+        "paragraphe": [],
+        "list": [
+          "After an order is canceled or a return is processed, a refund will be issued to the original payment method.",
+          "Once the return process is complete, the refund will be processed within 1-5 business days.",
+          "After the refund is processed, please allow 3-5 business days for PayPal refunds, and 3-10 business days for all other payment methods.",
+          "We will notify you via email once the refund has been issued.",
+          "A full refund will be issued even if an ESONRA Store Digital Gift Card was used as full or partial payment for the order.",
+          "An order can be canceled and immediately refunded if the package has not yet begun processing for shipment.",
+          "Once a package begins processing for shipment, it must be delivered to its destination and returned to ESONRA before a refund can be issued. Please contact our Customer Service team for more detailed information."
+        ]
+      }
+    }
+  ],
+  "termsOfService": {
+    "seoTitle": "ESONRA - Terms of Service",
+    "title": "Terms of Service",
+    "overview": {
+      "title": "Overview",
+      "p1": "This website is operated by ESONRA. Throughout the site, the terms “we”, “us” and “our” refer to ESONRA. ESONRA offers this website, including all information, tools, and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies, and notices stated here.",
+      "p2": "By visiting our site and/or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”), including those additional terms and conditions and policies referenced herein and/or available by hyperlink. These Terms of Service apply to all users of the site, including without limitation users who are browsers, vendors, customers, merchants, and/or contributors of content.",
+      "p3": "Please read these Terms of Service carefully before accessing or using our website. By accessing or using any part of the site, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any services. If these Terms of Service are considered an offer, acceptance is expressly limited to these Terms of Service.",
+      "p4": "Any new features or tools which are added to the current store shall also be subject to the Terms of Service. You can review the most current version of the Terms of Service at any time on this page. We reserve the right to update, change, or replace any part of these Terms of Service by posting updates and/or changes to our website. It is your responsibility to check this page periodically for changes. Your continued use of or access to the website following the posting of any changes constitutes acceptance of those changes."
+    },
+    "sections": {
+      "section1": {
+        "title": "Section 1 - Online Store Terms",
+        "text": "By agreeing to these Terms of Service, you represent that you are at least the age of majority in your state or province of residence, or that you are the age of majority in your state or province of residence and you have given us your consent to allow any of your minor dependents to use this site. You may not use our products for any illegal or unauthorized purpose nor may you, in the use of the Service, violate any laws in your jurisdiction (including but not limited to copyright laws). You must not transmit any worms or viruses or any code of a destructive nature. A breach or violation of any of the Terms will result in an immediate termination of your Services."
+      },
+      "section2": {
+        "title": "Section 2 - General Conditions",
+        "text": "We reserve the right to refuse service to anyone for any reason at any time. You understand that your content (not including credit card information), may be transferred unencrypted and involve (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices. Credit card information is always encrypted during transfer over networks. You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service or any contact on the website through which the service is provided, without express written permission by us. The headings used in this agreement are included for convenience only and will not limit or otherwise affect these Terms."
+      },
+      "section3": {
+        "title": "Section 3 - Accuracy, Completeness, and Timeliness of Information",
+        "text": "We are not responsible if information made available on this site is not accurate, complete, or current. The material on this site is provided for general information only and should not be relied upon or used as the sole basis for making decisions without consulting primary, more accurate, more complete, or more timely sources of information. Any reliance on the material on this site is at your own risk. This site may contain certain historical information. Historical information, necessarily, is not current and is provided for your reference only. We reserve the right to modify the contents of this site at any time, but we have no obligation to update any information on our site. You agree that it is your responsibility to monitor changes to our site."
+      },
+      "section4": {
+        "title": "Section 4 - Modifications to the Service and Prices",
+        "text": "Prices for our products are subject to change without notice. We reserve the right at any time to modify or discontinue the Service (or any part or content thereof) without notice at any time. We shall not be liable to you or to any third-party for any modification, price change, suspension, or discontinuance of the Service."
+      },
+      "section5": {
+        "title": "Section 5 - Products or Services (if applicable)",
+        "text": "Certain products or services may be available exclusively online through the website. These products or services may have limited quantities and are subject to return or exchange only according to our Return Policy. We have made every effort to display as accurately as possible the colors and images of our products that appear at the store. We cannot guarantee that your computer monitor's display of any color will be accurate. We reserve the right but are not obligated, to limit the sales of our products or Services to any person, geographic region, or jurisdiction. We may exercise this right on a case-by-case basis. We reserve the right to limit the quantities of any products or services that we offer. All descriptions of products or product pricing are subject to change at any time without notice, at the sole discretion of us. We reserve the right to discontinue any product at any time. Any offer for any product or service made on this site is void where prohibited. We do not warrant that the quality of any products, services, information, or other material purchased or obtained by you will meet your expectations, or that any errors in the Service will be corrected."
+      },
+      "section6": {
+        "title": "Section 6 - Accuracy of Billing and Account Information",
+        "text": "We reserve the right to refuse any order you place with us. We may, in our sole discretion, limit or cancel quantities purchased per person, per household, or per order. These restrictions may include orders placed by or under the same customer account, the same credit card, and/or orders that use the same billing and/or shipping address. In the event that we make a change to or cancel an order, we may attempt to notify you by contacting the email and/or billing address/phone number provided at the time the order was made. We reserve the right to limit or prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers, or distributors. You agree to provide current, complete, and accurate purchase and account information for all purchases made at our store. You agree to promptly update your account and other information, including your email address and credit card numbers and expiration dates so that we can complete your transactions and contact you as needed."
+      },
+      "section7": {
+        "title": "Section 7 - Returns Policy",
+        "text": "For more detail, please review our Returns Policy."
+      },
+      "section8": {
+        "title": "Section 8 - Optional Tools",
+        "text": "We may provide you with access to third-party tools over which we neither monitor nor have any control nor input. You acknowledge and agree that we provide access to such tools ”as is” and “as available” without any warranties, representations, or conditions of any kind and without any endorsement. We shall have no liability whatsoever arising from or relating to your use of optional third-party tools. Any use by you of optional tools offered through the site is entirely at your own risk and discretion and you should ensure that you are familiar with and approve of the terms on which tools are provided by the relevant third-party provider(s). We may also, in the future, offer new services and/or features through the website (including, the release of new tools and resources). Such new features and/or services shall also be subject to these Terms of Service."
+      },
+      "section9": {
+        "title": "Section 9 - Third-Party Links",
+        "text": "Certain content, products, and services available via our Service may include materials from third-parties. Third-party links on this site may direct you to third-party websites that are not affiliated with us. We are not responsible for examining or evaluating the content or accuracy and we do not warrant and will not have any liability or responsibility for any third-party materials or websites, or for any other materials, products, or services of third-parties. We are not liable for any harm or damages related to the purchase or use of goods, services, resources, content, or any other transactions made in connection with any third-party websites. Please review carefully the third-party's policies and practices and make sure you understand them before you engage in any transaction. Complaints, claims, concerns, or questions regarding third-party products should be directed to the third-party."
+      },
+      "section10": {
+        "title": "Section 10 - User Comments, Feedback, and Other Submissions",
+        "text": "If at our request, you send certain specific submissions (for example contest entries) or without a request from us you send creative ideas, suggestions, proposals, plans, or other materials, whether online, by email, by postal mail, or otherwise (collectively, 'comments'), you agree that we may, at any time, without restriction, edit, copy, publish, distribute, translate and otherwise use in any medium any comments that you forward to us. We are and shall be under no obligation (1) to maintain any comments in confidence; (2) to pay compensation for any comments; or (3) to respond to any comments. We may, but have no obligation to, monitor, edit or remove content that we determine in our sole discretion are unlawful, offensive, threatening, libelous, defamatory, pornographic, obscene, or otherwise objectionable or violates any party’s intellectual property or these Terms of Service. You agree that your comments will not violate any rights of any third-party, including copyright, trademark, privacy, personality, or other personal or proprietary rights. You further agree that your comments will not contain libelous or otherwise unlawful, abusive or obscene material, or contain any computer virus or other malware that could in any way affect the operation of the Service or any related website. You may not use a false email address, pretend to be someone other than yourself, or otherwise mislead us or third-parties as to the origin of any comments. You are solely responsible for any comments you make and their accuracy. We take no responsibility and assume no liability for any comments posted by you or any third-party."
+      },
+      "section11": {
+        "title": "Section 11 - Personal Information",
+        "text": "Your submission of personal information through the store is governed by our Privacy Policy."
+      },
+      "section12": {
+        "title": "Section 12 - Errors, Inaccuracies and Omissions",
+        "text": "Occasionally there may be information on our site or in the Service that contains typographical errors, inaccuracies or omissions that may relate to product descriptions, pricing, promotions, offers, product shipping charges, transit times and availability. We reserve the right to correct any errors, inaccuracies or omissions, and to change or update information or cancel orders if any information in the Service or on any related website is inaccurate at any time without prior notice (including after you have submitted your order). We undertake no obligation to update, amend, or clarify information in the Service or on any related website, including without limitation, pricing information, except as required by law. No specified update or refresh date applied in the Service or on any related website should be taken to indicate that all information in the Service or on any related website has been modified or updated."
+      },
+      "section13": {
+        "title": "Section 13 - Prohibited Uses",
+        "text": "In addition to other prohibitions as set forth in the Terms of Service, you are prohibited from using the site or its content: (a) for any unlawful purpose; (b) to solicit others to perform or participate in any unlawful acts; (c) to violate any international, federal, provincial or state regulations, rules, laws, or local ordinances; (d) to infringe upon or violate our intellectual property rights or the intellectual property rights of others; (e) to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate based on gender, sexual orientation, religion, ethnicity, race, age, national origin, or disability; (f) to submit false or misleading information; (g) to upload or transmit viruses or any other type of malicious code that will or may be used in any way that will affect the functionality or operation of the Service or of any related website, other websites, or the Internet; (h) to collect or track the personal information of others; (i) to spam, phish, pharm, pretext, spider, crawl, or scrape; (j) for any obscene or immoral purpose; or (k) to interfere with or circumvent the security features of the Service or any related website, other websites, or the Internet. We reserve the right to terminate your use of the Service or any related website for violating any of the prohibited uses."
+      },
+      "section14": {
+        "title": "Section 14 - Disclaimer of Warranties; Limitation of Liability",
+        "text": "We do not guarantee, represent, or warrant that your use of our service will be uninterrupted, timely, secure, or error-free. We do not warrant that the results that may be obtained from the use of the service will be accurate or reliable. You agree that from time to time we may remove the service for indefinite periods of time or cancel the service at any time, without notice to you. You expressly agree that your use of, or inability to use, the service is at your sole risk. The service and all products and services delivered to you through the service are (except as expressly stated by us) provided 'as is' and 'as available' for your use, without any representation, warranties, or conditions of any kind, either express or implied, including all implied warranties or conditions of merchantability, merchantable quality, fitness for a particular purpose, durability, title, and non-infringement. In no case shall ESONRA, our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, service providers, or licensors be liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind, including, without limitation lost profits, lost revenue, lost savings, loss of data, replacement costs, or any similar damages, whether based in contract, tort (including negligence), strict liability or otherwise, arising from your use of any of the service or any products procured using the service, or for any other claim related in any way to your use of the service or any product, including, but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of the service or any content (or product) posted, transmitted, or otherwise made available via the service, even if advised of their possibility. Because some states or jurisdictions do not allow the exclusion or the limitation of liability for consequential or incidental damages, in such states or jurisdictions, our liability shall be limited to the maximum extent permitted by law."
+      },
+      "section15": {
+        "title": "Section 15 - Indemnification",
+        "text": "You agree to indemnify, defend and hold harmless ESONRA and our parent, subsidiaries, affiliates, partners, officers, directors, agents, contractors, licensors, service providers, subcontractors, suppliers, interns, and employees, harmless from any claim or demand, including reasonable attorneys’ fees, made by any third party due to or arising out of your breach of these Terms of Service or the documents they incorporate by reference or your violation of any law or the rights of a third-party."
+      },
+      "section16": {
+        "title": "Section 16 - Severability",
+        "text": "In the event that any provision of these Terms of Service is determined to be unlawful, void, or unenforceable, such provision shall nonetheless be enforceable to the fullest extent permitted by applicable law, and the unenforceable portion shall be deemed to be severed from these Terms of Service, such determination shall not affect the validity and enforceability of any other remaining provisions."
+      },
+      "section17": {
+        "title": "Section 17 - Termination",
+        "text": "The obligations and liabilities of the parties incurred prior to the termination date shall survive the termination of this agreement for all purposes. These Terms of Service are effective unless and until terminated by either you or us. You may terminate these Terms of Service at any time by notifying us that you no longer wish to use our Services, or when you cease using our site. If in our sole judgment you fail, or we suspect that you have failed, to comply with any term or provision of these Terms of Service, we also may terminate this agreement at any time without notice and you will remain liable for all amounts due up to and including the date of termination; and/or accordingly may deny you access to our Services (or any part thereof)."
+      },
+      "section18": {
+        "title": "Section 18 - Entire Agreement",
+        "text": "The failure of us to exercise or enforce any right or provision of these Terms of Service shall not constitute a waiver of such right or provision. These Terms of Service and any policies or operating rules posted by us on this site or in respect to The Service constitutes the entire agreement and understanding between you and us and govern your use of the Service, superseding any prior or contemporaneous agreements, communications, and proposals, whether oral or written, between you and us (including, but not limited to, any prior versions of the Terms of Service). Any ambiguities in the interpretation of these Terms of Service shall not be construed against the drafting party."
+      },
+      "section19": {
+        "title": "Section 19 - Governing Law",
+        "text": "These Terms of Service and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the laws of the United States."
+      },
+      "section20": {
+        "title": "Section 20 - Changes to Terms of Service",
+        "text": "You can review the most current version of the Terms of Service at any time at this page. We reserve the right, at our sole discretion, to update, change, or replace any part of these Terms of Service by posting updates and changes to our website. It is your responsibility to check our website periodically for changes."
+      },
+      "section21": {
+        "title": "Section 21 - Contact Information",
+        "text": "Questions about the Terms of Service should be sent to us at support@esonra.com."
+      }
+    }
   }
-  
 }

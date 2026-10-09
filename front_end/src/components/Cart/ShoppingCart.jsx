@@ -328,10 +328,8 @@ const Eyebrow = styled.div`
 const Title = styled.h1`
   margin: 0;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+   font-family: Arial, sans-serif;
+
 
   font-size: clamp(27px, 4vw, 38px);
 
@@ -627,10 +625,8 @@ const ProductName = styled.h2`
 
   margin: 0;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+    font-family: Arial, sans-serif;
+
 
   font-size: 16px;
   font-weight: 400;

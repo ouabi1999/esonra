@@ -55,8 +55,8 @@ function ContactUs() {
   return (
     <Container dir={i18n.dir()}>
       <SEO
-      title="Contact Enouza"
-      description="Contact Enouza for questions about our luxury lamps, orders, shipping, returns, or any other assistance."
+      title="Contact Ensora"
+      description="Contact Ensora for questions about our luxury lamps, orders, shipping, returns, or any other assistance."
       canonical="/contact-us"
     />
 

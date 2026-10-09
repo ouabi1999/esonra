@@ -194,7 +194,7 @@ function CustomerReviews(props) {
                               <ImagePlaceholder
                                 data-review-placeholder="true"
                               >
-                                <PlaceholderMark>ENOUZA</PlaceholderMark>
+                                <PlaceholderMark>ENSORA</PlaceholderMark>
                                 <PlaceholderText>
                                   {translate(
                                     "no_photo_available",
@@ -228,7 +228,7 @@ function CustomerReviews(props) {
         </ReviewsList>
       ) : (
         <EmptyReviews>
-          <EmptyMark>ENOUZA</EmptyMark>
+          <EmptyMark>ENSORA</EmptyMark>
           <EmptyTitle>
             {translate("no_reviews", "No reviews yet")}
           </EmptyTitle>

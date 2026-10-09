@@ -9,10 +9,10 @@ sitemaps = {
 }
 
 
-def enouza_sitemap(request):
+def ensora_sitemap(request):
     if ENV == "production":
-        request.META["HTTP_HOST"] = "www.enouza.com"
-        request.META["SERVER_NAME"] = "www.enouza.com"
+        request.META["HTTP_HOST"] = "www.ensora.com"
+        request.META["SERVER_NAME"] = "www.ensora.com"
         request.META["SERVER_PORT"] = "443"
         request.META["wsgi.url_scheme"] = "https"
     else:

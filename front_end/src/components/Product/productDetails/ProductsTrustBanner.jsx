@@ -8,7 +8,7 @@ import WorkspacePremiumOutlinedIcon from "@mui/icons-material/WorkspacePremiumOu
 import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
 import ReplayIcon from "@mui/icons-material/Replay";
 import VolunteerActivismOutlinedIcon from "@mui/icons-material/VolunteerActivismOutlined";
-
+import { colors } from "../../../utilis/colors";
 
 
 const ProductTrustBanner = () => {
@@ -197,11 +197,11 @@ const SecureContent = styled.div`
   letter-spacing: 2px;
   text-transform: uppercase;
 
-  color: #716c64;
+  color: #000000;
 
   svg {
     font-size: 15px;
-    color: #9a8d78;
+    color: #000000;
     flex-shrink: 0;
   }
 
@@ -294,7 +294,7 @@ const IconWrapper = styled.div`
 
   svg {
     font-size: 32px;
-    color: #9a8d78;
+    color: ${colors.secondary};
 
     stroke-width: 0.8;
   }

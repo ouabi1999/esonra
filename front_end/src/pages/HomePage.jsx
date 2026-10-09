@@ -75,7 +75,7 @@ function HomePage() {
     <Container>
       <SEO
         title="Home"
-        description="Discover Enouza's curated collection of luxury lamps and premium home lighting, designed to bring warmth, elegance, and character to every space."
+        description="Discover ESONRA’s curated collection of smart trackers and premium accessories, designed to keep your essentials connected, secure, and always within reach."
         canonical="/"
       />
 
@@ -83,8 +83,8 @@ function HomePage() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "Enouza",
-          url: "https://www.enouza.com/",
+          name: "Ensora",
+          url: "https://www.ensora.com/",
         })}
       </script>
 
@@ -92,9 +92,9 @@ function HomePage() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Enouza",
-          url: "https://www.enouza.com/",
-          logo: "https://www.enouza.com/assestLogo.png",
+          name: "Ensora",
+          url: "https://www.ensora.com/",
+          logo: "https://www.ensora.com/assestLogo.png",
         })}
       </script>
 
@@ -118,7 +118,7 @@ function HomePage() {
 
       <DesignSection />
 
-      <MatricsSection />
+      {/*<MatricsSection />*/}
 
       <SectionPlaceholder>
         <Suspense fallback={null}>

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MenuItem from "@mui/material/MenuItem";
 import TextField from "@mui/material/TextField";
-import { categoryList, series, types } from '../../../../../../common/categoryList';
+import { categoryList} from '../../../../../../common/categoryList';
 
 function Organization({ formData, setFormData }) {
   return (
@@ -20,27 +20,9 @@ function Organization({ formData, setFormData }) {
           ))}
         </TextFieldStyled>
 
-        <TextFieldStyled
-          select
-          label="Product type"
-          value={formData.product_type}
-          onChange={e => setFormData({ ...formData, product_type: e.target.value })}
-        >
-          {types.map((option, index) => (
-            <MenuItem key={index} value={option}>{option}</MenuItem>
-          ))}
-        </TextFieldStyled>
+       
 
-        <TextFieldStyled
-          select
-          label="Series"
-          value={formData.series}
-          onChange={e => setFormData({ ...formData, series: e.target.value })}
-        >
-          {series.map((option, index) => (
-            <MenuItem key={index} value={option}>{option}</MenuItem>
-          ))}
-        </TextFieldStyled>
+       
       </FieldsContainer>
     </Container>
   );

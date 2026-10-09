@@ -77,7 +77,7 @@ export default function CheckoutForm() {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: "https://enouza.com/order-success",
+        return_url: "https://ensora.com/order-success",
       },
     });
 
@@ -186,31 +186,29 @@ export default function CheckoutForm() {
     </>
   );
 }
+
 const Container = styled.div`
- 
+  width: 100%;
+  box-sizing: border-box;
 
   form {
     width: 30vw;
     min-width: 340px;
-
     align-self: center;
     border: 1px solid #e4ded4;
-
     border-radius: 7px;
     padding: 15px;
+    box-sizing: border-box;
   }
 
   #payment-message {
     color: rgb(105, 115, 134);
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     padding-top: 12px;
     text-align: center;
   }
 
- 
-
-  /* Buttons and links */
   button {
     background: #b18952;
     font-family: Arial, sans-serif;
@@ -222,81 +220,45 @@ const Container = styled.div`
     font-weight: 600;
     cursor: pointer;
     display: block;
-    transition: all 0.2s ease;
+    transition:
+      background 0.2s ease,
+      opacity 0.2s ease;
     box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
     width: 100%;
+    margin-top: 16px;
     margin-bottom: 8px;
   }
 
-  button:hover {
+  button:hover:not(:disabled) {
     filter: contrast(115%);
   }
 
   button:disabled {
     opacity: 0.5;
-    cursor: default;
+    cursor: not-allowed;
   }
 
-  /* spinner/processing state, errors */
-  .spinner,
-  .spinner:before,
-  .spinner:after {
-    border-radius: 50%;
+  .loading-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
 
   .spinner {
-    color: #ffffff;
-    font-size: 22px;
-    text-indent: -99999px;
-    margin: 0px auto;
-    position: relative;
-    width: 20px;
-    height: 20px;
-    box-shadow: inset 0 0 0 2px;
-    -webkit-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    box-sizing: border-box;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: checkout-spin 0.7s linear infinite;
+    margin:auto;
   }
 
-  .spinner:before,
-  .spinner:after {
-    position: absolute;
-    content: "";
-  }
-
-  .spinner:before {
-    width: 10.4px;
-    height: 20.4px;
-    background: #5469d4;
-    border-radius: 20.4px 0 0 20.4px;
-    top: -0.2px;
-    left: -0.2px;
-    -webkit-transform-origin: 10.4px 10.2px;
-    transform-origin: 10.4px 10.2px;
-    -webkit-animation: loading 2s infinite ease 1.5s;
-    animation: loading 2s infinite ease 1.5s;
-  }
-
-  .spinner:after {
-    width: 10.4px;
-    height: 10.2px;
-    background: #5469d4;
-    border-radius: 0 10.2px 10.2px 0;
-    top: -0.1px;
-    left: 10.2px;
-    -webkit-transform-origin: 0px 10.2px;
-    transform-origin: 0px 10.2px;
-    -webkit-animation: loading 2s infinite ease;
-    animation: loading 2s infinite ease;
-  }
-
-  @keyframes loading {
-    0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
+  @keyframes checkout-spin {
+    to {
       transform: rotate(360deg);
     }
   }
@@ -305,6 +267,19 @@ const Container = styled.div`
     form {
       width: 50vw;
       min-width: 320px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    form {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .spinner {
+      animation-duration: 1.5s;
     }
   }
 `;

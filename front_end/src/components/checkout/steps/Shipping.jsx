@@ -470,9 +470,8 @@ const ShippingMethods = styled.div`
 
     margin: 0 0 6px;
 
-    font-family:
-      Georgia,
-      serif;
+     font-family: Arial, sans-serif;
+
 
     font-size: 15px;
 

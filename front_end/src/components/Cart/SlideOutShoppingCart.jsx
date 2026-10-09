@@ -362,10 +362,8 @@ const DrawerHeader = styled.header`
 const Title = styled.h2`
   margin: 0;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+   font-family: Arial, sans-serif;
+
 
   font-size: 22px;
 
@@ -555,10 +553,8 @@ const ProductName = styled.h3`
 
   margin: 0;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  font-family: Arial, sans-serif;
+
 
   font-size: 15px;
 

@@ -1,3 +1,4 @@
+
 import React from "react";
 import styled from "styled-components";
 
@@ -7,6 +8,7 @@ import CreditScoreIcon from "@mui/icons-material/CreditScore";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 
 import { useTranslation } from "react-i18next";
+import { colors } from "../../utilis/colors";
 
 const BuyerTrustServices = ({ divRef }) => {
   const { t, i18n } = useTranslation();
@@ -74,7 +76,6 @@ const BuyerTrustServices = ({ divRef }) => {
 
 export default BuyerTrustServices;
 
-
 /* =========================================================
    CONTAINER
 ========================================================= */
@@ -85,30 +86,17 @@ const Container = styled.section`
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 
-  background: #faf9f6;
+  background: ${colors.background};
 
-  border-top: 1px solid #ebe6df;
-  border-bottom: 1px solid #ebe6df;
+  border-top: 1px solid ${colors.border};
+  border-bottom: 1px solid ${colors.border};
 
   box-sizing: border-box;
-
-
-  /* ===============================
-     TABLET — 2 COLUMNS
-  =============================== */
 
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-
-  /* ===============================
-     MOBILE — 1 COLUMN
-  =============================== */
-
- 
 `;
-
 
 /* =========================================================
    SERVICE
@@ -131,14 +119,6 @@ const Service = styled.div`
 
   box-sizing: border-box;
 
-
-  /* =====================================================
-     DESKTOP — 4 COLUMNS
-
-     Vertical separators:
-     1 | 2 | 3 | 4
-  ===================================================== */
-
   &:not(:last-child)::after {
     content: "";
 
@@ -152,30 +132,13 @@ const Service = styled.div`
 
     transform: translateY(-50%);
 
-    background: #ddd6cd;
+    background: ${colors.border};
   }
 
-
-  /* =====================================================
-     TABLET — 2 × 2
-
-     1 | 2
-     -----
-     3 | 4
-  ===================================================== */
-
   @media (max-width: 900px) {
-
-    /* Remove desktop separators first */
     &::after {
       display: none;
     }
-
-
-    /*
-      Vertical separator only
-      after item 1 and item 3
-    */
 
     &:nth-child(odd)::after {
       content: "";
@@ -192,14 +155,8 @@ const Service = styled.div`
 
       transform: translateY(-50%);
 
-      background: #ddd6cd;
+      background: ${colors.border};
     }
-
-
-    /*
-      Horizontal separator
-      after first row
-    */
 
     &:nth-child(-n + 2)::before {
       content: "";
@@ -207,23 +164,17 @@ const Service = styled.div`
       position: absolute;
 
       bottom: 0;
-
       left: 50%;
 
       width: 65%;
-
       height: 1px;
 
       transform: translateX(-50%);
 
-      background: #e5dfd7;
+      background: ${colors.border};
     }
   }
-
-
- 
 `;
-
 
 /* =========================================================
    ICON
@@ -241,17 +192,17 @@ const IconWrapper = styled.div`
 
   margin-bottom: 13px;
 
-  border: 1px solid #ded5ca;
+  border: 1px solid ${colors.border};
   border-radius: 50%;
 
-  background: #ffffff;
+  background: ${colors.surface};
 
   box-sizing: border-box;
 
   .icon {
     font-size: 21px;
 
-    color: #9b815f;
+    color: ${colors.accent};
 
     transition: transform 250ms ease;
   }
@@ -259,7 +210,6 @@ const IconWrapper = styled.div`
   ${Service}:hover & .icon {
     transform: translateY(-2px);
   }
-
 
   @media (max-width: 600px) {
     width: 42px;
@@ -273,7 +223,6 @@ const IconWrapper = styled.div`
   }
 `;
 
-
 /* =========================================================
    TITLE
 ========================================================= */
@@ -281,7 +230,7 @@ const IconWrapper = styled.div`
 const ServiceTitle = styled.span`
   margin-bottom: 7px;
 
-  color: #26221e;
+  color: ${colors.primary};
 
   font-family:
     "Cormorant Garamond",
@@ -296,12 +245,10 @@ const ServiceTitle = styled.span`
 
   letter-spacing: 0.02em;
 
-
   @media (max-width: 600px) {
     font-size: 16px;
   }
 `;
-
 
 /* =========================================================
    DESCRIPTION
@@ -312,7 +259,7 @@ const ServiceDescription = styled.p`
 
   margin: 0;
 
-  color: #817970;
+  color: ${colors.textSecondary};
 
   font-size: 10px;
 
@@ -323,7 +270,6 @@ const ServiceDescription = styled.p`
   letter-spacing: 0.04em;
 
   text-align: center;
-
 
   @media (max-width: 600px) {
     width: min(240px, 100%);

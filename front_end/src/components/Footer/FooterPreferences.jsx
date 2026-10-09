@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import styled from "styled-components";
 
@@ -16,18 +17,21 @@ import {
   setCurrency,
   setCurrencyAutomatically,
 } from "../../features/currencySlice";
+
 import { setLanguage } from "../../features/LanguagesSlice";
+import { colors } from "../../utilis/colors";
 
 // ============================================================
-// ENOUZA FOOTER PREFERENCES
+// ENSORA FOOTER PREFERENCES
 // ============================================================
 
 function FooterPreferences() {
   const dispatch = useDispatch();
   const { t, i18n } = useTranslation();
-    const selectedLang = useSelector(state=> state.language.selectedLanguage)
-    
-  
+
+  const selectedLang = useSelector(
+    (state) => state.language.selectedLanguage
+  );
 
   // ==========================================================
   // REDUX
@@ -42,8 +46,7 @@ function FooterPreferences() {
   );
 
   const currencyManuallySelected = useSelector(
-    (state) =>
-      state.currency.currencyManuallySelected
+    (state) => state.currency.currencyManuallySelected
   );
 
   // ==========================================================
@@ -51,8 +54,6 @@ function FooterPreferences() {
   // ==========================================================
 
   const [isOpen, setIsOpen] = useState(false);
-
-
 
   // ==========================================================
   // LANGUAGES
@@ -94,12 +95,9 @@ function FooterPreferences() {
       i18n.changeLanguage(value);
     }
 
-    window.localStorage.setItem(
-      "selectedLang",
-      value
-    );
+    window.localStorage.setItem("selectedLang", value);
 
-    dispatch(setLanguage(value))
+    dispatch(setLanguage(value));
   };
 
   // ==========================================================
@@ -112,15 +110,10 @@ function FooterPreferences() {
     dispatch(setLocation(newCountry));
 
     if (!currencyManuallySelected) {
-      const automaticCurrency =
-        COUNTRY_CURRENCY_MAP[newCountry];
+      const automaticCurrency = COUNTRY_CURRENCY_MAP[newCountry];
 
       if (automaticCurrency) {
-        dispatch(
-          setCurrencyAutomatically(
-            automaticCurrency
-          )
-        );
+        dispatch(setCurrencyAutomatically(automaticCurrency));
       }
     }
   };
@@ -144,15 +137,10 @@ function FooterPreferences() {
   // ==========================================================
 
   const selectedCountry =
-    data?.find(
-      (item) => item.value === country
-    )?.label || "";
+    data?.find((item) => item.value === country)?.label || "";
 
   const selectedLanguage =
-    languages.find(
-      (language) =>
-        language.code === selectedLang
-    )?.label || "";
+    languages.find((language) => language.code === selectedLang)?.label || "";
 
   // ==========================================================
   // SAVE
@@ -174,26 +162,17 @@ function FooterPreferences() {
         onClickAway={() => setIsOpen(false)}
       >
         <Wrapper>
-
-          {/* ==================================================
-              FOOTER TRIGGER
-          ================================================== */}
+          {/* FOOTER TRIGGER */}
 
           <Trigger
             type="button"
-            onClick={() =>
-              setIsOpen(
-                (previous) => !previous
-              )
-            }
+            onClick={() => setIsOpen((previous) => !previous)}
             aria-expanded={isOpen}
           >
-            
-
             <TriggerMain>
               {country && (
                 <Flag
-                alt="country flag"
+                  alt="country flag"
                   className="triggerFlag"
                   code={country}
                 />
@@ -201,14 +180,13 @@ function FooterPreferences() {
 
               {selectedCountry && (
                 <SelectedText>
-                     {t(`countries.${country}`)}
+                  {t(`countries.${country}`)}
                 </SelectedText>
               )}
 
-              {selectedCountry &&
-                selectedLanguage && (
-                  <Dot>•</Dot>
-                )}
+              {selectedCountry && selectedLanguage && (
+                <Dot>•</Dot>
+              )}
 
               {selectedLanguage && (
                 <SelectedText>
@@ -218,36 +196,22 @@ function FooterPreferences() {
 
               <Dot>•</Dot>
 
-              <Currency>
-                {selectedCurrency}
-              </Currency>
+              <Currency>{selectedCurrency}</Currency>
 
-              <Arrow
-                className={
-                  isOpen ? "open" : ""
-                }
-              >
+              <Arrow className={isOpen ? "open" : ""}>
                 <KeyboardArrowDownIcon />
               </Arrow>
             </TriggerMain>
           </Trigger>
 
-
-          {/* ==================================================
-              DROPDOWN
-          ================================================== */}
+          {/* DROPDOWN */}
 
           {isOpen && (
             <Dropdown>
-
-              {/* ----------------------------------------------
-                  HEADER
-              ---------------------------------------------- */}
+              {/* HEADER */}
 
               <DropdownHeader>
-                <Eyebrow>
-                  ENOUZA
-                </Eyebrow>
+                <Eyebrow>ENSORA</Eyebrow>
 
                 <Title>
                   {t("purchaseOptions.Language")}
@@ -256,17 +220,12 @@ function FooterPreferences() {
                 </Title>
               </DropdownHeader>
 
-
-              {/* ----------------------------------------------
-                  COUNTRY
-              ---------------------------------------------- */}
+              {/* COUNTRY */}
 
               <Field>
                 <FieldHeader>
                   <FieldLabel>
-                    {t(
-                      "purchaseOptions.Ship_to"
-                    )}
+                    {t("purchaseOptions.Ship_to")}
                   </FieldLabel>
                 </FieldHeader>
 
@@ -281,36 +240,23 @@ function FooterPreferences() {
 
                   <select
                     value={country || ""}
-                    onChange={
-                      handleCountryChange
-                    }
+                    onChange={handleCountryChange}
                   >
-                    {data?.map(
-                      (item, index) => (
-                        <option
-                          key={index}
-                          value={item.value}
-                        >
+                    {data?.map((item, index) => (
+                      <option key={index} value={item.value}>
                         {t(`countries.${item.value}`)}
-
-                        </option>
-                      )
-                    )}
+                      </option>
+                    ))}
                   </select>
                 </SelectWrapper>
               </Field>
 
-
-              {/* ----------------------------------------------
-                  LANGUAGE
-              ---------------------------------------------- */}
+              {/* LANGUAGE */}
 
               <Field>
                 <FieldHeader>
                   <FieldLabel>
-                    {t(
-                      "purchaseOptions.Language"
-                    )}
+                    {t("purchaseOptions.Language")}
                   </FieldLabel>
                 </FieldHeader>
 
@@ -318,73 +264,45 @@ function FooterPreferences() {
                   <select
                     value={selectedLang}
                     onChange={(event) =>
-                      switchLanguage(
-                        event.target.value
-                      )
+                      switchLanguage(event.target.value)
                     }
                   >
-                    {languages.map(
-                      (language) => (
-                        <option
-                          key={language.code}
-                          value={language.code}
-                        >
-                          {language.label}
-                        </option>
-                      )
-                    )}
+                    {languages.map((language) => (
+                      <option
+                        key={language.code}
+                        value={language.code}
+                      >
+                        {language.label}
+                      </option>
+                    ))}
                   </select>
                 </SelectWrapper>
               </Field>
 
-
-              {/* ----------------------------------------------
-                  CURRENCY
-              ---------------------------------------------- */}
+              {/* CURRENCY */}
 
               <Field>
                 <FieldHeader>
                   <FieldLabel>
-                    {t(
-                      "purchaseOptions.Currency"
-                    )}
+                    {t("purchaseOptions.Currency")}
                   </FieldLabel>
                 </FieldHeader>
 
                 <SelectWrapper>
                   <select
                     value={selectedCurrency}
-                    onChange={
-                      handleCurrencyChange
-                    }
+                    onChange={handleCurrencyChange}
                   >
-                    <option value="USD">
-                      USD — US Dollar
-                    </option>
-
-                    <option value="EUR">
-                      EUR — Euro
-                    </option>
-
-                    <option value="GBP">
-                      GBP — British Pound
-                    </option>
-
-                    <option value="AED">
-                      AED — UAE Dirham
-                    </option>
-
-                    <option value="SAR">
-                      SAR — Saudi Riyal
-                    </option>
+                    <option value="USD">USD — US Dollar</option>
+                    <option value="EUR">EUR — Euro</option>
+                    <option value="GBP">GBP — British Pound</option>
+                    <option value="AED">AED — UAE Dirham</option>
+                    <option value="SAR">SAR — Saudi Riyal</option>
                   </select>
                 </SelectWrapper>
               </Field>
 
-
-              {/* ----------------------------------------------
-                  FOOTER
-              ---------------------------------------------- */}
+              {/* FOOTER */}
 
               <DropdownFooter>
                 <SaveButton
@@ -394,10 +312,8 @@ function FooterPreferences() {
                   {t("common.save")}
                 </SaveButton>
               </DropdownFooter>
-
             </Dropdown>
           )}
-
         </Wrapper>
       </ClickAwayListener>
     </Container>
@@ -406,19 +322,15 @@ function FooterPreferences() {
 
 export default FooterPreferences;
 
-
 // ============================================================
 // CONTAINER
 // ============================================================
 
 const Container = styled.div`
   position: relative;
-
   display: inline-block;
-  padding:10px;
-
+  padding: 10px;
 `;
-
 
 // ============================================================
 // WRAPPER
@@ -426,10 +338,8 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   position: relative;
-
   max-width: 100%;
 `;
-
 
 // ============================================================
 // TRIGGER
@@ -437,33 +347,19 @@ const Wrapper = styled.div`
 
 const Trigger = styled.button`
   appearance: none;
-
   display: flex;
-
   flex-direction: column;
-
   align-items: flex-start;
-
   gap: 7px;
-
   width: auto;
-
   max-width: 100%;
-
   padding: 0;
-
   margin: 0;
-
   border: none;
-
   outline: none;
-
   background: transparent;
-
-  color: #ffffff;
-
+  color: ${colors.text};
   cursor: pointer;
-
   text-align: left;
 
   font-family:
@@ -471,18 +367,14 @@ const Trigger = styled.button`
     Arial,
     sans-serif;
 
-  transition:
-    opacity 0.25s ease;
+  transition: opacity 0.25s ease;
 
   &:hover {
     opacity: 0.82;
   }
 
   &:focus-visible {
-    outline:
-      1px solid
-      rgba(179, 154, 118, 0.7);
-
+    outline: 1px solid ${colors.accent};
     outline-offset: 6px;
   }
 
@@ -491,30 +383,18 @@ const Trigger = styled.button`
   }
 `;
 
-
-// ============================================================
-// TRIGGER LABEL
-// ============================================================
-
-
 // ============================================================
 // TRIGGER MAIN
 // ============================================================
 
 const TriggerMain = styled.span`
   display: flex;
-
   align-items: center;
-
   flex-wrap: wrap;
-
   gap: 7px;
-
   width: 100%;
-
   min-height: 19px;
-
-  color: #ffffff;
+  color: ${colors.text};
 
   font-family:
     "Inter",
@@ -522,69 +402,51 @@ const TriggerMain = styled.span`
     sans-serif;
 
   font-size: 12px;
-
   font-weight: 400;
-
   line-height: 1.5;
-
   white-space: normal;
-
   overflow-wrap: anywhere;
 
   .triggerFlag {
     width: 20px;
-
     height: 13px;
-
     flex: 0 0 auto;
-
     object-fit: cover;
-
     border-radius: 1px;
   }
 
   @media (max-width: 767px) {
     gap: 5px;
-
     font-size: 11px;
-
     line-height: 1.45;
 
     .triggerFlag {
       width: 19px;
-
       height: 12px;
     }
   }
 
   @media (max-width: 380px) {
     gap: 4px;
-
     font-size: 10px;
 
     .triggerFlag {
       width: 18px;
-
       height: 12px;
     }
   }
 `;
-
 
 // ============================================================
 // SELECTED TEXT
 // ============================================================
 
 const SelectedText = styled.span`
-  color: #000000;
-
+  color: ${colors.text};
   font-weight: 400;
-
   white-space: normal;
-
   overflow-wrap: anywhere;
 `;
-
 
 // ============================================================
 // DOT
@@ -592,10 +454,7 @@ const SelectedText = styled.span`
 
 const Dot = styled.span`
   flex: 0 0 auto;
-
-  color:
-    rgba(255, 255, 255, 0.35);
-
+  color: rgba(255, 255, 255, 0.45);
   font-size: 9px;
 
   @media (max-width: 380px) {
@@ -603,19 +462,15 @@ const Dot = styled.span`
   }
 `;
 
-
 // ============================================================
 // CURRENCY
 // ============================================================
 
 const Currency = styled.span`
-  color: #000000;
-
+  color: ${colors.text};
   font-weight: 500;
-
   white-space: nowrap;
 `;
-
 
 // ============================================================
 // ARROW
@@ -623,17 +478,11 @@ const Currency = styled.span`
 
 const Arrow = styled.span`
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   flex: 0 0 auto;
-
   margin-left: 2px;
-
-  color:
-    rgb(0, 0, 0);
+  color: ${colors.text};
 
   transition:
     transform 0.25s ease,
@@ -641,52 +490,40 @@ const Arrow = styled.span`
 
   svg {
     width: 17px;
-
     height: 17px;
   }
 
   &.open {
     transform: rotate(180deg);
-
-    color: #b39a76;
+    color: ${colors.accent};
   }
 
   @media (max-width: 767px) {
     svg {
       width: 16px;
-
       height: 16px;
     }
   }
 `;
 
-
 // ============================================================
 // DROPDOWN
 // ============================================================
+
 const Dropdown = styled.div`
   position: absolute;
-
   left: 50%;
-
   bottom: calc(100% + 22px);
-
   z-index: 99999;
-
   width: 380px;
-
   overflow: hidden;
 
-  background: #ffffff;
+  background: ${colors.surface};
+  border: 1px solid ${colors.border};
 
-  border: 1px solid #d8d3ca;
-
-  box-shadow:
-    0 24px 65px
-    rgba(0, 0, 0, 0.18);
+  box-shadow: 0 24px 65px rgba(7, 27, 27, 0.18);
 
   transform: translateX(-50%);
-
   animation: dropdownAppear 0.22s ease-out;
 
   @keyframes dropdownAppear {
@@ -701,35 +538,19 @@ const Dropdown = styled.div`
     }
   }
 
-  /* =========================
-     TABLET
-     ========================= */
-
   @media (max-width: 900px) {
     width: 350px;
   }
 
-  /* =========================
-     MOBILE
-     ========================= */
-
   @media (max-width: 600px) {
     position: fixed;
-
     left: 50%;
-
     bottom: 75px;
-
     width: calc(100vw - 30px);
-
     max-width: 380px;
-
     max-height: calc(100vh - 100px);
-
     overflow-y: auto;
-
     transform: translateX(-50%);
-
     animation: dropdownMobileAppear 0.22s ease-out;
 
     @keyframes dropdownMobileAppear {
@@ -747,46 +568,32 @@ const Dropdown = styled.div`
 
   @media (max-width: 400px) {
     width: calc(100vw - 24px);
-
     bottom: 70px;
   }
 
   @media (max-width: 360px) {
     width: calc(100vw - 20px);
-
     bottom: 65px;
   }
 `;
-
 
 // ============================================================
 // DROPDOWN HEADER
 // ============================================================
 
 const DropdownHeader = styled.div`
-  padding:
-    25px
-    26px;
-
-  background: #f7f4ee;
-
-  border-bottom:
-    1px solid
-    #ddd8d0;
+  padding: 25px 26px;
+  background: ${colors.background};
+  border-bottom: 1px solid ${colors.border};
 
   @media (max-width: 767px) {
-    padding:
-      21px
-      20px;
+    padding: 21px 20px;
   }
 
   @media (max-width: 480px) {
-    padding:
-      19px
-      18px;
+    padding: 19px 18px;
   }
 `;
-
 
 // ============================================================
 // EYEBROW
@@ -794,8 +601,7 @@ const DropdownHeader = styled.div`
 
 const Eyebrow = styled.div`
   margin-bottom: 8px;
-
-  color: #a4865c;
+  color: ${colors.accent};
 
   font-family:
     "Inter",
@@ -803,22 +609,16 @@ const Eyebrow = styled.div`
     sans-serif;
 
   font-size: 9px;
-
   font-weight: 600;
-
   letter-spacing: 0.2em;
-
   line-height: 1;
-
   text-transform: uppercase;
 
   @media (max-width: 480px) {
     font-size: 8px;
-
     margin-bottom: 7px;
   }
 `;
-
 
 // ============================================================
 // TITLE
@@ -826,8 +626,7 @@ const Eyebrow = styled.div`
 
 const Title = styled.h3`
   margin: 0;
-
-  color: #111111;
+  color: ${colors.primary};
 
   font-family:
     "Playfair Display",
@@ -835,11 +634,8 @@ const Title = styled.h3`
     serif;
 
   font-size: 23px;
-
   font-weight: 400;
-
   line-height: 1.3;
-
   overflow-wrap: anywhere;
 
   @media (max-width: 767px) {
@@ -851,35 +647,23 @@ const Title = styled.h3`
   }
 `;
 
-
 // ============================================================
 // FIELD
 // ============================================================
 
 const Field = styled.div`
-  padding:
-    18px
-    26px;
-
-  background: #ffffff;
-
-  border-bottom:
-    1px solid
-    #e5e1da;
+  padding: 18px 26px;
+  background: ${colors.surface};
+  border-bottom: 1px solid ${colors.border};
 
   @media (max-width: 767px) {
-    padding:
-      16px
-      20px;
+    padding: 16px 20px;
   }
 
   @media (max-width: 480px) {
-    padding:
-      15px
-      18px;
+    padding: 15px 18px;
   }
 `;
-
 
 // ============================================================
 // FIELD HEADER
@@ -887,25 +671,19 @@ const Field = styled.div`
 
 const FieldHeader = styled.div`
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
   gap: 10px;
-
   margin-bottom: 9px;
-
   min-width: 0;
 `;
-
 
 // ============================================================
 // FIELD LABEL
 // ============================================================
 
 const FieldLabel = styled.div`
-  color: #111111;
+  color: ${colors.primary};
 
   font-family:
     "Inter",
@@ -913,24 +691,17 @@ const FieldLabel = styled.div`
     sans-serif;
 
   font-size: 10px;
-
   font-weight: 600;
-
   letter-spacing: 0.13em;
-
   line-height: 1.3;
-
   text-transform: uppercase;
-
   overflow-wrap: anywhere;
 
   @media (max-width: 480px) {
     font-size: 9px;
-
     letter-spacing: 0.1em;
   }
 `;
-
 
 // ============================================================
 // SELECT WRAPPER
@@ -938,70 +709,41 @@ const FieldLabel = styled.div`
 
 const SelectWrapper = styled.div`
   position: relative;
-
   width: 100%;
-
   min-width: 0;
 
   .selectFlag {
     position: absolute;
-
     left: 13px;
-
     top: 50%;
-
     width: 20px;
-
     height: 13px;
-
     object-fit: cover;
-
-    transform:
-      translateY(-50%);
-
+    transform: translateY(-50%);
     pointer-events: none;
-
     z-index: 2;
-
     border-radius: 1px;
   }
 
   select {
     appearance: none;
-
     display: block;
-
     width: 100%;
-
     min-width: 0;
-
     height: 44px;
+    padding: 0 42px 0 14px;
 
-    padding:
-      0
-      42px
-      0
-      14px;
-
-    border:
-      1px solid
-      #d1ccc4;
-
+    border: 1px solid ${colors.border};
     border-radius: 0;
-
     outline: none;
+    background-color: ${colors.surface};
 
-    background-color: #ffffff;
-
-    background-image:
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23222222' stroke-width='1.2'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23071B1B' stroke-width='1.2'/%3E%3C/svg%3E");
 
     background-repeat: no-repeat;
+    background-position: right 15px center;
 
-    background-position:
-      right 15px center;
-
-    color: #111111;
+    color: ${colors.primary};
 
     font-family:
       "Inter",
@@ -1009,9 +751,7 @@ const SelectWrapper = styled.div`
       sans-serif;
 
     font-size: 12px;
-
     font-weight: 500;
-
     cursor: pointer;
 
     transition:
@@ -1019,22 +759,17 @@ const SelectWrapper = styled.div`
       box-shadow 0.2s ease;
 
     &:hover {
-      border-color: #b39a76;
+      border-color: ${colors.accent};
     }
 
     &:focus {
-      border-color: #b39a76;
-
-      box-shadow:
-        0 0 0 2px
-        rgba(179, 154, 118, 0.1);
+      border-color: ${colors.accent};
+      box-shadow: 0 0 0 2px rgba(24, 200, 120, 0.1);
     }
 
     option {
-      color: #111111;
-
-      background: #ffffff;
-
+      color: ${colors.primary};
+      background: ${colors.surface};
       font-size: 12px;
     }
   }
@@ -1046,24 +781,14 @@ const SelectWrapper = styled.div`
   @media (max-width: 480px) {
     select {
       height: 42px;
-
-      padding:
-        0
-        38px
-        0
-        12px;
-
+      padding: 0 38px 0 12px;
       font-size: 11px;
-
-      background-position:
-        right 12px center;
+      background-position: right 12px center;
     }
 
     .selectFlag {
       left: 11px;
-
       width: 19px;
-
       height: 12px;
     }
 
@@ -1073,38 +798,24 @@ const SelectWrapper = styled.div`
   }
 `;
 
-
 // ============================================================
 // DROPDOWN FOOTER
 // ============================================================
 
 const DropdownFooter = styled.div`
   display: flex;
-
   justify-content: flex-end;
-
-  padding:
-    18px
-    26px
-    22px;
-
-  background: #f7f4ee;
+  padding: 18px 26px 22px;
+  background: ${colors.background};
 
   @media (max-width: 767px) {
-    padding:
-      16px
-      20px
-      20px;
+    padding: 16px 20px 20px;
   }
 
   @media (max-width: 480px) {
-    padding:
-      15px
-      18px
-      18px;
+    padding: 15px 18px 18px;
   }
 `;
-
 
 // ============================================================
 // SAVE BUTTON
@@ -1112,24 +823,15 @@ const DropdownFooter = styled.div`
 
 const SaveButton = styled.button`
   appearance: none;
-
   min-width: 140px;
-
   height: 40px;
+  padding: 0 22px;
 
-  padding:
-    0
-    22px;
-
-  border:
-    1px solid
-    #191816;
-
+  border: 1px solid ${colors.primary};
   border-radius: 0;
 
-  background: #191816;
-
-  color: #ffffff;
+  background: ${colors.primary};
+  color: ${colors.surface};
 
   font-family:
     "Inter",
@@ -1137,13 +839,9 @@ const SaveButton = styled.button`
     sans-serif;
 
   font-size: 9px;
-
   font-weight: 600;
-
   letter-spacing: 0.15em;
-
   text-transform: uppercase;
-
   cursor: pointer;
 
   transition:
@@ -1151,22 +849,19 @@ const SaveButton = styled.button`
     border-color 0.25s ease;
 
   &:hover {
-    background: #b39a76;
-
-    border-color: #b39a76;
+    background: ${colors.accentHover};
+    border-color: ${colors.accentHover};
+    color: ${colors.primary};
   }
 
   @media (max-width: 767px) {
     width: 100%;
-
     min-width: 0;
   }
 
   @media (max-width: 480px) {
     height: 42px;
-
     font-size: 8px;
-
     letter-spacing: 0.13em;
   }
 `;

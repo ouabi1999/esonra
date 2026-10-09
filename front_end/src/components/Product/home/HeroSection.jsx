@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
@@ -7,11 +8,11 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { optimizeCloudinaryImage } from "../../../utilis/cloudinary";
 import DecorationLine from "../../../../common/DecorationLine";
 import { createProductSlug } from "../../../utilis/CreateSlug";
+import { colors } from "../../../utilis/colors";
 
 export default function HeroSection() {
   const [product, setProduct] = useState(null);
   const { t, i18n } = useTranslation();
-
 
   useEffect(() => {
     const getHeroProduct = async () => {
@@ -26,7 +27,6 @@ export default function HeroSection() {
 
     getHeroProduct();
   }, []);
-
 
   const imageUrl = optimizeCloudinaryImage(
     product?.multimediaInfo?.image_urls?.[2],
@@ -47,13 +47,11 @@ export default function HeroSection() {
           <Description>{t("heroSection.description")}</Description>
 
           <QualityTitle>
-            enouza
+            Ensora
           </QualityTitle>
           <DecorationLine />
 
-
           {/* STATS */}
-
         </Content>
 
         {/* IMAGE SIDE */}
@@ -69,12 +67,13 @@ export default function HeroSection() {
 
             {/* SHOP BUTTON */}
             <ShopButton
-              to={`/product/${createProductSlug(product.name?.en)}`} $rtl={isRTL}
+              to={`/product/${createProductSlug(product.name?.en)}`}
+              $rtl={isRTL}
               dir={i18n.dir() === "rtl" ? "rtl" : "ltr"}
             >
               <span>{t("heroSection.ctaLabel")}</span>
 
-              <Arrow $rtl={isRTL} >
+              <Arrow $rtl={isRTL}>
                 <ArrowForwardIcon />
               </Arrow>
             </ShopButton>
@@ -84,10 +83,6 @@ export default function HeroSection() {
     </HeroBox>
   );
 }
-
-
-
-
 
 /* =========================
    ANIMATIONS
@@ -132,16 +127,8 @@ const HeroBox = styled.section`
   align-items: center;
   justify-content: center;
 
-  background:
-    linear-gradient(
-      135deg,
-      #f8f6f2 0%,
-      #f1eee8 48%,
-      #e9e4dc 100%
-    );
-
-  color: #1a1917;
-
+  background: ${colors.background};
+  color: ${colors.text};
 
   @media (max-width: 1100px) {
     padding: 48px 28px;
@@ -211,7 +198,7 @@ const Title = styled.h1`
 
   max-width: 570px;
 
-  color: #171615;
+  color: ${colors.primary};
 
   font-family:
     "Playfair Display",
@@ -246,7 +233,7 @@ const Description = styled.p`
 
   margin: 0 0 37px;
 
-  color: #68635d;
+  color: ${colors.textSecondary};
 
   font-family:
     "Inter",
@@ -281,7 +268,7 @@ const QualityTitle = styled.p`
 
   margin: 0 0 21px;
 
-  color: #806b45;
+  color: ${colors.accent};
 
   font-family:
     "Inter",
@@ -311,7 +298,6 @@ const QualityTitle = styled.p`
   }
 `;
 
-
 /* =========================
    IMAGE
 ========================= */
@@ -340,11 +326,11 @@ const ImageContainer = styled.div`
 
   overflow: hidden;
 
-  background: #ded9d0;
+  background: ${colors.secondary};
 
   box-shadow:
-    0 26px 65px rgba(48, 43, 39, 0.13),
-    0 8px 22px rgba(48, 43, 39, 0.06);
+    0 26px 65px rgba(7, 27, 27, 0.13),
+    0 8px 22px rgba(7, 27, 27, 0.06);
 
   animation:
     ${floatAnimation}
@@ -368,15 +354,15 @@ const ImageContainer = styled.div`
 
   @media (max-width: 600px) {
     box-shadow:
-      0 20px 45px rgba(48, 43, 39, 0.12),
-      0 6px 18px rgba(48, 43, 39, 0.05);
+      0 20px 45px rgba(7, 27, 27, 0.12),
+      0 6px 18px rgba(7, 27, 27, 0.05);
   }
 `;
 
 const HeroImage = styled.img`
   display: block;
   width: 100%;
-  
+
   height: clamp(470px, 46vw, 620px);
   aspect-ratio: 700 / 620;
 
@@ -410,47 +396,49 @@ const HeroImage = styled.img`
 /* =========================
    SHOP BUTTON
 ========================= */
+
 const Arrow = styled.span`
   display: flex;
-  
-  svg{
-   font-size: 10px;
+
+  svg {
+    font-size: 10px;
   }
+
   transform: ${({ $rtl }) =>
     $rtl ? "rotate(180deg)" : "none"};
-
-  
 `;
+
 const ShopButton = styled(Link)`
   position: absolute;
   right: 7%;
-  border: 2px solid #ffffff;
-  padding:10px 15px;
+  border: 2px solid ${colors.accent};
+  padding: 10px 15px;
   bottom: 20px;
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  color: #ffffff;
+  color: ${colors.surface};
   text-decoration: none;
-   background: #0000004f;
+  background: rgba(7, 27, 27, 0.82);
 
-  font-wieght:500;
-    font-size: 0.7rem;
+  font-wieght: 500;
+  font-size: 0.7rem;
 
-  white-space: nowrap; /* ✅ fixed */
+  white-space: nowrap;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  z-index: 5; /* ✅ prevents hiding behind image */
-  transition: color 0.25s ease, border-color 0.25s ease, gap 0.25s ease; /* ✅ explicit + gap */
+  z-index: 5;
+  transition: color 0.25s ease, border-color 0.25s ease, gap 0.25s ease;
 
   &:hover {
-    color: #000000;
-    border-color: #000000;
-    gap: 12px; /* optional: makes arrow move on hover */
+    color: ${colors.primary};
+    border-color: ${colors.accent};
+    background: ${colors.accent};
+    gap: 12px;
   }
 
   &:focus-visible {
-    outline: 1px solid white;
+    outline: 1px solid ${colors.surface};
     outline-offset: 5px;
   }
 
@@ -458,11 +446,10 @@ const ShopButton = styled(Link)`
   [dir="rtl"] & {
     left: auto;
     right: 7%;
-
   }
 
   @media (max-width: 700px) {
-    left: auto; /* ✅ clear the desktop left value */
+    left: auto;
     right: 50%;
     transform: translateX(50%);
     bottom: 30px;
@@ -472,9 +459,8 @@ const ShopButton = styled(Link)`
     [dir="rtl"] & {
       left: 50%;
       right: auto;
-      transform: translateX(-50%); /* mirror the centering */
-          font-size: 10rem;
-
+      transform: translateX(-50%);
+      font-size: 10rem;
     }
   }
 
@@ -482,9 +468,3 @@ const ShopButton = styled(Link)`
     bottom: 24px;
   }
 `;
-//////////////////
-
-
-
-
-

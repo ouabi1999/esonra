@@ -82,7 +82,7 @@ class ProductView(APIView):
 
                 result = cloudinary.uploader.upload(
                     image_file,
-                    folder="enouza/products"
+                    folder="ensora/products"
                 )
 
                 image_urls.append(result["secure_url"])
@@ -121,7 +121,7 @@ class ProductView(APIView):
         # SAVE PRODUCT
         # --------------------------------------------------
 
-        serializer = ProductSerializer(data=data)
+        serializer = ProductDetailsSerializer(data=data)
 
         if serializer.is_valid():
 
@@ -238,7 +238,7 @@ class ProductDetailsView(APIView):
         if additionalImageFiles:
             for image_file in additionalImageFiles:
                 result = cloudinary.uploader.upload(
-                    image_file, folder="enouza/products"
+                    image_file, folder="ensora/products"
                 )
                 image_urls.append(result["secure_url"])
 

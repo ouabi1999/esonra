@@ -1,24 +1,24 @@
+
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import ArrowForward from "@mui/icons-material/ArrowForward";
 import { Link } from "react-router-dom";
-import {optimizeCloudinaryVideo} from "../../../utilis/cloudinary"
+import { optimizeCloudinaryVideo } from "../../../utilis/cloudinary";
+import { colors } from "../../../utilis/colors";
 
 const MetricsSection = () => {
   const { t, i18n } = useTranslation();
 
- const vedeoUrl = "https://res.cloudinary.com/dzpzy1o1y/video/upload/v1786567618/About_iiabi5.mp4"
-  
-  
-  
+  const vedeoUrl =
+    "https://res.cloudinary.com/dzpzy1o1y/video/upload/v1786567618/About_iiabi5.mp4";
 
   return (
     <Section>
       {/* =========================
-          WHY CHOOSE ENOUZA
+          WHY CHOOSE ENSORA
       ========================= */}
-{/*
+      {/*
       <SectionHeader
         dir={i18n.language === "ar" ? "rtl" : "ltr"}
       >
@@ -32,6 +32,7 @@ const MetricsSection = () => {
           <DecorationLine />
         </TitleDecoration>
       </SectionHeader>
+      */}
 
       {/* =========================
           VIDEO
@@ -40,33 +41,29 @@ const MetricsSection = () => {
       <VideoSection
         dir={i18n.language === "ar" ? "rtl" : "ltr"}
       >
-          <Video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            aria-label="Enouza luxury lighting and premium home decor"
-          >
-            <source
-              src={optimizeCloudinaryVideo(  vedeoUrl, {width: 1600} )}
-              type="video/mp4"
-            />
-          </Video>
-        
-        
+        <Video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-label="Esnora Smart Tracking, Thoughtfully Chosen."
+        >
+          <source
+            src={optimizeCloudinaryVideo(vedeoUrl, { width: 1600 })}
+            type="video/mp4"
+          />
+        </Video>
 
         <VideoOverlay />
 
         <VideoContent>
-          
-
           <VideoDescription>
             {t("matricsSection.description")}
           </VideoDescription>
         </VideoContent>
 
-        <ShopButton  to={"/product/liora-marble-ambient-table-lamp"}>
+        <ShopButton to={"/product/liora-marble-ambient-table-lamp"}>
           {t("common.buyNow")}
 
           <Arrow $rtl={i18n.dir() === "rtl"}>
@@ -81,26 +78,11 @@ const MetricsSection = () => {
 export default MetricsSection;
 
 /* =========================
-   COLORS
-========================= */
-
-const COLORS = {
-  background: "#F7F5F0",
-  white: "#FFFFFF",
-  text: "#1D1C1A",
-  muted: "#77736B",
-  gold: "#B39A76",
-  softGold: "#DED4C4",
-  border: "#E4DED4",
-};
-
-/* =========================
    SECTION
 ========================= */
 
 const Section = styled.section`
   width: 100%;
-  background: ${COLORS.background};
 `;
 
 /* =========================
@@ -119,7 +101,7 @@ const SectionHeader = styled.div`
 const SectionTitle = styled.h2`
   margin: 0;
 
-  color: ${COLORS.text};
+  color: ${colors.primary};
 
   font-family: "Playfair Display", serif;
   font-size: clamp(1.4rem, 1vw, 2rem);
@@ -152,7 +134,7 @@ const DecorationLine = styled.span`
   width: 55px;
   height: 1px;
 
-  background: ${COLORS.softGold};
+  background: ${colors.border};
 
   @media (max-width: 480px) {
     width: 40px;
@@ -165,7 +147,7 @@ const DecorationDot = styled.span`
 
   border-radius: 50%;
 
-  background: ${COLORS.gold};
+  background: ${colors.accent};
 `;
 
 /* =========================
@@ -212,13 +194,7 @@ const VideoPlaceholder = styled.div`
   position: absolute;
   inset: 0;
 
-  background:
-    linear-gradient(
-      120deg,
-      #d9d0c2 0%,
-      #eee8df 45%,
-      #d4c8b8 100%
-    );
+
 `;
 
 /* =========================
@@ -230,9 +206,6 @@ const VideoOverlay = styled.div`
 
   inset: 0;
 
-  background: rgba(0, 0, 0, 0.3);
-
- 
 `;
 
 /* =========================
@@ -251,9 +224,9 @@ const VideoContent = styled.div`
 
   text-align: center;
 
-  color: white;
+  color: ${colors.surface};
 
-  z-index:1;
+  z-index: 1;
 `;
 
 const VideoTitle = styled.h2`
@@ -276,6 +249,8 @@ const VideoDescription = styled.p`
   margin: 20px auto 0;
 
   max-width: 580px;
+
+  color: ${colors.surface};
 
   font-family: "Playfair Display", serif;
   font-size: clamp(0.9rem, 1.5vw, 1.2rem);
@@ -309,7 +284,7 @@ const ShopButton = styled(Link)`
 
   gap: 8px;
 
-  color: white;
+  color: ${colors.surface};
 
   text-decoration: none;
 
@@ -326,7 +301,7 @@ const ShopButton = styled(Link)`
   z-index: 1;
 
   &:hover {
-    color: #d4bd91;
+    color: ${colors.accent};
   }
 
   @media (max-width: 700px) {

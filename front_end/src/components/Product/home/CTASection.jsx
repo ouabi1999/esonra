@@ -1,18 +1,11 @@
+
 import React from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-
-const COLORS = {
-  cream: "#F6F3ED",
-  white: "#FFFFFF",
-  ink: "#1D1C1A",
-  muted: "#77736B",
-  gold: "#B39A76",
-  border: "#E4DED4",
-};
+import { colors } from "../../../utilis/colors";
 
 const CTASection = () => {
   const { t, i18n } = useTranslation();
@@ -23,25 +16,19 @@ const CTASection = () => {
     <Section dir={isRTL ? "rtl" : "ltr"}>
       <Container>
         <CTA>
-
           <Eyebrow>
             <EyebrowLine />
             <span>{t("ctaSection.eyebrow")}</span>
             <EyebrowLine />
           </Eyebrow>
 
-          <Title>
-            {t("ctaSection.titleLeft")}
-          </Title>
+          <Title>{t("ctaSection.titleLeft")}</Title>
 
           <Description>
             {t("ctaSection.description")}
           </Description>
 
-          <Button
-            as={Link}
-            to="/contact-us"
-          >
+          <Button as={Link} to="/contact-us">
             <ButtonText>
               {t("ctaSection.button")}
             </ButtonText>
@@ -56,7 +43,6 @@ const CTASection = () => {
               />
             </ButtonIcon>
           </Button>
-
         </CTA>
       </Container>
     </Section>
@@ -65,17 +51,14 @@ const CTASection = () => {
 
 export default CTASection;
 
-
 /* ============================================================
    SECTION
 ============================================================ */
 
 const Section = styled.section`
   width: 100%;
-
   padding: 90px 0;
-
-  background: ${COLORS.cream};
+  background: ${colors.background};
 
   @media (max-width: 700px) {
     padding: 65px 0;
@@ -86,14 +69,12 @@ const Section = styled.section`
   }
 `;
 
-
 /* ============================================================
    CONTAINER
 ============================================================ */
 
 const Container = styled.div`
   width: min(1180px, calc(100% - 48px));
-
   margin: 0 auto;
 
   @media (max-width: 600px) {
@@ -101,46 +82,33 @@ const Container = styled.div`
   }
 `;
 
-
 /* ============================================================
    CTA
 ============================================================ */
 
 const CTA = styled.div`
   position: relative;
-
   display: flex;
   flex-direction: column;
-
   align-items: center;
-
   justify-content: center;
-
   min-height: 430px;
-
   padding: 70px 40px;
-
   text-align: center;
-
-  background: ${COLORS.white};
-
-  border: 1px solid ${COLORS.border};
-
+  background: ${colors.surface};
+  border: 1px solid ${colors.border};
   overflow: hidden;
 
   @media (max-width: 700px) {
     min-height: 380px;
-
     padding: 55px 25px;
   }
 
   @media (max-width: 480px) {
     min-height: 350px;
-
     padding: 45px 20px;
   }
 `;
-
 
 /* ============================================================
    EYEBROW
@@ -148,33 +116,21 @@ const CTA = styled.div`
 
 const Eyebrow = styled.div`
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 14px;
-
   margin-bottom: 25px;
-
-  color: ${COLORS.gold};
-
+  color: ${colors.accent};
   font-size: 9px;
-
   font-weight: 700;
-
   letter-spacing: 0.2em;
-
   text-transform: uppercase;
 `;
 
 const EyebrowLine = styled.span`
   width: 28px;
-
   height: 1px;
-
-  background: ${COLORS.gold};
-
+  background: ${colors.accent};
   opacity: 0.7;
 
   @media (max-width: 480px) {
@@ -182,29 +138,21 @@ const EyebrowLine = styled.span`
   }
 `;
 
-
 /* ============================================================
    TITLE
 ============================================================ */
 
 const Title = styled.h2`
   max-width: 720px;
-
   margin: 0;
-
-  color: ${COLORS.ink};
-
+  color: ${colors.primary};
   font-family:
     "Times New Roman",
     Georgia,
     serif;
-
   font-size: clamp(40px, 5vw, 62px);
-
   font-weight: 400;
-
   line-height: 1.05;
-
   letter-spacing: -0.04em;
 
   @media (max-width: 600px) {
@@ -216,31 +164,23 @@ const Title = styled.h2`
   }
 `;
 
-
 /* ============================================================
    DESCRIPTION
 ============================================================ */
 
 const Description = styled.p`
   max-width: 510px;
-
   margin: 22px auto 32px;
-
-  color: ${COLORS.muted};
-
+  color: ${colors.textSecondary};
   font-size: 14px;
-
   line-height: 1.8;
 
   @media (max-width: 480px) {
     margin-top: 18px;
-
     font-size: 13px;
-
     line-height: 1.7;
   }
 `;
-
 
 /* ============================================================
    BUTTON
@@ -248,27 +188,16 @@ const Description = styled.p`
 
 const Button = styled(Link)`
   display: inline-flex;
-
   align-items: center;
-
   gap: 16px;
-
   padding: 6px 7px 6px 22px;
-
   border-radius: 999px;
-
-  background: ${COLORS.ink};
-
-  color: ${COLORS.white};
-
+  background: ${colors.primary};
+  color: ${colors.surface};
   text-decoration: none;
-
   font-size: 10px;
-
   font-weight: 700;
-
   letter-spacing: 0.14em;
-
   text-transform: uppercase;
 
   transition:
@@ -277,16 +206,13 @@ const Button = styled(Link)`
     gap 0.25s ease;
 
   &:hover {
-    background: #2B2926;
-
+    background: ${colors.secondary};
     transform: translateY(-2px);
-
     gap: 21px;
   }
 
   @media (max-width: 480px) {
     padding-left: 18px;
-
     gap: 13px;
   }
 `;
@@ -297,18 +223,13 @@ const ButtonText = styled.span`
 
 const ButtonIcon = styled.span`
   width: 36px;
-
   height: 36px;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   border-radius: 50%;
-
-  background: ${COLORS.gold};
+  background: ${colors.accent};
+  color: ${colors.primary};
 
   svg {
     width: 17px;

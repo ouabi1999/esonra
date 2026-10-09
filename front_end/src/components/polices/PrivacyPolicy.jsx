@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import SEO from "../../components/SEO/SEO";
 function PrivacyPolicy() {
-  const { t, i18n } = useTranslation("privacy");
+  const { t, i18n } = useTranslation();
 
   useLayoutEffect(() => {
     window.scrollTo({
@@ -18,7 +18,7 @@ function PrivacyPolicy() {
     <Container dir={isRTL ? "rtl" : "ltr"}>
           <SEO
       title="Privacy Policy"
-      description="Read Enouza's Privacy Policy to learn how we collect, use, protect, and manage your personal information when you use our website."
+      description="Read Ensora's Privacy Policy to learn how we collect, use, protect, and manage your personal information when you use our website."
       canonical="/privacy-policy"
     />
      
@@ -27,16 +27,16 @@ function PrivacyPolicy() {
       ================================================= */}
 
       <Header>
-        <Eyebrow>ENOUZA</Eyebrow>
+        <Eyebrow>ESONRA</Eyebrow>
 
         <Title>
-          {t("privacyPolicy.title")}
+          {t("privacyPolicyPage.title")}
         </Title>
 
         <HeaderLine />
 
         <Intro>
-          {t("privacyPolicy.intro")}
+          {t("privacyPolicyPage.intro")}
         </Intro>
       </Header>
 
@@ -50,13 +50,13 @@ function PrivacyPolicy() {
 
         <Subtitle>
           {t(
-            "privacyPolicy.collectingPersonalInfo.title"
+            "privacyPolicyPage.collectingPersonalInfo.title"
           )}
         </Subtitle>
 
         <Text>
           {t(
-            "privacyPolicy.collectingPersonalInfo.description"
+            "privacyPolicyPage.collectingPersonalInfo.description"
           )}
         </Text>
       </Section>
@@ -70,23 +70,23 @@ function PrivacyPolicy() {
         <SectionNumber>02</SectionNumber>
 
         <Subtitle>
-          {t("privacyPolicy.deviceInfo.title")}
+          {t("privacyPolicyPage.deviceInfo.title")}
         </Subtitle>
 
         <Text>
-          {t("privacyPolicy.deviceInfo.examples")}
+          {t("privacyPolicyPage.deviceInfo.examples")}
         </Text>
 
         <Text>
-          {t("privacyPolicy.deviceInfo.purpose")}
+          {t("privacyPolicyPage.deviceInfo.purpose")}
         </Text>
 
         <Text>
-          {t("privacyPolicy.deviceInfo.source")}
+          {t("privacyPolicyPage.deviceInfo.source")}
         </Text>
 
         <Text>
-          {t("privacyPolicy.deviceInfo.disclosure")}
+          {t("privacyPolicyPage.deviceInfo.disclosure")}
         </Text>
       </Section>
 
@@ -99,23 +99,23 @@ function PrivacyPolicy() {
         <SectionNumber>03</SectionNumber>
 
         <Subtitle>
-          {t("privacyPolicy.orderInfo.title")}
+          {t("privacyPolicyPage.orderInfo.title")}
         </Subtitle>
 
         <Text>
-          {t("privacyPolicy.orderInfo.examples")}
+          {t("privacyPolicyPage.orderInfo.examples")}
         </Text>
 
         <Text>
-          {t("privacyPolicy.orderInfo.purpose")}
+          {t("privacyPolicyPage.orderInfo.purpose")}
         </Text>
 
         <Text>
-          {t("privacyPolicy.orderInfo.source")}
+          {t("privacyPolicyPage.orderInfo.source")}
         </Text>
 
         <Text>
-          {t("privacyPolicy.orderInfo.disclosure")}
+          {t("privacyPolicyPage.orderInfo.disclosure")}
         </Text>
       </Section>
 
@@ -129,25 +129,25 @@ function PrivacyPolicy() {
 
         <Subtitle>
           {t(
-            "privacyPolicy.customerSupportInfo.title"
+            "privacyPolicyPage.customerSupportInfo.title"
           )}
         </Subtitle>
 
         <Text>
           {t(
-            "privacyPolicy.customerSupportInfo.examples"
+            "privacyPolicyPage.customerSupportInfo.examples"
           )}
         </Text>
 
         <Text>
           {t(
-            "privacyPolicy.customerSupportInfo.purpose"
+            "privacyPolicyPage.customerSupportInfo.purpose"
           )}
         </Text>
 
         <Text>
           {t(
-            "privacyPolicy.customerSupportInfo.source"
+            "privacyPolicyPage.customerSupportInfo.source"
           )}
         </Text>
       </Section>
@@ -162,13 +162,13 @@ function PrivacyPolicy() {
 
         <Subtitle>
           {t(
-            "privacyPolicy.sharingPersonalInfo.title"
+            "privacyPolicyPage.sharingPersonalInfo.title"
           )}
         </Subtitle>
 
         <Text>
           {t(
-            "privacyPolicy.sharingPersonalInfo.text"
+            "privacyPolicyPage.sharingPersonalInfo.text"
           )}
         </Text>
       </Section>
@@ -183,13 +183,13 @@ function PrivacyPolicy() {
 
         <Subtitle>
           {t(
-            "privacyPolicy.behavioralAdvertising.title"
+            "privacyPolicyPage.behavioralAdvertising.title"
           )}
         </Subtitle>
 
         <Text>
           {t(
-            "privacyPolicy.behavioralAdvertising.text"
+            "privacyPolicyPage.behavioralAdvertising.text"
           )}
         </Text>
       </Section>
@@ -204,13 +204,13 @@ function PrivacyPolicy() {
 
         <Subtitle>
           {t(
-            "privacyPolicy.usingPersonalInfo.title"
+            "privacyPolicyPage.usingPersonalInfo.title"
           )}
         </Subtitle>
 
         <Text>
           {t(
-            "privacyPolicy.usingPersonalInfo.text"
+            "privacyPolicyPage.usingPersonalInfo.text"
           )}
         </Text>
       </Section>
@@ -225,13 +225,13 @@ function PrivacyPolicy() {
 
         <Subtitle>
           {t(
-            "privacyPolicy.lawfulBasis.title"
+            "privacyPolicyPage.lawfulBasis.title"
           )}
         </Subtitle>
 
         <Text>
           {t(
-            "privacyPolicy.lawfulBasis.text"
+            "privacyPolicyPage.lawfulBasis.text"
           )}
         </Text>
       </Section>
@@ -245,11 +245,11 @@ function PrivacyPolicy() {
         <SectionNumber>09</SectionNumber>
 
         <Subtitle>
-          {t("privacyPolicy.retention.title")}
+          {t("privacyPolicyPage.retention.title")}
         </Subtitle>
 
         <Text>
-          {t("privacyPolicy.retention.text")}
+          {t("privacyPolicyPage.retention.text")}
         </Text>
       </Section>
 
@@ -263,13 +263,13 @@ function PrivacyPolicy() {
 
         <Subtitle>
           {t(
-            "privacyPolicy.automaticDecisionMaking.title"
+            "privacyPolicyPage.automaticDecisionMaking.title"
           )}
         </Subtitle>
 
         <Text>
           {t(
-            "privacyPolicy.automaticDecisionMaking.text"
+            "privacyPolicyPage.automaticDecisionMaking.text"
           )}
         </Text>
       </Section>
@@ -283,15 +283,15 @@ function PrivacyPolicy() {
         <SectionNumber>11</SectionNumber>
 
         <Subtitle>
-          {t("privacyPolicy.yourRights.title")}
+          {t("privacyPolicyPage.yourRights.title")}
         </Subtitle>
 
         <Text>
-          {t("privacyPolicy.yourRights.gdpr")}
+          {t("privacyPolicyPage.yourRights.gdpr")}
         </Text>
 
         <Text>
-          {t("privacyPolicy.yourRights.ccpa")}
+          {t("privacyPolicyPage.yourRights.ccpa")}
         </Text>
       </Section>
 
@@ -304,11 +304,11 @@ function PrivacyPolicy() {
         <SectionNumber>12</SectionNumber>
 
         <Subtitle>
-          {t("privacyPolicy.cookies.title")}
+          {t("privacyPolicyPage.cookies.title")}
         </Subtitle>
 
         <Text>
-          {t("privacyPolicy.cookies.text")}
+          {t("privacyPolicyPage.cookies.text")}
         </Text>
       </Section>
 
@@ -321,11 +321,11 @@ function PrivacyPolicy() {
         <SectionNumber>13</SectionNumber>
 
         <Subtitle>
-          {t("privacyPolicy.doNotTrack.title")}
+          {t("privacyPolicyPage.doNotTrack.title")}
         </Subtitle>
 
         <Text>
-          {t("privacyPolicy.doNotTrack.text")}
+          {t("privacyPolicyPage.doNotTrack.text")}
         </Text>
       </Section>
 
@@ -338,11 +338,11 @@ function PrivacyPolicy() {
         <SectionNumber>14</SectionNumber>
 
         <Subtitle>
-          {t("privacyPolicy.changes.title")}
+          {t("privacyPolicyPage.changes.title")}
         </Subtitle>
 
         <Text>
-          {t("privacyPolicy.changes.text")}
+          {t("privacyPolicyPage.changes.text")}
         </Text>
       </Section>
 
@@ -355,15 +355,15 @@ function PrivacyPolicy() {
         <SectionNumber>15</SectionNumber>
 
         <Subtitle>
-          {t("privacyPolicy.contact.title")}
+          {t("privacyPolicyPage.contact.title")}
         </Subtitle>
 
         <Text>
-          {t("privacyPolicy.contact.text")}
+          {t("privacyPolicyPage.contact.text")}
         </Text>
 
         <Updated>
-          {t("privacyPolicy.lastUpdated")}
+          {t("privacyPolicyPage.lastUpdated")}
         </Updated>
       </Section>
 

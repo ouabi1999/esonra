@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import StarIcon from '@mui/icons-material/Star';
 import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
-import CircularProgress, {
-    circularProgressClasses,
-  } from '@mui/material/CircularProgress';
+import CircularProgress from '@mui/material/CircularProgress';
 import {useSelector} from "react-redux"
 
 function Feedback(props) {

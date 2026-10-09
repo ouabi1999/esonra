@@ -1,14 +1,14 @@
+
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import { useNavigate } from "react-router-dom";
 import ApiInstance from "../../../../common/baseUrl";
 import ReviewImagePopup from "../aboutProduct/reviews/ReviewImagePopup";
-
+import { colors } from "../../../utilis/colors";
 
 const CustomersFeedback = () => {
   const [reviews, setReviews] = useState([]);
@@ -18,8 +18,9 @@ const CustomersFeedback = () => {
     id: null,
     index: null,
   });
-  const [review, setReview] = useState({})
-const navigate = useNavigate();
+  const [review, setReview] = useState({});
+  const navigate = useNavigate();
+
   // 1. Helper function to determine slides based on width
   const getSlidesToShow = () => {
     if (window.innerWidth < 550) return 1;
@@ -41,32 +42,31 @@ const navigate = useNavigate();
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // 4. Fetch data (unchanged)
+  // 4. Fetch data
   useEffect(() => {
     ApiInstance.get("ratings/")
       .then((res) => setReviews(res.data))
       .catch((err) => console.error("Ratings error:", err));
   }, []);
 
-  // 5. Settings - REMOVE the 'responsive' array entirely
+  // 5. Slider settings
   const settings = {
     dots: true,
-    infinite: reviews.length > slidesToShow, // Use dynamic variable
+    infinite: reviews.length > slidesToShow,
     autoplay: true,
     autoplaySpeed: 2500,
     speed: 600,
-    slidesToShow: slidesToShow, // 👈 Dynamic
-    slidesToScroll: 1, // Keep this 1 so it doesn't skip slides
+    slidesToShow: slidesToShow,
+    slidesToScroll: 1,
     arrows: false,
     pauseOnHover: true,
-    // responsive: []  // ❌ DELETE THIS LINE
   };
+
   const setRate = (item, index) => {
-    setExpanded(true)
-    setReview(item)
-    setSelected({ id: item.id, index: index },)
-    console.log(review, expanded)
-  }
+    setExpanded(true);
+    setReview(item);
+    setSelected({ id: item.id, index: index });
+  };
 
   const optimizeCloudinaryImage = (url, width = 700) => {
     if (!url?.includes("res.cloudinary.com")) return url;
@@ -77,21 +77,17 @@ const navigate = useNavigate();
       `/image/upload/f_auto,q_auto,w_${width}/`
     );
   };
+
   return (
     <Section>
       <Container>
-
         {/* HEADER */}
-
         <Header>
           <Eyebrow>
-            <bdi>
-              {t("customersFeedback.eyebrow")}
-            </bdi>
+            <bdi>{t("customersFeedback.eyebrow")}</bdi>
           </Eyebrow>
-          <Title>
-            {t("customersFeedback.title")}
-          </Title>
+
+          <Title>{t("customersFeedback.title")}</Title>
 
           <Description>
             {t("customersFeedback.description")}
@@ -113,118 +109,116 @@ const navigate = useNavigate();
         </Header>
 
         {/* REVIEWS */}
-
-        {reviews.length > 0 && (
+        {reviews?.length > 0 && (
           <Reviews>
             <Slider {...settings}>
-              {reviews.map((item, index) => {
-
-
+              {reviews?.map((item, index) => {
                 return (
                   <ReviewSlide key={item.id}>
-                   <ReviewCard>
-  {/* IMAGE */}
-  <ImageWrapper onClick={() => setRate(item, 0)}>
-    <ReviewImage
-      src={
-        item.review?.images?.length > 0
-          ? optimizeCloudinaryImage(item.review.images[0], 700)
-          : optimizeCloudinaryImage(
-              "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1786734712/ChatGPT_Image_Aug_14_2026_09_11_32_PM_lok4wr.png",
-              700
-            )
-      }
-      alt="Customer review"
-      loading="lazy"
-      decoding="async"
-      width="700"
-      height="700"
-    />
-  </ImageWrapper>
+                    <ReviewCard>
+                      {/* IMAGE */}
+                      <ImageWrapper onClick={() => setRate(item, 0)}>
+                        <ReviewImage
+                          src={
+                            item.review?.images?.length > 0
+                              ? optimizeCloudinaryImage(
+                                  item.review.images[0],
+                                  700
+                                )
+                              : optimizeCloudinaryImage(
+                                  "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1786734712/ChatGPT_Image_Aug_14_2026_09_11_32_PM_lok4wr.png",
+                                  700
+                                )
+                          }
+                          alt="Customer review"
+                          loading="lazy"
+                          decoding="async"
+                          width="700"
+                          height="700"
+                        />
+                      </ImageWrapper>
 
-  {/* CONTENT */}
-  <ReviewContent>
+                      {/* CONTENT */}
+                      <ReviewContent>
+                        {/* RATING + VERIFIED */}
+                        <RatingRow>
+                          <ReviewRating
+                            aria-label={`${item.stars} out of 5 stars`}
+                          >
+                            {"★".repeat(item.stars || 0)}
+                          </ReviewRating>
 
-    {/* RATING + VERIFIED */}
-    <RatingRow>
-      <ReviewRating
-        aria-label={`${item.stars} out of 5 stars`}
-      >
-        {"★".repeat(item.stars || 0)}
-      </ReviewRating>
+                          <Verified>
+                            <Check />
+                            {t("customersFeedback.verifiedPurchase")}
+                          </Verified>
+                        </RatingRow>
 
-      <Verified>
-        <Check />
-        {t("customersFeedback.verifiedPurchase")}
-      </Verified>
-    </RatingRow>
+                        {/* REVIEW */}
+                        <ReviewText>
+                          {item.review?.text || ""}
+                        </ReviewText>
 
-    {/* REVIEW */}
-    <ReviewText>
-      {item.review?.text || ""}
-    </ReviewText>
+                        {/* CUSTOMER */}
+                        <Customer>
+                          <CustomerAvatar>
+                            {item.user?.firstName?.charAt(0) || "C"}
+                          </CustomerAvatar>
 
-    {/* CUSTOMER */}
-    <Customer>
-      <CustomerAvatar>
-        {item.user?.firstName?.charAt(0) || "C"}
-      </CustomerAvatar>
+                          <CustomerInfo>
+                            <CustomerName>
+                              {item.user?.firstName
+                                ? `${item.user.firstName} ${
+                                    item.user?.lastName?.slice(0, 1) || ""
+                                  }.`
+                                : "Customer"}
+                            </CustomerName>
 
-      <CustomerInfo>
-        <CustomerName>
-          {item.user?.firstName
-            ? `${item.user.firstName} ${
-                item.user?.lastName?.slice(0, 1) || ""
-              }.`
-            : "Customer"}
-        </CustomerName>
-
-        <CustomerDate>
-          {item.created_at
-            ? new Date(item.created_at).toLocaleDateString("en-GB")
-            : ""}
-        </CustomerDate>
-      </CustomerInfo>
-    </Customer>
-
-  </ReviewContent>
-</ReviewCard>
+                            <CustomerDate>
+                              {item.created_at
+                                ? new Date(
+                                    item.created_at
+                                  ).toLocaleDateString("en-GB")
+                                : ""}
+                            </CustomerDate>
+                          </CustomerInfo>
+                        </Customer>
+                      </ReviewContent>
+                    </ReviewCard>
                   </ReviewSlide>
-
                 );
-
-
               })}
             </Slider>
-            {expanded === true && (
-              <ReviewImagePopup rate={review} selected={selected} setSelected={setSelected} />
-            )}
 
+            {expanded === true && (
+              <ReviewImagePopup
+                rate={review}
+                selected={selected}
+                setSelected={setSelected}
+              />
+            )}
           </Reviews>
         )}
-
       </Container>
-      <ViewAllButton onClick={() => navigate("/reviews")}>
-  {t("customersFeedback.viewAllReviews")}
-  <Arrow>→</Arrow>
-</ViewAllButton>
 
+      <ViewAllButton onClick={() => navigate("/reviews")}>
+        {t("customersFeedback.viewAllReviews")}
+        <Arrow>→</Arrow>
+      </ViewAllButton>
     </Section>
   );
 };
 
 export default CustomersFeedback;
+
 /* =========================
    SECTION
 ========================= */
-// =====================================================
-// SECTION
-// =====================================================
 
 const Section = styled.section`
   width: 100%;
   padding: 90px 20px 100px;
-  background: #faf9f7;
+  background: ${colors.background};
   box-sizing: border-box;
 
   @media (max-width: 550px) {
@@ -232,10 +226,9 @@ const Section = styled.section`
   }
 `;
 
-
-// =====================================================
-// CONTAINER
-// =====================================================
+/* =========================
+   CONTAINER
+========================= */
 
 const Container = styled.div`
   width: 100%;
@@ -244,10 +237,9 @@ const Container = styled.div`
   box-sizing: border-box;
 `;
 
-
-// =====================================================
-// HEADER
-// =====================================================
+/* =========================
+   HEADER
+========================= */
 
 const Header = styled.div`
   width: 100%;
@@ -269,7 +261,7 @@ const Eyebrow = styled.span`
   letter-spacing: 2.5px;
   text-transform: uppercase;
 
-  color: #777;
+  color: ${colors.textSecondary};
 `;
 
 const Title = styled.h2`
@@ -281,7 +273,7 @@ const Title = styled.h2`
   line-height: 1.1;
   letter-spacing: -0.5px;
 
-  color: #1d1d1b;
+  color: ${colors.primary};
 `;
 
 const Description = styled.p`
@@ -291,7 +283,7 @@ const Description = styled.p`
   font-size: 16px;
   line-height: 1.7;
 
-  color: #666;
+  color: ${colors.textSecondary};
 
   @media (max-width: 550px) {
     margin-top: 20px;
@@ -299,42 +291,35 @@ const Description = styled.p`
   }
 `;
 
-
-// =====================================================
-// RATING
-// =====================================================
+/* =========================
+   RATING
+========================= */
 
 const Rating = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 14px;
 `;
 
 const RatingNumber = styled.strong`
   font-family: Georgia, serif;
-
   font-size: 32px;
   font-weight: 400;
   line-height: 1;
-
-  color: #1d1d1b;
+  color: ${colors.primary};
 `;
 
 const RatingContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   gap: 4px;
 `;
 
 const Stars = styled.span`
   display: block;
-
-  color: #c9a35c;
-
+  color: ${colors.accent};
   font-size: 15px;
   line-height: 1;
   letter-spacing: 3px;
@@ -342,18 +327,16 @@ const Stars = styled.span`
 
 const RatingText = styled.span`
   font-size: 12px;
-  color: #777;
+  color: ${colors.textSecondary};
 `;
 
-
-// =====================================================
-// REVIEWS SLIDER
-// =====================================================
+/* =========================
+   REVIEWS SLIDER
+========================= */
 
 const Reviews = styled.div`
   width: 100%;
   margin: 0 auto;
-
   box-sizing: border-box;
 
   .slick-slider {
@@ -362,11 +345,8 @@ const Reviews = styled.div`
 
   .slick-list {
     width: 100%;
-
     margin: 0 -10px;
-
     padding: 10px 0 35px;
-
     overflow: hidden;
   }
 
@@ -377,9 +357,7 @@ const Reviews = styled.div`
 
   .slick-slide {
     height: auto;
-
     padding: 0 10px;
-
     box-sizing: border-box;
   }
 
@@ -404,20 +382,16 @@ const Reviews = styled.div`
 
   .slick-dots li button:before {
     width: 18px;
-
     font-size: 7px;
-
-    color: #1d1d1b;
-
+    color: ${colors.primary};
     opacity: 0.22;
-
     transition:
       opacity 0.25s ease,
       color 0.25s ease;
   }
 
   .slick-dots li.slick-active button:before {
-    color: #c9a35c;
+    color: ${colors.accent};
     opacity: 1;
   }
 
@@ -453,38 +427,31 @@ const Reviews = styled.div`
   }
 `;
 
-
-// =====================================================
-// SLIDE
-// =====================================================
+/* =========================
+   SLIDE
+========================= */
 
 const ReviewSlide = styled.div`
   width: 100%;
   height: 100%;
-
   box-sizing: border-box;
 `;
 
-
-// =====================================================
-// REVIEW CARD
-// =====================================================
+/* =========================
+   REVIEW CARD
+========================= */
 
 const ReviewCard = styled.article`
   position: relative;
-
   width: 100%;
   height: 600px;
-
   overflow: hidden;
 
   display: flex;
   flex-direction: column;
 
-  background: #fff;
-
-  border: 1px solid #e5e3df;
-
+  background: ${colors.surface};
+  border: 1px solid ${colors.border};
   box-sizing: border-box;
 
   transition:
@@ -494,11 +461,10 @@ const ReviewCard = styled.article`
 
   &:hover {
     transform: translateY(-3px);
-
-    border-color: #dedbd5;
+    border-color: ${colors.secondary};
 
     box-shadow:
-      0 12px 30px rgba(0, 0, 0, 0.07);
+      0 12px 30px rgba(7, 27, 27, 0.07);
   }
 
   @media (max-width: 550px) {
@@ -506,36 +472,26 @@ const ReviewCard = styled.article`
   }
 `;
 
-
-// =====================================================
-// IMAGE
-// =====================================================
+/* =========================
+   IMAGE
+========================= */
 
 const ImageWrapper = styled.div`
   position: relative;
-
   width: 100%;
   height: 350px;
-
   flex-shrink: 0;
-
   overflow: hidden;
-
-  background: #f4f2ed;
-
+  background: ${colors.background};
   cursor: pointer;
 `;
 
 const ReviewImage = styled.img`
   display: block;
-
   width: 100%;
   height: 100%;
-
   object-fit: cover;
-
   cursor: pointer;
-
   transition: transform 0.5s ease;
 
   ${ReviewCard}:hover & {
@@ -543,23 +499,19 @@ const ReviewImage = styled.img`
   }
 `;
 
-
-// =====================================================
-// CONTENT
-// =====================================================
+/* =========================
+   CONTENT
+========================= */
 
 const ReviewContent = styled.div`
   flex: 1;
-
   min-height: 0;
-
   padding: 28px 28px 24px;
 
   display: flex;
   flex-direction: column;
 
-  background: #fff;
-
+  background: ${colors.surface};
   box-sizing: border-box;
 
   @media (max-width: 550px) {
@@ -567,18 +519,15 @@ const ReviewContent = styled.div`
   }
 `;
 
-
-// =====================================================
-// REVIEW RATING ROW
-// =====================================================
+/* =========================
+   REVIEW RATING ROW
+========================= */
 
 const RatingRow = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   width: 100%;
-
   gap: 12px;
 `;
 
@@ -586,59 +535,47 @@ const ReviewRating = styled.div`
   display: flex;
   align-items: center;
 
-  color: #111;
+  color: ${colors.accent};
 
   font-size: 16px;
   line-height: 1;
-
   letter-spacing: 1px;
-
   white-space: nowrap;
 `;
 
-
-// =====================================================
-// REVIEW TEXT
-// =====================================================
+/* =========================
+   REVIEW TEXT
+========================= */
 
 const ReviewText = styled.p`
   margin: 22px 0 18px;
-
   font-family: Arial, sans-serif;
-
   font-size: 14px;
   line-height: 1.75;
-
-  color: #303030;
+  color: ${colors.textSecondary};
 
   display: -webkit-box;
-
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 
   overflow: hidden;
-
   text-overflow: ellipsis;
 `;
 
-
-// =====================================================
-// VERIFIED PURCHASE
-// =====================================================
+/* =========================
+   VERIFIED PURCHASE
+========================= */
 
 const Verified = styled.span`
   display: flex;
   align-items: center;
-
   gap: 7px;
 
   font-size: 10px;
   font-weight: 600;
-
   letter-spacing: 0.8px;
 
-  color: #777;
-
+  color: ${colors.textSecondary};
   white-space: nowrap;
 `;
 
@@ -649,44 +586,35 @@ const Check = styled.span`
 
   width: 7px;
   height: 7px;
-
   flex-shrink: 0;
-
   border-radius: 50%;
 
-  background: #777;
-
+  background: ${colors.success};
   color: transparent;
 `;
 
-
-// =====================================================
-// CUSTOMER
-// =====================================================
+/* =========================
+   CUSTOMER
+========================= */
 
 const Customer = styled.div`
   margin-top: auto;
-
   padding-top: 18px;
-
-  border-top: 1px solid #e7e5e1;
+  border-top: 1px solid ${colors.border};
 
   display: flex;
   align-items: center;
-
   gap: 14px;
 `;
 
 const CustomerAvatar = styled.div`
   width: 42px;
   height: 42px;
-
   flex-shrink: 0;
-
   border-radius: 50%;
 
-  background: #1d1d1b;
-  color: #fff;
+  background: ${colors.primary};
+  color: ${colors.surface};
 
   display: flex;
   align-items: center;
@@ -694,26 +622,21 @@ const CustomerAvatar = styled.div`
 
   font-size: 14px;
   font-weight: 600;
-
   text-transform: uppercase;
 `;
 
 const CustomerInfo = styled.div`
   display: flex;
   flex-direction: column;
-
   gap: 4px;
-
   min-width: 0;
 `;
 
 const CustomerName = styled.span`
   display: block;
-
   font-size: 14px;
   font-weight: 600;
-
-  color: #171717;
+  color: ${colors.primary};
 
   white-space: nowrap;
   overflow: hidden;
@@ -722,39 +645,30 @@ const CustomerName = styled.span`
 
 const CustomerDate = styled.span`
   display: block;
-
   font-size: 11px;
-
-  color: #999;
+  color: ${colors.textSecondary};
 `;
 
-
-// =====================================================
-// VIEW ALL REVIEWS BUTTON
-// =====================================================
+/* =========================
+   VIEW ALL REVIEWS BUTTON
+========================= */
 
 const ViewAllButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 12px;
 
   margin: 55px auto 0;
-
   padding: 14px 28px;
 
-  border: 1px solid #1d1d1b;
-
+  border: 1px solid ${colors.primary};
   background: transparent;
-
-  color: #1d1d1b;
+  color: ${colors.primary};
 
   font-size: 12px;
   font-weight: 500;
-
   letter-spacing: 1px;
-
   text-transform: uppercase;
 
   cursor: pointer;
@@ -765,10 +679,9 @@ const ViewAllButton = styled.button`
     transform 0.3s ease;
 
   &:hover {
-    background: #1d1d1b;
-
-    color: #fff;
-
+    background: ${colors.accent};
+    border-color: ${colors.accent};
+    color: ${colors.primary};
     transform: translateY(-2px);
   }
 
@@ -778,24 +691,19 @@ const ViewAllButton = styled.button`
 
   @media (max-width: 550px) {
     margin-top: 45px;
-
     padding: 13px 24px;
-
     font-size: 11px;
   }
 `;
 
-
-// =====================================================
-// ARROW
-// =====================================================
+/* =========================
+   ARROW
+========================= */
 
 const Arrow = styled.span`
   display: inline-block;
-
   font-size: 16px;
   line-height: 1;
-
   transition: transform 0.3s ease;
 
   ${ViewAllButton}:hover & {

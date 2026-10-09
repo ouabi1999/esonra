@@ -123,10 +123,7 @@ const TotalRow = styled.div`
 const TotalLabel = styled.h2`
   margin: 0;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+    font-family: Arial, sans-serif;
 
   font-size: 30px;
   font-weight: 400;
