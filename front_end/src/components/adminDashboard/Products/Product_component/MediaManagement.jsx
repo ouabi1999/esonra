@@ -4,16 +4,12 @@ import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 import DragIndicatorIcon from "@mui/icons-material/DragIndicator";
 
 /**
- * MediaManagement
- * - Keeps the main image upload separate, as in the original component.
- * - Lets existing URLs and newly selected files be reordered together in one gallery.
- * - Stores the gallery order in formData.multimediaInfo.image_order.
- * - Keeps existing upload fields: main_image, mainImageFile, mainImagePreview,
- *   mainImageExistingUrl, additionalImageFiles, multimediaInfo.image_urls.
- *
- * IMPORTANT: The product-save handler must resolve `new:<id>` entries in
- * multimediaInfo.image_order to the Cloudinary URLs returned after uploading
- * those files. See the note after the component for the exact expected format.
+ * The canonical gallery list is multimediaInfo.image_urls.
+ * Existing images are URL strings; newly selected images temporarily use
+ * { id, file, preview } entries in that same array. Reordering therefore
+ * changes image_urls itself, which remains the single source of gallery order.
+ * The save handler must upload each object entry and replace it with its URL
+ * in the same position before sending the final product data to the API.
  */
 function MediaManagement({ setFormData, formData }) {
   const mainImageInput = useRef(null);
@@ -22,92 +18,39 @@ function MediaManagement({ setFormData, formData }) {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [dragOverKey, setDragOverKey] = useState(null);
 
-  const existingImages = Array.isArray(formData?.multimediaInfo?.image_urls)
-    ? formData.multimediaInfo.image_urls
-    : [];
-
-  const newImages = Array.isArray(formData?.additionalImageFiles)
-    ? formData.additionalImageFiles
-    : [];
-
-  const makeExistingKey = (url) => `existing:${url}`;
-  const makeNewKey = (item) => `new:${item.id}`;
-
-  // Migrate/initialize order metadata without changing the underlying image arrays.
-  useEffect(() => {
-    const currentOrder = formData?.multimediaInfo?.image_order;
-    const validKeys = new Set([
-      ...existingImages.map(makeExistingKey),
-      ...newImages.filter((item) => item?.id).map(makeNewKey),
-    ]);
-
-    const validCurrent = Array.isArray(currentOrder)
-      ? currentOrder.filter((entry) => entry && validKeys.has(entry.key))
+  const rawImageUrls = formData?.multimediaInfo?.image_urls;
+  const imageUrls = Array.isArray(rawImageUrls)
+    ? rawImageUrls
+    : typeof rawImageUrls === "string" && rawImageUrls.trim()
+      ? rawImageUrls.split(";").map((url) => url.trim()).filter(Boolean)
       : [];
-    const present = new Set(validCurrent.map((entry) => entry.key));
-    const missing = [
-      ...existingImages.map((url) => ({ key: makeExistingKey(url), type: "existing", url })),
-      ...newImages
-        .filter((item) => item?.id)
-        .map((item) => ({ key: makeNewKey(item), type: "new", id: item.id })),
-    ].filter((entry) => !present.has(entry.key));
 
-    const nextOrder = [...validCurrent, ...missing];
-    const same = Array.isArray(currentOrder) &&
-      currentOrder.length === nextOrder.length &&
-      currentOrder.every((entry, index) => entry?.key === nextOrder[index]?.key);
+  const getEntryPreview = (entry) =>
+    typeof entry === "string" ? entry : entry?.preview || entry?.url || "";
 
-    if (!same) {
-      setFormData((prev) => ({
-        ...prev,
-        multimediaInfo: {
-          ...(prev.multimediaInfo || {}),
-          image_order: nextOrder,
-        },
-      }));
-    }
-    // Image identity/order is the intended trigger; setFormData is stable in normal use.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [existingImages.join("\n"), newImages.map((item) => item?.id).join("\n")]);
+  const galleryItems = useMemo(() => imageUrls.map((value, index) => {
+    const isNew = typeof value !== "string" && Boolean(value?.file);
+    const preview = getEntryPreview(value);
+    const key = isNew
+      ? `new:${value.id || index}`
+      : `existing:${index}:${String(value)}`;
+    return {
+      key,
+      type: isNew ? "new" : "existing",
+      value,
+      url: typeof value === "string" ? value : value?.url,
+      file: isNew ? value.file : null,
+      preview,
+      index,
+    };
+  }), [imageUrls]);
 
-  const galleryItems = useMemo(() => {
-    const byKey = new Map();
-    existingImages.forEach((url) => {
-      const key = makeExistingKey(url);
-      byKey.set(key, { key, type: "existing", url, preview: url });
-    });
-    newImages.forEach((item) => {
-      if (!item?.id) return;
-      const key = makeNewKey(item);
-      byKey.set(key, {
-        key,
-        type: "new",
-        id: item.id,
-        file: item.file,
-        preview: item.preview,
-      });
-    });
-
-    const order = Array.isArray(formData?.multimediaInfo?.image_order)
-      ? formData.multimediaInfo.image_order
-      : [];
-    const ordered = order.map((entry) => byKey.get(entry?.key)).filter(Boolean);
-    const seen = new Set(ordered.map((item) => item.key));
-    const remainder = [...byKey.values()].filter((item) => !seen.has(item.key));
-    return [...ordered, ...remainder];
-  }, [existingImages, newImages, formData?.multimediaInfo?.image_order]);
-
-  const setImageOrder = (items) => {
+  const updateImageUrls = (nextImages) => {
     setFormData((prev) => ({
       ...prev,
       multimediaInfo: {
         ...(prev.multimediaInfo || {}),
-        image_order: items.map((item) => {
-          if (item.type === "existing") {
-            return { key: makeExistingKey(item.url), type: "existing", url: item.url };
-          }
-          return { key: makeNewKey(item), type: "new", id: item.id };
-        }),
+        image_urls: nextImages,
       },
     }));
   };
@@ -178,30 +121,23 @@ function MediaManagement({ setFormData, formData }) {
     );
     if (!validFiles.length) return;
 
-    const imagesWithPreview = validFiles.map((file) => ({
+    const newEntries = validFiles.map((file) => ({
       id: `img-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`,
       file,
       preview: URL.createObjectURL(file),
     }));
 
     setFormData((prev) => {
-      const oldNew = Array.isArray(prev.additionalImageFiles)
-        ? prev.additionalImageFiles
-        : [];
-      const oldOrder = Array.isArray(prev.multimediaInfo?.image_order)
-        ? prev.multimediaInfo.image_order
-        : [];
-      const appendedOrder = imagesWithPreview.map((item) => ({
-        key: `new:${item.id}`,
-        type: "new",
-        id: item.id,
-      }));
+      const current = Array.isArray(prev.multimediaInfo?.image_urls)
+        ? prev.multimediaInfo.image_urls
+        : typeof prev.multimediaInfo?.image_urls === "string" && prev.multimediaInfo.image_urls.trim()
+          ? prev.multimediaInfo.image_urls.split(";").map((url) => url.trim()).filter(Boolean)
+          : [];
       return {
         ...prev,
-        additionalImageFiles: [...oldNew, ...imagesWithPreview],
         multimediaInfo: {
           ...(prev.multimediaInfo || {}),
-          image_order: [...oldOrder, ...appendedOrder],
+          image_urls: [...current, ...newEntries],
         },
       };
     });
@@ -220,22 +156,14 @@ function MediaManagement({ setFormData, formData }) {
       const imageUrl = uri.trim().split("\n")[0];
       if (!imageUrl) return;
       setFormData((prev) => {
-        const urls = Array.isArray(prev.multimediaInfo?.image_urls)
+        const current = Array.isArray(prev.multimediaInfo?.image_urls)
           ? prev.multimediaInfo.image_urls
-          : [];
-        const order = Array.isArray(prev.multimediaInfo?.image_order)
-          ? prev.multimediaInfo.image_order
           : [];
         return {
           ...prev,
           multimediaInfo: {
             ...(prev.multimediaInfo || {}),
-            image_urls: [...urls, imageUrl],
-            image_order: [...order, {
-              key: `existing:${imageUrl}`,
-              type: "existing",
-              url: imageUrl,
-            }],
+            image_urls: [...current, imageUrl],
           },
         };
       });
@@ -245,50 +173,12 @@ function MediaManagement({ setFormData, formData }) {
   };
 
   const removeGalleryImage = (item) => {
-    if (item.type === "existing") {
-      setFormData((prev) => {
-        const urls = Array.isArray(prev.multimediaInfo?.image_urls)
-          ? prev.multimediaInfo.image_urls
-          : [];
-        const removedOnce = new Set();
-        const nextUrls = urls.filter((url) => {
-          if (url === item.url && !removedOnce.has(url)) {
-            removedOnce.add(url);
-            return false;
-          }
-          return true;
-        });
-        const order = (Array.isArray(prev.multimediaInfo?.image_order)
-          ? prev.multimediaInfo.image_order
-          : []).filter((entry) => entry?.key !== item.key);
-        return {
-          ...prev,
-          multimediaInfo: {
-            ...(prev.multimediaInfo || {}),
-            image_urls: nextUrls,
-            image_order: order,
-          },
-        };
-      });
-    } else {
-      setFormData((prev) => {
-        const images = Array.isArray(prev.additionalImageFiles)
-          ? prev.additionalImageFiles
-          : [];
-        const removed = images.find((image) => image.id === item.id);
-        if (removed?.preview) URL.revokeObjectURL(removed.preview);
-        return {
-          ...prev,
-          additionalImageFiles: images.filter((image) => image.id !== item.id),
-          multimediaInfo: {
-            ...(prev.multimediaInfo || {}),
-            image_order: (Array.isArray(prev.multimediaInfo?.image_order)
-              ? prev.multimediaInfo.image_order
-              : []).filter((entry) => entry?.key !== item.key),
-          },
-        };
-      });
+    const nextImages = [...imageUrls];
+    nextImages.splice(item.index, 1);
+    if (item.type === "new" && item.preview?.startsWith("blob:")) {
+      URL.revokeObjectURL(item.preview);
     }
+    updateImageUrls(nextImages);
     setOpenDropdown(null);
   };
 
@@ -296,10 +186,10 @@ function MediaManagement({ setFormData, formData }) {
     if (item.type === "existing") {
       setFormData((prev) => ({
         ...prev,
-        main_image: item.url,
+        main_image: item.value,
         mainImageFile: null,
-        mainImagePreview: item.url,
-        mainImageExistingUrl: item.url,
+        mainImagePreview: item.preview,
+        mainImageExistingUrl: item.value,
       }));
     } else {
       setFormData((prev) => ({
@@ -337,10 +227,10 @@ function MediaManagement({ setFormData, formData }) {
     const fromIndex = galleryItems.findIndex((item) => item.key === sourceKey);
     const toIndex = galleryItems.findIndex((item) => item.key === targetItem.key);
     if (fromIndex < 0 || toIndex < 0) return;
-    const reordered = [...galleryItems];
+    const reordered = [...imageUrls];
     const [moved] = reordered.splice(fromIndex, 1);
     reordered.splice(toIndex, 0, moved);
-    setImageOrder(reordered);
+    updateImageUrls(reordered);
     setDragOverKey(null);
     setOpenDropdown(null);
   };
@@ -359,9 +249,11 @@ function MediaManagement({ setFormData, formData }) {
   // Revoke object URLs when the component unmounts.
   useEffect(() => {
     return () => {
-      const current = formData?.additionalImageFiles || [];
+      const current = formData?.multimediaInfo?.image_urls || [];
       current.forEach((item) => {
-        if (item?.preview?.startsWith("blob:")) URL.revokeObjectURL(item.preview);
+        if (typeof item !== "string" && item?.preview?.startsWith("blob:")) {
+          URL.revokeObjectURL(item.preview);
+        }
       });
       if (formData?.mainImagePreview?.startsWith?.("blob:")) {
         URL.revokeObjectURL(formData.mainImagePreview);
@@ -432,7 +324,7 @@ function MediaManagement({ setFormData, formData }) {
       <Container>
         <SectionLabel>Additional Images</SectionLabel>
         <p className="gallery-help">
-          Drag any photo onto another photo to change its position. Existing and new images can be reordered together.
+          Drag any photo onto another photo to change its position. Reordering changes multimediaInfo.image_urls directly, including newly added images.
         </p>
 
         <div
