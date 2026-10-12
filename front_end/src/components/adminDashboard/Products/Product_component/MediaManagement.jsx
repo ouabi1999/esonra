@@ -3,14 +3,7 @@ import styled from "styled-components";
 import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 import DragIndicatorIcon from "@mui/icons-material/DragIndicator";
 
-/**
- * The canonical gallery list is multimediaInfo.image_urls.
- * Existing images are URL strings; newly selected images temporarily use
- * { id, file, preview } entries in that same array. Reordering therefore
- * changes image_urls itself, which remains the single source of gallery order.
- * The save handler must upload each object entry and replace it with its URL
- * in the same position before sending the final product data to the API.
- */
+
 function MediaManagement({ setFormData, formData }) {
   const mainImageInput = useRef(null);
   const additionalImageInput = useRef(null);

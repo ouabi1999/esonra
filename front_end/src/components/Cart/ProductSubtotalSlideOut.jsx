@@ -20,6 +20,7 @@ function ProductSubtotalSlideOut(props) {
         total + item.price * item.quantity,
       0
     ) || 0;
+    
 const navigateToCheckout = () => {
    
     if (typeof window.gtag === "function") {
