@@ -34,66 +34,56 @@ const ReviewsPage = () => {
      FETCH REVIEWS
   ========================================================= */
 
-  useEffect(() => {
-    let mounted = true;
+useEffect(() => {
+  let mounted = true;
 
-    const fetchReviews = async () => {
-      setLoading(true);
+  const fetchReviews = async () => {
+    setLoading(true);
 
-      try {
-        const response = await ApiInstance.get(
-          `ratings/?page=${currentPage}&page_size=${PAGE_SIZE}`
-        );
+    try {
+      const response = await ApiInstance.get("ratings/", {
+        params: {
+          page: currentPage,
+          page_size: PAGE_SIZE,
+        },
+      });
 
-        if (!mounted) return;
+      if (!mounted) return;
 
-        /*
-          Django REST Framework pagination returns:
+      const data = response.data;
+      const results = Array.isArray(data?.results)
+        ? data.results
+        : [];
 
-          {
-            count: 35,
-            next: "...",
-            previous: null,
-            results: [...]
-          }
-        */
+      const count = Number(data?.count) || 0;
 
-        const data = response.data;
+      setReviews(results);
+      setTotalReviews(count);
+      setTotalPages(
+        Math.max(1, Math.ceil(count / PAGE_SIZE))
+      );
+    } catch (error) {
+      if (!mounted) return;
 
-        const results = Array.isArray(data)
-          ? data
-          : Array.isArray(data?.results)
-          ? data.results
-          : [];
+      console.error("Ratings error:", error);
 
-        const count = Array.isArray(data)
-          ? data.length
-          : Number(data?.count) || 0;
-
-        setReviews(results);
-        setTotalReviews(count);
-        setTotalPages(Math.max(1, Math.ceil(count / PAGE_SIZE)));
-      } catch (error) {
-        console.error("Ratings error:", error);
-
-        if (!mounted) return;
-
-        setReviews([]);
-        setTotalReviews(0);
-        setTotalPages(1);
-      } finally {
-        if (mounted) {
-          setLoading(false);
-        }
+      setReviews([]);
+      setTotalReviews(0);
+      setTotalPages(1);
+    } finally {
+      if (mounted) {
+        setLoading(false);
       }
-    };
+    }
+  };
 
-    fetchReviews();
+  fetchReviews();
 
-    return () => {
-      mounted = false;
-    };
-  }, [currentPage]);
+  return () => {
+    mounted = false;
+  };
+}, [currentPage]);
+
    /* =========================
        RESET SCROLL
     ========================= */
