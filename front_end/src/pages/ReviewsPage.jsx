@@ -5,7 +5,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import Pagination from "@mui/material/Pagination";
 
 import ApiInstance from "../../common/baseUrl";
-import ReviewImagePopup from "../components/Product/aboutProduct/reviews/ReviewImagePopup";
+import ReviewImagePopup from "../components/Home/aboutProduct/reviews/ReviewImagePopup";
 import { optimizeCloudinaryImage } from "../utilis/cloudinary";
 const ReviewsPage = () => {
   const { t } = useTranslation();
@@ -34,56 +34,66 @@ const ReviewsPage = () => {
      FETCH REVIEWS
   ========================================================= */
 
-useEffect(() => {
-  let mounted = true;
+  useEffect(() => {
+    let mounted = true;
 
-  const fetchReviews = async () => {
-    setLoading(true);
+    const fetchReviews = async () => {
+      setLoading(true);
 
-    try {
-      const response = await ApiInstance.get("ratings/", {
-        params: {
-          page: currentPage,
-          page_size: PAGE_SIZE,
-        },
-      });
+      try {
+        const response = await ApiInstance.get(
+          `ratings/?page=${currentPage}&page_size=${PAGE_SIZE}`
+        );
 
-      if (!mounted) return;
+        if (!mounted) return;
 
-      const data = response.data;
-      const results = Array.isArray(data?.results)
-        ? data.results
-        : [];
+        /*
+          Django REST Framework pagination returns:
 
-      const count = Number(data?.count) || 0;
+          {
+            count: 35,
+            next: "...",
+            previous: null,
+            results: [...]
+          }
+        */
 
-      setReviews(results);
-      setTotalReviews(count);
-      setTotalPages(
-        Math.max(1, Math.ceil(count / PAGE_SIZE))
-      );
-    } catch (error) {
-      if (!mounted) return;
+        const data = response.data;
 
-      console.error("Ratings error:", error);
+        const results = Array.isArray(data)
+          ? data
+          : Array.isArray(data?.results)
+          ? data.results
+          : [];
 
-      setReviews([]);
-      setTotalReviews(0);
-      setTotalPages(1);
-    } finally {
-      if (mounted) {
-        setLoading(false);
+        const count = Array.isArray(data)
+          ? data.length
+          : Number(data?.count) || 0;
+
+        setReviews(results);
+        setTotalReviews(count);
+        setTotalPages(Math.max(1, Math.ceil(count / PAGE_SIZE)));
+      } catch (error) {
+        console.error("Ratings error:", error);
+
+        if (!mounted) return;
+
+        setReviews([]);
+        setTotalReviews(0);
+        setTotalPages(1);
+      } finally {
+        if (mounted) {
+          setLoading(false);
+        }
       }
-    }
-  };
+    };
 
-  fetchReviews();
+    fetchReviews();
 
-  return () => {
-    mounted = false;
-  };
-}, [currentPage]);
-
+    return () => {
+      mounted = false;
+    };
+  }, [currentPage]);
    /* =========================
        RESET SCROLL
     ========================= */
@@ -507,7 +517,7 @@ const Title = styled.h1`
   margin: 0;
 
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(36px, 5vw, 64px);
+  font-size: clamp(36px, 3vw, 50px);
   font-weight: 400;
   line-height: 1.08;
 
@@ -674,9 +684,8 @@ const ImageCount = styled.span`
 `;
 
 const NoImage = styled.div`
-  height: 300px;
   min-height: 300px;
-
+ width:100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -688,14 +697,16 @@ const NoImage = styled.div`
       #e9e6df
     );
     img{
-    width:100%;
+     display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
     }
 `;
 
-const NoImageIcon = styled.span`
-  font-size: 28px;
-  color: #aaa;
-`;
+
 
 /* =============================================================
    REVIEW CONTENT
