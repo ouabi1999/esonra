@@ -5,7 +5,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import Pagination from "@mui/material/Pagination";
 
 import ApiInstance from "../../common/baseUrl";
-import ReviewImagePopup from "../components/Home/aboutProduct/reviews/ReviewImagePopup";
+import ReviewImagePopup from "../components/Product/aboutProduct/reviews/ReviewImagePopup";
 import { optimizeCloudinaryImage } from "../utilis/cloudinary";
 const ReviewsPage = () => {
   const { t } = useTranslation();
