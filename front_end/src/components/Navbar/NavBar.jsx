@@ -718,7 +718,7 @@ const BrandLogo = styled.div`
   line-height: 1;
 
   img {
-    height: 45px;
+    height: 19px;
     width: auto;
     max-width: 100%;
     object-fit: contain;
