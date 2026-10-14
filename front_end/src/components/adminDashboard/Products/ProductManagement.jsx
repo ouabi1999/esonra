@@ -42,8 +42,8 @@ function ProductManagement(props) {
   }
   );
 
-useEffect(() => {
-  if (!productData) return;
+  useEffect(() => {
+  if (!productData || !isAddProductOn || isEditProductOn) return;
 
   const skuInfo = (
     productData.ae_item_sku_info_dtos || []
@@ -194,11 +194,15 @@ useEffect(() => {
       image_urls: imageUrls,
     },
 
+    options: undefined,
     
   }));
-}, [
+ }, [
   productData,
- 
+  isAddProductOn,
+  isEditProductOn,
+  sellingMarkUp,
+  compareMarkUp,
 ]);
 
 

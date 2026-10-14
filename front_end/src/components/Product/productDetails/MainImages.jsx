@@ -1,415 +1,831 @@
 import React, { useEffect, useState } from "react";
+
 import { createPortal } from "react-dom";
+
 import { AnimatePresence } from "motion/react";
+
 import * as motion from "motion/react-client";
+
 import styled from "styled-components";
+
 import { useTranslation } from "react-i18next";
 
+
+
 import FullscreenIcon from "@mui/icons-material/Fullscreen";
+
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
+
+
 function MainImages(props) {
+
   const {
+
     currentSku,
+
     productData,
+
     picsDetailsIndex,
+
     selectPicsDetails,
+
     isPicsDetailsActive,
+
     isColorActive,
+
   } = props;
+
+
 
   const { t, i18n } = useTranslation();
 
+
+
   /*
+
     Arabic = RTL
+
     Everything else = LTR
+
   */
+
+
 
   const [isFullscreen, setIsFullscreen] = useState(false);
 
+
+
   const images =
+
     productData?.multimediaInfo?.image_urls || [];
 
-  const activeImage = isColorActive
-    ? currentSku?.attributes?.[currentSku?.colorKey]?.image
+
+
+  // Resolve the image from the selected SKU itself.
+  // Do not depend on colorKey: any selected SKU attribute may carry the image.
+  const selectedSkuImage =
+    currentSku?.sku_image ||
+    currentSku?.skuImage ||
+    Object.values(currentSku?.attributes || {})
+      .map((attribute) => attribute?.sku_image || attribute?.image)
+      .find(Boolean) ||
+    "";
+
+  // Use the selected SKU's image without relying on colorKey.
+  const showSelectedSkuImage = Boolean(isColorActive && selectedSkuImage);
+
+  const activeImage = showSelectedSkuImage
+    ? selectedSkuImage
     : isPicsDetailsActive
       ? images[picsDetailsIndex]
       : images[0];
 
-  const currentIndex = isColorActive
+  const currentIndex = showSelectedSkuImage
     ? 0
     : isPicsDetailsActive
       ? picsDetailsIndex
       : 0;
 
+
+
   /* =========================================================
+
      OPEN FULLSCREEN
+
   ========================================================= */
+
+
 
   const openFullscreen = () => {
+
     if (!activeImage) return;
 
+
+
     setIsFullscreen(true);
+
   };
 
+
+
   /* =========================================================
+
      CLOSE FULLSCREEN
+
   ========================================================= */
+
+
 
   const closeFullscreen = () => {
+
     setIsFullscreen(false);
+
   };
 
+
+
   /* =========================================================
+
      ESC KEY
+
   ========================================================= */
 
+
+
   useEffect(() => {
+
     if (!isFullscreen) return;
 
+
+
     const handleKeyDown = (event) => {
+
       if (event.key === "Escape") {
+
         closeFullscreen();
+
       }
+
+
 
       if (event.key === "ArrowLeft") {
+
         handlePrevious();
+
       }
 
+
+
       if (event.key === "ArrowRight") {
+
         handleNext();
+
       }
+
     };
+
+
 
     document.addEventListener("keydown", handleKeyDown);
 
+
+
     document.body.style.overflow = "hidden";
 
+
+
     return () => {
+
       document.removeEventListener("keydown", handleKeyDown);
 
+
+
       document.body.style.overflow = "";
+
     };
+
   }, [isFullscreen, currentIndex, images.length]);
 
+
+
   /* =========================================================
+
      PREVIOUS
+
   ========================================================= */
+
+
 
   const handlePrevious = () => {
+
     if (!images.length) return;
+
+
 
     const previousIndex =
+
       currentIndex <= 0
+
         ? images.length - 1
+
         : currentIndex - 1;
 
+
+
     selectPicsDetails(previousIndex);
+
   };
+
+
 
   /* =========================================================
+
      NEXT
+
   ========================================================= */
 
+
+
   const handleNext = () => {
+
     if (!images.length) return;
 
+
+
     const nextIndex =
+
       currentIndex >= images.length - 1
+
         ? 0
+
         : currentIndex + 1;
 
+
+
     selectPicsDetails(nextIndex);
+
   };
 
- 
+
+
+
+
+
 
   return (
+
     <>
+
       <Container>
+
         <Gallery>
 
+
+
           {/* =====================================================
-              THUMBNAILS
-          ===================================================== */}
+
+              THUMBNAILS
+
+          ===================================================== */}
+
+
 
           <ImageDetailsContainer>
+
             {images.map((img, index) => {
+
               const isActive =
-                !isColorActive &&
+
+                !showSelectedSkuImage &&
+
                 picsDetailsIndex === index &&
+
                 isPicsDetailsActive;
 
+
+
               return (
+
                 <Thumbnail
+
                   key={`${img}-${index}`}
+
                   $active={isActive}
-                 
+
+
+
                   onClick={() =>
+
                     selectPicsDetails(index)
+
                   }
+
                   type="button"
+
                 >
+
                   <img
-  src={img}
-  alt={`${productData?.name || "Product"} ${index + 1}`}
-  loading="lazy"
-  decoding="async"
-  width="58"
-  height="58"
-/>
+
+                    src={img}
+
+                    alt={`${productData?.name || "Product"} ${index + 1}`}
+
+                    loading="lazy"
+
+                    decoding="async"
+
+                    width="58"
+
+                    height="58"
+
+                  />
+
                 </Thumbnail>
+
               );
+
             })}
+
           </ImageDetailsContainer>
 
+
+
           {/* =====================================================
-              MAIN IMAGE
-          ===================================================== */}
+
+              MAIN IMAGE
+
+          ===================================================== */}
+
+
 
           <ProductImg>
 
-           
+
+
+
+
+
 
             {/* =================================================
-                CENTER IMAGE
-            ================================================= */}
+
+                CENTER IMAGE
+
+            ================================================= */}
+
+
 
             <ImageViewport>
 
+
+
               <NavigationButton
+
                 $left
+
                 type="button"
+
                 onClick={handlePrevious}
+
                 aria-label="Previous image"
+
               >
+
                 <ChevronLeftIcon />
+
               </NavigationButton>
+
+
 
               <AnimatePresence mode="wait">
+
                 <motion.div
+
                   key={activeImage}
+
                   initial={{
+
                     opacity: 0,
+
                     scale: 0.97,
+
                   }}
+
                   animate={{
+
                     opacity: 1,
+
                     scale: 1,
+
                   }}
+
                   exit={{
+
                     opacity: 0,
+
                     scale: 0.97,
+
                   }}
+
                   transition={{
+
                     duration: 0.35,
+
                     ease: [0.22, 1, 0.36, 1],
+
                   }}
+
                   style={{
+
                     width: "100%",
+
                     height: "100%",
+
                     display: "flex",
+
                     alignItems: "center",
+
                     justifyContent: "center",
+
                   }}
+
                 >
+
                   {activeImage && (
+
                     <MainImage
-  src={activeImage}
-  alt={productData?.name || "Product"}
-  loading="eager"
-  fetchpriority="high"
-  decoding="async"
-  width="1200"
-  height="1200"
-/>
+
+                      src={activeImage}
+
+                      alt={productData?.name || "Product"}
+
+                      loading="eager"
+
+                      fetchPriority="high"
+
+                      decoding="async"
+
+                      width="1200"
+
+                      height="1200"
+
+                    />
+
                   )}
+
                 </motion.div>
+
               </AnimatePresence>
 
+
+
               <NavigationButton
+
                 type="button"
+
                 onClick={handleNext}
+
                 aria-label="Next image"
+
               >
+
                 <ChevronRightIcon />
+
               </NavigationButton>
+
+
 
             </ImageViewport>
 
+
+
             {/* =================================================
-                BOTTOM LEFT PROGRESS
-            ================================================= */}
+
+                BOTTOM LEFT PROGRESS
+
+            ================================================= */}
+
+
 
             <ProgressContainer>
+
               <CurrentNumber>
+
                 {String(currentIndex + 1).padStart(
+
                   2,
+
                   "0"
+
                 )}
+
               </CurrentNumber>
 
+
+
               <ProgressTrack>
+
                 <ProgressBar
+
                   $progress={
+
                     images.length
+
                       ? ((currentIndex + 1) /
+
                         images.length) *
+
                       100
+
                       : 0
+
                   }
+
                 />
+
               </ProgressTrack>
 
+
+
               <TotalNumber>
+
                 {String(images.length).padStart(
+
                   2,
+
                   "0"
+
                 )}
+
               </TotalNumber>
+
             </ProgressContainer>
 
+
+
             {/* =================================================
-                BOTTOM RIGHT VIEW BUTTON
-            ================================================= */}
+
+                BOTTOM RIGHT VIEW BUTTON
+
+            ================================================= */}
+
+
 
             <FullscreenButton
+
               type="button"
+
               onClick={openFullscreen}
+
               aria-label="View image fullscreen"
+
             >
+
               <FullscreenIcon />
 
+
+
               <ViewText>
+
                 {t("common.view")}
+
               </ViewText>
+
             </FullscreenButton>
 
+
+
           </ProductImg>
+
         </Gallery>
+
       </Container>
 
+
+
       {/* =======================================================
-          FULLSCREEN OVERLAY
-      ======================================================= */}
+
+          FULLSCREEN OVERLAY
+
+      ======================================================= */}
+
+
 
       {isFullscreen &&
+
         typeof document !== "undefined" &&
+
         createPortal(
+
           <FullscreenOverlay
+
             initial={{
+
               opacity: 0,
+
             }}
+
             animate={{
+
               opacity: 1,
+
             }}
+
             exit={{
+
               opacity: 0,
+
             }}
+
             transition={{
+
               duration: 0.35,
+
             }}
+
           >
 
+
+
             {/* =================================================
-                    FULLSCREEN TOP
-                ================================================= */}
+
+                    FULLSCREEN TOP
+
+                ================================================= */}
+
+
 
             <FullscreenTop>
+
               <FullscreenCollection>
+
                 {t(
+
                   "footer.newsletter.eyebrow"
+
                 )}
+
               </FullscreenCollection>
 
+
+
               <CloseButton
+
                 type="button"
+
                 onClick={() =>
+
                   setIsFullscreen(false)
+
                 }
+
                 aria-label="Close fullscreen gallery"
+
               >
+
                 ×
+
               </CloseButton>
+
             </FullscreenTop>
 
+
+
             {/* =================================================
-                    FULLSCREEN CONTENT
-                ================================================= */}
+
+                    FULLSCREEN CONTENT
+
+                ================================================= */}
+
+
 
             <FullscreenContent>
+
               <FullscreenImage>
-              <motion.img
-  key={activeImage}
-  src={activeImage}
-  alt={productData?.name || "Product"}
-  initial={{ opacity: 0, scale: 0.96 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{
-    duration: 0.35,
-    ease: [0.22, 1, 0.36, 1],
-  }}
-/>
-               </FullscreenImage>
+
+                <motion.img
+
+                  key={activeImage}
+
+                  src={activeImage}
+
+                  alt={productData?.name || "Product"}
+
+                  initial={{ opacity: 0, scale: 0.96 }}
+
+                  animate={{ opacity: 1, scale: 1 }}
+
+                  transition={{
+
+                    duration: 0.35,
+
+                    ease: [0.22, 1, 0.36, 1],
+
+                  }}
+
+                />
+
+              </FullscreenImage>
+
               {images.length > 1 &&
-                !isColorActive && (
+
+                !showSelectedSkuImage && (
+
                   <>
-                    <FullscreenNavigation
-                      $position="left"
-                      type="button"
-                      onClick={
-                        handlePrevious
-                      }
-                      aria-label="Previous image"
-                    >
-                      ←
-                    </FullscreenNavigation>
 
                     <FullscreenNavigation
-                      $position="right"
+
+                      $position="left"
+
                       type="button"
-                      onClick={handleNext}
-                      aria-label="Next image"
+
+                      onClick={
+
+                        handlePrevious
+
+                      }
+
+                      aria-label="Previous image"
+
                     >
-                      →
+
+                      ←
+
                     </FullscreenNavigation>
+
+
+
+                    <FullscreenNavigation
+
+                      $position="right"
+
+                      type="button"
+
+                      onClick={handleNext}
+
+                      aria-label="Next image"
+
+                    >
+
+                      →
+
+                    </FullscreenNavigation>
+
                   </>
+
                 )}
+
+
 
             </FullscreenContent>
 
+
+
             {/* =================================================
-                    FULLSCREEN BOTTOM
-                ================================================= */}
+
+                    FULLSCREEN BOTTOM
+
+                ================================================= */}
+
+
 
             <FullscreenBottom>
+
               <FullscreenCounter>
+
                 {String(
+
                   currentIndex + 1
+
                 ).padStart(2, "0")}
+
+
 
                 <span>/</span>
 
+
+
                 {String(
+
                   Math.max(
+
                     images.length,
+
                     1
+
                   )
+
                 ).padStart(2, "0")}
+
               </FullscreenCounter>
 
+
+
               <FullscreenHint>
+
                 USE ← → TO NAVIGATE
+
               </FullscreenHint>
+
             </FullscreenBottom>
 
+
+
           </FullscreenOverlay>,
+
           document.body
+
         )}
+
     </>
+
   );
+
 }
+
+
 
 export default MainImages;
 
@@ -1222,4 +1638,4 @@ const FullscreenHint = styled.span`
   @media (max-width: 600px) {
     display: none;
   }
-`;
+`; 
