@@ -227,6 +227,7 @@
       }
     }
   },
+  
   "collectionSection": {
     "title": "Discover Our Collection.",
     "catlabel": "EXPLORE",
@@ -239,9 +240,9 @@
         "title": "Card Trackers",
         "description": "Slim, discreet tracking devices designed to fit seamlessly into your wallet and help you keep track of what matters."
       },
-      "necklace_trackers": {
-        "title": "Necklace Trackers",
-        "description": "Wearable tracking devices that combine everyday convenience with a refined, minimalist design."
+      "smart_key_organizers": {
+        "title": "Smart Key Organizers",
+        "description": "Thoughtfully designed key organizers that keep your keys neatly arranged while bringing smart tracking convenience to your everyday carry."
       },
       "tracker_holders": {
         "title": "Tracker Holders",
@@ -256,7 +257,8 @@
         "description": "Practical, carefully selected accessories designed to enhance the versatility and everyday use of your tracking devices."
       }
     }
-  },
+  
+},
   "customersFeedback": {
     "eyebrow": "THE ESONRA EXPERIENCE",
     "title": "Chosen for everyday peace of mind.",

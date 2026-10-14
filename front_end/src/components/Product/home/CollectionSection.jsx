@@ -20,10 +20,10 @@ const CollectionSection = () => {
       link: "/collections?category=keychain_trackers",
     },
     {
-      key: "necklace_trackers",
+      key: "smart_key_organizers",
       image:
         "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1791509859/esonra-necklace-trackers-category_qaljrw.webp",
-      link: "/collections?category=necklace_trackers",
+      link: "/collections?category=smart_key_organizers",
     },
     {
       key: "card_trackers",

@@ -227,36 +227,39 @@
       }
     }
   },
+
+ 
   "collectionSection": {
     "title": "Descubre nuestra colección.",
     "catlabel": "EXPLORAR",
     "categories": {
       "keychain_trackers": {
         "title": "Localizadores para llaves",
-        "description": "Localizadores compactos para mantener tus llaves cerca y encontrarlas con facilidad estés donde estés."
+        "description": "Dispositivos de localización compactos que te ayudan a mantener tus llaves siempre a mano y encontrarlas fácilmente estés donde estés."
       },
       "card_trackers": {
         "title": "Localizadores tipo tarjeta",
-        "description": "Localizadores finos y discretos que caben en tu cartera y te ayudan a mantener localizadas tus pertenencias importantes."
+        "description": "Localizadores finos y discretos diseñados para integrarse perfectamente en tu cartera y ayudarte a encontrar lo que más importa."
       },
-      "necklace_trackers": {
-        "title": "Localizadores tipo colgante",
-        "description": "Localizadores ponibles que combinan comodidad cotidiana con un diseño minimalista y cuidado."
+      "smart_key_organizers": {
+        "title": "Organizadores inteligentes de llaves",
+        "description": "Organizadores cuidadosamente diseñados que mantienen tus llaves ordenadas y añaden la comodidad de la localización inteligente a tu día a día."
       },
       "tracker_holders": {
-        "title": "Fundas y soportes para localizadores",
-        "description": "Fundas y soportes diseñados para mantener tus localizadores protegidos, accesibles y listos para el uso diario."
+        "title": "Fundas para localizadores",
+        "description": "Fundas diseñadas para mantener tus dispositivos de localización protegidos, accesibles y listos para el uso diario."
       },
       "luggage_trackers": {
         "title": "Localizadores para equipaje",
-        "description": "Soluciones de seguimiento inteligente para ayudarte a localizar tu equipaje y viajar con mayor tranquilidad."
+        "description": "Soluciones inteligentes de localización que te ayudan a mantener tu equipaje controlado y viajar con mayor tranquilidad."
       },
       "tracker_accessories": {
         "title": "Accesorios para localizadores",
-        "description": "Accesorios prácticos y seleccionados con cuidado para aprovechar mejor tus dispositivos de seguimiento."
+        "description": "Accesorios prácticos y cuidadosamente seleccionados para mejorar la versatilidad y el uso diario de tus dispositivos de localización."
       }
     }
   },
+
   "customersFeedback": {
     "eyebrow": "LA EXPERIENCIA ESONRA",
     "title": "Elegidos para tu tranquilidad diaria.",

@@ -38,7 +38,7 @@ const DesignSection = () => {
   ];
 
   const imageURL =
-    "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1791561951/esonra_smart_tracking_concept_d36elo.webp";
+    "https://ae01.alicdn.com/kf/Sa940d1538b834bceb621b90c01daa9fds.png";
 
   return (
     <DesignContainer maxWidth={false}>
