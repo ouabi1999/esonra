@@ -20,7 +20,7 @@ const MainSlider = () => {
     "https://res.cloudinary.com/dzpzy1o1y/video/upload/v1790536327/Aure_Portable_Lamp_Travertine_Stone_Linen_-_Blossholm_3_c7eahz.mp4";
 
   const posterUrl =
-    "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1791561476/esonra_cover_1_gvhdsk.webp";
+    "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1793746100/esonra/products/camping-stove-lightweight_en2yws.webp";
 
   const optimizedPoster = optimizeCloudinaryImage(posterUrl, {
     width: 1820,

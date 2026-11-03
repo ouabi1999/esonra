@@ -29,7 +29,7 @@
   },
   "homePage": {
     "new": "Nuevo",
-    "welcomeMessage": "Te damos la bienvenida a ESONRA",
+    "welcomeMessage": "Te damos la bienvenida a Nuestra Tienda",
     "featuredProducts": "Destacados",
     "mayAlsoLike": "También te puede interesar",
     "newArrival": "Novedades",
@@ -47,9 +47,9 @@
     "best_sellers": "Más vendidos"
   },
   "mainSlider": {
-    "title": "Seguimiento inteligente, elegido con cuidado.",
-    "description": "Una colección cuidada de soluciones de seguimiento inteligente para ayudarte a localizar tus pertenencias importantes.",
-    "welcome": "Te damos la bienvenida a ESONRA."
+    "title": "Productos de calidad, elegidos con cuidado.",
+    "description": "Una colección cuidada de productos prácticos y elegantes diseñados para adaptarse a tus necesidades diarias.",
+    "welcome": "Te damos la bienvenida a Nuestra Tienda."
   },
   "productPage": {
     "addToCart": "Añadir al carrito",
@@ -91,18 +91,18 @@
     }
   },
   "heroSection": {
-    "title": "Tus esenciales, siempre a tu alcance",
-    "description": "Soluciones de seguimiento diseñadas con cuidado para ayudarte a encontrar lo que importa, estés donde estés.",
-    "ctaLabel": "Explorar la colección",
-    "detailDesign": "Donde la tecnología se une al diseño",
+    "title": "Todo lo que necesitas, siempre a tu alcance",
+    "description": "Productos seleccionados con cuidado que combinan calidad, estilo y valor para tu día a día.",
+    "ctaLabel": "Comprar ahora",
+    "detailDesign": "Donde la calidad se une al diseño",
     "curated": "DISEÑADO CON CUIDADO",
-    "curated_description": "Soluciones de seguimiento seleccionadas cuidadosamente para el día a día.",
+    "curated_description": "Productos seleccionados cuidadosamente para el día a día.",
     "refined": "SOFISTICADO",
     "refined_description": "Diseños elegantes concebidos desde la simplicidad.",
     "atmospheric": "SENCILLO",
-    "atmospheric_description": "Seguimiento inteligente para tu tranquilidad.",
+    "atmospheric_description": "Productos prácticos que aportan mayor comodidad a tu día.",
     "distinctive": "FUNCIONAL",
-    "distinctive_description": "Esenciales prácticos para mantener cerca lo que importa.",
+    "distinctive_description": "Esenciales prácticos que se adaptan a tus necesidades diarias.",
     "stats": {
       "rated": {
         "value": "4,9★",
@@ -119,13 +119,13 @@
     }
   },
   "ctaSection": {
-    "eyebrow": "ATENCIÓN AL CLIENTE ESONRA",
+    "eyebrow": "ATENCIÓN AL CLIENTE",
     "titleLeft": "Estamos aquí para ayudarte.",
-    "description": "¿Tienes alguna pregunta sobre un localizador, tu pedido o la entrega? Nuestro equipo está aquí para ayudarte y hacer que tu experiencia sea sencilla.",
+    "description": "¿Tienes alguna pregunta sobre un producto, tu pedido o la entrega? Nuestro equipo está aquí para ayudarte y hacer que tu experiencia sea sencilla.",
     "button": "Contáctanos",
     "supportEyebrow": "ATENCIÓN AL CLIENTE",
     "titleRight": "Estamos aquí cuando nos necesites.",
-    "supportDescription": "Tanto si necesitas ayuda para elegir un localizador como si tienes alguna pregunta sobre tu pedido, estaremos encantados de ayudarte.",
+    "supportDescription": "Tanto si necesitas ayuda para elegir un producto como si tienes alguna pregunta sobre tu pedido, estaremos encantados de ayudarte.",
     "contact": {
       "email": {
         "title": "Correo electrónico",
@@ -134,84 +134,84 @@
       "support": {
         "title": "Atención al cliente",
         "details": "Atención al cliente",
-        "description": "Queremos que tu experiencia con ESONRA sea sencilla."
+        "description": "Queremos que tu experiencia de compra sea sencilla."
       }
     }
   },
   "matricsSection": {
-    "why_us": "LO QUE HACE DIFERENTE A ESONRA",
+    "why_us": "LO QUE NOS HACE DIFERENTES",
     "title": "Cada detalle, cuidadosamente pensado.",
-    "description": "Cada producto ESONRA se selecciona por su diseño, funcionalidad y capacidad para simplificar el día a día."
+    "description": "Cada producto se selecciona por su diseño, funcionalidad y capacidad para simplificar el día a día."
   },
   "inspirationPage": {
     "hero": {
-      "catlabel": "EL BLOG DE ESONRA",
-      "title": "Una forma más inteligente de mantener cerca lo que importa.",
+      "catlabel": "EL BLOG",
+      "title": "Una forma más inteligente de comprar lo que necesitas.",
       "description": "Descubre diseños cuidados, esenciales para cada día y nuevas formas de aportar sencillez y tranquilidad a tu rutina."
     },
     "intro": {
       "catlabel": "ENCUENTRA TU INSPIRACIÓN",
       "title": "Diseñado para lo que importa.",
-      "description": "La solución de seguimiento adecuada puede simplificar tu día a día. Explora nuestra colección y descubre formas prácticas de mantener tus esenciales cerca y sentirte más tranquilo."
+      "description": "El producto adecuado puede simplificar tu día a día. Explora nuestra colección y descubre formas prácticas de encontrar lo que necesitas."
     },
     "spaces": {
       "catlabel": "DESCUBRE SEGÚN TU ESTILO DE VIDA",
-      "title": "Seguimiento inteligente para el día a día.",
+      "title": "Esenciales prácticos para el día a día.",
       "items": {
         "livingRoom": {
-          "title": "Esenciales cotidianos",
-          "description": "Controla tus pertenencias de uso diario con soluciones de seguimiento inteligentes y discretas."
+          "title": "Esenciales para el hogar",
+          "description": "Productos seleccionados con cuidado que hacen tu hogar más cómodo y elegante."
         },
         "diningRoom": {
           "title": "Trabajo y movilidad",
-          "description": "Mantén localizadas tus pertenencias importantes, en el trabajo, durante tus desplazamientos o al descubrir nuevos lugares."
+          "description": "Productos prácticos que te acompañan en el trabajo, durante tus desplazamientos o al descubrir nuevos lugares."
         },
         "bedroom": {
           "title": "Esenciales de viaje",
-          "description": "Viaja con mayor tranquilidad y mantén localizados tu equipaje y tus esenciales de viaje."
+          "description": "Viaja con mayor comodidad con productos diseñados para el equipaje y los viajes."
         }
       }
     },
     "explore": "Explorar",
     "statement": {
-      "catlabel": "LA FILOSOFÍA ESONRA",
-      "title": "La tecnología debería simplificar la vida.",
-      "description": "Desde los objetos cotidianos hasta los viajes más largos, el seguimiento inteligente te ayuda a mantener localizadas las cosas que más importan."
+      "catlabel": "NUESTRA FILOSOFÍA",
+      "title": "Los buenos productos deberían simplificar la vida.",
+      "description": "Desde los objetos cotidianos hasta los viajes más largos, una selección cuidada te ayuda a sacar más partido a cada día."
     },
     "ideas": {
-      "catlabel": "GUÍA DE SEGUIMIENTO INTELIGENTE",
-      "title": "Formas más inteligentes de mantener tus pertenencias localizadas.",
+      "catlabel": "GUÍA DE COMPRA INTELIGENTE",
+      "title": "Formas más inteligentes de comprar.",
       "items": {
         "ambientLighting": {
-          "title": "Seguimiento de llaves y objetos cotidianos",
-          "description": "Encuentra con más facilidad tus llaves y objetos cotidianos con localizadores compactos y prácticos."
+          "title": "Esenciales cotidianos",
+          "description": "Elige productos prácticos que se adapten a tu rutina y te ahorren tiempo y esfuerzo."
         },
         "statementLighting": {
-          "title": "Seguimiento de carteras y objetos personales",
-          "description": "Elige soluciones de seguimiento finas y discretas, diseñadas para acompañarte cada día."
+          "title": "Favoritos personales",
+          "description": "Descubre productos elegantes y prácticos diseñados para tus necesidades personales."
         },
         "layeredLighting": {
-          "title": "Seguimiento de viajes y equipaje",
-          "description": "Viaja con más tranquilidad gracias a soluciones de seguimiento para equipaje y esenciales de viaje."
+          "title": "Viajes y equipaje",
+          "description": "Viaja con más tranquilidad gracias a productos diseñados para viajes y equipaje."
         }
       }
     },
     "editorial": {
-      "catlabel": "ESONRA EDITORIAL",
+      "catlabel": "EDITORIAL",
       "title": "Diseñado con cuidado para lo que importa.",
-      "description": "Descubre soluciones de seguimiento inteligente que combinan diseño cuidado, funcionalidad diaria y mayor tranquilidad.",
-      "link": "Explorar localizadores"
+      "description": "Descubre productos que combinan diseño cuidado, funcionalidad diaria y un gran valor.",
+      "link": "Explorar productos"
     },
     "newsletter": {
       "catlabel": "SIGUE EN CONTACTO",
       "title": "Un día a día más inteligente empieza aquí.",
-      "description": "Descubre novedades, guías prácticas y nuevas formas de mantener localizadas tus pertenencias importantes.",
-      "button": "Únete a ESONRA"
+      "description": "Descubre novedades, guías prácticas y nuevas formas de comprar.",
+      "button": "Únete a nosotros"
     }
   },
   "designSection": {
     "title": "Diseñado con cuidado. Encuentra con facilidad.",
-    "catlabel": "DESCUBRE LA DIFERENCIA ESONRA",
+    "catlabel": "DESCUBRE LA DIFERENCIA",
     "principles": {
       "minimalism": {
         "title": "Diseñado para el día a día",
@@ -222,46 +222,43 @@
         "description": "Materiales seleccionados y acabados cuidados que combinan durabilidad, funcionalidad y sofisticación discreta."
       },
       "ambient": {
-        "title": "Tranquilidad en cada viaje",
-        "description": "Creemos que la tecnología debe simplificar la vida y ayudarte a localizar lo que importa para afrontar cada día con mayor tranquilidad."
+        "title": "Tranquilidad en cada compra",
+        "description": "Creemos que los buenos productos deben simplificar la vida y ayudarte a sacar más partido a cada día con mayor tranquilidad."
       }
     }
   },
-
- 
   "collectionSection": {
     "title": "Descubre nuestra colección.",
     "catlabel": "EXPLORAR",
     "categories": {
-      "keychain_trackers": {
-        "title": "Localizadores para llaves",
-        "description": "Dispositivos de localización compactos que te ayudan a mantener tus llaves siempre a mano y encontrarlas fácilmente estés donde estés."
+      "electronics": {
+        "title": "Electrónica",
+        "description": "Productos electrónicos prácticos y seleccionados con cuidado para tus necesidades diarias."
       },
-      "card_trackers": {
-        "title": "Localizadores tipo tarjeta",
-        "description": "Localizadores finos y discretos diseñados para integrarse perfectamente en tu cartera y ayudarte a encontrar lo que más importa."
+      "fashion": {
+        "title": "Moda",
+        "description": "Ropa y accesorios elegantes y prácticos que se adaptan a tu estilo de vida."
       },
-      "smart_key_organizers": {
-        "title": "Organizadores inteligentes de llaves",
-        "description": "Organizadores cuidadosamente diseñados que mantienen tus llaves ordenadas y añaden la comodidad de la localización inteligente a tu día a día."
+      "home_living": {
+        "title": "Hogar y vida",
+        "description": "Esenciales para el hogar diseñados con cuidado que combinan estilo y practicidad para mayor comodidad."
       },
-      "tracker_holders": {
-        "title": "Fundas para localizadores",
-        "description": "Fundas diseñadas para mantener tus dispositivos de localización protegidos, accesibles y listos para el uso diario."
+      "beauty": {
+        "title": "Belleza y cuidado",
+        "description": "Productos de cuidado personal seleccionados con cuidado para una rutina diaria mejor."
       },
-      "luggage_trackers": {
-        "title": "Localizadores para equipaje",
-        "description": "Soluciones inteligentes de localización que te ayudan a mantener tu equipaje controlado y viajar con mayor tranquilidad."
+      "sports_outdoors": {
+        "title": "Deporte y aire libre",
+        "description": "Equipamiento deportivo y esenciales para actividades al aire libre."
       },
-      "tracker_accessories": {
-        "title": "Accesorios para localizadores",
-        "description": "Accesorios prácticos y cuidadosamente seleccionados para mejorar la versatilidad y el uso diario de tus dispositivos de localización."
+      "accessories": {
+        "title": "Accesorios",
+        "description": "Accesorios prácticos y seleccionados con cuidado para completar tu look y tu uso diario."
       }
     }
   },
-
   "customersFeedback": {
-    "eyebrow": "LA EXPERIENCIA ESONRA",
+    "eyebrow": "LA EXPERIENCIA",
     "title": "Elegidos para tu tranquilidad diaria.",
     "description": "Clientes reales. Experiencias reales.",
     "ratingText": "Basado en reseñas de clientes",
@@ -283,8 +280,8 @@
     "applyFilters": "Aplicar filtros",
     "clearFilters": "Borrar filtros",
     "search_did_not_match": "Lo sentimos, tu búsqueda no coincide con ningún producto.",
-    "collection_description": "Descubra una selección cuidada de soluciones de seguimiento para llaves, carteras, equipaje y el día a día.",
-    "collection": "COLECCIÓN ESONRA",
+    "collection_description": "Descubre una selección cuidada de productos para tus necesidades diarias.",
+    "collection": "NUESTRA COLECCIÓN",
     "discover": "DESCUBRIR"
   },
   "customer_reviews": {
@@ -300,7 +297,7 @@
     "view_image": "Ver imagen",
     "rating": "Valoración",
     "reviews": "Reseñas",
-    "brand_review": "OPINIÓN DE ESONRA",
+    "brand_review": "OPINIÓN DE LA TIENDA",
     "description": "Descripción del producto",
     "customer_rating": "Valoración del cliente",
     "customer_reviews": "Reseñas de clientes",
@@ -312,35 +309,15 @@
     "purchase_information": "Información de compra",
     "secure_purchase_premium_quality": "Compra segura y calidad cuidada",
     "save": "guardar",
-    "Emitting Color": "Compatibilidad de seguimiento",
-    "Lampshade Color": "Color",
-    "Body Color": "Color",
     "Color": "Color",
     "Color Name": "Color",
     "Colour": "Color",
     "Color Classification": "Clasificación del color",
     "Size": "Tamaño",
     "Sizes": "Tamaños",
-    "Item Length": "Longitud del artículo",
-    "Item Width": "Ancho del artículo",
-    "Item Height": "Altura del artículo",
     "Dimensions": "Dimensiones",
     "Is Customized": "Personalizado",
-    "Sd Card Memory": "Memoria de tarjeta SD",
-    "Color Temperature": "Tipo de batería",
-    "Memory": "Memoria",
-    "Memory Size": "Capacidad de memoria",
-    "Storage": "Almacenamiento",
-    "Internal Storage": "Almacenamiento interno",
-    "ROM": "ROM",
-    "RAM": "RAM",
     "Capacity": "Capacidad",
-    "Plug Type": "Tipo de conexión",
-    "Power Plug": "Tipo de conexión",
-    "Socket Type": "Tipo de conexión",
-    "Power Specification": "Información de alimentación",
-    "Voltage": "Voltaje",
-    "Wattage": "Consumo eléctrico",
     "Ships From": "Se envía desde",
     "Ship From": "Se envía desde",
     "Warehouse": "Almacén",
@@ -352,7 +329,6 @@
     "Package": "Paquete",
     "Quantity": "Cantidad",
     "Model": "Modelo",
-    "Compatible Model": "Modelo compatible",
     "Version": "Versión",
     "Edition": "Edición",
     "Variant": "Variante",
@@ -361,10 +337,7 @@
     "Fit": "Ajuste",
     "Pattern": "Patrón",
     "Sleeve Length": "Largo de manga",
-    "Frequency": "Frecuencia",
-    "Resolution": "Resolución",
     "Interface": "Interfaz",
-    "Speed": "Velocidad",
     "Power": "Alimentación",
     "description": "Descripción",
     "specifications": "Especificaciones",
@@ -389,19 +362,19 @@
     "one_star": "estrella",
     "two_stars": "estrellas",
     "give_us_your_feedback": "Comparte tu opinión",
-    "led_ambient_lighting": "localizadores_para_llaves",
-    "phone_mounts_holders": "soportes_para_localizadores",
-    "organizers_storage": "accesorios_para_localizadores",
-    "comfort_accessories": "accesorios_para_localizadores",
-    "air_fresheners_scents": "accesorios_para_localizadores",
-    "table_lamps": "localizadores_para_llaves",
-    "floor_lamps": "localizadores_para_tarjetas",
-    "wall_lamps": "soportes_para_localizadores",
-    "pendant_lights": "localizadores_tipo_colgante",
-    "ceiling_lights": "accesorios_para_localizadores",
-    "bedside_lamps": "localizadores_para_tarjetas",
-    "desk_office_lamps": "localizadores_para_llaves",
-    "outdoor_lighting": "localizadores_para_equipaje"
+    "led_ambient_lighting": "electronica",
+    "phone_mounts_holders": "accesorios",
+    "organizers_storage": "hogar_y_vida",
+    "comfort_accessories": "accesorios",
+    "air_fresheners_scents": "belleza",
+    "table_lamps": "electronica",
+    "floor_lamps": "moda",
+    "wall_lamps": "accesorios",
+    "pendant_lights": "accesorios",
+    "ceiling_lights": "deporte_y_aire_libre",
+    "bedside_lamps": "moda",
+    "desk_office_lamps": "electronica",
+    "outdoor_lighting": "deporte_y_aire_libre"
   },
   "buyerTrustServices": {
     "freeShipping": {
@@ -466,7 +439,7 @@
   },
   "footer": {
     "brand": {
-      "description": "Soluciones de seguimiento cuidadosamente seleccionadas que combinan diseño refinado, funcionalidad diaria y tranquilidad."
+      "description": "Productos seleccionados con cuidado que combinan diseño refinado, funcionalidad diaria y valor."
     },
     "payment": {
       "secure": "Pagos seguros"
@@ -504,7 +477,7 @@
       "errorMessage": "No se ha podido completar la suscripción. Inténtalo de nuevo.",
       "copyright": "Derechos de autor",
       "all_rights_reserved": "Todos los derechos reservados.",
-      "eyebrow": "EL UNIVERSO ESONRA"
+      "eyebrow": "NUESTRA SELECCIÓN"
     }
   },
   "policies": {
@@ -555,31 +528,31 @@
   },
   "aboutus": {
     "seo": {
-      "title": "Sobre ESONRA | Accesorios de rastreo inteligente cuidadosamente seleccionados",
-      "description": "Descubra ESONRA, una selección cuidada de soluciones inteligentes de seguimiento y accesorios prácticos diseñados para ayudarle a tener localizados sus objetos esenciales."
+      "title": "Sobre nosotros | Productos cuidadosamente seleccionados",
+      "description": "Descubre nuestra tienda, una selección cuidada de productos prácticos y elegantes diseñados para tus necesidades diarias."
     },
     "hero": {
-      "eyebrow": "DESCUBRE ESONRA",
-      "title": "Mantén cerca lo que importa.",
-      "description": "Soluciones de seguimiento seleccionadas con cuidado para el día a día y cada viaje."
+      "eyebrow": "DESCUBRE NUESTRA TIENDA",
+      "title": "Todo lo que necesitas, cerca de ti.",
+      "description": "Productos seleccionados con cuidado para el día a día y cada ocasión."
     },
     "story": {
       "eyebrow": "NUESTRA HISTORIA",
-      "title": "Tecnología que encaja en tu día a día.",
-      "lead": "Creemos que la tecnología debe simplificar la vida.",
-      "text": "La solución de seguimiento adecuada puede ayudarte a perder menos tiempo buscando y a sentir más tranquilidad respecto a tus pertenencias.",
-      "text2": "ESONRA nació de esta idea: reunir soluciones de seguimiento inteligente y diseños cuidados que encajen de forma natural en la rutina diaria."
+      "title": "Calidad que encaja en tu día a día.",
+      "lead": "Creemos que los buenos productos deben simplificar la vida.",
+      "text": "El producto adecuado puede ayudarte a ahorrar tiempo y a sentir más confianza en lo que compras.",
+      "text2": "Nuestra tienda nació de esta idea: reunir productos prácticos y diseños cuidados que encajen de forma natural en la rutina diaria."
     },
     "statement": {
-      "title": "Un poco más de tranquilidad cada día.",
-      "description": "Desde llaves y carteras hasta equipaje y accesorios de viaje, el seguimiento inteligente te ayuda a mantener localizadas las cosas importantes."
+      "title": "Un poco más de comodidad cada día.",
+      "description": "Desde esenciales para el hogar hasta moda y electrónica, una selección cuidada te ayuda a sacar más partido al día a día."
     },
     "approach": {
-      "eyebrow": "LA FILOSOFÍA ESONRA",
+      "eyebrow": "NUESTRA FILOSOFÍA",
       "title": "Elegido con intención.",
       "curated": {
         "title": "Cuidado",
-        "description": "Soluciones de seguimiento útiles, seleccionadas para las necesidades diarias."
+        "description": "Productos útiles, seleccionados para las necesidades diarias."
       },
       "refined": {
         "title": "Refinado",
@@ -587,7 +560,7 @@
       },
       "atmospheric": {
         "title": "Tranquilizador",
-        "description": "Tecnología pensada para ayudarte a localizar lo que importa."
+        "description": "Productos pensados para ayudarte a sacar más partido a cada día."
       },
       "distinctive": {
         "title": "Funcional",
@@ -606,19 +579,19 @@
         "description": "Funciones útiles y materiales elegidos pensando en la comodidad cotidiana."
       },
       "light": {
-        "title": "Tranquilidad",
-        "description": "Soluciones de seguimiento diseñadas para ayudarte a localizar pertenencias importantes, según la compatibilidad y las funciones de cada producto."
+        "title": "Valor",
+        "description": "Productos seleccionados para ofrecerte un valor real y una calidad duradera."
       }
     },
     "promise": {
-      "eyebrow": "EL COMPROMISO ESONRA",
+      "eyebrow": "NUESTRO COMPROMISO",
       "title": "Elegido con cuidado para el día a día.",
       "description": "Seleccionamos productos prestando atención al diseño, la funcionalidad práctica y su integración natural en la rutina diaria."
     },
     "final": {
       "eyebrow": "LA COLECCIÓN",
-      "title": "Descubre una forma más inteligente de localizar tus pertenencias.",
-      "description": "Explora las soluciones de seguimiento ESONRA para llaves, carteras, equipaje y mucho más.",
+      "title": "Descubre una forma más inteligente de comprar.",
+      "description": "Explora nuestra colección de productos cuidadosamente seleccionados para cada necesidad.",
       "cta": "Explorar la colección"
     }
   },
@@ -822,26 +795,26 @@
     "please_enter_your_new_password": "Introduzca la nueva contraseña",
     "please_enter_your_email": "Introduzca su correo electrónico",
     "please_enter_your_password": "Introduzca su contraseña",
-    "please_enter_your_first_name": "Enter first name",
-    "please_enter_your_last_name": "Enter last name",
-    "please_enter_your_address": "Enter address",
+    "please_enter_your_first_name": "Introduzca su nombre",
+    "please_enter_your_last_name": "Introduzca sus apellidos",
+    "please_enter_your_address": "Introduzca su dirección",
     "please_enter_your_city": "Introduzca la ciudad",
-    "please_enter_your_state": "Enter state",
+    "please_enter_your_state": "Introduzca la provincia",
     "please_enter_your_country": "Seleccione un país",
     "please_enter_your_zip_code": "Introduzca el código postal",
-    "please_enter_your_phone": "Enter phone number",
-    "please_enter_your_birthdate": "Enter birthdate",
+    "please_enter_your_phone": "Introduzca el número de teléfono",
+    "please_enter_your_birthdate": "Introduzca la fecha de nacimiento",
     "pleaseSelectShippingMethod": "Seleccione un método de envío.",
     "please_enter_coupon_code": "Introduzca un código de descuento.",
-    "invalid_discount_code": "Invalid discount code",
-    "discount_code_applied": "Discount code applied",
+    "invalid_discount_code": "Código de descuento no válido",
+    "discount_code_applied": "Código de descuento aplicado",
     "discount": "Descuento",
     "error_invalid_birthdate": "La fecha de nacimiento no puede ser futura.",
-    "error_max_name_characters": "Name too long",
+    "error_max_name_characters": "El nombre es demasiado largo",
     "error_min_password_characters": "La contraseña es demasiado corta",
-    "error_required_gender": "Gender is required",
+    "error_required_gender": "El género es obligatorio",
     "required": "Obligatorio",
-    "text_field_required": "This field is required",
+    "text_field_required": "Este campo es obligatorio",
     "send": "Enviar",
     "enter_message": "Escribe tu mensaje",
     "message_sent": "Mensaje enviado",
@@ -876,9 +849,9 @@
     "password_reset_successful": "Contraseña restablecida correctamente",
     "success_logged_in": "Sesión iniciada",
     "success_account_created": "Cuenta creada correctamente",
-    "success_password_reset_link_sent": "Reset link sent",
+    "success_password_reset_link_sent": "Enlace de restablecimiento enviado",
     "success_password_reset": "Contraseña restablecida",
-    "success_profile_updated": "Profile updated",
+    "success_profile_updated": "Perfil actualizado",
     "success_password_changed": "Contraseña cambiada correctamente"
   },
   "errors": {
@@ -894,7 +867,7 @@
     "bad_request": "Solicitud incorrecta. Compruebe los datos enviados.",
     "validation_error": "Error de validación. Corrija los errores del formulario.",
     "item_out_of_stock": "Artículo agotado. No se puede añadir al carrito.",
-    "error_password_dont_match": "Passwords don't match",
+    "error_password_dont_match": "Las contraseñas no coinciden",
     "error_email_already_exists": "Este correo electrónico ya está registrado",
     "error_email_not_exists": "No se ha encontrado el correo electrónico",
     "error_invalid_credentials": "Correo electrónico o contraseña incorrectos",
@@ -902,33 +875,33 @@
     "error_too_many_requests": "Demasiados intentos. Vuelva a intentarlo más tarde.",
     "error_weak_password": "La contraseña es demasiado débil",
     "error_invalid_email": "Correo electrónico no válido",
-    "error_user_not_found": "User not found",
+    "error_user_not_found": "Usuario no encontrado",
     "error_network_request_failed": "Error de conexión",
-    "error_something_went_wrong": "Something went wrong",
-    "error_invalid_verification_code": "Invalid code",
-    "error_verification_code_expired": "Code expired",
-    "error_no_internet_connection": "No internet",
+    "error_something_went_wrong": "Algo ha salido mal",
+    "error_invalid_verification_code": "Código no válido",
+    "error_verification_code_expired": "El código ha caducado",
+    "error_no_internet_connection": "Sin conexión a Internet",
     "error_old_password_incorrect": "La contraseña actual es incorrecta",
-    "error_gender_must_be_defined": "gender must be defined",
+    "error_gender_must_be_defined": "El género debe estar definido",
     "please_confirm_your_password": "Confirme su contraseña",
     "please_enter_your_new_password": "Introduzca la nueva contraseña",
     "please_enter_your_email": "Introduzca su correo electrónico",
     "please_enter_your_password": "Introduzca su contraseña",
-    "please_enter_your_first_name": "Enter first name",
-    "please_enter_your_last_name": "Enter last name",
-    "please_enter_your_address": "Enter address",
+    "please_enter_your_first_name": "Introduzca su nombre",
+    "please_enter_your_last_name": "Introduzca sus apellidos",
+    "please_enter_your_address": "Introduzca su dirección",
     "please_enter_your_city": "Introduzca la ciudad",
-    "please_enter_your_state": "Enter state",
+    "please_enter_your_state": "Introduzca la provincia",
     "please_enter_your_country": "Seleccione un país",
     "please_enter_your_zip_code": "Introduzca el código postal",
-    "please_enter_your_phone": "Enter phone",
-    "please_enter_your_birthdate": "Enter birthdate",
+    "please_enter_your_phone": "Introduzca el teléfono",
+    "please_enter_your_birthdate": "Introduzca la fecha de nacimiento",
     "error_invalid_birthdate": "La fecha de nacimiento no puede ser futura.",
-    "error_max_name_characters": "Name too long",
+    "error_max_name_characters": "El nombre es demasiado largo",
     "error_min_password_characters": "La contraseña es demasiado corta",
-    "error_required_gender": "Gender is required",
+    "error_required_gender": "El género es obligatorio",
     "required": "Obligatorio",
-    "page_not_found": "Page Not Found",
+    "page_not_found": "Página no encontrada",
     "page_not_found_description": "La página que busca no existe."
   },
   "languages": {
@@ -946,300 +919,118 @@
     "hi": "Hindi"
   },
   "countries": {
-    "AF": "Afganistán",
-    "AX": "Islas Åland",
-    "AL": "Albania",
-    "DZ": "Argelia",
-    "AS": "Samoa Americana",
-    "AD": "Andorra",
-    "AO": "Angola",
-    "AI": "Anguila",
-    "AQ": "Antártida",
-    "AG": "Antigua y Barbuda",
-    "AR": "Argentina",
-    "AM": "Armenia",
-    "AW": "Aruba",
-    "AU": "Australia",
-    "AT": "Austria",
-    "AZ": "Azerbaiyán",
-    "BS": "Bahamas",
-    "BH": "Baréin",
-    "BD": "Bangladés",
-    "BB": "Barbados",
-    "BY": "Bielorrusia",
-    "BE": "Bélgica",
-    "BZ": "Belice",
-    "BJ": "Benín",
-    "BM": "Bermudas",
-    "BT": "Bután",
-    "BO": "Bolivia",
-    "BQ": "Países Bajos del Caribe",
-    "BA": "Bosnia y Herzegovina",
-    "BW": "Botsuana",
-    "BV": "Isla Bouvet",
-    "BR": "Brasil",
-    "IO": "Territorio Británico del Océano Índico",
-    "BN": "Brunéi",
-    "BG": "Bulgaria",
-    "BF": "Burkina Faso",
-    "BI": "Burundi",
-    "CV": "Cabo Verde",
-    "KH": "Camboya",
-    "CM": "Camerún",
-    "CA": "Canadá",
-    "KY": "Islas Caimán",
-    "CF": "República Centroafricana",
-    "TD": "Chad",
-    "CL": "Chile",
-    "CN": "China",
-    "CX": "Isla de Navidad",
-    "CC": "Islas Cocos (Keeling)",
-    "CO": "Colombia",
-    "KM": "Comoras",
-    "CG": "Congo (Brazzaville)",
-    "CD": "Congo (Kinshasa)",
-    "CK": "Islas Cook",
-    "CR": "Costa Rica",
-    "HR": "Croacia",
-    "CU": "Cuba",
-    "CW": "Curazao",
-    "CY": "Chipre",
-    "CZ": "Chequia",
-    "CI": "Costa de Marfil",
-    "DK": "Dinamarca",
-    "DJ": "Yibuti",
-    "DM": "Dominica",
-    "DO": "República Dominicana",
-    "EC": "Ecuador",
-    "EG": "Egipto",
-    "SV": "El Salvador",
-    "GQ": "Guinea Ecuatorial",
-    "ER": "Eritrea",
-    "EE": "Estonia",
-    "SZ": "Esuatini",
-    "ET": "Etiopía",
-    "FK": "Islas Malvinas",
-    "FO": "Islas Feroe",
-    "FJ": "Fiyi",
-    "FI": "Finlandia",
-    "FR": "Francia",
-    "GF": "Guayana Francesa",
-    "PF": "Polinesia Francesa",
-    "TF": "Territorios Australes Franceses",
-    "GA": "Gabón",
-    "GM": "Gambia",
-    "GE": "Georgia",
-    "DE": "Alemania",
-    "GH": "Ghana",
-    "GI": "Gibraltar",
-    "GR": "Grecia",
-    "GL": "Groenlandia",
-    "GD": "Granada",
-    "GP": "Guadalupe",
-    "GU": "Guam",
-    "GT": "Guatemala",
-    "GG": "Guernsey",
-    "GN": "Guinea",
-    "GW": "Guinea-Bisáu",
-    "GY": "Guyana",
-    "HT": "Haití",
-    "HM": "Islas Heard y McDonald",
-    "VA": "Ciudad del Vaticano",
-    "HN": "Honduras",
-    "HK": "Hong Kong, RAE de China",
-    "HU": "Hungría",
-    "IS": "Islandia",
-    "IN": "India",
-    "ID": "Indonesia",
-    "IR": "Irán",
-    "IQ": "Irak",
-    "IE": "Irlanda",
-    "IM": "Isla de Man",
-    "IL": "Israel",
-    "IT": "Italia",
-    "JM": "Jamaica",
-    "JP": "Japón",
-    "JE": "Jersey",
-    "JO": "Jordania",
-    "KZ": "Kazajistán",
-    "KE": "Kenia",
-    "KI": "Kiribati",
-    "KP": "Corea del Norte",
-    "KR": "Corea del Sur",
-    "KW": "Kuwait",
-    "KG": "Kirguistán",
-    "LA": "Laos",
-    "LV": "Letonia",
-    "LB": "Líbano",
-    "LS": "Lesoto",
-    "LR": "Liberia",
-    "LY": "Libia",
-    "LI": "Liechtenstein",
-    "LT": "Lituania",
-    "LU": "Luxemburgo",
-    "MO": "Macao, RAE de China",
-    "MG": "Madagascar",
-    "MW": "Malaui",
-    "MY": "Malasia",
-    "MV": "Maldivas",
-    "ML": "Malí",
-    "MT": "Malta",
-    "MH": "Islas Marshall",
-    "MQ": "Martinica",
-    "MR": "Mauritania",
-    "MU": "Mauricio",
-    "YT": "Mayotte",
-    "MX": "México",
-    "FM": "Micronesia",
-    "MD": "Moldavia",
-    "MC": "Mónaco",
-    "MN": "Mongolia",
-    "ME": "Montenegro",
-    "MS": "Montserrat",
-    "MA": "Marruecos",
-    "MZ": "Mozambique",
-    "MM": "Myanmar (Birmania)",
-    "NA": "Namibia",
-    "NR": "Nauru",
-    "NP": "Nepal",
-    "NL": "Países Bajos",
-    "NC": "Nueva Caledonia",
-    "NZ": "Nueva Zelanda",
-    "NI": "Nicaragua",
-    "NE": "Níger",
-    "NG": "Nigeria",
-    "NU": "Niue",
-    "NF": "Isla Norfolk",
-    "MK": "Macedonia del Norte",
-    "MP": "Islas Marianas del Norte",
-    "NO": "Noruega",
-    "OM": "Omán",
-    "PK": "Pakistán",
-    "PW": "Palaos",
-    "PS": "Territorios Palestinos",
-    "PA": "Panamá",
-    "PG": "Papúa Nueva Guinea",
-    "PY": "Paraguay",
-    "PE": "Perú",
-    "PH": "Filipinas",
-    "PN": "Islas Pitcairn",
-    "PL": "Polonia",
-    "PT": "Portugal",
-    "PR": "Puerto Rico",
-    "QA": "Catar",
-    "RO": "Rumanía",
-    "RU": "Rusia",
-    "RW": "Ruanda",
-    "RE": "Reunión",
-    "BL": "San Bartolomé",
-    "SH": "Santa Elena",
-    "KN": "San Cristóbal y Nieves",
-    "LC": "Santa Lucía",
-    "MF": "San Martín",
-    "PM": "San Pedro y Miquelón",
-    "VC": "San Vicente y las Granadinas",
-    "WS": "Samoa",
-    "SM": "San Marino",
-    "ST": "Santo Tomé y Príncipe",
-    "SA": "Arabia Saudí",
-    "SN": "Senegal",
-    "RS": "Serbia",
-    "SC": "Seychelles",
-    "SL": "Sierra Leona",
-    "SG": "Singapur",
-    "SX": "Sint Maarten",
-    "SK": "Eslovaquia",
-    "SI": "Eslovenia",
-    "SB": "Islas Salomón",
-    "SO": "Somalia",
-    "ZA": "Sudáfrica",
-    "GS": "Islas Georgias del Sur y Sandwich del Sur",
-    "SS": "Sudán del Sur",
-    "ES": "España",
-    "LK": "Sri Lanka",
-    "SD": "Sudán",
-    "SR": "Surinam",
-    "SJ": "Svalbard y Jan Mayen",
-    "SE": "Suecia",
-    "CH": "Suiza",
-    "SY": "Siria",
-    "TW": "Taiwán",
-    "TJ": "Tayikistán",
-    "TZ": "Tanzania",
-    "TH": "Tailandia",
-    "TL": "Timor Oriental",
-    "TG": "Togo",
-    "TK": "Tokelau",
-    "TO": "Tonga",
-    "TT": "Trinidad y Tobago",
-    "TN": "Túnez",
-    "TR": "Turquía",
-    "TM": "Turkmenistán",
-    "TC": "Islas Turcas y Caicos",
-    "TV": "Tuvalu",
-    "UG": "Uganda",
-    "UA": "Ucrania",
-    "AE": "Emiratos Árabes Unidos",
-    "GB": "Reino Unido",
-    "UM": "Islas Ultramarinas Menores de Estados Unidos",
-    "US": "Estados Unidos",
-    "UY": "Uruguay",
-    "UZ": "Uzbekistán",
-    "VU": "Vanuatu",
-    "VE": "Venezuela",
-    "VN": "Vietnam",
-    "VG": "Islas Vírgenes Británicas",
-    "VI": "Islas Vírgenes de Estados Unidos",
-    "WF": "Wallis y Futuna",
-    "EH": "Sáhara Occidental",
-    "YE": "Yemen",
-    "ZM": "Zambia",
-    "ZW": "Zimbabue"
+    "AF": "Afganistán", "AX": "Islas Åland", "AL": "Albania", "DZ": "Argelia",
+    "AS": "Samoa Americana", "AD": "Andorra", "AO": "Angola", "AI": "Anguila",
+    "AQ": "Antártida", "AG": "Antigua y Barbuda", "AR": "Argentina", "AM": "Armenia",
+    "AW": "Aruba", "AU": "Australia", "AT": "Austria", "AZ": "Azerbaiyán",
+    "BS": "Bahamas", "BH": "Baréin", "BD": "Bangladés", "BB": "Barbados",
+    "BY": "Bielorrusia", "BE": "Bélgica", "BZ": "Belice", "BJ": "Benín",
+    "BM": "Bermudas", "BT": "Bután", "BO": "Bolivia", "BQ": "Países Bajos del Caribe",
+    "BA": "Bosnia y Herzegovina", "BW": "Botsuana", "BV": "Isla Bouvet", "BR": "Brasil",
+    "IO": "Territorio Británico del Océano Índico", "BN": "Brunéi", "BG": "Bulgaria",
+    "BF": "Burkina Faso", "BI": "Burundi", "CV": "Cabo Verde", "KH": "Camboya",
+    "CM": "Camerún", "CA": "Canadá", "KY": "Islas Caimán", "CF": "República Centroafricana",
+    "TD": "Chad", "CL": "Chile", "CN": "China", "CX": "Isla de Navidad",
+    "CC": "Islas Cocos (Keeling)", "CO": "Colombia", "KM": "Comoras",
+    "CG": "Congo (Brazzaville)", "CD": "Congo (Kinshasa)", "CK": "Islas Cook",
+    "CR": "Costa Rica", "HR": "Croacia", "CU": "Cuba", "CW": "Curazao", "CY": "Chipre",
+    "CZ": "Chequia", "CI": "Costa de Marfil", "DK": "Dinamarca", "DJ": "Yibuti",
+    "DM": "Dominica", "DO": "República Dominicana", "EC": "Ecuador", "EG": "Egipto",
+    "SV": "El Salvador", "GQ": "Guinea Ecuatorial", "ER": "Eritrea", "EE": "Estonia",
+    "SZ": "Esuatini", "ET": "Etiopía", "FK": "Islas Malvinas", "FO": "Islas Feroe",
+    "FJ": "Fiyi", "FI": "Finlandia", "FR": "Francia", "GF": "Guayana Francesa",
+    "PF": "Polinesia Francesa", "TF": "Territorios Australes Franceses", "GA": "Gabón",
+    "GM": "Gambia", "GE": "Georgia", "DE": "Alemania", "GH": "Ghana", "GI": "Gibraltar",
+    "GR": "Grecia", "GL": "Groenlandia", "GD": "Granada", "GP": "Guadalupe", "GU": "Guam",
+    "GT": "Guatemala", "GG": "Guernsey", "GN": "Guinea", "GW": "Guinea-Bisáu",
+    "GY": "Guyana", "HT": "Haití", "HM": "Islas Heard y McDonald",
+    "VA": "Ciudad del Vaticano", "HN": "Honduras", "HK": "Hong Kong, RAE de China",
+    "HU": "Hungría", "IS": "Islandia", "IN": "India", "ID": "Indonesia", "IR": "Irán",
+    "IQ": "Irak", "IE": "Irlanda", "IM": "Isla de Man", "IL": "Israel", "IT": "Italia",
+    "JM": "Jamaica", "JP": "Japón", "JE": "Jersey", "JO": "Jordania", "KZ": "Kazajistán",
+    "KE": "Kenia", "KI": "Kiribati", "KP": "Corea del Norte", "KR": "Corea del Sur",
+    "KW": "Kuwait", "KG": "Kirguistán", "LA": "Laos", "LV": "Letonia", "LB": "Líbano",
+    "LS": "Lesoto", "LR": "Liberia", "LY": "Libia", "LI": "Liechtenstein",
+    "LT": "Lituania", "LU": "Luxemburgo", "MO": "Macao, RAE de China",
+    "MG": "Madagascar", "MW": "Malaui", "MY": "Malasia", "MV": "Maldivas",
+    "ML": "Malí", "MT": "Malta", "MH": "Islas Marshall", "MQ": "Martinica",
+    "MR": "Mauritania", "MU": "Mauricio", "YT": "Mayotte", "MX": "México",
+    "FM": "Micronesia", "MD": "Moldavia", "MC": "Mónaco", "MN": "Mongolia",
+    "ME": "Montenegro", "MS": "Montserrat", "MA": "Marruecos", "MZ": "Mozambique",
+    "MM": "Myanmar (Birmania)", "NA": "Namibia", "NR": "Nauru", "NP": "Nepal",
+    "NL": "Países Bajos", "NC": "Nueva Caledonia", "NZ": "Nueva Zelanda",
+    "NI": "Nicaragua", "NE": "Níger", "NG": "Nigeria", "NU": "Niue",
+    "NF": "Isla Norfolk", "MK": "Macedonia del Norte", "MP": "Islas Marianas del Norte",
+    "NO": "Noruega", "OM": "Omán", "PK": "Pakistán", "PW": "Palaos",
+    "PS": "Territorios Palestinos", "PA": "Panamá", "PG": "Papúa Nueva Guinea",
+    "PY": "Paraguay", "PE": "Perú", "PH": "Filipinas", "PN": "Islas Pitcairn",
+    "PL": "Polonia", "PT": "Portugal", "PR": "Puerto Rico", "QA": "Catar",
+    "RO": "Rumanía", "RU": "Rusia", "RW": "Ruanda", "RE": "Reunión",
+    "BL": "San Bartolomé", "SH": "Santa Elena", "KN": "San Cristóbal y Nieves",
+    "LC": "Santa Lucía", "MF": "San Martín", "PM": "San Pedro y Miquelón",
+    "VC": "San Vicente y las Granadinas", "WS": "Samoa", "SM": "San Marino",
+    "ST": "Santo Tomé y Príncipe", "SA": "Arabia Saudí", "SN": "Senegal",
+    "RS": "Serbia", "SC": "Seychelles", "SL": "Sierra Leona", "SG": "Singapur",
+    "SX": "Sint Maarten", "SK": "Eslovaquia", "SI": "Eslovenia",
+    "SB": "Islas Salomón", "SO": "Somalia", "ZA": "Sudáfrica",
+    "GS": "Islas Georgias del Sur y Sandwich del Sur", "SS": "Sudán del Sur",
+    "ES": "España", "LK": "Sri Lanka", "SD": "Sudán", "SR": "Surinam",
+    "SJ": "Svalbard y Jan Mayen", "SE": "Suecia", "CH": "Suiza", "SY": "Siria",
+    "TW": "Taiwán", "TJ": "Tayikistán", "TZ": "Tanzania", "TH": "Tailandia",
+    "TL": "Timor Oriental", "TG": "Togo", "TK": "Tokelau", "TO": "Tonga",
+    "TT": "Trinidad y Tobago", "TN": "Túnez", "TR": "Turquía",
+    "TM": "Turkmenistán", "TC": "Islas Turcas y Caicos", "TV": "Tuvalu",
+    "UG": "Uganda", "UA": "Ucrania", "AE": "Emiratos Árabes Unidos",
+    "GB": "Reino Unido", "UM": "Islas Ultramarinas Menores de Estados Unidos",
+    "US": "Estados Unidos", "UY": "Uruguay", "UZ": "Uzbekistán", "VU": "Vanuatu",
+    "VE": "Venezuela", "VN": "Vietnam", "VG": "Islas Vírgenes Británicas",
+    "VI": "Islas Vírgenes de Estados Unidos", "WF": "Wallis y Futuna",
+    "EH": "Sáhara Occidental", "YE": "Yemen", "ZM": "Zambia", "ZW": "Zimbabue"
   },
   "aboutPage": {
     "title": "Sobre nosotros",
-    "metaDescription": "Descubra las soluciones inteligentes de seguimiento de ESONRA, incluidos localizadores para llaves, tarjetas y equipaje, además de accesorios prácticos.",
-    "intro": "En ESONRA creemos que la tecnología debe hacer que la vida cotidiana sea más sencilla y ofrezca mayor tranquilidad.",
-    "passion": "Nos apasiona combinar el seguimiento inteligente, el diseño cuidado y la funcionalidad diaria. Seleccionamos productos pensados para ayudarle a tener localizados sus objetos esenciales.",
+    "metaDescription": "Descubre nuestra tienda, una selección cuidada de productos prácticos, incluidos electrónica, moda, esenciales para el hogar y accesorios prácticos.",
+    "intro": "En nuestra tienda creemos que los buenos productos deben hacer que la vida cotidiana sea más sencilla y agradable.",
+    "passion": "Nos apasiona combinar calidad, diseño cuidado y funcionalidad diaria. Seleccionamos productos pensados para ayudarte a sacar más partido a tu día, con diseños que encajan de forma natural en tu estilo de vida.",
     "visionTitle": "Nuestra visión",
-    "visionText": "Nuestro objetivo es integrar el seguimiento inteligente de forma sencilla y práctica en la vida cotidiana. A través de una selección cuidada de productos, queremos ayudarle a mantener sus pertenencias localizadas con mayor tranquilidad.",
+    "visionText": "Nuestro objetivo es hacer que comprar sea sencillo y práctico. A través de una selección cuidada de productos, ayudamos a las personas a encontrar lo que necesitan con mayor confianza.",
     "qualityTitle": "Calidad en la que puede confiar",
-    "qualityText": "Nos centramos en productos que combinan un diseño práctico, un funcionamiento fiable y atención al detalle. Cada elección busca aportar utilidad real al día a día.",
-    "whyTitle": "Why ESONRA?",
+    "qualityText": "Nos centramos en productos que combinan un diseño práctico, un funcionamiento fiable y atención al detalle. Creemos que los buenos productos deben ser intuitivos, fiables y estar diseñados pensando en las necesidades del día a día.",
+    "whyTitle": "¿Por qué comprar con nosotros?",
     "why": {
       "items": [
-        "Soluciones de seguimiento seleccionadas cuidadosamente",
+        "Productos seleccionados cuidadosamente",
         "Diseños refinados y prácticos",
         "Una experiencia de compra segura",
-        "Reliable delivery options",
+        "Opciones de entrega fiables",
         "Atención al cliente dedicada"
       ]
     },
     "modernTitle": "Diseñado para la vida moderna",
-    "modernText": "Nuestra colección combina tecnología inteligente con un diseño limpio y cuidado para adaptarse a los estilos de vida actuales. Tanto si quiere localizar sus llaves como mantener controlado su equipaje, encontrará soluciones prácticas para el día a día.",
-    "closing": "Gracias por elegir ESONRA: tecnología cuidadosamente seleccionada para simplificar la vida cotidiana."
+    "modernText": "Nuestra colección combina diseño práctico con un estilo limpio y cuidado para adaptarse a los estilos de vida actuales. Tanto si buscas electrónica, moda como esenciales para el hogar, encontrarás soluciones prácticas para sacar más partido al día a día.",
+    "closing": "Gracias por elegirnos: productos cuidadosamente seleccionados para simplificar la vida cotidiana."
   },
   "privacyPolicyPage": {
-    "seoTitle": "ESONRA - Política de privacidad",
+    "seoTitle": "Política de privacidad",
     "title": "Política de privacidad",
-    "intro": "Esta Política de privacidad describe cómo ESONRA.com (el «Sitio» o «nosotros») recopila, utiliza y divulga sus datos personales cuando visita el Sitio o realiza una compra en él.",
+    "intro": "Esta Política de privacidad describe cómo nuestro sitio (el «Sitio» o «nosotros») recopila, utiliza y divulga sus datos personales cuando visita el Sitio o realiza una compra en él.",
     "collectingPersonalInfo": {
       "title": "Recopilación de datos personales",
       "description": "Cuando visita el Sitio, recopilamos determinada información sobre su dispositivo, su interacción con el Sitio y los datos necesarios para tramitar sus compras. También podemos recopilar información adicional si se pone en contacto con nosotros para recibir atención al cliente. En esta Política de privacidad, denominamos «datos personales» a cualquier información que permita identificar de forma única a una persona, incluida la información indicada a continuación."
     },
     "deviceInfo": {
-      "title": "Device Information",
+      "title": "Información del dispositivo",
       "examples": "Ejemplos de datos personales recopilados: versión del navegador web, dirección IP, zona horaria, información sobre cookies, sitios o productos que consulta, términos de búsqueda y forma en que interactúa con el Sitio.",
       "purpose": "Finalidad de la recopilación: cargar el Sitio correctamente para usted y analizar su uso para optimizarlo.",
       "source": "Origen de la recopilación: se recopilan automáticamente cuando accede al Sitio mediante cookies, archivos de registro, balizas web, etiquetas o píxeles.",
-      "disclosure": "Divulgación con fines comerciales: se comparte con nuestro encargado del tratamiento, ESONRA."
+      "disclosure": "Divulgación con fines comerciales: se comparte con nuestro encargado del tratamiento."
     },
     "orderInfo": {
       "title": "Información del pedido",
       "examples": "Ejemplos de datos personales recopilados: nombre, dirección de facturación, dirección de envío, información de pago, correo electrónico y número de teléfono.",
       "purpose": "Finalidad de la recopilación: ofrecerle productos o servicios, tramitar los pagos, organizar los envíos, emitir facturas o confirmaciones de pedido, comunicarnos con usted, comprobar si los pedidos presentan riesgos o indicios de fraude y ofrecer publicidad o información acorde con sus preferencias.",
       "source": "Origen de la recopilación: usted nos proporciona estos datos.",
-      "disclosure": "Divulgación con fines comerciales: se comparte con nuestro encargado del tratamiento, ESONRA."
+      "disclosure": "Divulgación con fines comerciales: se comparte con nuestro encargado del tratamiento."
     },
     "customerSupportInfo": {
       "title": "Información para la atención al cliente",
@@ -1252,7 +1043,7 @@
       "text": "Compartimos sus datos personales con proveedores de servicios para que nos ayuden a prestar nuestros servicios y cumplir los contratos que mantenemos con usted, tal como se ha descrito anteriormente. Por ejemplo, podemos compartir sus datos personales para cumplir las leyes y normativas aplicables, responder a citaciones, órdenes de registro u otras solicitudes legales, o proteger de cualquier otro modo nuestros derechos."
     },
     "behavioralAdvertising": {
-      "title": "Behavioral Advertising",
+      "title": "Publicidad conductual",
       "text": "Utilizamos sus datos personales para mostrarle anuncios segmentados o comunicaciones comerciales que consideramos que pueden interesarle. Por ejemplo, usamos Google Analytics para comprender cómo utilizan los clientes el Sitio. Puede obtener más información sobre el uso de datos personales por parte de Google en https://policies.google.com/privacy. Para excluirse del seguimiento, visite https://tools.google.com/dlpage/gaoptout. También compartimos información sobre el uso que hace del Sitio y de los anuncios con nuestros socios publicitarios."
     },
     "usingPersonalInfo": {
@@ -1260,15 +1051,15 @@
       "text": "Utilizamos sus datos personales para prestar nuestros servicios, lo que incluye ofrecer productos a la venta, procesar pagos, enviar y entregar pedidos, e informarle sobre nuevos productos, servicios y ofertas."
     },
     "lawfulBasis": {
-      "title": "Lawful Basis",
+      "title": "Base jurídica",
       "text": "Si reside en el Espacio Económico Europeo (EEE), tratamos sus datos personales sobre la base de su consentimiento, la ejecución de un contrato, el cumplimiento de obligaciones legales, la protección de intereses vitales, el desempeño de funciones de interés público o nuestros intereses legítimos, siempre que estos no prevalezcan sobre sus derechos fundamentales."
     },
     "retention": {
-      "title": "Retention",
+      "title": "Conservación",
       "text": "Cuando realiza un pedido a través del Sitio, conservamos sus datos personales hasta que nos solicite su eliminación."
     },
     "automaticDecisionMaking": {
-      "title": "Automatic Decision-Making",
+      "title": "Toma de decisiones automatizada",
       "text": "Si reside en el EEE, tiene derecho a oponerse a las decisiones automatizadas (incluida la elaboración de perfiles) que produzcan efectos jurídicos o le afecten significativamente. Nuestro encargado del tratamiento utiliza decisiones automatizadas limitadas para prevenir el fraude, como listas temporales de bloqueo de direcciones IP o tarjetas de crédito."
     },
     "yourRights": {
@@ -1281,24 +1072,24 @@
       "text": "Las cookies son pequeños archivos de información que se descargan en su dispositivo cuando visita nuestro Sitio. Utilizamos cookies funcionales, de rendimiento, publicitarias y de redes sociales para mejorar su experiencia de navegación y recordar sus preferencias."
     },
     "doNotTrack": {
-      "title": "Do Not Track",
+      "title": "No rastrear",
       "text": "Dado que no existe una respuesta uniforme del sector a las señales «Do Not Track» (No rastrear), no modificamos nuestras prácticas de recopilación de datos cuando el navegador detecta una de estas señales."
     },
     "changes": {
-      "title": "Changes",
+      "title": "Cambios",
       "text": "Podemos actualizar esta Política de privacidad periódicamente para reflejar cambios en nuestras prácticas o por motivos legales, normativos u operativos."
     },
     "contact": {
       "title": "Contacto",
-      "text": "Para obtener más información sobre nuestras prácticas de privacidad, plantear preguntas o presentar reclamaciones, escríbanos a support@esonra.com."
+      "text": "Para obtener más información sobre nuestras prácticas de privacidad, plantear preguntas o presentar reclamaciones, póngase en contacto con nosotros por correo electrónico."
     },
     "lastUpdated": "Última actualización: 15 de junio de 2022"
   },
   "returnPolicyPage": {
-    "seoTitle": "ESONRA - Política de devoluciones",
+    "seoTitle": "Política de devoluciones",
     "title": "Política de devoluciones y reembolsos",
     "returns": {
-      "heading": "Returns:",
+      "heading": "Devoluciones:",
       "text": "En resumen, solo podrá devolver un artículo y recibir un reembolso si está completamente NUEVO y SIN ABRIR, incluidos su embalaje original y todos los accesorios. Sabemos que esta condición puede parecer estricta, pero sin ella no podríamos ofrecer nuestros precios. Aceptaremos devoluciones de artículos sin abrir durante un plazo de 15 a 25 días desde la recepción del producto. Todos los reembolsos se efectuarán mediante el método de pago original y pueden tardar entre 7 y 10 días hábiles en reflejarse."
     },
     "rejectedRefunds": {
@@ -1350,7 +1141,7 @@
       "answer": {
         "paragraphe": [],
         "list": [
-          "Inicie sesión en su cuenta de ESONRA y póngase en contacto con nuestro equipo de atención al cliente.",
+          "Inicie sesión en su cuenta y póngase en contacto con nuestro equipo de atención al cliente.",
           "Proporcione toda la información posible sobre los productos de su pedido que desea devolver o cambiar.",
           "Los artículos devueltos no deben presentar señales visibles de desgaste ni de uso.",
           "Imprima la etiqueta de envío prepagada que recibirá por correo electrónico.",
@@ -1404,19 +1195,19 @@
           "Una vez completada la devolución, el reembolso se tramitará en un plazo de 1 a 5 días hábiles.",
           "Una vez tramitado el reembolso, espere de 3 a 5 días hábiles si se realiza mediante PayPal y de 3 a 10 días hábiles para los demás métodos de pago.",
           "Le notificaremos por correo electrónico cuando se haya emitido el reembolso.",
-          "Se emitirá un reembolso completo incluso si utilizó una tarjeta regalo digital de ESONRA Store como pago total o parcial del pedido.",
+          "Se emitirá un reembolso completo incluso si utilizó una tarjeta regalo digital como pago total o parcial del pedido.",
           "Un pedido puede cancelarse y reembolsarse de inmediato si el paquete todavía no ha comenzado a prepararse para el envío.",
-          "Una vez que el paquete haya comenzado a prepararse para el envío, deberá entregarse en su destino y devolverse a ESONRA antes de emitir un reembolso. Póngase en contacto con nuestro equipo de atención al cliente para obtener más información."
+          "Una vez que el paquete haya comenzado a prepararse para el envío, deberá entregarse en su destino y devolverse antes de emitir un reembolso. Póngase en contacto con nuestro equipo de atención al cliente para obtener más información."
         ]
       }
     }
   ],
   "shippingPolicy": {
-    "seoTitle": "ESONRA - Política de envío",
+    "seoTitle": "Política de envío",
     "title": "Política de envíos",
     "intro": "Ofrecemos envío gratuito a todo el mundo en todos nuestros productos y realizamos entregas en casi todos los países.",
     "deliveryTime": {
-      "title": "Estimated Delivery Time",
+      "title": "Plazo de entrega estimado",
       "description": "La entrega suele tardar entre 5 y 15 días hábiles, con un plazo máximo de 30 días hábiles según el destino."
     },
     "tracking": {
@@ -1424,16 +1215,16 @@
       "description": "Cuando se envíe el pedido, recibirá un correo electrónico con el número de seguimiento. Por motivos logísticos, los artículos pueden enviarse en paquetes separados."
     },
     "customFees": {
-      "title": "Custom Fees",
+      "title": "Gastos de aduana",
       "description": "No nos hacemos responsables de los posibles gastos de aduana generados durante el envío."
     },
     "lostOrDelayedPackages": {
-      "title": "Lost or Delayed Packages",
+      "title": "Paquetes perdidos o retrasados",
       "description": "Si su paquete se pierde o sufre un retraso, póngase en contacto con nosotros e indique los datos de su pedido."
     },
     "contact": {
       "title": "Contacto",
-      "description": "Si tiene más preguntas sobre el envío, escríbanos a support@esonra.com."
+      "description": "Si tiene más preguntas sobre el envío, póngase en contacto con nosotros."
     }
   },
   "shippingFaq": [
@@ -1445,9 +1236,9 @@
           "Los gastos de envío internacional varían según el destino. A continuación encontrará un desglose de los costes de envío aplicables a cada zona."
         ],
         "list": [
-          "Canada: $0 - $19.99",
-          "Europe: $0 - $40",
-          "Australia: $0 - $43.99",
+          "Canadá: 0 $ - 19,99 $",
+          "Europa: 0 $ - 40 $",
+          "Australia: 0 $ - 43,99 $",
           "Envíos internacionales: envío gratuito en determinados productos."
         ]
       }
@@ -1507,108 +1298,45 @@
           "Una vez completado el proceso de devolución, el reembolso se tramitará en un plazo de 1 a 5 días hábiles.",
           "Una vez tramitado el reembolso, espere de 3 a 5 días hábiles si se realiza mediante PayPal y de 3 a 10 días hábiles para los demás métodos de pago.",
           "Le notificaremos por correo electrónico cuando se haya emitido el reembolso.",
-          "Se emitirá un reembolso completo incluso si utilizó una tarjeta regalo digital de ESONRA Store como pago total o parcial del pedido.",
+          "Se emitirá un reembolso completo incluso si utilizó una tarjeta regalo digital como pago total o parcial del pedido.",
           "Un pedido puede cancelarse y reembolsarse de inmediato si el paquete todavía no ha comenzado a prepararse para el envío.",
-          "Una vez que el paquete haya comenzado a prepararse para el envío, deberá entregarse en su destino y devolverse a ESONRA antes de emitir un reembolso. Póngase en contacto con nuestro equipo de atención al cliente para obtener más información."
+          "Una vez que el paquete haya comenzado a prepararse para el envío, deberá entregarse en su destino y devolverse antes de emitir un reembolso. Póngase en contacto con nuestro equipo de atención al cliente para obtener más información."
         ]
       }
     }
   ],
   "termsOfService": {
-    "seoTitle": "ESONRA - Términos del servicio",
+    "seoTitle": "Términos del servicio",
     "title": "Términos del servicio",
     "overview": {
-      "title": "Overview",
-      "p1": "Este sitio web está gestionado por ESONRA. En todo el sitio, los términos «nosotros», «nos» y «nuestro» se refieren a ESONRA. ESONRA pone este sitio web a su disposición, incluida toda la información, las herramientas y los servicios que ofrece, siempre que usted acepte los términos, condiciones, políticas y avisos aquí indicados.",
+      "title": "Resumen",
+      "p1": "Este sitio web está gestionado por nuestra tienda. En todo el sitio, los términos «nosotros», «nos» y «nuestro» se refieren a nuestra tienda. Ofrecemos este sitio web, incluida toda la información, las herramientas y los servicios que ofrece, siempre que usted acepte los términos, condiciones, políticas y avisos aquí indicados.",
       "p2": "Al visitar nuestro sitio o realizar una compra, utiliza nuestro «Servicio» y acepta quedar sujeto a los siguientes términos y condiciones («Condiciones del servicio» o «Condiciones»), así como a los términos y políticas adicionales a los que se hace referencia en este documento o que están disponibles mediante un enlace. Estas Condiciones se aplican a todos los usuarios del sitio, incluidos, entre otros, visitantes, proveedores, clientes, comerciantes y colaboradores de contenido.",
       "p3": "Lea atentamente estas Condiciones del servicio antes de acceder a nuestro sitio web o utilizarlo. Al acceder a cualquier parte del sitio o utilizarla, acepta quedar sujeto a estas Condiciones. Si no acepta todos los términos y condiciones de este acuerdo, no debe acceder al sitio web ni utilizar sus servicios. Si estas Condiciones se consideran una oferta, su aceptación queda expresamente limitada a ellas.",
       "p4": "Las nuevas funciones o herramientas que se incorporen a la tienda también estarán sujetas a estas Condiciones del servicio. Puede consultar la versión más reciente de las Condiciones en esta página en cualquier momento. Nos reservamos el derecho de actualizar, modificar o sustituir cualquier parte de estas Condiciones mediante la publicación de cambios en nuestro sitio web. Es su responsabilidad revisar periódicamente esta página. El uso continuado del sitio después de publicar cambios implica su aceptación."
     },
     "sections": {
-      "section1": {
-        "title": "Sección 1 - Condiciones de la tienda en línea",
-        "text": "Al aceptar estas Condiciones del servicio, declara que tiene al menos la mayoría de edad en su estado o provincia de residencia, o que tiene dicha mayoría de edad y nos ha dado su consentimiento para permitir que cualquiera de sus dependientes menores utilice este sitio. No puede utilizar nuestros productos para ningún fin ilegal o no autorizado ni, al utilizar el Servicio, infringir las leyes de su jurisdicción, incluidas, entre otras, las leyes de derechos de autor. No debe transmitir gusanos, virus ni ningún código de naturaleza destructiva. El incumplimiento de cualquiera de estas Condiciones dará lugar a la terminación inmediata de sus Servicios."
-      },
-      "section2": {
-        "title": "Sección 2 - Condiciones generales",
-        "text": "Nos reservamos el derecho a denegar el servicio a cualquier persona, por cualquier motivo y en cualquier momento. Usted entiende que su contenido (excepto la información de tarjetas de crédito) puede transferirse sin cifrar e implicar (a) transmisiones a través de distintas redes y (b) cambios para adaptarse a los requisitos técnicos de las redes o dispositivos de conexión. La información de tarjetas de crédito siempre se cifra durante la transferencia a través de las redes. Acepta no reproducir, duplicar, copiar, vender, revender ni explotar ninguna parte del Servicio, su uso o el acceso al Servicio, ni ningún contacto del sitio web a través del cual se presta el Servicio, sin nuestro permiso expreso por escrito. Los encabezados se incluyen únicamente por comodidad y no limitarán ni afectarán a estas Condiciones."
-      },
-      "section3": {
-        "title": "Sección 3 - Exactitud, integridad y actualidad de la información",
-        "text": "No nos hacemos responsables si la información disponible en este sitio no es exacta, completa o actual. El material del sitio se ofrece únicamente con fines informativos generales y no debe utilizarse como única base para tomar decisiones sin consultar fuentes de información más precisas, completas o actualizadas. Cualquier confianza depositada en el material del sitio corre por su cuenta y riesgo. Este sitio puede contener información histórica, que no es necesariamente actual y se proporciona solo como referencia. Nos reservamos el derecho de modificar el contenido del sitio en cualquier momento, pero no tenemos obligación de actualizar la información. Usted acepta que es responsable de supervisar los cambios del sitio."
-      },
-      "section4": {
-        "title": "Sección 4 - Modificaciones del servicio y precios",
-        "text": "Los precios de nuestros productos pueden cambiar sin previo aviso. Nos reservamos el derecho de modificar o interrumpir el Servicio, o cualquier parte de su contenido, en cualquier momento y sin previo aviso. No seremos responsables ante usted ni ante terceros por ninguna modificación, cambio de precio, suspensión o interrupción del Servicio."
-      },
-      "section5": {
-        "title": "Sección 5 - Productos o servicios (si corresponde)",
-        "text": "Determinados productos o servicios pueden estar disponibles exclusivamente en línea a través del sitio web. Estos productos o servicios pueden tener cantidades limitadas y solo podrán devolverse o cambiarse conforme a nuestra Política de devoluciones. Hemos hecho todo lo posible para mostrar con la mayor precisión posible los colores y las imágenes de nuestros productos en la tienda. No podemos garantizar que la pantalla de su dispositivo reproduzca los colores con exactitud. Nos reservamos el derecho, aunque no estamos obligados, a limitar la venta de nuestros productos o Servicios a cualquier persona, región geográfica o jurisdicción. Podemos ejercer este derecho caso por caso. También nos reservamos el derecho a limitar las cantidades de cualquier producto o servicio que ofrecemos. Las descripciones y los precios de los productos pueden cambiar en cualquier momento y sin previo aviso, a nuestra entera discreción. Nos reservamos el derecho de dejar de ofrecer cualquier producto en cualquier momento. Cualquier oferta de un producto o servicio en este sitio será nula donde esté prohibida. No garantizamos que la calidad de los productos, servicios, información u otros materiales que usted compre u obtenga cumpla sus expectativas, ni que se corrijan todos los errores del Servicio."
-      },
-      "section6": {
-        "title": "Sección 6 - Exactitud de la facturación y de la información de la cuenta",
-        "text": "Nos reservamos el derecho de rechazar cualquier pedido que realice. A nuestra entera discreción, podemos limitar o cancelar las cantidades compradas por persona, hogar o pedido. Estas restricciones pueden incluir pedidos realizados desde la misma cuenta de cliente, con la misma tarjeta de crédito o que utilicen la misma dirección de facturación o envío. Si modificamos o cancelamos un pedido, intentaremos avisarle mediante el correo electrónico, la dirección de facturación o el número de teléfono facilitados al realizarlo. Nos reservamos el derecho de limitar o prohibir pedidos que, a nuestro juicio, parezcan realizados por distribuidores, revendedores o comerciantes. Usted acepta proporcionar información de compra y de cuenta actual, completa y exacta para todas las compras realizadas en nuestra tienda y actualizarla rápidamente, incluidos su correo electrónico y los datos de pago, para que podamos completar las transacciones y contactar con usted cuando sea necesario."
-      },
-      "section7": {
-        "title": "Sección 7 - Política de devoluciones",
-        "text": "Para obtener más información, consulte nuestra Política de devoluciones."
-      },
-      "section8": {
-        "title": "Sección 8 - Herramientas opcionales",
-        "text": "Podemos facilitarle acceso a herramientas de terceros sobre las que no ejercemos supervisión ni tenemos control o participación. Usted reconoce y acepta que ofrecemos acceso a estas herramientas «tal cual» y «según disponibilidad», sin garantías, declaraciones ni condiciones de ningún tipo y sin respaldo alguno. No asumimos responsabilidad alguna derivada del uso que haga de herramientas opcionales de terceros. El uso de estas herramientas es por su cuenta y riesgo, y debe asegurarse de conocer y aceptar las condiciones establecidas por el proveedor correspondiente. En el futuro también podremos ofrecer nuevos servicios o funciones a través del sitio web, incluidas nuevas herramientas y recursos, que estarán sujetos a estas Condiciones del servicio."
-      },
-      "section9": {
-        "title": "Sección 9 - Enlaces de terceros",
-        "text": "Determinados contenidos, productos y servicios disponibles a través de nuestro Servicio pueden incluir materiales de terceros. Los enlaces de terceros de este sitio pueden dirigirle a sitios web que no están afiliados a nosotros. No somos responsables de examinar ni evaluar el contenido o la exactitud de esos sitios, ni garantizamos ni asumimos responsabilidad por materiales, sitios web, productos o servicios de terceros. No nos hacemos responsables de ningún daño o perjuicio relacionado con la compra o el uso de bienes, servicios, recursos, contenidos u otras transacciones realizadas en sitios web de terceros. Revise detenidamente las políticas y prácticas del tercero y asegúrese de comprenderlas antes de realizar cualquier transacción. Las quejas, reclamaciones, dudas o preguntas sobre productos de terceros deben dirigirse a dicho tercero."
-      },
-      "section10": {
-        "title": "Sección 10 - Comentarios, opiniones y otros envíos de usuarios",
-        "text": "Si, a petición nuestra, nos envía aportaciones específicas (por ejemplo, participaciones en concursos) o, sin que se lo pidamos, nos envía ideas creativas, sugerencias, propuestas, planes u otros materiales, ya sea en línea, por correo electrónico, por correo postal o de cualquier otro modo (conjuntamente, los «comentarios»), acepta que podamos, en cualquier momento y sin restricciones, editar, copiar, publicar, distribuir, traducir y utilizar por cualquier medio los comentarios que nos envíe. No estamos ni estaremos obligados a (1) mantener los comentarios en confidencialidad; (2) pagar una compensación por ellos; ni (3) responder a ellos. Podemos, aunque no estamos obligados a ello, supervisar, editar o eliminar contenido que, a nuestra entera discreción, consideremos ilegal, ofensivo, amenazante, difamatorio, pornográfico, obsceno, censurable o que infrinja derechos de propiedad intelectual de terceros o estas Condiciones. Usted acepta que sus comentarios no vulnerarán derechos de terceros, incluidos derechos de autor, marcas, privacidad, personalidad u otros derechos personales o de propiedad. También acepta que no incluirán material difamatorio, ilegal, abusivo u obsceno ni virus informáticos u otro software malicioso que pueda afectar al funcionamiento del Servicio o de cualquier sitio web relacionado. No podrá utilizar una dirección de correo electrónico falsa, hacerse pasar por otra persona ni inducirnos a nosotros o a terceros a error sobre el origen de los comentarios. Usted es el único responsable de los comentarios que publique y de su exactitud. No asumimos responsabilidad alguna por los comentarios publicados por usted o por terceros."
-      },
-      "section11": {
-        "title": "Sección 11 - Información personal",
-        "text": "El envío de información personal a través de la tienda se rige por nuestra Política de privacidad."
-      },
-      "section12": {
-        "title": "Sección 12 - Errores, inexactitudes y omisiones",
-        "text": "En ocasiones, la información de nuestro sitio o del Servicio puede contener errores tipográficos, inexactitudes u omisiones relacionados con descripciones de productos, precios, promociones, ofertas, gastos de envío, plazos de transporte y disponibilidad. Nos reservamos el derecho de corregir errores, inexactitudes u omisiones, así como de cambiar o actualizar información o cancelar pedidos si algún dato del Servicio o de un sitio web relacionado es inexacto, en cualquier momento y sin previo aviso, incluso después de que haya enviado su pedido. No asumimos obligación alguna de actualizar, modificar o aclarar la información del Servicio o de cualquier sitio web relacionado, incluida la información sobre precios, salvo cuando la ley lo exija. Ninguna fecha de actualización indicada debe interpretarse como garantía de que toda la información se haya modificado o actualizado."
-      },
-      "section13": {
-        "title": "Sección 13 - Usos prohibidos",
-        "text": "Además de las prohibiciones establecidas en estas Condiciones, queda prohibido utilizar el sitio o su contenido: (a) con fines ilícitos; (b) para inducir a otros a realizar actos ilícitos o participar en ellos; (c) para infringir normativas, reglas, leyes u ordenanzas internacionales, federales, provinciales, estatales o locales; (d) para vulnerar nuestros derechos de propiedad intelectual o los de terceros; (e) para acosar, abusar, insultar, dañar, difamar, calumniar, menospreciar, intimidar o discriminar por razón de género, orientación sexual, religión, etnia, raza, edad, nacionalidad o discapacidad; (f) para enviar información falsa o engañosa; (g) para cargar o transmitir virus u otro código malicioso que pueda afectar al funcionamiento del Servicio, de sitios web relacionados, de otros sitios o de Internet; (h) para recopilar o rastrear datos personales de otras personas; (i) para enviar spam, realizar phishing, pharming, pretexting, spidering, crawling o scraping; (j) con fines obscenos o inmorales; o (k) para interferir con las funciones de seguridad del Servicio, de sitios relacionados, de otros sitios web o de Internet, o eludirlas. Nos reservamos el derecho de cancelar su uso del Servicio o de cualquier sitio relacionado si incumple cualquiera de estos usos prohibidos."
-      },
-      "section14": {
-        "title": "Sección 14 - Exclusión de garantías y limitación de responsabilidad",
-        "text": "No garantizamos ni declaramos que el uso de nuestro servicio será ininterrumpido, puntual, seguro o libre de errores. Tampoco garantizamos que los resultados obtenidos mediante el uso del servicio sean exactos o fiables. Usted acepta que, ocasionalmente, podamos retirar el servicio por periodos indefinidos o cancelarlo en cualquier momento sin previo aviso. Acepta expresamente que utiliza el servicio, o que no puede utilizarlo, bajo su exclusiva responsabilidad. El servicio y todos los productos y servicios que se le entreguen a través de él se proporcionan, salvo que indiquemos expresamente lo contrario, «tal cual» y «según disponibilidad», sin declaraciones, garantías ni condiciones de ningún tipo, expresas o implícitas, incluidas las garantías implícitas de comerciabilidad, calidad comercial, idoneidad para un fin particular, durabilidad, titularidad y ausencia de infracción. En ningún caso ESONRA, nuestros directivos, empleados, afiliados, agentes, contratistas, becarios, proveedores, prestadores de servicios o licenciantes serán responsables de lesiones, pérdidas, reclamaciones ni daños directos, indirectos, incidentales, punitivos, especiales o consecuentes de ningún tipo, incluidos, entre otros, lucro cesante, pérdida de ingresos, ahorros, datos o costes de sustitución, ya se basen en un contrato, responsabilidad extracontractual (incluida negligencia), responsabilidad objetiva u otro fundamento, derivados del uso del servicio o de productos adquiridos mediante él, o de cualquier reclamación relacionada con dicho uso, incluidos errores u omisiones en el contenido o pérdidas o daños derivados del uso del servicio o de cualquier contenido o producto publicado, transmitido o puesto a disposición a través del servicio, incluso si se nos hubiera advertido de la posibilidad de tales daños. Dado que algunos estados o jurisdicciones no permiten excluir o limitar la responsabilidad por daños incidentales o consecuentes, nuestra responsabilidad en esas jurisdicciones se limitará al máximo permitido por la ley."
-      },
-      "section15": {
-        "title": "Sección 15 - Indemnización",
-        "text": "Usted acepta indemnizar, defender y mantener indemnes a ESONRA y a nuestra empresa matriz, filiales, afiliadas, socios, directivos, administradores, agentes, contratistas, licenciantes, proveedores de servicios, subcontratistas, proveedores, becarios y empleados frente a cualquier reclamación o demanda de terceros, incluidos los honorarios razonables de abogados, que se derive de su incumplimiento de estas Condiciones del servicio, de los documentos incorporados por referencia o de la vulneración de cualquier ley o derecho de terceros."
-      },
-      "section16": {
-        "title": "Sección 16 - Divisibilidad",
-        "text": "Si alguna disposición de estas Condiciones del servicio se considera ilegal, nula o inaplicable, dicha disposición seguirá siendo exigible en la máxima medida permitida por la ley aplicable, y la parte inaplicable se considerará separada de estas Condiciones. Esta determinación no afectará a la validez ni a la exigibilidad de las demás disposiciones."
-      },
-      "section17": {
-        "title": "Sección 17 - Terminación",
-        "text": "Las obligaciones y responsabilidades de las partes contraídas antes de la fecha de terminación seguirán vigentes a todos los efectos. Estas Condiciones del servicio permanecerán en vigor hasta que usted o nosotros las demos por terminadas. Puede terminarlas en cualquier momento notificándonos que ya no desea utilizar nuestros Servicios o dejando de utilizar el sitio. Si, a nuestro exclusivo juicio, incumple o sospechamos que ha incumplido alguna disposición de estas Condiciones, también podremos terminar este acuerdo en cualquier momento y sin previo aviso. Seguirá siendo responsable de todos los importes adeudados hasta la fecha de terminación, inclusive, y podremos denegarle el acceso a nuestros Servicios, o a cualquier parte de ellos."
-      },
-      "section18": {
-        "title": "Sección 18 - Acuerdo íntegro",
-        "text": "El hecho de que no ejerzamos o hagamos cumplir algún derecho o disposición de estas Condiciones no constituirá una renuncia a dicho derecho o disposición. Estas Condiciones y las políticas o normas operativas publicadas por nosotros en este sitio o relativas al Servicio constituyen el acuerdo íntegro entre usted y nosotros y rigen el uso del Servicio, sustituyendo cualquier acuerdo, comunicación o propuesta anterior o contemporánea, oral o escrita, incluidas versiones anteriores de estas Condiciones. Las ambigüedades en la interpretación de estas Condiciones no se interpretarán en contra de la parte que las haya redactado."
-      },
-      "section19": {
-        "title": "Sección 19 - Legislación aplicable",
-        "text": "Estas Condiciones del servicio y cualquier acuerdo independiente mediante el cual le prestemos Servicios se regirán e interpretarán de conformidad con las leyes de los Estados Unidos."
-      },
-      "section20": {
-        "title": "Sección 20 - Cambios en las Condiciones del servicio",
-        "text": "Puede consultar la versión más reciente de las Condiciones del servicio en cualquier momento en esta página. Nos reservamos el derecho, a nuestra entera discreción, de actualizar, modificar o sustituir cualquier parte de estas Condiciones mediante la publicación de cambios en nuestro sitio web. Es su responsabilidad revisar periódicamente el sitio para comprobar si hay cambios."
-      },
-      "section21": {
-        "title": "Sección 21 - Información de contacto",
-        "text": "Las preguntas sobre estas Condiciones del servicio deben enviarse a support@esonra.com"
-      }
+      "section1": { "title": "Sección 1 - Condiciones de la tienda en línea", "text": "Al aceptar estas Condiciones del servicio, declara que tiene al menos la mayoría de edad en su estado o provincia de residencia, o que tiene dicha mayoría de edad y nos ha dado su consentimiento para permitir que cualquiera de sus dependientes menores utilice este sitio. No puede utilizar nuestros productos para ningún fin ilegal o no autorizado ni, al utilizar el Servicio, infringir las leyes de su jurisdicción, incluidas, entre otras, las leyes de derechos de autor. No debe transmitir gusanos, virus ni ningún código de naturaleza destructiva. El incumplimiento de cualquiera de estas Condiciones dará lugar a la terminación inmediata de sus Servicios." },
+      "section2": { "title": "Sección 2 - Condiciones generales", "text": "Nos reservamos el derecho a denegar el servicio a cualquier persona, por cualquier motivo y en cualquier momento. Usted entiende que su contenido (excepto la información de tarjetas de crédito) puede transferirse sin cifrar e implicar (a) transmisiones a través de distintas redes y (b) cambios para adaptarse a los requisitos técnicos de las redes o dispositivos de conexión. La información de tarjetas de crédito siempre se cifra durante la transferencia a través de las redes. Acepta no reproducir, duplicar, copiar, vender, revender ni explotar ninguna parte del Servicio, su uso o el acceso al Servicio, ni ningún contacto del sitio web a través del cual se presta el Servicio, sin nuestro permiso expreso por escrito. Los encabezados se incluyen únicamente por comodidad y no limitarán ni afectarán a estas Condiciones." },
+      "section3": { "title": "Sección 3 - Exactitud, integridad y actualidad de la información", "text": "No nos hacemos responsables si la información disponible en este sitio no es exacta, completa o actual. El material del sitio se ofrece únicamente con fines informativos generales y no debe utilizarse como única base para tomar decisiones sin consultar fuentes de información más precisas, completas o actualizadas. Cualquier confianza depositada en el material del sitio corre por su cuenta y riesgo. Este sitio puede contener información histórica, que no es necesariamente actual y se proporciona solo como referencia. Nos reservamos el derecho de modificar el contenido del sitio en cualquier momento, pero no tenemos obligación de actualizar la información. Usted acepta que es responsable de supervisar los cambios del sitio." },
+      "section4": { "title": "Sección 4 - Modificaciones del servicio y precios", "text": "Los precios de nuestros productos pueden cambiar sin previo aviso. Nos reservamos el derecho de modificar o interrumpir el Servicio, o cualquier parte de su contenido, en cualquier momento y sin previo aviso. No seremos responsables ante usted ni ante terceros por ninguna modificación, cambio de precio, suspensión o interrupción del Servicio." },
+      "section5": { "title": "Sección 5 - Productos o servicios (si corresponde)", "text": "Determinados productos o servicios pueden estar disponibles exclusivamente en línea a través del sitio web. Estos productos o servicios pueden tener cantidades limitadas y solo podrán devolverse o cambiarse conforme a nuestra Política de devoluciones. Hemos hecho todo lo posible para mostrar con la mayor precisión posible los colores y las imágenes de nuestros productos en la tienda. No podemos garantizar que la pantalla de su dispositivo reproduzca los colores con exactitud. Nos reservamos el derecho, aunque no estamos obligados, a limitar la venta de nuestros productos o Servicios a cualquier persona, región geográfica o jurisdicción. Podemos ejercer este derecho caso por caso. También nos reservamos el derecho a limitar las cantidades de cualquier producto o servicio que ofrecemos. Las descripciones y los precios de los productos pueden cambiar en cualquier momento y sin previo aviso, a nuestra entera discreción. Nos reservamos el derecho de dejar de ofrecer cualquier producto en cualquier momento. Cualquier oferta de un producto o servicio en este sitio será nula donde esté prohibida. No garantizamos que la calidad de los productos, servicios, información u otros materiales que usted compre u obtenga cumpla sus expectativas, ni que se corrijan todos los errores del Servicio." },
+      "section6": { "title": "Sección 6 - Exactitud de la facturación y de la información de la cuenta", "text": "Nos reservamos el derecho de rechazar cualquier pedido que realice. A nuestra entera discreción, podemos limitar o cancelar las cantidades compradas por persona, hogar o pedido. Estas restricciones pueden incluir pedidos realizados desde la misma cuenta de cliente, con la misma tarjeta de crédito o que utilicen la misma dirección de facturación o envío. Si modificamos o cancelamos un pedido, intentaremos avisarle mediante el correo electrónico, la dirección de facturación o el número de teléfono facilitados al realizarlo. Nos reservamos el derecho de limitar o prohibir pedidos que, a nuestro juicio, parezcan realizados por distribuidores, revendedores o comerciantes. Usted acepta proporcionar información de compra y de cuenta actual, completa y exacta para todas las compras realizadas en nuestra tienda y actualizarla rápidamente, incluidos su correo electrónico y los datos de pago, para que podamos completar las transacciones y contactar con usted cuando sea necesario." },
+      "section7": { "title": "Sección 7 - Política de devoluciones", "text": "Para obtener más información, consulte nuestra Política de devoluciones." },
+      "section8": { "title": "Sección 8 - Herramientas opcionales", "text": "Podemos facilitarle acceso a herramientas de terceros sobre las que no ejercemos supervisión ni tenemos control o participación. Usted reconoce y acepta que ofrecemos acceso a estas herramientas «tal cual» y «según disponibilidad», sin garantías, declaraciones ni condiciones de ningún tipo y sin respaldo alguno. No asumimos responsabilidad alguna derivada del uso que haga de herramientas opcionales de terceros. El uso de estas herramientas es por su cuenta y riesgo, y debe asegurarse de conocer y aceptar las condiciones establecidas por el proveedor correspondiente. En el futuro también podremos ofrecer nuevos servicios o funciones a través del sitio web, incluidas nuevas herramientas y recursos, que estarán sujetos a estas Condiciones del servicio." },
+      "section9": { "title": "Sección 9 - Enlaces de terceros", "text": "Determinados contenidos, productos y servicios disponibles a través de nuestro Servicio pueden incluir materiales de terceros. Los enlaces de terceros de este sitio pueden dirigirle a sitios web que no están afiliados a nosotros. No somos responsables de examinar ni evaluar el contenido o la exactitud de esos sitios, ni garantizamos ni asumimos responsabilidad por materiales, sitios web, productos o servicios de terceros. No nos hacemos responsables de ningún daño o perjuicio relacionado con la compra o el uso de bienes, servicios, recursos, contenidos u otras transacciones realizadas en sitios web de terceros. Revise detenidamente las políticas y prácticas del tercero y asegúrese de comprenderlas antes de realizar cualquier transacción. Las quejas, reclamaciones, dudas o preguntas sobre productos de terceros deben dirigirse a dicho tercero." },
+      "section10": { "title": "Sección 10 - Comentarios, opiniones y otros envíos de usuarios", "text": "Si, a petición nuestra, nos envía aportaciones específicas (por ejemplo, participaciones en concursos) o, sin que se lo pidamos, nos envía ideas creativas, sugerencias, propuestas, planes u otros materiales, ya sea en línea, por correo electrónico, por correo postal o de cualquier otro modo (conjuntamente, los «comentarios»), acepta que podamos, en cualquier momento y sin restricciones, editar, copiar, publicar, distribuir, traducir y utilizar por cualquier medio los comentarios que nos envíe. No estamos ni estaremos obligados a (1) mantener los comentarios en confidencialidad; (2) pagar una compensación por ellos; ni (3) responder a ellos. Podemos, aunque no estamos obligados a ello, supervisar, editar o eliminar contenido que, a nuestra entera discreción, consideremos ilegal, ofensivo, amenazante, difamatorio, pornográfico, obsceno, censurable o que infrinja derechos de propiedad intelectual de terceros o estas Condiciones. Usted acepta que sus comentarios no vulnerarán derechos de terceros, incluidos derechos de autor, marcas, privacidad, personalidad u otros derechos personales o de propiedad. También acepta que no incluirán material difamatorio, ilegal, abusivo u obsceno ni virus informáticos u otro software malicioso que pueda afectar al funcionamiento del Servicio o de cualquier sitio web relacionado. No podrá utilizar una dirección de correo electrónico falsa, hacerse pasar por otra persona ni inducirnos a nosotros o a terceros a error sobre el origen de los comentarios. Usted es el único responsable de los comentarios que publique y de su exactitud. No asumimos responsabilidad alguna por los comentarios publicados por usted o por terceros." },
+      "section11": { "title": "Sección 11 - Información personal", "text": "El envío de información personal a través de la tienda se rige por nuestra Política de privacidad." },
+      "section12": { "title": "Sección 12 - Errores, inexactitudes y omisiones", "text": "En ocasiones, la información de nuestro sitio o del Servicio puede contener errores tipográficos, inexactitudes u omisiones relacionados con descripciones de productos, precios, promociones, ofertas, gastos de envío, plazos de transporte y disponibilidad. Nos reservamos el derecho de corregir errores, inexactitudes u omisiones, así como de cambiar o actualizar información o cancelar pedidos si algún dato del Servicio o de un sitio web relacionado es inexacto, en cualquier momento y sin previo aviso, incluso después de que haya enviado su pedido. No asumimos obligación alguna de actualizar, modificar o aclarar la información del Servicio o de cualquier sitio web relacionado, incluida la información sobre precios, salvo cuando la ley lo exija. Ninguna fecha de actualización indicada debe interpretarse como garantía de que toda la información se haya modificado o actualizado." },
+      "section13": { "title": "Sección 13 - Usos prohibidos", "text": "Además de las prohibiciones establecidas en estas Condiciones, queda prohibido utilizar el sitio o su contenido: (a) con fines ilícitos; (b) para inducir a otros a realizar actos ilícitos o participar en ellos; (c) para infringir normativas, reglas, leyes u ordenanzas internacionales, federales, provinciales, estatales o locales; (d) para vulnerar nuestros derechos de propiedad intelectual o los de terceros; (e) para acosar, abusar, insultar, dañar, difamar, calumniar, menospreciar, intimidar o discriminar por razón de género, orientación sexual, religión, etnia, raza, edad, nacionalidad o discapacidad; (f) para enviar información falsa o engañosa; (g) para cargar o transmitir virus u otro código malicioso que pueda afectar al funcionamiento del Servicio, de sitios web relacionados, de otros sitios o de Internet; (h) para recopilar o rastrear datos personales de otras personas; (i) para enviar spam, realizar phishing, pharming, pretexting, spidering, crawling o scraping; (j) con fines obscenos o inmorales; o (k) para interferir con las funciones de seguridad del Servicio, de sitios relacionados, de otros sitios web o de Internet, o eludirlas. Nos reservamos el derecho de cancelar su uso del Servicio o de cualquier sitio relacionado si incumple cualquiera de estos usos prohibidos." },
+      "section14": { "title": "Sección 14 - Exclusión de garantías y limitación de responsabilidad", "text": "No garantizamos ni declaramos que el uso de nuestro servicio será ininterrumpido, puntual, seguro o libre de errores. Tampoco garantizamos que los resultados obtenidos mediante el uso del servicio sean exactos o fiables. Usted acepta que, ocasionalmente, podamos retirar el servicio por periodos indefinidos o cancelarlo en cualquier momento sin previo aviso. Acepta expresamente que utiliza el servicio, o que no puede utilizarlo, bajo su exclusiva responsabilidad. El servicio y todos los productos y servicios que se le entreguen a través de él se proporcionan, salvo que indiquemos expresamente lo contrario, «tal cual» y «según disponibilidad», sin declaraciones, garantías ni condiciones de ningún tipo, expresas o implícitas, incluidas las garantías implícitas de comerciabilidad, calidad comercial, idoneidad para un fin particular, durabilidad, titularidad y ausencia de infracción. En ningún caso nuestra tienda, nuestros directivos, empleados, afiliados, agentes, contratistas, becarios, proveedores, prestadores de servicios o licenciantes serán responsables de lesiones, pérdidas, reclamaciones ni daños directos, indirectos, incidentales, punitivos, especiales o consecuentes de ningún tipo, incluidos, entre otros, lucro cesante, pérdida de ingresos, ahorros, datos o costes de sustitución, ya se basen en un contrato, responsabilidad extracontractual (incluida negligencia), responsabilidad objetiva u otro fundamento, derivados del uso del servicio o de productos adquiridos mediante él, o de cualquier reclamación relacionada con dicho uso, incluidos errores u omisiones en el contenido o pérdidas o daños derivados del uso del servicio o de cualquier contenido o producto publicado, transmitido o puesto a disposición a través del servicio, incluso si se nos hubiera advertido de la posibilidad de tales daños. Dado que algunos estados o jurisdicciones no permiten excluir o limitar la responsabilidad por daños incidentales o consecuentes, nuestra responsabilidad en esas jurisdicciones se limitará al máximo permitido por la ley." },
+      "section15": { "title": "Sección 15 - Indemnización", "text": "Usted acepta indemnizar, defender y mantener indemnes a nuestra tienda y a nuestra empresa matriz, filiales, afiliadas, socios, directivos, administradores, agentes, contratistas, licenciantes, proveedores de servicios, subcontratistas, proveedores, becarios y empleados frente a cualquier reclamación o demanda de terceros, incluidos los honorarios razonables de abogados, que se derive de su incumplimiento de estas Condiciones del servicio, de los documentos incorporados por referencia o de la vulneración de cualquier ley o derecho de terceros." },
+      "section16": { "title": "Sección 16 - Divisibilidad", "text": "Si alguna disposición de estas Condiciones del servicio se considera ilegal, nula o inaplicable, dicha disposición seguirá siendo exigible en la máxima medida permitida por la ley aplicable, y la parte inaplicable se considerará separada de estas Condiciones. Esta determinación no afectará a la validez ni a la exigibilidad de las demás disposiciones." },
+      "section17": { "title": "Sección 17 - Terminación", "text": "Las obligaciones y responsabilidades de las partes contraídas antes de la fecha de terminación seguirán vigentes a todos los efectos. Estas Condiciones del servicio permanecerán en vigor hasta que usted o nosotros las demos por terminadas. Puede terminarlas en cualquier momento notificándonos que ya no desea utilizar nuestros Servicios o dejando de utilizar el sitio. Si, a nuestro exclusivo juicio, incumple o sospechamos que ha incumplido alguna disposición de estas Condiciones, también podremos terminar este acuerdo en cualquier momento y sin previo aviso. Seguirá siendo responsable de todos los importes adeudados hasta la fecha de terminación, inclusive, y podremos denegarle el acceso a nuestros Servicios, o a cualquier parte de ellos." },
+      "section18": { "title": "Sección 18 - Acuerdo íntegro", "text": "El hecho de que no ejerzamos o hagamos cumplir algún derecho o disposición de estas Condiciones no constituirá una renuncia a dicho derecho o disposición. Estas Condiciones y las políticas o normas operativas publicadas por nosotros en este sitio o relativas al Servicio constituyen el acuerdo íntegro entre usted y nosotros y rigen el uso del Servicio, sustituyendo cualquier acuerdo, comunicación o propuesta anterior o contemporánea, oral o escrita, incluidas versiones anteriores de estas Condiciones. Las ambigüedades en la interpretación de estas Condiciones no se interpretarán en contra de la parte que las haya redactado." },
+      "section19": { "title": "Sección 19 - Legislación aplicable", "text": "Estas Condiciones del servicio y cualquier acuerdo independiente mediante el cual le prestemos Servicios se regirán e interpretarán de conformidad con las leyes de los Estados Unidos." },
+      "section20": { "title": "Sección 20 - Cambios en las Condiciones del servicio", "text": "Puede consultar la versión más reciente de las Condiciones del servicio en cualquier momento en esta página. Nos reservamos el derecho, a nuestra entera discreción, de actualizar, modificar o sustituir cualquier parte de estas Condiciones mediante la publicación de cambios en nuestro sitio web. Es su responsabilidad revisar periódicamente el sitio para comprobar si hay cambios." },
+      "section21": { "title": "Sección 21 - Información de contacto", "text": "Las preguntas sobre estas Condiciones del servicio deben enviarse por correo electrónico." }
     }
   }
 }

@@ -181,15 +181,7 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
-STATIC_URL = "/static/"
 
-if ENVIRONMENT == "production":
-    STATIC_ROOT = BASE_DIR / "staticfiles"
-    STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-    STATICFILES_DIRS = [FRONTEND_DIR / "dist"]
-else:
-    STATICFILES_DIRS = [FRONTEND_DIR / "dist"]
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 AUTH_USER_MODEL = "one_shop.Users"

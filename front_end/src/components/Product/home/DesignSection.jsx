@@ -38,7 +38,7 @@ const DesignSection = () => {
   ];
 
   const imageURL =
-    "https://ae01.alicdn.com/kf/Sa940d1538b834bceb621b90c01daa9fds.png";
+    "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1793746100/esonra/products/arabic-portable-gas-stove-infographic_s44f5e.webp";
 
   return (
     <DesignContainer maxWidth={false}>
@@ -55,7 +55,7 @@ const DesignSection = () => {
               decoding="async"
             />
           </ImageWrapper>
-
+{/*
           <div className="collection-button1">
             <CollectionButton
               dir={isRTL ? "rtl" : "ltr"}
@@ -70,8 +70,8 @@ const DesignSection = () => {
               </Arrow>
             </CollectionButton>
           </div>
+          */}
         </Grid>
-
         {/* DESIGN CONTENT */}
         <Grid
           item
