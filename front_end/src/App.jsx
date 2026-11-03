@@ -151,7 +151,7 @@ const HomeDashboard = React.lazy(() =>
 );
 
 const ProductsLayout = React.lazy(() =>
-  import("./components/adminDashboard/Products/Products_Layout")
+  import("./components/adminDashboard/ProductsManagement/Products_Layout")
 );
 
 const Chart = React.lazy(() =>
@@ -176,7 +176,7 @@ const Email = React.lazy(() =>
 
 const AliExpressProductFetcher = React.lazy(() =>
   import(
-    "./components/adminDashboard/AliDropship/AliExpressProductFetcher.jsx"
+    "./components/adminDashboard/ProductsManagement/AliDropship/AliExpressProductFetcher.jsx"
   )
 );
 

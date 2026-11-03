@@ -8,7 +8,7 @@ import WorkspacePremiumOutlinedIcon from "@mui/icons-material/WorkspacePremiumOu
 import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
 import ReplayIcon from "@mui/icons-material/Replay";
 import VolunteerActivismOutlinedIcon from "@mui/icons-material/VolunteerActivismOutlined";
-import { colors } from "../../../utilis/colors";
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 
 const ProductTrustBanner = () => {
@@ -113,11 +113,11 @@ const ProductTrustBanner = () => {
 
         <TrustItem>
           <IconWrapper>
-            <Inventory2OutlinedIcon className="icons" aria-hidden="true" />
+            <AttachMoneyIcon className="icons" aria-hidden="true" />
           </IconWrapper>
 
           <TrustTitle>
-            {t("trust.fastDelivery.title")}
+            {t("buyerTrustServices.moneyBack.title")}
           </TrustTitle>
         </TrustItem>
 
@@ -197,11 +197,12 @@ const SecureContent = styled.div`
   letter-spacing: 2px;
   text-transform: uppercase;
 
-  color: #000000;
+      color: #020202;
+
 
   svg {
     font-size: 15px;
-    color: #000000;
+      color: #020202;
     flex-shrink: 0;
   }
 
@@ -247,13 +248,13 @@ const PaymentIcon = styled.img`
   flex-shrink: 0;
 
   @media (max-width: 700px) {
-    width: 34px;
-    height: 34px;
+    width: 38px;
+    height: 38px;
   }
 
   @media (max-width: 360px) {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
   }
 `;
 
@@ -268,6 +269,7 @@ const TrustGrid = styled.div`
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  place-content:center;
 `;
 
 const TrustItem = styled.div`
@@ -294,7 +296,7 @@ const IconWrapper = styled.div`
 
   svg {
     font-size: 32px;
-    color: ${colors.secondary};
+    color: #252525;
 
     stroke-width: 0.8;
   }
@@ -304,7 +306,7 @@ const IconWrapper = styled.div`
     margin-bottom: 10px;
 
     .icons {
-      font-size: 20px;
+      font-size: 26px;
     }
   }
 `;
@@ -325,6 +327,6 @@ const TrustTitle = styled.div`
   color: #45413d;
 
   @media (max-width: 600px) {
-    font-size: 8px;
+    font-size: 9px;
   }
 `;

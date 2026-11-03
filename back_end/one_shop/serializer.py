@@ -228,10 +228,14 @@ class ProductDetailsSerializer(serializers.ModelSerializer):
     skuInfo = serializers.JSONField()
     multimediaInfo = serializers.JSONField()
     read_only_fields = ["id", "release_date"]
-
-    ratings = getRatingSerializer(
-        source="user_ratings", many=True, read_only=True, default=[]
-    )
+    average_rating = serializers.FloatField(read_only=True, allow_null=True)
+    ratings_count = serializers.IntegerField(read_only=True)
+    five_star_count = serializers.IntegerField(read_only=True)
+    four_star_count = serializers.IntegerField(read_only=True)
+    three_star_count = serializers.IntegerField(read_only=True)
+    two_star_count = serializers.IntegerField(read_only=True)
+    one_star_count = serializers.IntegerField(read_only=True)
+   
 
     class Meta:
         model = Products

@@ -109,4 +109,5 @@ urlpatterns = [
         name="product-search",
     ),
     path("displayInfo/", displayView.DisplayInfoAPIView.as_view(), name="displayInfo"),
+    path("product_ratings", productView.ProductRatingsView.as_view(), name="productratings")
 ]

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styled from "styled-components";
-import ApiInstance from "../../../../common/baseUrl";
+import ApiInstance from "../../../../../common/baseUrl";
 import { useDispatch } from "react-redux";
-import { setAliExpressProduct } from "../../../features/AliExpressProductSlice";
+import { setAliExpressProduct } from "../../../../features/AliExpressProductSlice";
 export default function AliExpressProductFetcher() {
   const [productId, setProductId] = useState("");
   const [loading, setLoading] = useState(false);
@@ -59,11 +59,7 @@ const Container = styled.div`
 
 `;
 
-const Title = styled.h2`
-  font-family: 'Inter', sans-serif;
-  color: #111827;
-  margin-bottom: 16px;
-`;
+
 
 const InputWrapper = styled.div`
   display: flex;

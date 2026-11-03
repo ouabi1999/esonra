@@ -11,32 +11,50 @@ export default function FixedAddBuyButtons({
   shippingInfo,
   buy_Now_item,
   add_item_to_cart,
-  purchaseRef
+  purchaseRef,
+  bottomRef
+
 }) {
   const { t, i18n } = useTranslation();
   const [showFixed, setShowFixed] = useState(false);
 
   useEffect(() => {
-    if (!purchaseRef?.current) return;
+  const purchaseElement = purchaseRef?.current;
+  const bottomElement = bottomRef?.current;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Show fixed buttons when the original buttons
-        // are no longer visible
-        setShowFixed(!entry.isIntersecting);
-      },
-      {
-        threshold: 0,
-      }
-    );
+  if (!purchaseElement) return;
 
-    observer.observe(purchaseRef.current);
+  const updateVisibility = () => {
+    const purchaseRect = purchaseElement.getBoundingClientRect();
 
-    return () => {
-      observer.disconnect();
-    };
-  }, [purchaseRef]);
+    // Show the bar after the original purchase buttons
+    // have moved above the visible viewport.
+    const originalButtonsPassed =
+      purchaseRect.bottom <= 0;
 
+    // Hide the bar when the bottom of the product details
+    // section becomes visible.
+    const reachedBottom = bottomElement
+      ? bottomElement.getBoundingClientRect().top <
+        window.innerHeight
+      : false;
+
+    setShowFixed(originalButtonsPassed && !reachedBottom);
+  };
+
+  window.addEventListener("scroll", updateVisibility, {
+    passive: true,
+  });
+
+  window.addEventListener("resize", updateVisibility);
+
+  updateVisibility();
+
+  return () => {
+    window.removeEventListener("scroll", updateVisibility);
+    window.removeEventListener("resize", updateVisibility);
+  };
+}, [purchaseRef, bottomRef]);
   if (!showFixed) return null;
 
   const isOutOfStock = available < 1;
@@ -106,7 +124,7 @@ const FixedPurchaseBar = styled.div`
 
 
   right: 0;
-  bottom: 0;
+  bottom: 60px;
 
   z-index: 1000;
 

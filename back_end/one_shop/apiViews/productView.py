@@ -11,6 +11,7 @@ from django.http import JsonResponse
 from django.db.models import Avg, Count, Value
 from django.db.models.functions import Coalesce
 from django.utils.text import slugify
+from rest_framework.pagination import PageNumberPagination
 
 from ..serializer import (
     ProductSerializer,
@@ -27,7 +28,6 @@ from django.utils.text import slugify
 
 
 import cloudinary.uploader
-
 
 
 class ProductView(APIView):
@@ -72,26 +72,21 @@ class ProductView(APIView):
         # Cloudinary - Upload additional images
         image_urls = multimedia_info.get("image_urls", [])
 
-        additionalImageFiles = request.FILES.getlist(
-            "additionalImageFiles"
-        )
+        additionalImageFiles = request.FILES.getlist("additionalImageFiles")
 
         if additionalImageFiles:
 
             for image_file in additionalImageFiles:
 
                 result = cloudinary.uploader.upload(
-                    image_file,
-                    folder="esonra/products"
+                    image_file, folder="esonra/products"
                 )
 
                 image_urls.append(result["secure_url"])
 
             multimedia_info["image_urls"] = image_urls
 
-            data["multimediaInfo"] = json.dumps(
-                multimedia_info
-            )
+            data["multimediaInfo"] = json.dumps(multimedia_info)
 
         # --------------------------------------------------
         # CREATE UNIQUE PRODUCT SLUG
@@ -102,9 +97,7 @@ class ProductView(APIView):
         if isinstance(name_data, str):
             name_data = json.loads(name_data)
 
-        base_slug = slugify(
-            name_data.get("en", "")
-        )
+        base_slug = slugify(name_data.get("en", ""))
 
         slug = base_slug
         counter = 2
@@ -127,70 +120,62 @@ class ProductView(APIView):
 
             serializer.save()
 
-            return Response(
-                serializer.data,
-                status=status.HTTP_201_CREATED
-            )
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
 
-        return Response(
-            serializer.errors,
-            status=status.HTTP_400_BAD_REQUEST
-        )
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def get(self, request):
 
-        start = int(
-            request.GET.get("start", 0)
-        )
+        start = int(request.GET.get("start", 0))
 
-        per_page = int(
-            request.GET.get("per_page", 4)
-        )
+        per_page = int(request.GET.get("per_page", 4))
 
         products_qs = Products.objects.annotate(
-            ratings_count=Count(
-                "user_ratings",
-                distinct=True
-            ),
-            orders_count=Count(
-                "orders",
-                distinct=True
-            ),
-        ).order_by(
-            "orders_count",
-            "-ratings_count",
-            "-release_date"
-        )
+            ratings_count=Count("user_ratings", distinct=True),
+            orders_count=Count("orders", distinct=True),
+        ).order_by("orders_count", "-ratings_count", "-release_date")
 
         total_products = products_qs.count()
 
-        products = products_qs[
-            start : start + per_page
-        ]
+        products = products_qs[start : start + per_page]
 
-        serializer = ProductSerializer(
-            products,
-            many=True
-        )
+        serializer = ProductSerializer(products, many=True)
 
         return JsonResponse(
             {
                 "products": serializer.data,
                 "total_products": total_products,
-                "has_more": (
-                    start + per_page
-                    < total_products
-                ),
+                "has_more": (start + per_page < total_products),
             }
         )
+
+
+from django.db.models import Avg, Count, Q
+from django.shortcuts import get_object_or_404
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
 
 
 class ProductDetailsView(APIView):
     parser_classes = (MultiPartParser, FormParser)
 
     def get(self, request, pk=None):
-        product = get_object_or_404(Products, slug=pk)
+        product = get_object_or_404(
+            Products.objects.annotate(
+                average_rating=Avg("user_ratings__stars"),
+                ratings_count=Count("user_ratings"),
+                five_star_count=Count("user_ratings", filter=Q(user_ratings__stars=5)),
+                four_star_count=Count("user_ratings", filter=Q(user_ratings__stars=4)),
+                three_star_count=Count("user_ratings", filter=Q(user_ratings__stars=3)),
+                two_star_count=Count("user_ratings", filter=Q(user_ratings__stars=2)),
+                one_star_count=Count("user_ratings", filter=Q(user_ratings__stars=1)),
+            ),
+            slug=pk,
+        )
+
         serializer = ProductDetailsSerializer(product)
+
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def delete(self, request, pk=None):
@@ -319,19 +304,63 @@ class OrderCreateView(APIView):
         return Response(serializer.data)
 
 
+class ProductRatingsView(APIView):
+
+    def get(self, request):
+        product_id = request.query_params.get("product_id")
+
+        if not product_id:
+            return Response(
+                {"error": "product_id is required"}, status=status.HTTP_400_BAD_REQUEST
+            )
+
+        ratings = Rating.objects.filter(product_id=product_id).order_by(
+            "-created_at", "-id"
+        )
+
+        paginator = PageNumberPagination()
+        paginator.page_size = 12
+        paginator.page_size_query_param = "page_size"
+        paginator.max_page_size = 100
+
+        page = paginator.paginate_queryset(ratings, request)
+
+        serializer = RatingSerializer(page, many=True)
+
+        return paginator.get_paginated_response(serializer.data)
+
+
 class RatingView(APIView):
     def get(self, request):
-        current_page = int(request.GET.get("currentPage", 1))
-        per_page = int(request.GET.get("per_page", 15))
-        start = int(request.GET.get("start", 0))
-        ratings = Rating.objects.all()
+        try:
+            current_page = max(1, int(request.GET.get("page", 1)))
+            per_page = max(1, min(100, int(request.GET.get("page_size", 14))))
+        except (ValueError, TypeError):
+            return Response(
+                {"error": "Invalid pagination parameters."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
+        ratings = Rating.objects.all().order_by("-id")
+
         paginator = Paginator(ratings, per_page)
         page = paginator.get_page(current_page)
 
-
         serializer = RatingSerializer(page.object_list, many=True)
 
-        return Response(serializer.data)
+        return Response(
+            {
+                "count": paginator.count,
+                "total_pages": paginator.num_pages,
+                "current_page": page.number,
+                "page_size": per_page,
+                "next": page.next_page_number() if page.has_next() else None,
+                "previous": (
+                    page.previous_page_number() if page.has_previous() else None
+                ),
+                "results": serializer.data,
+            }
+        )
 
     def post(self, request):
         data = request.data.copy()
@@ -399,33 +428,22 @@ class ProductFilterView(APIView):
         # Search
         if search:
             queryset = queryset.filter(
-                Q(name__en__icontains=search) |
-                Q(description__en__icontains=search)
+                Q(name__en__icontains=search) | Q(description__en__icontains=search)
             )
 
         # Category
         if category:
             categories = [
-                value.strip()
-                for value in category.split(",")
-                if value.strip()
+                value.strip() for value in category.split(",") if value.strip()
             ]
 
-            queryset = queryset.filter(
-                category__in=categories
-            )
+            queryset = queryset.filter(category__in=categories)
 
         # Ratings and orders
         queryset = queryset.annotate(
             average_rating=Avg("user_ratings__stars"),
-            ratings_count=Count(
-                "user_ratings",
-                distinct=True
-            ),
-            orders_count=Count(
-                "orders",
-                distinct=True
-            ),
+            ratings_count=Count("user_ratings", distinct=True),
+            orders_count=Count("orders", distinct=True),
         )
 
         products = list(queryset)
@@ -491,17 +509,11 @@ class ProductFilterView(APIView):
             product._filter_max_price = product_max_price
 
             if min_price is not None:
-                if (
-                    product_min_price is None
-                    or product_min_price < min_price
-                ):
+                if product_min_price is None or product_min_price < min_price:
                     continue
 
             if max_price is not None:
-                if (
-                    product_max_price is None
-                    or product_max_price > max_price
-                ):
+                if product_max_price is None or product_max_price > max_price:
                     continue
 
             filtered_products.append(product)
@@ -514,9 +526,11 @@ class ProductFilterView(APIView):
             products.sort(
                 key=lambda product: (
                     product._filter_min_price is None,
-                    product._filter_min_price
-                    if product._filter_min_price is not None
-                    else float("inf"),
+                    (
+                        product._filter_min_price
+                        if product._filter_min_price is not None
+                        else float("inf")
+                    ),
                     product.id,
                 )
             )
@@ -526,9 +540,11 @@ class ProductFilterView(APIView):
             products.sort(
                 key=lambda product: (
                     product._filter_min_price is None,
-                    -product._filter_min_price
-                    if product._filter_min_price is not None
-                    else float("inf"),
+                    (
+                        -product._filter_min_price
+                        if product._filter_min_price is not None
+                        else float("inf")
+                    ),
                     product.id,
                 )
             )
@@ -538,14 +554,8 @@ class ProductFilterView(APIView):
 
             products = list(
                 Products.objects.annotate(
-                    ratings_count=Count(
-                        "user_ratings",
-                        distinct=True
-                    ),
-                    orders_count=Count(
-                        "orders",
-                        distinct=True
-                    ),
+                    ratings_count=Count("user_ratings", distinct=True),
+                    orders_count=Count("orders", distinct=True),
                 ).order_by(
                     "-orders_count",
                     "-ratings_count",
@@ -560,11 +570,7 @@ class ProductFilterView(APIView):
                 key=lambda product: (
                     -(product.orders_count or 0),
                     -(product.ratings_count or 0),
-                    -(
-                        product.release_date.timestamp()
-                        if product.release_date
-                        else 0
-                    ),
+                    -(product.release_date.timestamp() if product.release_date else 0),
                     product.id,
                 )
             )
@@ -579,13 +585,9 @@ class ProductFilterView(APIView):
                 name = product.name or {}
                 description = product.description or {}
 
-                name_en = str(
-                    name.get("en", "")
-                ).lower()
+                name_en = str(name.get("en", "")).lower()
 
-                description_en = str(
-                    description.get("en", "")
-                ).lower()
+                description_en = str(description.get("en", "")).lower()
 
                 score = 0
 
@@ -609,27 +611,17 @@ class ProductFilterView(APIView):
 
             products.sort(
                 key=lambda product: (
-                    -(
-                        product.release_date.timestamp()
-                        if product.release_date
-                        else 0
-                    ),
+                    -(product.release_date.timestamp() if product.release_date else 0),
                     product.id,
                 )
             )
 
         # Pagination
-        paginator = Paginator(
-            products,
-            per_page
-        )
+        paginator = Paginator(products, per_page)
 
         page_obj = paginator.get_page(page)
 
-        serializer = ProductSerializer(
-            page_obj.object_list,
-            many=True
-        )
+        serializer = ProductSerializer(page_obj.object_list, many=True)
 
         return Response(
             {
@@ -639,7 +631,7 @@ class ProductFilterView(APIView):
                 "per_page": per_page,
                 "results": serializer.data,
             },
-            status=status.HTTP_200_OK
+            status=status.HTTP_200_OK,
         )
 
 

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import StarIcon from "@mui/icons-material/Star";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import ReviewImagePopup from "./ReviewImagePopup";
-import Ratings from "./Ratings";
 
 function CustomerReviews(props) {
   const [selected, setSelected] = useState({
@@ -12,17 +11,14 @@ function CustomerReviews(props) {
   });
 
   const {
-    fiveStars,
-    twoStars,
-    fourStars,
-    threeStars,
-    oneStar,
-    sum_stars,
-    newRatings,
-    productData,
     ratings,
     t,
     i18n,
+    totalReviews = 0,
+    totalPages = 1,
+    currentPage = 1,
+    loading = false,
+    setCurrentPage,
   } = props;
 
   const stars = useMemo(() => Array(5).fill(0), []);
@@ -63,6 +59,21 @@ function CustomerReviews(props) {
     }
   };
 
+const handlePageChange = (page) => {
+  if (
+    page < 1 ||
+    page > totalPages ||
+    page === currentPage ||
+    loading ||
+    typeof setCurrentPage !== "function"
+  ) {
+    return;
+  }
+
+  setCurrentPage(page);
+};
+
+
   const handleImageError = (event) => {
     const image = event.currentTarget;
 
@@ -92,7 +103,9 @@ function CustomerReviews(props) {
 
       
 
-      {ratings?.length > 0 ? (
+      {loading ? (
+        <ReviewSkeleton />
+      ) : ratings?.length > 0 ? (
         <ReviewsList>
           {ratings.map((rate, reviewIndex) => {
             const ratingValue = getRatingValue(rate?.stars);
@@ -113,7 +126,11 @@ function CustomerReviews(props) {
 
                   <IdentityInfo>
                     <CustomerName dir = {"ltr"}>
-                      {rate.user?.firstName + " " + rate.user?.lastName.slice(0, 1)}.
+                      {`${rate?.user?.firstName || "Customer"} ${
+                        rate?.user?.lastName
+                          ? `${rate.user.lastName.charAt(0)}.`
+                          : ""
+                      }`}
                     </CustomerName>
 
                     <VerifiedLabel>
@@ -235,7 +252,86 @@ function CustomerReviews(props) {
           <EmptyAccent />
         </EmptyReviews>
       )}
+
+      {!loading && totalReviews > 0 && totalPages > 1 && (
+        <Pagination aria-label={translate("pagination", "Review pages")}>
+          <bdi>
+          <PaginationInfo>
+            {t("common.page", "Page")} {" "}
+            <strong>{currentPage}</strong> {" "}
+            {t("common.of", "of")} {" "}
+            <strong>{totalPages}</strong>
+          </PaginationInfo>
+</bdi>
+          <PaginationControls>
+            <PaginationButton
+              type="button"
+              disabled={currentPage <= 1 || loading}
+              onClick={() => handlePageChange(currentPage - 1)}
+              aria-label={translate("previous_page", "Previous page")}
+            >
+              <span aria-hidden="true">{i18n?.language[0] === "ar" ? "→" : "←"}</span>
+              <span>{t("common.previous", "Previous")}</span>
+            </PaginationButton>
+
+            <PageNumber aria-current="page">{currentPage}</PageNumber>
+
+            <PaginationButton
+              type="button"
+              disabled={currentPage >= totalPages || loading}
+              onClick={() => handlePageChange(currentPage + 1)}
+              aria-label={t("next_page", "Next page")}
+            >
+              <span>{t("common.next", "Next")}</span>
+              <span aria-hidden="true">{i18n?.language[0] === "ar" ? "←" : "→"}</span>
+            </PaginationButton>
+          </PaginationControls>
+        </Pagination>
+      )}
     </Container>
+  );
+}
+
+function ReviewSkeleton() {
+  return (
+    <SkeletonList aria-label="Loading customer reviews" aria-busy="true">
+      {[0, 1, 2].map((item) => (
+        <SkeletonReviewCard key={item}>
+          <SkeletonIdentity>
+            <SkeletonBlock $avatar />
+            <SkeletonIdentityText>
+              <SkeletonBlock $name />
+              <SkeletonBlock $verified />
+            </SkeletonIdentityText>
+          </SkeletonIdentity>
+
+          <SkeletonMain>
+            <SkeletonMeta>
+              <SkeletonStars>
+                {[0, 1, 2, 3, 4].map((star) => (
+                  <SkeletonBlock $star key={star} />
+                ))}
+              </SkeletonStars>
+              <SkeletonBlock $date />
+            </SkeletonMeta>
+
+            <SkeletonTextLines>
+              <SkeletonBlock />
+              <SkeletonBlock $lineWidth="88%" />
+              <SkeletonBlock $lineWidth="64%" />
+            </SkeletonTextLines>
+
+            {item !== 1 && (
+              <SkeletonImages>
+                <SkeletonBlock $thumbnail />
+                <SkeletonBlock $thumbnail />
+                {item === 0 && <SkeletonBlock $thumbnail />}
+              </SkeletonImages>
+            )}
+          </SkeletonMain>
+        </SkeletonReviewCard>
+      ))}
+    </SkeletonList>
   );
 }
 
@@ -598,4 +694,277 @@ const EmptyAccent = styled.span`
   height: 1px;
   margin-top: 14px;
   background: #a88a62;
+`;
+
+const Pagination = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 25px 4px;
+  border-bottom: 1px solid #e4ded6;
+  color: #62594f;
+
+  @media (max-width: 600px) {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+    padding: 22px 0;
+  }
+`;
+
+const PaginationInfo = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #62594f;
+
+  strong {
+    color: #29251f;
+    font-weight: 600;
+  }
+`;
+
+const PaginationCount = styled.span`
+  margin-left: 8px;
+  color: #9d9184;
+  font-size: 11px;
+`;
+
+const PaginationControls = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`;
+
+const PaginationButton = styled.button`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 12px;
+  border: 1px solid #d7cec2;
+  border-radius: 2px;
+  background: transparent;
+  color: #62594f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+
+  &:hover:not(:disabled) {
+    border-color: #a88a62;
+    background: #fcfaf7;
+    color: #29251f;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  &:focus-visible {
+    outline: 1px solid #a88a62;
+    outline-offset: 3px;
+  }
+`;
+
+const PageNumber = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  box-sizing: border-box;
+  border: 1px solid #a88a62;
+  background: #fcfaf7;
+  color: #29251f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+`;
+
+const SkeletonList = styled.div`
+  width: 100%;
+  border-top: 1px solid #e4ded6;
+`;
+
+const SkeletonReviewCard = styled.div`
+  position: relative;
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  column-gap: 48px;
+  width: 100%;
+  padding: 42px 4px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e4ded6;
+
+  @media (max-width: 850px) {
+    grid-template-columns: 150px minmax(0, 1fr);
+    column-gap: 32px;
+    padding: 34px 2px;
+  }
+
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 30px 0;
+  }
+`;
+
+const SkeletonIdentity = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+
+  @media (max-width: 650px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+  }
+`;
+
+const SkeletonIdentityText = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+`;
+
+
+const SkeletonMain = styled.div`
+  min-width: 0;
+`;
+
+
+const SkeletonMeta = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 20px;
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+`;
+
+const SkeletonStars = styled.div`
+  display: flex;
+  gap: 4px;
+`;
+
+const SkeletonTextLines = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+const SkeletonImages = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 23px;
+`;
+
+const SkeletonBlock = styled.div`
+  position: relative;
+  flex: 0 0 auto;
+  overflow: hidden;
+  width: ${({ $lineWidth }) => $lineWidth || "100%"};
+  height: ${({ $avatar, $star, $date, $name, $verified, $thumbnail }) =>
+    $avatar ? "46px" : $star ? "14px" : $date ? "10px" : $name ? "14px" : $verified ? "8px" : $thumbnail ? "76px" : "10px"};
+  max-width: 100%;
+  border-radius: ${({ $avatar }) => ($avatar ? "50%" : "2px")};
+  border: ${({ $avatar, $thumbnail }) =>
+    $avatar || $thumbnail ? "1px solid #e2d9ce" : "none"};
+  box-sizing: border-box;
+  background: #eee8df;
+
+  ${({ $avatar }) =>
+    $avatar &&
+    `
+      width: 46px;
+      flex: 0 0 46px;
+    `}
+
+  ${({ $star }) =>
+    $star &&
+    `
+      width: 14px;
+      flex: 0 0 14px;
+      border-radius: 2px;
+    `}
+
+  ${({ $date }) =>
+    $date &&
+    `
+      width: 78px;
+      flex: 0 0 78px;
+    `}
+
+  ${({ $name }) =>
+    $name &&
+    `
+      width: 112px;
+      flex: 0 0 112px;
+    `}
+
+  ${({ $verified }) =>
+    $verified &&
+    `
+      width: 88px;
+      flex: 0 0 88px;
+    `}
+
+  ${({ $thumbnail }) =>
+    $thumbnail &&
+    `
+      width: 76px;
+      flex: 0 0 76px;
+    `}
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.62) 45%,
+      transparent 100%
+    );
+    animation: ESONRA-skeleton-shimmer 1.5s ease-in-out infinite;
+  }
+
+  @keyframes ESONRA-skeleton-shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @media (max-width: 500px) {
+    ${({ $thumbnail }) =>
+      $thumbnail &&
+      `
+        width: 70px;
+        flex-basis: 70px;
+        height: 70px;
+      `}
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &::after {
+      animation: none;
+    }
+  }
 `;

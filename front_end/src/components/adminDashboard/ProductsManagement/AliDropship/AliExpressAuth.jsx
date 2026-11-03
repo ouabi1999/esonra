@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ApiInstance from "../../../../common/baseUrl"; // your existing Axios instance
+import ApiInstance from "../../../../../common/baseUrl"; // your existing Axios instance
 import styled from "styled-components";
 
 const APP_KEY = import.meta.env.VITE_API_ALIEXPRESS_APPKEY;

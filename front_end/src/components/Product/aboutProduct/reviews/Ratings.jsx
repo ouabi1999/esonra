@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
@@ -10,16 +11,17 @@ function Ratings({
   twoStars = 0,
   oneStar = 0,
   sum_stars = 0,
-  ratings = [],
+  productData = {},
 }) {
   const { t, i18n } = useTranslation();
 
-  const totalReviews = Array.isArray(ratings) ? ratings.length : 0;
-  const average =
-    totalReviews > 0
-      ? (Number(sum_stars || 0) / totalReviews).toFixed(1)
-      : "0.0";
+  // Total number of reviews
+  const totalReviews = Number(productData?.ratings_count) || 0;
 
+  // Average rating
+  const average = Number(productData?.average_rating) || 0;
+
+  // Rating breakdown
   const rows = [
     { value: 5, count: Number(fiveStars) || 0 },
     { value: 4, count: Number(fourStars) || 0 },
@@ -28,11 +30,16 @@ function Ratings({
     { value: 1, count: Number(oneStar) || 0 },
   ];
 
+  // Calculate percentage using total reviews
   const getPercentage = (count) => {
-    if (!Number(sum_stars) || Number(sum_stars) <= 0) return 0;
-    return Math.round((count / Number(sum_stars)) * 100);
+    if (totalReviews <= 0) return 0;
+
+    const percentage = (count / totalReviews) * 100;
+
+    return Math.min(100, Math.round(percentage));
   };
 
+  // Star labels
   const getStarLabel = (value) => {
     if (i18n.language === "ar") {
       const keys = {
@@ -53,15 +60,22 @@ function Ratings({
     <Container dir={i18n.language === "ar" ? "rtl" : "ltr"}>
       <RatingsHeader>
         <Eyebrow>ESONRA</Eyebrow>
-        <Title>{t("customer_reviews.customer_reviews", "Customers Reviews")}</Title>
+
+        <Title>
+          {t(
+            "customer_reviews.customer_reviews",
+            "Customers Reviews"
+          )}
+        </Title>
+
         <HeaderAccent />
       </RatingsHeader>
 
       <RatingsLayout>
         <Summary>
-          <Average>{average}</Average>
+          <Average>{average.toFixed(1)}</Average>
 
-          <Stars aria-label={`${average} out of 5`}>
+          <Stars aria-label={`${average.toFixed(1)} out of 5`}>
             {[0, 1, 2, 3, 4].map((star) => (
               <StarIcon key={star} />
             ))}
@@ -70,12 +84,15 @@ function Ratings({
           <ReviewCount>
             {totalReviews}{" "}
             {t(
-             totalReviews === 1 ? "customer_reviews.customer_review" :  "customer_reviews.customer_reviews"
+              totalReviews === 1
+                ? "customer_reviews.customer_review"
+                : "customer_reviews.customer_reviews"
             )}
           </ReviewCount>
 
           <Verified>
             <VerifiedDot />
+
             {t(
               "productInfo.all_from_verified_purchases",
               "Verified purchases"
@@ -89,11 +106,23 @@ function Ratings({
 
             return (
               <RatingRow key={value}>
-                <StarLabel>{getStarLabel(value)}</StarLabel>
-                <ProgressTrack aria-label={`${value} stars: ${percentage}%`}>
+                <StarLabel>
+                  {getStarLabel(value)}
+                </StarLabel>
+
+                <ProgressTrack
+                  role="progressbar"
+                  aria-label={`${value} stars`}
+                  aria-valuenow={percentage}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                >
                   <ProgressFill $percentage={percentage} />
                 </ProgressTrack>
-                <Percentage>{percentage}%</Percentage>
+
+                <Percentage>
+                  {percentage}%
+                </Percentage>
               </RatingRow>
             );
           })}
@@ -105,10 +134,13 @@ function Ratings({
 
 export default Ratings;
 
+// ----------------------------------
+// STYLES
+// ----------------------------------
+
 const Container = styled.section`
   width: 100%;
   color: #29251f;
-
 `;
 
 const RatingsHeader = styled.div`
@@ -122,11 +154,9 @@ const RatingsHeader = styled.div`
 const Eyebrow = styled.span`
   margin-bottom: 7px;
   color: #a88a62;
-
   font-family: Arial, Helvetica, sans-serif;
   font-size: 8px;
   font-weight: 500;
-
   letter-spacing: 0.34em;
   text-transform: uppercase;
 `;
@@ -145,7 +175,6 @@ const Title = styled.h3`
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: 0.01em;
-;
 `;
 
 const HeaderAccent = styled.span`

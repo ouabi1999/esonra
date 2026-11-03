@@ -18,6 +18,9 @@ import NewArrival from "../components/newArrival/NewArrival";
 import ApiInstance from "../../common/baseUrl";
 import ProductDetailsSkeleton from "../components/Services/skeletons/ProductDetailsSkeleton";
 import SlideOutShoppingCart from "../components/Cart/SlideOutShoppingCart";
+import DesignSection from "../components/Product/home/DesignSection";
+import CustomersFeedback from "../components/Product/home/CustomersFeedbak";
+import InspirationPage from "./InspirationPage";
 
 function ProductDetailsPage() {
   const navigate = useNavigate();
@@ -429,7 +432,9 @@ const onClose = ()=>{
         <NewArrival products={similarProducts} name="mayAlsoLike" isAuto={false} />
       </>
       )}
-     
+     <DesignSection/>
+    
+     <CustomersFeedback/>
       
     </Page>
 
