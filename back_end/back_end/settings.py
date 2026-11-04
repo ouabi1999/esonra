@@ -33,7 +33,7 @@ if ENVIRONMENT == "production":
     ALLOWED_HOSTS = [
         "esonra.com",
         "www.esonra.com",
-        "shark-app-chnag.ondigitalocean.app",
+        "esonra-zvh69.ondigitalocean.app",
         "esonra.onrender.com",
     ]
 
@@ -41,14 +41,14 @@ if ENVIRONMENT == "production":
         "https://esonra.com",
         "https://www.esonra.com",
         "https://esonra.onrender.com",
-        "https://shark-app-chnag.ondigitalocean.app",
+        "https://esonra-zvh69.ondigitalocean.app",
     ]
 
     CORS_ALLOWED_ORIGINS = [
         "https://esonra.com",
         "https://www.esonra.com",
         "https://esonra.onrender.com",
-        "https://shark-app-chnag.ondigitalocean.app",
+        "https://esonra-zvh69.ondigitalocean.app",
     ]
 
     SECURE_SSL_REDIRECT = True

@@ -11,27 +11,26 @@ import { colors } from "../../../utilis/colors";
 const CollectionSection = () => {
   const { t, i18n } = useTranslation();
   const dispatch = useDispatch();
-
-  const collections = [
-    {
-      key: "keychain_trackers",
-      image:
-"https://res.cloudinary.com/dzpzy1o1y/image/upload/v1791509858/esonra-keychain-trackers-category_rne5z5.webp",
-      link: "/collections?category=keychain_trackers",
-    },
-    {
-      key: "smart_key_organizers",
-      image:
-        "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1791509859/esonra-necklace-trackers-category_qaljrw.webp",
-      link: "/collections?category=smart_key_organizers",
-    },
-    {
-      key: "card_trackers",
-      image:
-        "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1791509859/esonra-card-trackers-category_2_rmsfhq.webp",
-      link: "/collections?category=card_trackers",
-    },
-  ];
+const collections = [
+  {
+    key: "electronics",
+    image:
+      "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1791509858/esonra-keychain-trackers-category_rne5z5.webp",
+    link: "/collections?category=electronics",
+  },
+  {
+    key: "fashion",
+    image:
+      "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1791509859/esonra-necklace-trackers-category_qaljrw.webp",
+    link: "/collections?category=fashion",
+  },
+  {
+    key: "home_living",
+    image:
+      "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1791509859/esonra-card-trackers-category_2_rmsfhq.webp",
+    link: "/collections?category=home_living",
+  },
+];
 
   return (
     <Section>
