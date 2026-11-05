@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 import SideCart from "./SideCart";
 import CurrencyPrice from "../../../../common/CurrencyPrice";
 import { colors } from "../../../utilis/colors"
-import Countdown from "../../../../common/CountDown.js";
+import Countdown from "../../../../common/CountDown"
 
 
 function ProductInfo({
