@@ -100,11 +100,12 @@ export const AliExpressRating= ({ product }) => {
       });
       
       toast.success('Rating submitted successfully!');
-      setFormData({
+      setFormData((prev) => ({
+        ...prev,
         stars: 0,
         review: { text: '', images: [] },
         user: { firstName: '', lastName:"",  avatar: '', country: '', countryCode: '' }
-      });
+      }));
     } catch (error) {
       toast.error('Failed to submit rating');
     }
