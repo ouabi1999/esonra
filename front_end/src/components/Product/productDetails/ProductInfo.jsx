@@ -565,7 +565,7 @@ const Stars = styled.div`
   }
 
   svg.active {
-    color: ${colors.accent};
+    color: ${colors.secondary};
   }
 
   @media (max-width: 600px) {

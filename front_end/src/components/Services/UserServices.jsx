@@ -28,10 +28,7 @@ function UserServices() {
       icon: LocalShippingIcon,
       text: t("trust.freeShipping.text"),
     },
-    {
-      icon: ReplayIcon,
-      text: t("trust.returns.text"),
-    },
+   
     {
       icon: WorkspacePremiumIcon,
       text: t("trust.warranty.title"),
