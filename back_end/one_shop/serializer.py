@@ -23,6 +23,8 @@ class CustomException(APIException):
 User = get_user_model()
 
 
+
+
 class AddressSerializer(serializers.ModelSerializer):
     class Meta:
         model = Address
@@ -37,31 +39,31 @@ class OrderSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
     def create(self, validated_data):
-
         ordered_items = validated_data.pop("ordered_items")
+
+        # Support JSON strings as well as Python lists
         if isinstance(ordered_items, str):
             try:
                 ordered_items = json.loads(ordered_items)
             except json.JSONDecodeError:
-                raise serializers.ValidationError(
-                    {"ordered_items": "Invalid format for ordered_items"}
-                )
+                raise serializers.ValidationError({
+                    "ordered_items": "Invalid format for ordered_items."
+                })
+
+        if not isinstance(ordered_items, list):
+            raise serializers.ValidationError({
+                "ordered_items": "Must be a list."
+            })
 
         address_data = validated_data.pop("address")
-        # Create address
+
         address = Address.objects.create(**address_data)
 
-        # Create order
         order = Orders.objects.create(
-            address=address, ordered_items=ordered_items, **validated_data
+            address=address,
+            ordered_items=ordered_items,
+            **validated_data
         )
-
-        # Add order to products' orders list
-        for item in ordered_items:
-            product = Products.objects.get(id=item["id"])
-            order.products.add(
-                product
-            )  # This is the correct way to add orders to products
 
         return order
 

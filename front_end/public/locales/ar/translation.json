@@ -432,6 +432,32 @@
     "promise": { "eyebrow": "وعد المتجر", "title": "مختار بعناية للحياة اليومية.", "description": "نختار المنتجات مع الاهتمام بالتصميم والوظائف العملية ومدى انسجامها الطبيعي مع الروتين اليومي." },
     "final": { "eyebrow": "المجموعة", "title": "اكتشف طريقة أذكى للتسوق.", "description": "اكتشف منتجاتنا المختارة بعناية لكل احتياجاتك.", "cta": "اكتشف المجموعة" }
   },
+
+  
+  "checkoutPage": {
+    
+  "totalToPay": "الإجمالي المستحق",
+  "includingShipping": "شامل رسوم الشحن",
+
+    "paymentMethod": "طريقة الدفع",
+    "paymentDescription": "اختر الطريقة التي تفضلها لدفع طلبك.",
+    "creditCard": "بطاقة ائتمان / بطاقة خصم",
+    "creditCardDescription": "ادفع بأمان باستخدام بطاقتك البنكية.",
+    "cashOnDelivery": "الدفع عند الاستلام",
+    "cashOnDeliveryDescription": "ادفع نقدًا عند وصول طلبك.",
+    "cardDetails": "بيانات البطاقة",
+    "payNow": "ادفع الآن",
+    "payWhenDelivered": "ادفع عند وصول طلبك",
+    "codInformation": "أكمل طلبك الآن وادفع لمندوب التوصيل عند استلام الطرد.",
+    "confirmOrder": "تأكيد الطلب",
+    "securePayment": "معلومات الدفع الخاصة بك محمية وتتم معالجتها بأمان.",
+    "paymentSuccess": "تم الدفع بنجاح!",
+    "paymentProcessing": "جارٍ معالجة عملية الدفع.",
+    "paymentFailed": "لم تنجح عملية الدفع. يرجى المحاولة مرة أخرى.",
+    "paymentError": "حدث خطأ أثناء عملية الدفع.",
+    "orderCreationError": "تعذر إنشاء طلبك. يرجى المحاولة مرة أخرى."
+  },
+
   "common": {
     "phoneNumber": "رقم الهاتف",
     "selectShippingMethod": "اختر طريقة الشحن",

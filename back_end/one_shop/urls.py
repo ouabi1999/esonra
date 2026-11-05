@@ -52,7 +52,7 @@ urlpatterns = [
         productView.DashboardProductsView.as_view(),
         name="get_dashboard_products",
     ),
-    path("create-order/", productView.OrderCreateView.as_view(), name="create-order"),
+    path("create-order/", ordersView.OrderCreateView.as_view(), name="create-order"),
     
     path("ratings/", productView.RatingView.as_view(), name="set-ratings"),
     path(

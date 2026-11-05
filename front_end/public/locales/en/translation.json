@@ -480,6 +480,7 @@
       "eyebrow": "THE EDIT"
     }
   },
+  
   "policies": {
     "title": "Policies",
     "privacyPolicy": {
@@ -595,6 +596,32 @@
       "cta": "Explore the Collection"
     }
   },
+
+  
+  "checkoutPage": {
+    
+  "totalToPay": "Total to pay",
+  "includingShipping": "Including shipping",
+
+    "paymentMethod": "Payment method",
+    "paymentDescription": "Choose how you would like to pay for your order.",
+    "creditCard": "Credit / Debit Card",
+    "creditCardDescription": "Pay securely using your bank card.",
+    "cashOnDelivery": "Cash on Delivery",
+    "cashOnDeliveryDescription": "Pay in cash when your order arrives.",
+    "cardDetails": "Card details",
+    "payNow": "Pay now",
+    "payWhenDelivered": "Pay when your order arrives",
+    "codInformation": "Complete your order now and pay the delivery person when your package is delivered.",
+    "confirmOrder": "Confirm order",
+    "securePayment": "Your payment information is protected and securely processed.",
+    "paymentSuccess": "Payment succeeded!",
+    "paymentProcessing": "Your payment is processing.",
+    "paymentFailed": "Your payment was not successful. Please try again.",
+    "paymentError": "Something went wrong with your payment.",
+    "orderCreationError": "We couldn't create your order. Please try again."
+  },
+
   "common": {
     "phoneNumber": "Phone Number",
     "selectShippingMethod": "Select Shipping Method",

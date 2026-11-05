@@ -32,12 +32,14 @@ export default function StripeContanier({ t, i18n }) {
     cartItems?.map((item) => ({
       id: item.id,
       quantity: item.quantity,
-      sku_attr: item.selectedSku?.sku_attr,
+      sku: item.selectedSku?.sku_attr,
+      price: item.price,
     })) || [];
 
   /*
    * Create PaymentIntent
    */
+ 
   useEffect(() => {
     if (paymentIntentCreated.current) return;
 
@@ -58,7 +60,7 @@ export default function StripeContanier({ t, i18n }) {
       zipcode: formData.logistics_address?.zip,
       state: formData.logistics_address?.state,
       country: formData.logistics_address?.country,
-
+      phoneNumber: formData.logistics_address?.phoneNumber,
       email: formData.logistics_address?.email,
 
       shipping_method: formData.shippingMethod,

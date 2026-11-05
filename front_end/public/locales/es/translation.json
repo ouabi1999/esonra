@@ -595,6 +595,32 @@
       "cta": "Explorar la colección"
     }
   },
+
+  
+  "checkoutPage": {
+    
+  "totalToPay": "Total a pagar",
+  "includingShipping": "Envío incluido",
+
+    "paymentMethod": "Método de pago",
+    "paymentDescription": "Elige cómo deseas pagar tu pedido.",
+    "creditCard": "Tarjeta de crédito / débito",
+    "creditCardDescription": "Paga de forma segura con tu tarjeta bancaria.",
+    "cashOnDelivery": "Pago contra reembolso",
+    "cashOnDeliveryDescription": "Paga en efectivo cuando recibas tu pedido.",
+    "cardDetails": "Datos de la tarjeta",
+    "payNow": "Pagar ahora",
+    "payWhenDelivered": "Paga cuando llegue tu pedido",
+    "codInformation": "Completa tu pedido ahora y paga al repartidor cuando recibas el paquete.",
+    "confirmOrder": "Confirmar pedido",
+    "securePayment": "Tu información de pago está protegida y se procesa de forma segura.",
+    "paymentSuccess": "¡Pago realizado correctamente!",
+    "paymentProcessing": "Tu pago se está procesando.",
+    "paymentFailed": "El pago no se ha realizado. Inténtalo de nuevo.",
+    "paymentError": "Ha ocurrido un error con tu pago.",
+    "orderCreationError": "No se pudo crear tu pedido. Inténtalo de nuevo."
+  
+  },
   "common": {
     "phoneNumber": "Número de teléfono",
     "selectShippingMethod": "Seleccionar método de envío",

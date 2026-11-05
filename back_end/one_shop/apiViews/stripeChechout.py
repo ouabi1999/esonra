@@ -126,6 +126,7 @@ class StripeWebhookView(APIView):
                             "state": request_data["state"],        # Optional field with default
                             "country": request_data["country"],
                             "zipcode": request_data["zipcode"],
+                            "phoneNumber": request_data["phoneNumber"]
                         }
                     request_data["address"] = address
                     serializer = OrderSerializer(data=request_data)

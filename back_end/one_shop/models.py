@@ -108,6 +108,7 @@ class Address(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     email = models.EmailField()
+    phone_number = models.CharField(max_length=30, blank=True, null=True)
     address1 = models.CharField(max_length=255)
     address2 = models.CharField(max_length=255, blank=True, null=True)
     city = models.CharField(max_length=100)
@@ -121,26 +122,61 @@ class Address(models.Model):
 
     
 class Orders(models.Model):
-    id = models.BigAutoField(primary_key=True, unique=True)
-    address = models.ForeignKey(Address, on_delete=models.SET_NULL, null=True)
+    id = models.BigAutoField(primary_key=True)
+
+    address = models.ForeignKey(
+        Address,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True
+    )
+
     ordered_items = models.JSONField()
+
     shipping_method = models.CharField(max_length=100)
     shipping_price = models.DecimalField(max_digits=10, decimal_places=2)
     delivery_time = models.CharField(max_length=100)
     total_price = models.DecimalField(max_digits=10, decimal_places=2)
+
     payment_method = models.CharField(max_length=50)
-    ordered_at = models.DateField(auto_now_add=True)
-    # Association to User
+
+    order_status = models.CharField(
+        max_length=20,
+        choices=(
+            ("pending", "Pending"),
+            ("processing", "Processing"),
+            ("shipped", "Shipped"),
+            ("delivered", "Delivered"),
+            ("cancelled", "Cancelled"),
+        ),
+        default="pending"
+    )
+
+    payment_status = models.CharField(
+        max_length=20,
+        choices=(
+            ("unpaid", "Unpaid"),
+            ("pending", "Pending"),
+            ("paid", "Paid"),
+            ("failed", "Failed"),
+            ("refunded", "Refunded"),
+        ),
+        default="unpaid"
+    )
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
+        on_delete=models.SET_NULL,
         related_name="orders",
         blank=True,
         null=True,
     )
 
     def __str__(self):
-        return f"Order {self.id} by {self.payment_method}"
+        return f"Order {self.id} - {self.payment_method}"
     
     
 class OrderIntegration(models.Model):

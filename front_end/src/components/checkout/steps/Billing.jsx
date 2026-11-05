@@ -270,7 +270,7 @@ function Billing({ t, i18n }) {
   }
 >
                       {countriesData?.map((country, index) => (
-                        <MenuItem key={index} value={country.label}>
+                        <MenuItem key={index} value={country.value}>
                           {t(`countries.${country.value}`)}
                         </MenuItem>
                       ))}
