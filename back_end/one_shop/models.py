@@ -53,7 +53,7 @@ class Users(AbstractBaseUser, PermissionsMixin):
 
 class Products(models.Model):
     id = models.BigAutoField(primary_key=True, unique=True)  # type: ignore
-    product_id = models.CharField(max_length=100, unique=True, blank=True, null=True)
+    external_product_id = models.CharField(blank=True, null=True)
     name = models.JSONField()
     description = models.JSONField()
     brand = models.CharField(max_length=100, blank=True, null=True)

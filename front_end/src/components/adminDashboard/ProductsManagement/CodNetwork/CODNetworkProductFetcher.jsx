@@ -14,7 +14,7 @@ export default function CODNetworkProductFetcher() {
   const COD_API_BASE_URL = import.meta.env.VITE_COD_API_BASE_URL;
   const COD_API_TOKEN = import.meta.env.VITE_COD_API_TOKEN;
 
-  const fetchProducts = async () => {
+  const fetchProductsList = async () => {
    
 
     setLoading(true);
@@ -63,7 +63,7 @@ export default function CODNetworkProductFetcher() {
         response.data.message || "Products synchronized successfully."
       );
 
-      await fetchProducts();
+      await fetchProductsList();
     } catch (error) {
       console.error(error);
       toast.error("Could not synchronize COD Network products.");
@@ -96,7 +96,7 @@ export default function CODNetworkProductFetcher() {
           onChange={(event) => setProductId(event.target.value)}
         />
 
-        <button onClick={fetchProducts} disabled={loading}>
+        <button onClick={fetchProductsList} disabled={loading}>
           Get Product
         </button>
 

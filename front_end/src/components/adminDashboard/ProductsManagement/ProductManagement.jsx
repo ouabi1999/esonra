@@ -18,7 +18,7 @@ import CODNetworkProductFetcher from "./CodNetwork/CODNetworkProductFetcher";
 
 
 const createEmptyForm = () => ({
-  product_id: "",
+  external_product_id: "",
 
   name: {
     en: "",
@@ -169,7 +169,7 @@ const mapAliExpressProduct = (
     product.ae_multimedia_info_dto || {};
 
   return {
-    product_id:
+    external_product_id:
       product.ae_item_base_info_dto?.product_id || "",
 
     name: {
@@ -410,7 +410,7 @@ function ProductManagement({
     const fields = [
       "slug",
       "brand",
-      "product_id",
+      "external_product_id",
       "discount",
       "category",
       "quantity",

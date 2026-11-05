@@ -23,7 +23,7 @@ import os
 # ==========================================
 
 COD_NETWORK_URL = "https://api.cod.network/v2/seller/leads"
-COD_NETWORK_API_TOKEN = os.getenv("COD_API_TOKEN")
+COD_NETWORK_API_TOKEN = os.getenv("COD_NETWORK_API_TOKEN")
 
 def create_cod_network_order(payload):
 
