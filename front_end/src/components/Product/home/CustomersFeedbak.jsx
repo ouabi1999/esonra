@@ -511,7 +511,7 @@ const CustomersFeedback = () => {
 
                 const customerName = firstName
 
-                  ? `${firstName} ${lastName.slice(0, 1)}${
+                  ? `${firstName} ${lastName.slice(0, 2)}${
 
                       lastName ? "." : ""
 
@@ -1608,6 +1608,7 @@ const CustomerName = styled.span`
   overflow: hidden;
 
   text-overflow: ellipsis;
+  text-transform: capitalize;
 
 `;
 
