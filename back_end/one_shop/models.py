@@ -240,10 +240,9 @@ class Rating(models.Model):
     id = models.BigAutoField(primary_key=True, unique=True)
     stars = models.IntegerField()
     review = models.JSONField()
-
     user = models.JSONField()
     product = models.ForeignKey('Products', on_delete=models.CASCADE, related_name='user_ratings')
-    created_at = models.DateField(default=timezone.now)
+    created_at = models.DateField(default=datetime.date.today)
     def __str__(self):
         return str(self.id)
 
