@@ -211,7 +211,7 @@ const handlePageChange = (page) => {
                               <ImagePlaceholder
                                 data-review-placeholder="true"
                               >
-                                <PlaceholderMark>ESONRA</PlaceholderMark>
+                                <PlaceholderMark>ENOUZA</PlaceholderMark>
                                 <PlaceholderText>
                                   {translate(
                                     "no_photo_available",
@@ -245,7 +245,7 @@ const handlePageChange = (page) => {
         </ReviewsList>
       ) : (
         <EmptyReviews>
-          <EmptyMark>ESONRA</EmptyMark>
+          <EmptyMark>ENOUZA</EmptyMark>
           <EmptyTitle>
             {translate("no_reviews", "No reviews yet")}
           </EmptyTitle>
@@ -943,10 +943,10 @@ const SkeletonBlock = styled.div`
       rgba(255, 255, 255, 0.62) 45%,
       transparent 100%
     );
-    animation: ESONRA-skeleton-shimmer 1.5s ease-in-out infinite;
+    animation: enouza-skeleton-shimmer 1.5s ease-in-out infinite;
   }
 
-  @keyframes ESONRA-skeleton-shimmer {
+  @keyframes enouza-skeleton-shimmer {
     100% {
       transform: translateX(100%);
     }

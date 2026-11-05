@@ -1,21 +1,22 @@
-
 import React, { useEffect, useMemo } from "react";
 import styled from "styled-components";
 import { useSearchParams } from "react-router-dom";
+
 import StarIcon from "@mui/icons-material/Star";
 import VerifiedOutlinedIcon from "@mui/icons-material/VerifiedOutlined";
+
 import { useTranslation } from "react-i18next";
 
 import SideCart from "./SideCart";
 import CurrencyPrice from "../../../../common/CurrencyPrice";
+import Countdown from "../../../../common/CountDown";
 import { colors } from "../../../utilis/colors"
+
 function ProductInfo({
   productData,
-  ratings,
-  sum_stars,
+  
   selectedAttributes,
   setSelectedAttributes,
-  availableAttributes,
   setAvailableAttributes,
   currentSku,
   setCurrentSku,
@@ -32,14 +33,16 @@ function ProductInfo({
   isPopUpShippingOpen,
   shippingMethodIndex,
   setShippingInfo,
+              footerRef
+
+  
 }) {
   const { t, i18n } = useTranslation();
   const skuInfo = Array.isArray(productData?.skuInfo)
     ? productData.skuInfo
     : [];
 
-  const [searchParams] = useSearchParams();
-  const skuIndexParam = searchParams.get("index");
+  const skuIndexParam = 1;
   const initialSkuIndex =
     skuIndexParam !== null ? Number(skuIndexParam) : null;
 
@@ -275,35 +278,26 @@ function ProductInfo({
     "Product";
 
   const stars = Array(5).fill(0);
-  const ratingList = Array.isArray(ratings) ? ratings : [];
-  const ratingCount = ratingList.length;
+  const ratingCount = productData?.ratings_count;
 
-  const averageRating =
-    ratingCount > 0
-      ? (Number(sum_stars || 0) / ratingCount).toFixed(1)
-      : "0.0";
+  const averageRating = Number(productData?.average_rating).toFixed(1) || 0 
 
-  const roundedRating = Math.round(Number(averageRating));
 
   const sellingPrice =
     Number(currentSku?.sellingPrice) > 0
-      ? currentSku.sellingPrice
-      : productData?.price;
+      ? Number(currentSku.sellingPrice)
+      : Number(productData?.price) || 0;
 
+  // Assumes productData.discount stores the original/comparison price,
+  // as in the existing component. Adjust this fallback if it stores a discount amount.
   const comparePrice =
     Number(currentSku?.comparePrice) > 0
-      ? currentSku.comparePrice
-      : productData?.discount;
+      ? Number(currentSku.comparePrice)
+      : Number(productData?.discount) || 0;
 
   const savePercentage =
-    Number(currentSku?.comparePrice) > 0 &&
-    Number(currentSku?.sellingPrice) > 0
-      ? (
-          ((Number(currentSku.comparePrice) -
-            Number(currentSku.sellingPrice)) /
-            Number(currentSku.comparePrice)) *
-          100
-        ).toFixed(0)
+    comparePrice > sellingPrice && sellingPrice > 0
+      ? Math.round(((comparePrice - sellingPrice) / comparePrice) * 100)
       : null;
 
   const getSelectedDisplayValue = (attributeName) => {
@@ -323,64 +317,68 @@ function ProductInfo({
     });
   };
 
+ 
   return (
     <Container dir={i18n.language === "ar" ? "rtl" : "ltr"}>
       <ProductHeader>
-        <Eyebrow>
-          {!productData?.category
-            ? t(`productInfo.${productData.category}`)
-            : "ESONRA COLLECTION"}
-        </Eyebrow>
+       
+
+
 
         <ProductTitle>{productName}</ProductTitle>
+         
 
         <RatingRow>
-          <Stars aria-label={`${averageRating} out of 5 stars`}>
-            {stars.map((_, index) => (
-              <StarIcon
-                key={index}
-                className={index < roundedRating ? "active" : ""}
-              />
-            ))}
-          </Stars>
-
-          <RatingNumber>{averageRating}</RatingNumber>
-
-          {ratingCount > 0 && (
+          {ratingCount > 0 && averageRating !== null && (
             <>
+              <Stars aria-label={`${averageRating} out of 5 stars`}>
+                {stars.map((_, index) => (
+                  <StarIcon
+                    key={index}
+                    className={index < averageRating? "active" : ""}
+                  />
+                ))}
+              </Stars>
+
+              <RatingNumber>{averageRating}</RatingNumber>
               <RatingDivider />
               <RatingCount type="button" onClick={handleReviewsClick}>
                 {ratingCount === 1
-                  ? t(
-                      "customer_reviews.customer_review",
-                      "Customer Review"
-                    )
-                  : t(
-                      "customer_reviews.customer_reviews",
-                      "Customer Reviews"
-                    )}{" "}
-                ({ratingCount})
+                  ? t("customer_reviews.customer_review", "Customer Review")
+                  : t("customer_reviews.customer_reviews", "Customer Reviews")} ({ratingCount})
               </RatingCount>
             </>
           )}
+
+          {productData?.isHero && (
+            <RatingCount as="span">
+              {t("common.orders")} (211)
+            </RatingCount>
+          )}
         </RatingRow>
+      
       </ProductHeader>
 
       <PriceBlock>
+        <div style={{display:"flex", justifyContent:"space-between", alignItems:"baseline" , marginBottom:"9px"
+        }}>
+
+          <Countdown title="specialOffer" />
+        </div>
         <PriceLine>
           <ProductPrice>
             <CurrencyPrice price={sellingPrice} />
           </ProductPrice>
 
-          {comparePrice && (
+          {comparePrice > sellingPrice && sellingPrice > 0 && (
             <ComparePrice>
               <CurrencyPrice price={comparePrice} />
             </ComparePrice>
           )}
 
-          {comparePrice > 0 && (
+          {savePercentage !== null && (
             <SaveBadge dir={i18n.language === "ar" ? "rtl" : "ltr"}>
-              {t("productInfo.save")}{" "}
+              {t("productInfo.save")} {" "}
               <bdi style={{ margin: "0 2px" }}>{savePercentage}%</bdi>
             </SaveBadge>
           )}
@@ -494,6 +492,8 @@ function ProductInfo({
           shippingMethodIndex={shippingMethodIndex}
           currentSku={currentSku}
           setShippingInfo={setShippingInfo}
+          footerRef = {footerRef}
+
         />
       </PurchaseInformation>
     </Container>
