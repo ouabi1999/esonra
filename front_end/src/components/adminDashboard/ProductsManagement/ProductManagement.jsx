@@ -398,13 +398,15 @@ function ProductManagement({
 
     // Main image: append only an actual uploaded file.
     // Existing image URLs are retained in multimediaInfo.
-    if (
-      typeof File !== "undefined" &&
-      formData.main_image instanceof File
-    ) {
-      data.append("main_image", formData.main_image);
-    }
-
+    // Main image
+if (formData.main_image instanceof File) {
+  data.append("main_image", formData.main_image);
+} else if (
+  typeof formData.main_image === "string" &&
+  formData.main_image.trim()
+) {
+  data.append("main_image", formData.main_image.trim());
+}
 
     // Regular fields
     const fields = [
