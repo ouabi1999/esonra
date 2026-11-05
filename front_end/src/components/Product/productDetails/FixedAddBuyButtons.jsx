@@ -128,7 +128,7 @@ const FixedPurchaseBar = styled.div`
 
   z-index: 1000;
 
-  width: 40%;
+  width: 30%;
 
   padding: 12px 20px;
 
