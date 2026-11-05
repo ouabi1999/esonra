@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
+import { colors } from "../src/utilis/colors"
 
 // =========================================================
 // OFFER CONFIGURATION
 // =========================================================
-
-// One shared deadline for every visitor.
-// Update this date when launching a new promotion.
-// Deadline: October 31, 2026, at 23:59:59 in Spain (CET).
-const OFFER_DEADLINE = new Date(
-  "2026-10-28T23:59:59+01:00"
-).getTime();;
+const OFFER_DEADLINE = new Date("2026-11-30T23:59:59+01:00").getTime();
 
 const Countdown = ({ title = "specialOffer" }) => {
   const [timeLeft, setTimeLeft] = useState(null);
@@ -20,12 +15,10 @@ const Countdown = ({ title = "specialOffer" }) => {
   useEffect(() => {
     const updateCountdown = () => {
       const difference = OFFER_DEADLINE - Date.now();
-
       if (difference <= 0) {
         setTimeLeft(null);
         return;
       }
-
       setTimeLeft({
         days: Math.floor(difference / 86400000),
         hours: Math.floor((difference / 3600000) % 24),
@@ -33,15 +26,11 @@ const Countdown = ({ title = "specialOffer" }) => {
         seconds: Math.floor((difference / 1000) % 60),
       });
     };
-
     updateCountdown();
-
     const interval = setInterval(updateCountdown, 1000);
-
     return () => clearInterval(interval);
   }, []);
 
-  // Hide the offer after expiration.
   if (!timeLeft) return null;
   const format = (value) => String(value).padStart(2, "0");
 
@@ -55,9 +44,7 @@ const Countdown = ({ title = "specialOffer" }) => {
         seconds: timeLeft.seconds,
       })}
     >
-      <OfferLabel>
-        {t(`countdownSection.${title}`)}
-      </OfferLabel>
+      <OfferLabel>{t(`countdownSection.${title}`)}</OfferLabel>
 
       <Divider />
 
@@ -78,20 +65,14 @@ const Countdown = ({ title = "specialOffer" }) => {
       <Time>
         {timeLeft.days > 0 && (
           <>
-            <TimeUnit>
-              {timeLeft.days}d
-            </TimeUnit>
-
+            <TimeUnit>{timeLeft.days}d</TimeUnit>
             <Separator>:</Separator>
           </>
         )}
-
         <TimeUnit>{format(timeLeft.hours)}</TimeUnit>
         <Separator>:</Separator>
-
         <TimeUnit>{format(timeLeft.minutes)}</TimeUnit>
         <Separator>:</Separator>
-
         <TimeUnit>{format(timeLeft.seconds)}</TimeUnit>
       </Time>
     </Badge>
@@ -101,7 +82,7 @@ const Countdown = ({ title = "specialOffer" }) => {
 export default Countdown;
 
 // =========================================================
-// LUXURY STYLING
+// ESonra STYLING
 // =========================================================
 
 const Badge = styled.div`
@@ -115,11 +96,11 @@ const Badge = styled.div`
   padding: 5px 10px;
   box-sizing: border-box;
 
-  background: #faf8f3;
-  border: 1px solid #e8dfcc;
+  background: ${colors.surface};
+  border: 1px solid ${colors.border};
   border-radius: 3px;
 
-  color: #866c32;
+  color: ${colors.primary};
   font-family: inherit;
   line-height: 1;
   white-space: nowrap;
@@ -133,7 +114,7 @@ const Badge = styled.div`
 `;
 
 const OfferLabel = styled.span`
-  color: #866c32;
+  color: ${colors.accent};
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -148,8 +129,7 @@ const OfferLabel = styled.span`
 const Divider = styled.span`
   width: 1px;
   height: 14px;
-
-  background: #e3d8c3;
+  background: ${colors.border};
   flex-shrink: 0;
 
   @media (max-width: 480px) {
@@ -162,6 +142,7 @@ const ClockIcon = styled.span`
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  color: ${colors.secondary};
 
   svg {
     display: block;
@@ -187,7 +168,7 @@ const Time = styled.span`
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.15px;
 
-  color: #866c32;
+  color: ${colors.primary};
 
   @media (max-width: 480px) {
     gap: 2px;
@@ -201,7 +182,7 @@ const TimeUnit = styled.span`
 `;
 
 const Separator = styled.span`
-  color: #c4b18d;
+  color: ${colors.textSecondary};
   font-size: 13px;
   font-weight: 400;
 `;

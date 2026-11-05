@@ -209,6 +209,19 @@
       "button": "انضم إلينا"
     }
   },
+   "countdownSection": {
+    "specialOffer": "عرض خاص",
+    "offerEndsIn": "ينتهي العرض خلال",
+    "days": "أيام",
+    "hours": "ساعات",
+    "minutes": "دقائق",
+    "seconds": "ثوانٍ",
+    "offerExpired": "انتهى العرض",
+    "limitedTimeOffer": "عرض لفترة محدودة",
+    "description": "استمتع بهذا العرض الحصري قبل انتهاء الوقت.",
+    "shopNow": "تسوق الآن",
+    "ariaLabel": "الوقت المتبقي لهذا العرض الخاص"
+  },
   "designSection": {
     "title": "تصميم مدروس. وتجربة بلا عناء.",
     "catlabel": "اكتشف الفرق",
@@ -499,25 +512,29 @@
     }
   },
   "trust": {
-    "secureCheckout": "دفع آمن",
-    "freeShipping": {
-      "title": "شحن مجاني",
-      "text": "شحن مجاني على جميع الطلبات"
-    },
-    "fastDelivery": {
-      "title": "توصيل عالمي",
-      "text": "توصيل دولي خلال 5–15 يومًا"
-    },
-    "returns": {
-      "title": "إرجاع خلال 100 يوم",
-      "text": "إرجاع سهل خلال 100 يوم"
-    },
-    "warranty": {
-      "title": "ضمان 3 سنوات",
-      "text": "مصنوع لجودة تدوم"
-    },
-    "shopWithConfidence": "تسوق بثقة"
+  "secureCheckout": "دفع آمن",
+  "payAfterDelivery": {
+    "title": "الدفع عند الاستلام",
+    "text": "ادفع بعد التوصيل"
   },
+  "freeShipping": {
+    "title": "شحن مجاني",
+    "text": "شحن مجاني على جميع الطلبات"
+  },
+  "fastDelivery": {
+    "title": "توصيل عالمي",
+    "text": "توصيل دولي خلال 2–5 أيام"
+  },
+  "returns": {
+    "title": "إرجاع خلال 100 يوم",
+    "text": "إرجاع سهل خلال 100 يوم"
+  },
+  "warranty": {
+    "title": "ضمان 3 سنوات",
+    "text": "مصنوع لجودة تدوم"
+  },
+  "shopWithConfidence": "تسوق بثقة"
+},
   "orderSuccess": {
     "orderPlacedSuccessfully": "🎉 تم تقديم الطلب بنجاح! 🎉",
     "orderProcessingMessage": "شكرًا لتسوقك معنا. طلبك قيد المعالجة.",

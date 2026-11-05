@@ -5,6 +5,7 @@ import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import ReplayIcon from "@mui/icons-material/Replay";
+import PaymentsIcon from "@mui/icons-material/Payments";
 
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
@@ -19,8 +20,10 @@ function UserServices() {
       icon: VerifiedUserIcon,
       text: t("trust.secureCheckout"),
     },
-    
-   
+    {
+      icon: PaymentsIcon,
+      text: t("trust.payAfterDelivery.text"),
+    },
     {
       icon: LocalShippingIcon,
       text: t("trust.freeShipping.text"),
@@ -41,9 +44,7 @@ function UserServices() {
         <Track
           $rtl={isRTL}
           animate={{
-            x: isRTL
-              ? ["-50%", "0%"]
-              : ["0%", "-50%"],
+            x: isRTL ? ["-50%", "0%"] : ["0%", "-50%"],
           }}
           transition={{
             duration: 24,
@@ -52,22 +53,16 @@ function UserServices() {
             repeatType: "loop",
           }}
         >
-          {/* =================================================
-              FIRST GROUP
-          ================================================= */}
-
+          {/* FIRST GROUP */}
           <Group $rtl={isRTL}>
             {services.map((service, index) => {
               const Icon = service.icon;
-
               return (
                 <React.Fragment key={`first-${index}`}>
                   <Service>
                     <Icon className="service-icon" />
-
                     <span>{service.text}</span>
                   </Service>
-
                   <Separator aria-hidden="true">
                     <span />
                   </Separator>
@@ -76,26 +71,16 @@ function UserServices() {
             })}
           </Group>
 
-          {/* =================================================
-              SECOND GROUP
-              Exact duplicate for seamless infinite loop
-          ================================================= */}
-
-          <Group
-            $rtl={isRTL}
-            aria-hidden="true"
-          >
+          {/* SECOND GROUP — duplicate for seamless loop */}
+          <Group $rtl={isRTL} aria-hidden="true">
             {services.map((service, index) => {
               const Icon = service.icon;
-
               return (
                 <React.Fragment key={`second-${index}`}>
                   <Service>
                     <Icon className="service-icon" />
-
                     <span>{service.text}</span>
                   </Service>
-
                   <Separator aria-hidden="true">
                     <span />
                   </Separator>
@@ -111,101 +96,85 @@ function UserServices() {
 
 export default UserServices;
 
+/* =========================================================
+   ESonra COLOR TOKENS
+========================================================= */
+const colors = {
+  primary: "#071B1B",
+  secondary: "#0C3335",
+  accent: "#18C878",
+  accentHover: "#12A968",
+  background: "#F5F8F6",
+  surface: "#FFFFFF",
+  text: "#071B1B",
+  textSecondary: "#53645D",
+  border: "#DCE5E0",
+  success: "#18C878",
+  error: "#DC2626",
+  footer: "#071B1B",
+};
 
 /* =========================================================
    CONTAINER
 ========================================================= */
-
 const Container = styled.div`
   position: -webkit-sticky;
   position: sticky;
-
   top: 0;
   z-index: 2;
-
   width: 100%;
   height: 34px;
-
   overflow: hidden;
-
-  background: #353531;
-
+  background: ${colors.primary};
   display: flex;
   align-items: center;
-
   box-sizing: border-box;
 `;
-
 
 /* =========================================================
    VIEWPORT
 ========================================================= */
-
 const Viewport = styled.div`
   position: relative;
-
   width: 100%;
   height: 100%;
-
   overflow: hidden;
-
   display: flex;
   align-items: center;
-
   box-sizing: border-box;
 `;
-
 
 /* =========================================================
    TRACK
 ========================================================= */
-
 const Track = styled(motion.div)`
   display: flex;
   align-items: center;
-
   width: max-content;
   min-width: max-content;
-
   height: 100%;
-
   flex-shrink: 0;
-
-  direction: ${({ $rtl }) =>
-    $rtl ? "rtl" : "ltr"};
-
+  direction: ${({ $rtl }) => ($rtl ? "rtl" : "ltr")};
   will-change: transform;
-
   transform: translate3d(0, 0, 0);
-
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 `;
 
-
 /* =========================================================
    GROUP
 ========================================================= */
-
 const Group = styled.div`
   width: max(100vw, 1440px);
   min-width: max(100vw, 1440px);
-
   height: 100%;
-
   flex: 0 0 auto;
-
   display: flex;
   align-items: center;
-
   justify-content: space-between;
-
   box-sizing: border-box;
-
   padding: 0 50px;
-
-  direction: ${({ $rtl }) =>
-    $rtl ? "rtl" : "ltr"};
+  direction: ${({ $rtl }) => ($rtl ? "rtl" : "ltr")};
 
   @media only screen and (max-width: 816px) {
     width: max(100vw, 1000px);
@@ -213,92 +182,61 @@ const Group = styled.div`
   }
 `;
 
-
 /* =========================================================
    SERVICE
 ========================================================= */
-
 const Service = styled.div`
   width: max-content;
   min-width: max-content;
-
   flex: 0 0 auto;
-
   height: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   box-sizing: border-box;
-
   white-space: nowrap;
-
-  
-
-  color: #ffffff;
+  color: ${colors.surface};
 
   .service-icon {
     width: 18px;
     height: 18px;
-
     flex: 0 0 18px;
-
-    color: #ffffff;
-
+    color: ${colors.accent};
     margin-inline-end: 7px;
   }
 
   span {
     display: block;
-
     width: max-content;
     min-width: max-content;
-
     font-size: 12px;
-
-
     line-height: 1;
-
     letter-spacing: 0.2px;
-
-    color: #ffffff;
-
+    color: ${colors.surface};
     white-space: nowrap;
   }
 `;
 
-
 /* =========================================================
    SEPARATOR / DOT
 ========================================================= */
-
 const Separator = styled.div`
   width: 36px;
   min-width: 36px;
-
   height: 100%;
-
   flex: 0 0 36px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   box-sizing: border-box;
 
   span {
     display: block;
-
     width: 3px;
     height: 3px;
-
     flex: 0 0 3px;
-
     border-radius: 50%;
-
-    background: #ffffff;
-
+    background: ${colors.accent};
     transform: translateY(-0.5px);
   }
 `;

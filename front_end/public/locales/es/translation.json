@@ -209,6 +209,19 @@
       "button": "Únete"
     }
   },
+  "countdownSection": {
+    "specialOffer": "Oferta Especial",
+    "offerEndsIn": "LA OFERTA TERMINA EN",
+    "days": "Días",
+    "hours": "Horas",
+    "minutes": "Minutos",
+    "seconds": "Segundos",
+    "offerExpired": "La oferta ha terminado",
+    "limitedTimeOffer": "Oferta por Tiempo Limitado",
+    "description": "Disfruta de esta oferta exclusiva antes de que se acabe el tiempo.",
+    "shopNow": "Comprar Ahora",
+    "ariaLabel": "Tiempo restante para esta oferta especial"
+  },
   "designSection": {
     "title": "Diseñado con cuidado. Hecho para ti.",
     "catlabel": "DESCUBRE LA DIFERENCIA",
@@ -499,25 +512,29 @@
     }
   },
   "trust": {
-    "secureCheckout": "Pago seguro",
-    "freeShipping": {
-      "title": "Envío gratis",
-      "text": "Envío gratis en todos los pedidos"
-    },
-    "fastDelivery": {
-      "title": "Entrega mundial",
-      "text": "Entrega internacional en 5–15 días"
-    },
-    "returns": {
-      "title": "Devoluciones en 100 días",
-      "text": "Devoluciones fáciles en 100 días"
-    },
-    "warranty": {
-      "title": "Garantía de 3 años",
-      "text": "Creado para una calidad duradera"
-    },
-    "shopWithConfidence": "Compra con confianza"
+  "secureCheckout": "Pago seguro",
+  "payAfterDelivery": {
+    "title": "Pago contra reembolso",
+    "text": "Paga después de la entrega"
   },
+  "freeShipping": {
+    "title": "Envío gratis",
+    "text": "Envío gratis en todos los pedidos"
+  },
+  "fastDelivery": {
+    "title": "Entrega mundial",
+    "text": "Entrega internacional en 2–5 días"
+  },
+  "returns": {
+    "title": "Devoluciones en 100 días",
+    "text": "Devoluciones fáciles en 100 días"
+  },
+  "warranty": {
+    "title": "Garantía de 3 años",
+    "text": "Creado para una calidad duradera"
+  },
+  "shopWithConfidence": "Compra con confianza"
+},
   "orderSuccess": {
     "orderPlacedSuccessfully": "🎉 ¡Pedido realizado con éxito! 🎉",
     "orderProcessingMessage": "Gracias por comprar con nosotros. Tu pedido se está procesando.",

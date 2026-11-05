@@ -90,6 +90,19 @@
       "text": "We do not share your personal details with any third parties without your consent. We protect your privacy and keep your personal details safe and secure."
     }
   },
+   "countdownSection": {
+    "specialOffer": "Special Offer",
+    "offerEndsIn": "OFFER ENDS IN",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "offerExpired": "Offer has ended",
+    "limitedTimeOffer": "Limited-Time Offer",
+    "description": "Enjoy this exclusive offer before time runs out.",
+    "shopNow": "Shop Now",
+    "ariaLabel": "Time remaining for this special offer"
+  },
   "heroSection": {
     "title": "Everything You Need, Always Within Reach",
     "description": "Thoughtfully selected products that combine quality, style, and value for your everyday life.",
@@ -499,26 +512,31 @@
       "title": "About Us"
     }
   },
-  "trust": {
-    "secureCheckout": "Secure Checkout",
-    "freeShipping": {
-      "title": "Free Shipping",
-      "text": "Free Shipping on All Orders"
-    },
-    "fastDelivery": {
-      "title": "Worldwide Delivery",
-      "text": "International Delivery in 5–15 Days"
-    },
-    "returns": {
-      "title": "100-Day Returns",
-      "text": "Easy Returns Within 100 Days"
-    },
-    "warranty": {
-      "title": "3-Year Warranty",
-      "text": "Crafted for Lasting Quality"
-    },
-    "shopWithConfidence": "Shop With Confidence"
+
+ "trust": {
+  "secureCheckout": "Secure Checkout",
+  "payAfterDelivery": {
+    "title": "Cash on Delivery",
+    "text": "Pay After Delivery"
   },
+  "freeShipping": {
+    "title": "Free Shipping",
+    "text": "Free Shipping on All Orders"
+  },
+  "fastDelivery": {
+    "title": "Worldwide Delivery",
+    "text": "International Delivery in 2–5 Days"
+  },
+  "returns": {
+    "title": "100-Day Returns",
+    "text": "Easy Returns Within 100 Days"
+  },
+  "warranty": {
+    "title": "3-Year Warranty",
+    "text": "Crafted for Lasting Quality"
+  },
+  "shopWithConfidence": "Shop With Confidence"
+},
   "orderSuccess": {
     "orderPlacedSuccessfully": "🎉 Order Placed Successfully! 🎉",
     "orderProcessingMessage": "Thank you for shopping with us. Your order is being processed.",
