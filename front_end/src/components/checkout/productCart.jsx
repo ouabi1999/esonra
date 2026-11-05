@@ -47,7 +47,7 @@ function ProductCart() {
 
       const code = couponCode.trim().toUpperCase();
 
-      if (code === "Esonra10") {
+      if (code === "ENOUZA10") {
         const discount = Number(total) * 0.1;
 
         setDiscountAmount(discount);
@@ -86,7 +86,7 @@ function ProductCart() {
       <div className="header-container">
         <div>
           <span className="checkout">
-            ESONRA — {t("common.checkout")}
+            ENOUZA — {t("common.checkout")}
           </span>
         </div>
       </div>
@@ -94,15 +94,22 @@ function ProductCart() {
       <Wrapper>
         <div className="product-container">
           {cartItems?.map((item, index) => {
+            const attributes = item?.selectedSku?.attributes || {};
+
             const image =
-              item?.selectedSku?.attributes?.[
-                item?.selectedSku?.colorKey
-              ]?.image;
+              Object.values(attributes).find(
+                (attribute) => attribute?.image || attribute?.sku_image
+              )?.image ||
+              Object.values(attributes).find(
+                (attribute) => attribute?.sku_image
+              )?.sku_image ||
+              "";
+
 
             const productName =
               item?.name?.[i18n.language] ||
               item?.name?.[
-                i18n.language?.split("-")[0]
+              i18n.language?.split("-")[0]
               ] ||
               item?.name?.en ||
               "";
@@ -138,11 +145,11 @@ function ProductCart() {
                 </span>
 
                 <span className="price">
-                    <CurrencyPrice price=
-                  {(
-                    Number(item?.price || 0) *
-                    Number(item?.quantity || 0)
-                  ).toFixed(2)}/>
+                  <CurrencyPrice price=
+                    {(
+                      Number(item?.price || 0) *
+                      Number(item?.quantity || 0)
+                    ).toFixed(2)} />
                 </span>
               </div>
             );
@@ -216,7 +223,7 @@ function ProductCart() {
             <span>{t("common.subtotal")}</span>
 
             <span>
-                <CurrencyPrice price={Number(total || 0).toFixed(2)}/>
+              <CurrencyPrice price={Number(total || 0).toFixed(2)} />
             </span>
           </div>
 
@@ -224,7 +231,7 @@ function ProductCart() {
             <span>{t("common.shipping")}</span>
 
             <span>
-               <CurrencyPrice price={shippingPrice.toFixed(2)}/>
+              <CurrencyPrice price={shippingPrice.toFixed(2)} />
             </span>
           </div>
 
@@ -235,7 +242,7 @@ function ProductCart() {
               </span>
 
               <span>
-                -<CurrencyPrice price ={discountAmount.toFixed(2)}/>
+                -<CurrencyPrice price={discountAmount.toFixed(2)} />
               </span>
             </div>
           )}
@@ -245,7 +252,7 @@ function ProductCart() {
               {t("common.total")}</span>
 
             <span>
-              <CurrencyPrice price = {finalTotal.toFixed(2)}/>
+              <CurrencyPrice price={finalTotal.toFixed(2)} />
             </span>
           </div>
         </Totals>

@@ -21,9 +21,10 @@ import EmptyCart from "./EmptyCart";
 import CurrencyPrice from "../../../common/CurrencyPrice";
 
 import ProductSubtotalSlideOut from "./ProductSubtotalSlideOut";
+import { trackViewCart } from "../../utilis/analytics";
 
 
-function SlideOutShoppingCart({ isOpen , onClose }) {
+function SlideOutShoppingCart({ isOpen, onClose }) {
   const dispatch = useDispatch();
 
   const { t, i18n } = useTranslation();
@@ -31,8 +32,24 @@ function SlideOutShoppingCart({ isOpen , onClose }) {
   const cartItems = useSelector(
     (state) => state.cart.cartItems
   );
+  const selectedCurrency = useSelector(state => state.currency.selectedCurrency)
 
+useEffect(() => {
+  if (!cartItems?.length) return;
 
+  trackViewCart({
+    currency: selectedCurrency,
+    items: cartItems.map((item) => ({
+      productId:
+        item?.selectedSku?.sku_attr ||
+        item?.product_id ||
+        item?.id,
+      name: item?.name?.en || "Luxury Lamp",
+      price: Number(item?.price || 0),
+      quantity: Number(item?.quantity || 1),
+    })),
+  });
+}, [cartItems, selectedCurrency]);
   useEffect(() => {
     if (!isOpen) return;
 
@@ -53,6 +70,7 @@ function SlideOutShoppingCart({ isOpen , onClose }) {
   if (!isOpen) return null;
 
 
+ 
   return (
     <Overlay>
 
@@ -105,10 +123,17 @@ function SlideOutShoppingCart({ isOpen , onClose }) {
                       item?.name?.en ||
                       "";
 
+                    const attributes = item?.selectedSku?.attributes || {};
+
                     const image =
-                      item?.selectedSku?.attributes?.[
-                        item?.selectedSku?.colorKey
-                      ]?.image;
+                      Object.values(attributes).find(
+                        (attribute) => attribute?.image || attribute?.sku_image
+                      )?.image ||
+                      Object.values(attributes).find(
+                        (attribute) => attribute?.sku_image
+                      )?.sku_image ||
+                      "";
+
 
 
                     return (
@@ -362,8 +387,10 @@ const DrawerHeader = styled.header`
 const Title = styled.h2`
   margin: 0;
 
-   font-family: Arial, sans-serif;
-
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
   font-size: 22px;
 
@@ -553,8 +580,10 @@ const ProductName = styled.h3`
 
   margin: 0;
 
-  font-family: Arial, sans-serif;
-
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
   font-size: 15px;
 

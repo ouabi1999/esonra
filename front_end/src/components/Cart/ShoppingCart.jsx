@@ -25,36 +25,19 @@ function ShoppingCart() {
   );
 
   const { t, i18n } = useTranslation();
-  useEffect(() => {
-    if (!cartItems?.length) return;
-
-    if (typeof window.gtag !== "function") return;
-
-    const items = cartItems.map((item) => ({
-      item_id: item?.selectedSku?.sku_attr || item?.id,
-      item_name:
-        item?.name?.en || "Luxury Lamp",
-      price: Number(item?.price || 0),
-      quantity: Number(item?.quantity || 1),
-    }));
-
-    const value = items.reduce(
-      (total, item) =>
-        total + item.price * item.quantity,
-      0
-    );
-
-    window.gtag("event", "view_cart", {
-      currency: "USD",
-      value,
-      items,
-    });
-  }, [cartItems]);
+ 
 
   useLayoutEffect(() => {
     window.scrollTo({
       top: 0,
       left: 0,
+    });
+    if (typeof window.gtag !== "function") return;
+
+    window.gtag("event", "view_cart", {
+      currency: "USD",
+      value,
+      items,
     });
   }, []);
 
@@ -107,10 +90,16 @@ function ShoppingCart() {
                 item?.name?.en ||
                 "";
 
-              const image =
-                item?.selectedSku?.attributes?.[
-                  item?.selectedSku?.colorKey
-                ]?.image;
+                  const attributes = item?.selectedSku?.attributes || {};
+
+const image =
+  Object.values(attributes).find(
+    (attribute) => attribute?.image || attribute?.sku_image
+  )?.image ||
+  Object.values(attributes).find(
+    (attribute) => attribute?.sku_image
+  )?.sku_image ||
+  "";
 
               return (
                 <ProductContainer
@@ -328,8 +317,10 @@ const Eyebrow = styled.div`
 const Title = styled.h1`
   margin: 0;
 
-   font-family: Arial, sans-serif;
-
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
   font-size: clamp(27px, 4vw, 38px);
 
@@ -625,8 +616,10 @@ const ProductName = styled.h2`
 
   margin: 0;
 
-    font-family: Arial, sans-serif;
-
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
 
   font-size: 16px;
   font-weight: 400;

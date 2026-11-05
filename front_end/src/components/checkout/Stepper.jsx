@@ -20,21 +20,17 @@ function Stepper() {
   return (
     <Container dir = {i18n.dir() === "ltr" ? "ltr": "rtl"}>
        <Wraper>
+          
         <div className='stepper-item'>
-            <h5> {t("common.signin")} </h5>
-        </div>
-        <div className="flex-auto border-t-2"></div>
-   
-        <div className='stepper-item'>
-            <h5>{t("common.billingAddress")} </h5>
+            <span>{t("common.billingAddress")} </span>
         </div>
         <div className="flex-auto border-t-2"></div>
         <div className='stepper-item' >
-            <h5>{t("common.shipping")}  </h5>
+            <span>{t("common.shipping")}  </span>
         </div>
         <div className="flex-auto border-t-2"></div>
         <div className='stepper-item'>
-            <h5> {t("common.payment")} </h5>
+            <span> {t("common.payment")} </span>
         </div>
       </Wraper>
     </Container>
@@ -45,8 +41,12 @@ export default Stepper;
 
 const Container = styled.div`
   
- 
+  span{
+  font-size:14px;
+  text-wrap:nowrap;
+  font-weight:bold;
   
+  }
  
 
 
@@ -81,17 +81,17 @@ const Wraper = styled.div`
 
 .border-t-2{
     border-top:1px solid  #b39a76;
-;
+
     width:25%;
 
 }
 
-h5{
+span{
 min-width:50px;
 text-align:center;
 }
 @media only screen and (max-width: 500px){
-      h5{
+      span{
 
         min-width:30px;
         white-space: nowrap;

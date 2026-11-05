@@ -19,18 +19,22 @@ import { useNavigate } from "react-router-dom";
 import ApiInstance from "../../../../common/baseUrl";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
+import CurrencyPrice from "../../../../common/CurrencyPrice";
 
 export default function CheckoutForm() {
   const stripe = useStripe();
   const elements = useElements();
-  const navigate = useNavigate();
-
   const { formData } = useContext(OrderContext);
-  const { activeStepIndex, setActiveStepIndex } = useContext(FormContext);
+
+  const { total } = useContext(FormContext);
+   const shippingPrice = Number(
+    formData?.shippingPrice || 0
+  );
+
+  
 
   const cartItems = useSelector((state) => state.cart.cartItems);
   const { t } = useTranslation();
-
   const [paymentMethod, setPaymentMethod] = useState("card");
   const [isLoading, setIsLoading] = useState(false);
   const [isLoadingCOD, setIsLoadingCOD] = useState(false);
@@ -143,6 +147,10 @@ export default function CheckoutForm() {
     }
   };
 
+
+   const finalTotal =
+    Number(total || 0) +
+    shippingPrice;
   return (
     <Container>
       {/* Header */}
@@ -283,7 +291,8 @@ export default function CheckoutForm() {
         </div>
 
         <strong>
-          {Number(formData.totalPrice || 0).toFixed(2)} USD
+          
+          <CurrencyPrice price={finalTotal.toFixed(2)} />
         </strong>
       </div>
 
