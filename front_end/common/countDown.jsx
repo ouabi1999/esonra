@@ -43,7 +43,6 @@ const Countdown = ({ title = "specialOffer" }) => {
 
   // Hide the offer after expiration.
   if (!timeLeft) return null;
-
   const format = (value) => String(value).padStart(2, "0");
 
   return (
