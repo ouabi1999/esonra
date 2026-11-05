@@ -4,25 +4,25 @@
     "login": "تسجيل الدخول",
     "searchPlaceholder": "ابحث...",
     "cart": "السلة",
-    "wishlist": "قائمة الأمنيات",
+    "wishlist": "المفضلة",
     "profile": "الملف الشخصي",
     "logout": "تسجيل الخروج",
     "dashboard": "لوحة التحكم",
     "adminDashboard": "الإدارة",
-    "userDashboard": "لوحة تحكمي",
+    "userDashboard": "لوحتي",
     "home": "الرئيسية",
-    "contactUs": "التواصل",
+    "contactUs": "اتصل بنا",
     "aboutUs": "من نحن",
     "privacyPolicy": "الخصوصية",
     "termsOfService": "الشروط",
-    "refundPolicy": "استرداد الأموال",
+    "refundPolicy": "الاسترداد",
     "shippingPolicy": "الشحن",
     "helpCenter": "المساعدة",
     "myOrders": "طلباتي",
     "notifications": "التنبيهات",
     "shoppingCart": "السلة",
-    "checkout": "إتمام الشراء",
-    "orderSuccess": "تم تقديم الطلب"
+    "checkout": "الدفع",
+    "orderSuccess": "تم الطلب"
   },
   "shoppingCart": {
     "freeExpressTo": "شحن سريع مجاني إلى"
@@ -34,21 +34,21 @@
     "mayAlsoLike": "قد يعجبك أيضًا",
     "newArrival": "وصل حديثًا",
     "bestSellers": "الأكثر مبيعًا",
-    "specialOffers": "العروض",
+    "specialOffers": "عروض",
     "buyerTrustServices": "خدماتنا",
     "freeShipping_offer": "شحن مجاني على الطلبات المؤهلة",
     "support_24_7": "دعم العملاء",
-    "money_Back": "الإرجاع واسترداد الأموال",
+    "money_Back": "الإرجاع والاسترداد",
     "secure_Payment": "مدفوعات آمنة",
     "easy_Returns": "إرجاع سهل",
     "safe_reliable_payments": "مدفوعات آمنة",
-    "More_to_love": "المزيد لاكتشافه",
+    "More_to_love": "المزيد لتحبه",
     "more_products": "المزيد من المنتجات",
     "best_sellers": "الأكثر مبيعًا"
   },
   "mainSlider": {
-    "title": "منتجات مختارة بعناية، لحياة أفضل.",
-    "description": "مجموعة مختارة بعناية من المنتجات العملية والأنيقة لتناسب احتياجاتك اليومية.",
+    "title": "منتجات عالية الجودة، مختارة بعناية.",
+    "description": "مجموعة مدروسة من المنتجات العملية والأنيقة المصممة لتناسب احتياجاتك اليومية.",
     "welcome": "مرحبًا بكم في متجرنا."
   },
   "productPage": {
@@ -63,7 +63,7 @@
     "quantity": "الكمية",
     "outOfStock": "غير متوفر",
     "inStock": "متوفر",
-    "soldOut": "نفد المخزون"
+    "soldOut": "نفدت الكمية"
   },
   "purchaseOptions": {
     "business_days": "أيام العمل",
@@ -74,12 +74,12 @@
     "Sell_on_OurPlatform": "بِع معنا",
     "Download_Our_App": "حمّل تطبيقنا",
     "Follow_Us": "تابعنا",
-    "Contact_Us": "التواصل",
+    "Contact_Us": "اتصل بنا",
     "free_Shipping": "شحن مجاني",
-    "available": "متاح",
+    "available": "متوفر",
     "Delivrey": "التوصيل",
     "Quantity": "الكمية",
-    "max-order-warning": "تم بلوغ الحد الأقصى للطلب",
+    "max-order-warning": "تم الوصول إلى الحد الأقصى للطلب",
     "available_shipping_methods": "طرق الشحن",
     "item_has_been_added": "تمت إضافة المنتج إلى السلة",
     "item_already_in_cart": "المنتج موجود بالفعل في السلة",
@@ -87,126 +87,187 @@
     "days": "أيام",
     "Security_&_Privacy": {
       "header": "الخصوصية",
-      "text": "لا نشارك بياناتك الشخصية مع أي طرف ثالث دون موافقتك. نحرص على حماية خصوصيتك والحفاظ على بياناتك الشخصية بأمان."
+      "text": "نحن لا نشارك تفاصيلك الشخصية مع أي طرف ثالث دون موافقتك. نحن نحمي خصوصيتك ونحافظ على سلامة تفاصيلك الشخصية وأمانها."
     }
   },
   "heroSection": {
-    "title": "كل ما تحتاجه، في مكان واحد",
-    "description": "منتجات مختارة بعناية لتناسب احتياجاتك اليومية، وتجمع بين الجودة والأناقة والقيمة.",
-    "ctaLabel": "تسوّق الآن",
+    "title": "كل ما تحتاجه، دائمًا في متناول يدك",
+    "description": "منتجات مختارة بعناية تجمع بين الجودة والأناقة والقيمة لحياتك اليومية.",
+    "ctaLabel": "تسوق الآن",
     "detailDesign": "حيث تلتقي الجودة بالتصميم",
-    "curated": "تصميم مدروس بعناية",
+    "curated": "مصمم بعناية",
     "curated_description": "منتجات مختارة بعناية للحياة اليومية.",
-    "refined": "راقٍ",
-    "refined_description": "تصاميم أنيقة تراعي البساطة.",
-    "atmospheric": "بلا عناء",
-    "atmospheric_description": "منتجات عملية تمنحك مزيدًا من الراحة.",
-    "distinctive": "عملي وهادف",
-    "distinctive_description": "منتجات عملية تلبي احتياجاتك بسهولة.",
+    "refined": "أنيق",
+    "refined_description": "أشكال أنيقة، مصممة ببساطة.",
+    "atmospheric": "سهل",
+    "atmospheric_description": "منتجات عملية تجلب المزيد من السهولة ليومك.",
+    "distinctive": "هادف",
+    "distinctive_description": "أساسيات عملية تناسب احتياجاتك اليومية.",
     "stats": {
-      "rated": { "value": "4.9★", "label": "تقييم العملاء" },
-      "satisfaction": { "value": "98%", "label": "رضا العملاء" },
-      "reviews": { "value": "100+", "label": "تقييمات موثّقة" }
+      "rated": {
+        "value": "4.9★",
+        "label": "تقييم العملاء"
+      },
+      "satisfaction": {
+        "value": "98%",
+        "label": "رضا العملاء"
+      },
+      "reviews": {
+        "value": "100+",
+        "label": "تقييمات موثقة"
+      }
     }
   },
   "ctaSection": {
-    "eyebrow": "خدمة عملاء المتجر",
-    "titleLeft": "نحن هنا لمساعدتك.",
-    "description": "هل لديك سؤال عن منتج أو طلبك أو التوصيل؟ فريقنا هنا لجعل تجربتك سهلة وسلسة.",
-    "button": "تواصل معنا",
+    "eyebrow": "رعاية العملاء",
+    "titleLeft": "نحن هنا للمساعدة.",
+    "description": "هل لديك سؤال حول منتج أو طلبك أو التوصيل؟ فريقنا هنا لجعل تجربتك بسيطة وسلسة.",
+    "button": "اتصل بنا",
     "supportEyebrow": "دعم العملاء",
-    "titleRight": "نحن هنا لمساعدتك متى احتجت إلينا.",
-    "supportDescription": "سواء احتجت إلى مساعدة في اختيار منتج أو كان لديك سؤال عن طلبك، يسعدنا مساعدتك دائمًا.",
+    "titleRight": "القليل من المساعدة، وقتما تحتاجها.",
+    "supportDescription": "سواء كنت بحاجة إلى مساعدة في اختيار منتج أو لديك سؤال حول طلبك، يسعدنا دائمًا مساعدتك.",
     "contact": {
-      "email": { "title": "البريد الإلكتروني", "description": "للاستفسارات العامة وطلب المساعدة." },
-      "support": { "title": "خدمة العملاء", "details": "دعم العملاء", "description": "نحن هنا لجعل تجربتك معنا سهلة ومريحة." }
+      "email": {
+        "title": "البريد الإلكتروني",
+        "description": "للاستفسارات العامة والمساعدة."
+      },
+      "support": {
+        "title": "رعاية العملاء",
+        "details": "دعم العملاء",
+        "description": "نحن هنا لجعل تجربة التسوق الخاصة بك سهلة."
+      }
     }
   },
   "matricsSection": {
-    "why_us": "ما يميّزنا",
-    "title": "كل تفصيل مدروس بعناية.",
-    "description": "نختار كل منتج لما يتمتع به من تصميم وجودة عملية وقدرة على تبسيط الحياة اليومية."
+    "why_us": "الفرق",
+    "title": "كل تفصيلة، مدروسة بعناية.",
+    "description": "يتم اختيار كل منتج لتصميمه ووظائفه وقدرته على جعل الحياة اليومية أبسط."
   },
   "inspirationPage": {
     "hero": {
-      "catlabel": "مجلة المتجر",
-      "title": "طريقة أذكى لاختيار ما تحتاجه.",
-      "description": "اكتشف منتجات مدروسة ومستلزمات يومية وطرقًا جديدة لإضافة البساطة والثقة إلى حياتك."
+      "catlabel": "المجلة",
+      "title": "طريقة أذكى للتسوق لما تحتاجه.",
+      "description": "اكتشف تصاميم مدروسة وأساسيات يومية وطرقًا جديدة لجلب البساطة والثقة إلى حياتك اليومية."
     },
     "intro": {
-      "catlabel": "اكتشف ما يلهمك",
-      "title": "مصمم لما يهمك.",
-      "description": "يمكن للمنتج المناسب أن يجعل حياتك اليومية أكثر سهولة. اكتشف مجموعتنا وطرقًا مدروسة لاختيار ما يناسبك."
+      "catlabel": "ابحث عن إلهامك",
+      "title": "مصمم حول ما يهم.",
+      "description": "المنتج المناسب يمكن أن يجعل الحياة اليومية تبدو أبسط. استكشف مجموعتنا واكتشف طرقًا مدروسة للعثور على ما تحتاجه."
     },
     "spaces": {
-      "catlabel": "اكتشف حسب أسلوب حياتك",
-      "title": "منتجات عملية للحياة اليومية",
+      "catlabel": "استكشف حسب نمط الحياة",
+      "title": "أساسيات يومية للحياة اليومية.",
       "items": {
-        "livingRoom": { "title": "مستلزمات المنزل", "description": "منتجات مختارة بعناية تجعل منزلك أكثر راحة وأناقة." },
-        "diningRoom": { "title": "العمل والتنقّل", "description": "منتجات عملية ترافقك في العمل والتنقل والاستكشاف." },
-        "bedroom": { "title": "مستلزمات السفر", "description": "سافر براحة أكبر مع منتجات مصممة للسفر والرحلات." }
+        "livingRoom": {
+          "title": "أساسيات المنزل",
+          "description": "منتجات مختارة بعناية تجعل منزلك أكثر راحة وأناقة."
+        },
+        "diningRoom": {
+          "title": "العمل وأثناء التنقل",
+          "description": "منتجات عملية ترافقك في العمل أو أثناء التنقل أو استكشاف مكان جديد."
+        },
+        "bedroom": {
+          "title": "أساسيات السفر",
+          "description": "سافر بمزيد من السهولة مع منتجات مصممة للأمتعة والرحلات."
+        }
       }
     },
-    "explore": "اكتشف",
+    "explore": "استكشف",
     "statement": {
-      "catlabel": "نهج المتجر",
-      "title": "ينبغي للمنتجات أن تجعل الحياة أكثر سهولة.",
-      "description": "من مستلزماتك اليومية إلى الرحلات البعيدة، تساعدك منتجاتنا المختارة على الاستمتاع بحياة أبسط."
+      "catlabel": "نهجنا",
+      "title": "المنتجات الجيدة يجب أن تجعل الحياة تبدو أبسط.",
+      "description": "من الأساسيات اليومية إلى الرحلات البعيدة، تساعدك الاختيارات المدروسة على الاستفادة أكثر من كل يوم."
     },
     "ideas": {
       "catlabel": "دليل التسوق الذكي",
-      "title": "طرق أذكى للاختيار",
+      "title": "طرق أذكى للتسوق.",
       "items": {
-        "ambientLighting": { "title": "مستلزمات يومية", "description": "اختر منتجات عملية تناسب روتينك اليومي وتوفر وقتك وجهدك." },
-        "statementLighting": { "title": "الأغراض الشخصية", "description": "اكتشف منتجات أنيقة وعملية تناسب احتياجاتك الشخصية." },
-        "layeredLighting": { "title": "السفر والأمتعة", "description": "عزّز ثقتك أثناء السفر بمنتجات مصممة للأمتعة والرحلات." }
+        "ambientLighting": {
+          "title": "أساسيات يومية",
+          "description": "اختر منتجات عملية تناسب روتينك وتوفر لك الوقت والجهد."
+        },
+        "statementLighting": {
+          "title": "المفضلة الشخصية",
+          "description": "اكتشف منتجات أنيقة وعملية مصممة حول احتياجاتك الشخصية."
+        },
+        "layeredLighting": {
+          "title": "السفر والأمتعة",
+          "description": "أضف الثقة إلى رحلاتك مع منتجات مصممة للسفر والأمتعة."
+        }
       }
     },
     "editorial": {
-      "catlabel": "محتوى المتجر",
-      "title": "تصميم مدروس لما يهمك.",
-      "description": "اكتشف منتجات تجمع بين التصميم المدروس والعملية اليومية والقيمة.",
-      "link": "اكتشف المنتجات"
+      "catlabel": "تحريري",
+      "title": "مصمم بعناية لما يهم.",
+      "description": "اكتشف منتجات تجمع بين التصميم المدروس والوظائف اليومية والقيمة الرائعة.",
+      "link": "استكشف المنتجات"
     },
     "newsletter": {
-      "catlabel": "ابقَ على اتصال",
-      "title": "يبدأ يومك الأكثر ذكاءً من هنا.",
-      "description": "اكتشف المنتجات الجديدة والأدلة العملية وطرقًا مدروسة للاختيار.",
+      "catlabel": "ابقَ على تواصل",
+      "title": "حياة يومية أذكى تبدأ هنا.",
+      "description": "اكتشف الوصولات الجديدة والأدلة العملية وطرق التسوق المدروسة.",
       "button": "انضم إلينا"
     }
   },
   "designSection": {
     "title": "تصميم مدروس. وتجربة بلا عناء.",
-    "catlabel": "اكتشف ما يميّزنا",
+    "catlabel": "اكتشف الفرق",
     "principles": {
-      "minimalism": { "title": "مصمم للحياة اليومية", "description": "خطوط نظيفة وأشكال أنيقة وتصاميم غير لافتة تنسجم طبيعيًا مع مستلزماتك اليومية." },
-      "materials": { "title": "تفاصيل صغيرة. جودة تدوم.", "description": "تجمع المواد المختارة بعناية والتشطيبات المدروسة بين المتانة والعملية والأناقة الهادئة." },
-      "ambient": { "title": "ثقة في كل تجربة", "description": "نؤمن بأن المنتجات الجيدة يجب أن تبسّط الحياة، وتساعدك على مواصلة يومك براحة بال أكبر." }
+      "minimalism": {
+        "title": "مصمم للحياة اليومية",
+        "description": "خطوط نظيفة وأشكال أنيقة وتصاميم هادئة تندمج بشكل طبيعي في أساسياتك اليومية."
+      },
+      "materials": {
+        "title": "تفاصيل صغيرة. جودة دائمة.",
+        "description": "مواد مختارة بعناية وتشطيبات مدروسة تجمع بين المتانة والوظائف والأناقة الهادئة."
+      },
+      "ambient": {
+        "title": "الثقة في كل عملية شراء",
+        "description": "نؤمن أن المنتجات الجيدة يجب أن تبسط الحياة — وتساعدك على الاستفادة أكثر من كل يوم بمزيد من راحة البال."
+      }
     }
   },
   "collectionSection": {
     "title": "اكتشف مجموعتنا.",
     "catlabel": "استكشف",
     "categories": {
-      "electronics": { "title": "الإلكترونيات", "description": "أجهزة إلكترونية عملية ومختارة بعناية لتناسب احتياجاتك اليومية." },
-      "fashion": { "title": "الأزياء", "description": "ملابس وإكسسوارات أنيقة وعملية تناسب أسلوب حياتك." },
-      "home_living": { "title": "المنزل والمعيشة", "description": "مستلزمات منزلية تجمع بين الأناقة والعملية لراحة أكبر." },
-      "beauty": { "title": "الجمال والعناية", "description": "منتجات عناية مختارة بعناية لروتين يومي أفضل." },
-      "sports_outdoors": { "title": "الرياضة والخارج", "description": "معدات رياضية ومستلزمات خارجية للاستمتاع بأنشطتك." },
-      "accessories": { "title": "الإكسسوارات", "description": "إكسسوارات عملية مختارة بعناية لتكمل إطلالتك واستخدامك اليومي." }
+      "electronics": {
+        "title": "إلكترونيات",
+        "description": "إلكترونيات عملية مختارة بعناية مصممة لتناسب احتياجاتك اليومية."
+      },
+      "fashion": {
+        "title": "أزياء",
+        "description": "ملابس وإكسسوارات أنيقة وعملية تناسب نمط حياتك."
+      },
+      "home_living": {
+        "title": "المنزل والمعيشة",
+        "description": "أساسيات منزلية مصممة بعناية تجمع بين الأناقة والعملية لمزيد من الراحة."
+      },
+      "beauty": {
+        "title": "الجمال والعناية",
+        "description": "منتجات عناية شخصية مختارة بعناية لروتين يومي أفضل."
+      },
+      "sports_outdoors": {
+        "title": "الرياضة والهواء الطلق",
+        "description": "معدات رياضية وأساسيات للهواء الطلق للاستمتاع بأنشطتك."
+      },
+      "accessories": {
+        "title": "إكسسوارات",
+        "description": "إكسسوارات عملية مختارة بعناية لإكمال مظهرك واستخدامك اليومي."
+      }
     }
   },
   "customersFeedback": {
-    "eyebrow": "تجربة المتجر",
-    "title": "اختيارات تمنحك راحة البال كل يوم.",
+    "eyebrow": "التجربة",
+    "title": "مختار لراحة البال اليومية.",
     "description": "عملاء حقيقيون. تجارب حقيقية.",
-    "ratingText": "استنادًا إلى تقييمات العملاء",
-    "verifiedPurchase": "عملية شراء موثّقة",
+    "ratingText": "بناءً على تقييمات العملاء",
+    "verifiedPurchase": "شراء موثق",
     "back": "رجوع",
     "review": "تقييم",
     "reviews": "تقييمات",
     "noReviews": "لا توجد تقييمات بعد",
-    "noReviewsDescription": "لا توجد حاليًا تقييمات عملاء لعرضها.",
+    "noReviewsDescription": "لا توجد حاليًا تقييمات من العملاء لعرضها.",
     "previousPage": "الصفحة السابقة",
     "nextPage": "الصفحة التالية",
     "viewAllReviews": "عرض جميع التقييمات"
@@ -216,19 +277,19 @@
     "brand": "العلامة التجارية",
     "priceRange": "نطاق السعر",
     "rating": "التقييم",
-    "applyFilters": "تطبيق عوامل التصفية",
-    "clearFilters": "مسح عوامل التصفية",
-    "search_did_not_match": "عذرًا، لم يعثر البحث على أي منتجات مطابقة.",
-    "collection_description": "اكتشف منتجات مختارة بعناية لتناسب احتياجاتك اليومية.",
-    "collection": "مجموعة المتجر",
+    "applyFilters": "تطبيق الفلاتر",
+    "clearFilters": "مسح الفلاتر",
+    "search_did_not_match": "عذرًا، لم يتطابق بحثك مع أي منتجات.",
+    "collection_description": "اكتشف منتجات مختارة بعناية لاحتياجاتك اليومية.",
+    "collection": "مجموعتنا",
     "discover": "اكتشف"
   },
   "customer_reviews": {
     "title": "تقييمات العملاء",
-    "verified_purchase": "عملية شراء موثّقة",
+    "verified_purchase": "شراء موثق",
     "no_reviews": "لا توجد تقييمات بعد",
-    "image_unavailable": "الصورة غير متاحة",
-    "customer": "العميل",
+    "image_unavailable": "الصورة غير متوفرة",
+    "customer": "عميل",
     "review_image": "صورة التقييم",
     "previous_image": "الصورة السابقة",
     "next_image": "الصورة التالية",
@@ -244,9 +305,9 @@
   },
   "productInfo": {
     "product_details": "تفاصيل المنتج",
-    "view_full_image": "عرض الصورة كاملة",
+    "view_full_image": "عرض الصورة الكاملة",
     "purchase_information": "معلومات الشراء",
-    "secure_purchase_premium_quality": "شراء آمن وجودة مميزة",
+    "secure_purchase_premium_quality": "شراء آمن وجودة عالية",
     "save": "وفّر",
     "Color": "اللون",
     "Color Name": "اللون",
@@ -255,26 +316,26 @@
     "Size": "المقاس",
     "Sizes": "المقاسات",
     "Dimensions": "الأبعاد",
-    "Is Customized": "هل المنتج مخصص؟",
+    "Is Customized": "مخصص",
     "Capacity": "السعة",
     "Ships From": "الشحن من",
     "Ship From": "الشحن من",
     "Warehouse": "المستودع",
     "Origin": "المنشأ",
     "Bundle": "حزمة",
-    "Sale by Pack": "البيع حسب العبوة",
-    "Pack": "عبوة",
+    "Sale by Pack": "البيع بالحزمة",
+    "Pack": "حزمة",
     "Set": "طقم",
-    "Package": "الطرد",
+    "Package": "الحزمة",
     "Quantity": "الكمية",
     "Model": "الطراز",
     "Version": "الإصدار",
-    "Edition": "النسخة",
-    "Variant": "الخيار",
-    "Material": "المادة",
+    "Edition": "الطبعة",
+    "Variant": "النوع",
+    "Material": "الخامة",
     "Fabric": "القماش",
-    "Fit": "الملاءمة",
-    "Pattern": "النقشة",
+    "Fit": "المقاس",
+    "Pattern": "النمط",
     "Sleeve Length": "طول الكم",
     "Interface": "الواجهة",
     "Power": "الطاقة",
@@ -288,42 +349,66 @@
     "rating": "التقييم",
     "comment": "التعليق",
     "reviewSubmitted": "تم إرسال التقييم",
-    "reviewPending": "تقييمك بانتظار الموافقة",
+    "reviewPending": "تقييمك قيد الموافقة",
     "size": "المقاس",
     "color": "اللون",
-    "material": "المادة",
+    "material": "الخامة",
     "brand": "العلامة التجارية",
     "model": "الطراز",
     "order": "الطلب",
-    "all_from_verified_purchases": "جميعها من عمليات شراء موثّقة",
+    "all_from_verified_purchases": "الكل من عمليات شراء موثقة",
     "star": "نجمة",
     "stars": "نجوم",
     "one_star": "نجمة",
-    "two_stars": "نجوم",
-    "give_us_your_feedback": "شاركنا رأيك",
-    "led_ambient_lighting": "الإلكترونيات",
-    "phone_mounts_holders": "الإكسسوارات",
+    "two_stars": "نجمتان",
+    "give_us_your_feedback": "أعطنا رأيك",
+    "led_ambient_lighting": "إلكترونيات",
+    "phone_mounts_holders": "إكسسوارات",
     "organizers_storage": "المنزل والمعيشة",
-    "comfort_accessories": "الإكسسوارات",
+    "comfort_accessories": "إكسسوارات",
     "air_fresheners_scents": "الجمال والعناية",
-    "table_lamps": "الإلكترونيات",
-    "floor_lamps": "الأزياء",
-    "wall_lamps": "الإكسسوارات",
-    "pendant_lights": "الإكسسوارات",
-    "ceiling_lights": "الرياضة والخارج",
-    "bedside_lamps": "الأزياء",
-    "desk_office_lamps": "الإلكترونيات",
-    "outdoor_lighting": "الرياضة والخارج"
+    "table_lamps": "إلكترونيات",
+    "floor_lamps": "أزياء",
+    "wall_lamps": "إكسسوارات",
+    "pendant_lights": "إكسسوارات",
+    "ceiling_lights": "الرياضة والهواء الطلق",
+    "bedside_lamps": "أزياء",
+    "desk_office_lamps": "إلكترونيات",
+    "outdoor_lighting": "الرياضة والهواء الطلق"
   },
   "buyerTrustServices": {
-    "freeShipping": { "title": "شحن مجاني", "description": "للطلبات التي تتجاوز 50 دولارًا" },
-    "support24_7": { "title": "دعم على مدار الساعة", "description": "نحن هنا لمساعدتك" },
-    "moneyBack": { "title": "استرداد الأموال", "description": "ضمان لمدة 30 يومًا" },
-    "safe_Payment": { "title": "دفع آمن", "description": "ادفع باستخدام أشهر وسائل الدفع وأكثرها أمانًا." },
-    "easyReturns": { "title": "إرجاع سهل", "description": "إرجاع سهل دون تعقيدات" },
-    "help_center": { "title": "مركز المساعدة", "description": "مساعدة على مدار الساعة لتجربة تسوّق سلسة." },
-    "worldwide_shipping": { "title": "الشحن إلى جميع أنحاء العالم", "description": "توصيل سريع وموثوق إلى باب منزلك أينما كنت في العالم." },
-    "Shop_with_confidence": { "title": "تسوّق بثقة", "description": "رضاك أولويتنا. استمتع بتسوّق آمن وإجراءات إرجاع سهلة." }
+    "freeShipping": {
+      "title": "شحن مجاني",
+      "description": "على الطلبات التي تزيد عن 50 دولارًا"
+    },
+    "support24_7": {
+      "title": "دعم 24/7",
+      "description": "نحن هنا للمساعدة"
+    },
+    "moneyBack": {
+      "title": "استرداد الأموال",
+      "description": "ضمان 30 يومًا"
+    },
+    "safe_Payment": {
+      "title": "دفع آمن",
+      "description": "ادفع باستخدام أشهر طرق الدفع وأكثرها أمانًا في العالم."
+    },
+    "easyReturns": {
+      "title": "إرجاع سهل",
+      "description": "إرجاع بدون متاعب"
+    },
+    "help_center": {
+      "title": "مركز المساعدة",
+      "description": "مساعدة على مدار الساعة لتجربة تسوق سلسة."
+    },
+    "worldwide_shipping": {
+      "title": "شحن عالمي",
+      "description": "توصيل سريع وموثوق إلى باب منزلك، في أي مكان في العالم."
+    },
+    "Shop_with_confidence": {
+      "title": "تسوق بثقة",
+      "description": "رضاك هو أولويتنا. استمتع بتسوق آمن وإرجاع سهل."
+    }
   },
   "profile": {
     "my_profile": "ملفي الشخصي",
@@ -336,15 +421,15 @@
     "edit_your_birthdate": "تعديل تاريخ الميلاد",
     "update_your_address": "تحديث العنوان",
     "manage_your_orders": "إدارة الطلبات",
-    "view_your_wishlist": "عرض قائمة الأمنيات",
-    "start_shopping": "ابدأ التسوّق",
-    "you_havent_placed_any_orders_yet": "لم تُجرِ أي طلبات حتى الآن",
+    "view_your_wishlist": "عرض المفضلة",
+    "start_shopping": "ابدأ التسوق",
+    "you_havent_placed_any_orders_yet": "لم تقم بأي طلبات بعد",
     "processing": "قيد المعالجة",
-    "order_take_between": "قد يستغرق الطلب مدة تتراوح بين",
-    "tracking_number": "رقم التتبّع",
-    "not_available": "غير متاح",
+    "order_take_between": "قد يستغرق الطلب بين",
+    "tracking_number": "رقم التتبع",
+    "not_available": "غير متوفر",
     "shippingMethod": "طريقة الشحن",
-    "order_placed_on": "تاريخ تقديم الطلب",
+    "order_placed_on": "تم الطلب في",
     "order_id": "رقم الطلب",
     "payment_method": "طريقة الدفع",
     "Credit_Debit_card": "بطاقة ائتمان/خصم",
@@ -353,111 +438,184 @@
     "total": "الإجمالي"
   },
   "footer": {
-    "brand": { "description": "منتجات مختارة بعناية تجمع بين التصميم الأنيق والعملية اليومية والقيمة." },
-    "payment": { "secure": "مدفوعات آمنة" },
-    "followUs": { "title": "تابعنا", "facebook": "فيسبوك", "instagram": "إنستغرام", "twitter": "تويتر", "tiktok": "تيك توك" },
-    "policies": { "title": "السياسات", "privacyPolicy": "سياسة الخصوصية", "termsOfService": "شروط الخدمة", "refundPolicy": "سياسة استرداد الأموال", "shippingPolicy": "سياسة الشحن" },
+    "brand": {
+      "description": "منتجات مختارة بعناية تجمع بين التصميم الأنيق والوظائف اليومية والقيمة."
+    },
+    "payment": {
+      "secure": "مدفوعات آمنة"
+    },
+    "followUs": {
+      "title": "تابعنا",
+      "facebook": "فيسبوك",
+      "instagram": "إنستغرام",
+      "twitter": "تويتر",
+      "tiktok": "تيك توك"
+    },
+    "policies": {
+      "title": "السياسات",
+      "privacyPolicy": "سياسة الخصوصية",
+      "termsOfService": "شروط الخدمة",
+      "refundPolicy": "سياسة الاسترداد",
+      "shippingPolicy": "سياسة الشحن"
+    },
     "help": {
-      "brand_faq_description": "اعثر على إجابات للأسئلة الأكثر شيوعًا.",
+      "brand_faq_description": "اعثر على إجابات للأسئلة التي نتلقاها في أغلب الأحيان.",
       "title": "المساعدة والدعم",
       "faq": "الأسئلة الشائعة",
-      "contactUs": "تواصل معنا",
+      "contactUs": "اتصل بنا",
       "aboutUs": "من نحن",
       "shipping": "معلومات الشحن",
-      "returns": "الإرجاع واسترداد الأموال",
-      "contact_note": "نحن هنا لمساعدتك. تواصل معنا لأي سؤال أو استفسار."
+      "returns": "الإرجاع والاسترداد",
+      "contact_note": "نحن هنا للمساعدة. تواصل معنا لأي أسئلة أو استفسارات."
     },
     "newsletter": {
-      "title": "ابقَ على اتصال",
-      "description": "كن أول من يكتشف المنتجات الجديدة والنصائح المفيدة والعروض الحصرية.",
+      "title": "ابقَ على تواصل",
+      "description": "كن أول من يكتشف الوصولات الجديدة والرؤى المفيدة والعروض الحصرية.",
       "placeholder": "أدخل بريدك الإلكتروني",
       "subscribeButton": "اشترك",
       "successMessage": "تم اشتراكك بنجاح.",
-      "errorMessage": "تعذّر الاشتراك. يُرجى المحاولة مرة أخرى.",
+      "errorMessage": "فشل الاشتراك. يرجى المحاولة مرة أخرى.",
       "copyright": "حقوق النشر",
       "all_rights_reserved": "جميع الحقوق محفوظة.",
-      "eyebrow": "مختارات المتجر"
+      "eyebrow": "التحرير"
     }
   },
   "policies": {
     "title": "السياسات",
-    "privacyPolicy": { "title": "الخصوصية" },
-    "termsOfService": { "title": "الشروط" },
-    "refundPolicy": { "title": "استرداد الأموال" },
-    "shippingPolicy": { "title": "الشحن" },
-    "aboutUs": { "title": "من نحن" }
+    "privacyPolicy": {
+      "title": "الخصوصية"
+    },
+    "termsOfService": {
+      "title": "الشروط"
+    },
+    "refundPolicy": {
+      "title": "الاسترداد"
+    },
+    "shippingPolicy": {
+      "title": "الشحن"
+    },
+    "aboutUs": {
+      "title": "من نحن"
+    }
   },
   "trust": {
-    "secureCheckout": "إتمام شراء آمن",
-    "freeShipping": { "title": "شحن مجاني", "text": "شحن مجاني لجميع الطلبات" },
-    "fastDelivery": { "title": "توصيل إلى جميع أنحاء العالم", "text": "توصيل دولي خلال 5–15 يومًا" },
-    "returns": { "title": "إرجاع خلال 100 يوم", "text": "إرجاع سهل خلال 100 يوم" },
-    "warranty": { "title": "ضمان لمدة 3 سنوات", "text": "مصمم لجودة تدوم" },
-    "shopWithConfidence": "تسوّق بثقة"
+    "secureCheckout": "دفع آمن",
+    "freeShipping": {
+      "title": "شحن مجاني",
+      "text": "شحن مجاني على جميع الطلبات"
+    },
+    "fastDelivery": {
+      "title": "توصيل عالمي",
+      "text": "توصيل دولي خلال 5–15 يومًا"
+    },
+    "returns": {
+      "title": "إرجاع خلال 100 يوم",
+      "text": "إرجاع سهل خلال 100 يوم"
+    },
+    "warranty": {
+      "title": "ضمان 3 سنوات",
+      "text": "مصنوع لجودة تدوم"
+    },
+    "shopWithConfidence": "تسوق بثقة"
   },
   "orderSuccess": {
     "orderPlacedSuccessfully": "🎉 تم تقديم الطلب بنجاح! 🎉",
-    "orderProcessingMessage": "شكرًا لتسوّقك معنا. طلبك قيد المعالجة.",
-    "backToHome": "العودة إلى الصفحة الرئيسية"
+    "orderProcessingMessage": "شكرًا لتسوقك معنا. طلبك قيد المعالجة.",
+    "backToHome": "العودة إلى الرئيسية"
   },
   "checkout": {
-    "loggedInContinue": "حسابك جاهز. تابع لإدخال تفاصيل الفوترة."
+    "loggedInContinue": "حسابك جاهز. تابع لإدخال تفاصيل الفاتورة."
   },
   "aboutus": {
-    "seo": { "title": "من نحن | متجرنا — منتجات مختارة بعناية", "description": "اكتشف متجرنا، مجموعة مختارة بعناية من المنتجات العملية التي تساعدك في حياتك اليومية." },
-    "hero": { "eyebrow": "اكتشف متجرنا", "title": "كل ما تحتاجه، في مكان واحد.", "description": "منتجات مختارة بعناية للحياة اليومية ولكل مناسبة." },
+    "seo": {
+      "title": "من نحن | منتجات مدروسة للحياة اليومية",
+      "description": "اكتشف متجرنا، مجموعة مدروسة من المنتجات العملية والأنيقة المصممة للاحتياجات اليومية."
+    },
+    "hero": {
+      "eyebrow": "اكتشف متجرنا",
+      "title": "كل ما تحتاجه، قريب منك.",
+      "description": "منتجات مختارة بعناية للحياة اليومية ولكل مناسبة."
+    },
     "story": {
       "eyebrow": "قصتنا",
       "title": "جودة تناسب الحياة اليومية.",
-      "lead": "نؤمن بأن المنتجات الجيدة يجب أن تجعل الحياة أكثر سهولة.",
-      "text": "يمكن للمنتج المناسب أن يوفر وقتك ويمنحك قيمة أكبر في كل استخدام.",
-      "text2": "تأسس متجرنا حول هذه الفكرة: جمع منتجات عملية مع تصاميم مدروسة تنسجم طبيعيًا مع الروتين اليومي."
+      "lead": "نؤمن أن المنتجات الجيدة يجب أن تجعل الحياة أبسط.",
+      "text": "المنتج المناسب يمكن أن يساعدك على توفير الوقت والشعور بمزيد من الثقة فيما تشتريه.",
+      "text2": "تم إنشاء متجرنا حول هذه الفكرة: الجمع بين المنتجات العملية والتصاميم المدروسة التي تندمج بشكل طبيعي في الروتين اليومي."
     },
-    "statement": { "title": "مزيد من الراحة في كل يوم.", "description": "من مستلزمات المنزل إلى الأزياء والإلكترونيات، تساعدك منتجاتنا المختارة على الاستمتاع بحياة أبسط." },
+    "statement": {
+      "title": "القليل من السهولة في كل يوم.",
+      "description": "من أساسيات المنزل إلى الأزياء والإلكترونيات، تساعدك الاختيارات المدروسة على الاستفادة أكثر من الحياة اليومية."
+    },
     "approach": {
-      "eyebrow": "نهج المتجر",
-      "title": "اختيارات مدروسة بعناية.",
-      "curated": { "title": "مدروس بعناية", "description": "منتجات مفيدة مختارة لتلبية الاحتياجات اليومية." },
-      "refined": { "title": "أنيق", "description": "تصاميم عملية وغير لافتة تناسب روتينك اليومي." },
-      "atmospheric": { "title": "يبعث على الاطمئنان", "description": "منتجات مدروسة تساعدك في حياتك اليومية." },
-      "distinctive": { "title": "هادف", "description": "منتجات يومية مختارة لوظائفها العملية وتصميمها المدروس." }
+      "eyebrow": "نهجنا",
+      "title": "مختار بنية.",
+      "curated": {
+        "title": "مدروس",
+        "description": "منتجات مفيدة مختارة للاحتياجات اليومية."
+      },
+      "refined": {
+        "title": "أنيق",
+        "description": "تصاميم هادئة وعملية مصممة لتناسب روتينك."
+      },
+      "atmospheric": {
+        "title": "مطمئن",
+        "description": "منتجات مدروسة لمساعدتك على الاستفادة أكثر من كل يوم."
+      },
+      "distinctive": {
+        "title": "هادف",
+        "description": "أساسيات يومية مختارة للوظيفة والتصميم المدروس."
+      }
     },
     "selection": {
-      "eyebrow": "ما يوجّه اختياراتنا",
-      "title": "اختيار يتجاوز المظهر.",
-      "form": { "title": "التصميم", "description": "أشكال عملية وتصاميم مدروسة تنسجم طبيعيًا مع الحياة اليومية." },
-      "material": { "title": "الوظيفة", "description": "ميزات مفيدة ومواد مختارة مع مراعاة الاستخدام اليومي والراحة." },
-      "light": { "title": "القيمة", "description": "منتجات مختارة تمنحك قيمة حقيقية وجودة تدوم." }
+      "eyebrow": "ما يوجه اختيارنا",
+      "title": "مختار لأكثر من المظهر.",
+      "form": {
+        "title": "التصميم",
+        "description": "أشكال عملية وأشكال مدروسة تندمج بشكل طبيعي في الحياة اليومية."
+      },
+      "material": {
+        "title": "الوظيفة",
+        "description": "ميزات ومواد مفيدة مختارة مع مراعاة التعامل اليومي والراحة."
+      },
+      "light": {
+        "title": "القيمة",
+        "description": "منتجات مختارة لتمنحك قيمة حقيقية وجودة تدوم."
+      }
     },
-    "promise": { "eyebrow": "وعد المتجر", "title": "مختار بعناية للحياة اليومية.", "description": "نختار المنتجات مع الاهتمام بالتصميم والوظائف العملية ومدى انسجامها الطبيعي مع الروتين اليومي." },
-    "final": { "eyebrow": "المجموعة", "title": "اكتشف طريقة أذكى للتسوق.", "description": "اكتشف منتجاتنا المختارة بعناية لكل احتياجاتك.", "cta": "اكتشف المجموعة" }
+    "promise": {
+      "eyebrow": "وعدنا",
+      "title": "مختار بعناية للحياة اليومية.",
+      "description": "نختار المنتجات مع الاهتمام بالتصميم والوظائف العملية ومدى اندماجها الطبيعي في الروتين اليومي."
+    },
+    "final": {
+      "eyebrow": "المجموعة",
+      "title": "اعثر على طريقة أذكى للتسوق.",
+      "description": "استكشف مجموعتنا من المنتجات المختارة بعناية لكل احتياج.",
+      "cta": "استكشف المجموعة"
+    }
   },
-
-  
   "checkoutPage": {
-    
-  "totalToPay": "الإجمالي المستحق",
-  "includingShipping": "شامل رسوم الشحن",
-
+    "totalToPay": "الإجمالي للدفع",
+    "includingShipping": "شامل الشحن",
     "paymentMethod": "طريقة الدفع",
-    "paymentDescription": "اختر الطريقة التي تفضلها لدفع طلبك.",
-    "creditCard": "بطاقة ائتمان / بطاقة خصم",
+    "paymentDescription": "اختر كيف تريد دفع ثمن طلبك.",
+    "creditCard": "بطاقة ائتمان / خصم",
     "creditCardDescription": "ادفع بأمان باستخدام بطاقتك البنكية.",
     "cashOnDelivery": "الدفع عند الاستلام",
     "cashOnDeliveryDescription": "ادفع نقدًا عند وصول طلبك.",
-    "cardDetails": "بيانات البطاقة",
+    "cardDetails": "تفاصيل البطاقة",
     "payNow": "ادفع الآن",
     "payWhenDelivered": "ادفع عند وصول طلبك",
-    "codInformation": "أكمل طلبك الآن وادفع لمندوب التوصيل عند استلام الطرد.",
+    "codInformation": "أكمل طلبك الآن وادفع لعامل التوصيل عند تسليم طردك.",
     "confirmOrder": "تأكيد الطلب",
-    "securePayment": "معلومات الدفع الخاصة بك محمية وتتم معالجتها بأمان.",
+    "securePayment": "معلومات الدفع الخاصة بك محمية ومعالجة بشكل آمن.",
     "paymentSuccess": "تم الدفع بنجاح!",
-    "paymentProcessing": "جارٍ معالجة عملية الدفع.",
-    "paymentFailed": "لم تنجح عملية الدفع. يرجى المحاولة مرة أخرى.",
-    "paymentError": "حدث خطأ أثناء عملية الدفع.",
-    "orderCreationError": "تعذر إنشاء طلبك. يرجى المحاولة مرة أخرى."
+    "paymentProcessing": "دفعتك قيد المعالجة.",
+    "paymentFailed": "لم تنجح دفعتك. يرجى المحاولة مرة أخرى.",
+    "paymentError": "حدث خطأ ما في دفعتك.",
+    "orderCreationError": "لم نتمكن من إنشاء طلبك. يرجى المحاولة مرة أخرى."
   },
-
   "common": {
     "phoneNumber": "رقم الهاتف",
     "selectShippingMethod": "اختر طريقة الشحن",
@@ -482,7 +640,7 @@
     "view_more": "عرض المزيد",
     "discover": "اكتشف",
     "bestMatch": "أفضل تطابق",
-    "resetFilters": "إعادة ضبط عوامل التصفية",
+    "resetFilters": "إعادة تعيين الفلاتر",
     "category": "الفئة",
     "priceLowToHigh": "السعر: من الأقل إلى الأعلى",
     "priceHighToLow": "السعر: من الأعلى إلى الأقل",
@@ -490,12 +648,12 @@
     "oldestFirst": "الأقدم",
     "buyNow": "اشترِ الآن",
     "addToCart": "أضف إلى السلة",
-    "shopping_cart": "سلة التسوّق",
-    "addToWishlist": "أضف إلى قائمة الأمنيات",
-    "removeFromWishlist": "إزالة من قائمة الأمنيات",
+    "shopping_cart": "سلة التسوق",
+    "addToWishlist": "أضف إلى المفضلة",
+    "removeFromWishlist": "إزالة من المفضلة",
     "viewDetails": "التفاصيل",
-    "checkout": "إتمام الشراء",
-    "placeOrder": "تأكيد الطلب",
+    "checkout": "الدفع",
+    "placeOrder": "تقديم الطلب",
     "orderSummary": "الملخص",
     "total": "الإجمالي",
     "subtotal": "المجموع الفرعي",
@@ -503,16 +661,16 @@
     "tax": "الضريبة",
     "grandTotal": "الإجمالي الكلي",
     "continueShopping": "متابعة التسوق",
-    "proceedToCheckout": "إتمام الشراء",
-    "noItemsInCart": "سلة التسوّق فارغة",
-    "noItemsInWishlist": "قائمة الأمنيات فارغة",
+    "proceedToCheckout": "الدفع",
+    "noItemsInCart": "سلتك فارغة",
+    "noItemsInWishlist": "قائمة المفضلة فارغة",
     "viewCart": "عرض السلة",
-    "viewWishlist": "عرض قائمة الأمنيات",
+    "viewWishlist": "عرض المفضلة",
     "myAccount": "حسابي",
     "logout": "تسجيل الخروج",
     "login": "تسجيل الدخول",
-    "you_are_logged_in": "تم تسجيل دخولك",
-    "register": "إنشاء حساب",
+    "you_are_logged_in": "أنت مسجل الدخول",
+    "register": "تسجيل",
     "signin": "تسجيل الدخول",
     "payment": "الدفع",
     "next": "التالي",
@@ -520,8 +678,8 @@
     "confirm": "تأكيد",
     "yes": "نعم",
     "no": "لا",
-    "checkout_as_guest": "إتمام الشراء كضيف دون الحاجة إلى تسجيل الدخول.",
-    "saving_address": "استخدم هذا العنوان لتفاصيل الدفع",
+    "checkout_as_guest": "الدفع كزائر بدون تسجيل دخول.",
+    "saving_address": "استخدام هذا العنوان لتفاصيل الدفع",
     "saveChanges": "حفظ التغييرات",
     "email": "البريد الإلكتروني",
     "password": "كلمة المرور",
@@ -530,12 +688,12 @@
     "lastName": "اسم العائلة",
     "address": "العنوان",
     "city": "المدينة",
-    "state": "المنطقة",
+    "state": "الولاية",
     "zipCode": "الرمز البريدي",
     "country": "الدولة",
     "phone": "الهاتف",
     "save": "حفظ",
-    "reset": "إعادة ضبط",
+    "reset": "إعادة تعيين",
     "changePassword": "تغيير كلمة المرور",
     "oldPassword": "كلمة المرور القديمة",
     "newPassword": "كلمة المرور الجديدة",
@@ -547,13 +705,13 @@
     "editAccount": "تعديل الحساب",
     "myOrders": "طلباتي",
     "orderHistory": "سجل الطلبات",
-    "trackOrder": "تتبّع الطلب",
+    "trackOrder": "تتبع الطلب",
     "orderStatus": "الحالة",
     "pending": "قيد الانتظار",
     "processing": "قيد المعالجة",
     "shipped": "تم الشحن",
-    "delivered": "تم التسليم",
-    "cancelled": "ملغى",
+    "delivered": "تم التوصيل",
+    "cancelled": "ملغي",
     "returnRequested": "تم طلب الإرجاع",
     "returned": "تم الإرجاع",
     "reviewProduct": "تقييم المنتج",
@@ -577,27 +735,27 @@
     "viewMore": "المزيد",
     "viewLess": "أقل",
     "noResultsFound": "لا توجد نتائج",
-    "tryDifferentKeywords": "جرّب البحث بكلمات أخرى",
-    "items": "المنتجات",
-    "item": "المنتج",
+    "tryDifferentKeywords": "جرب بحثًا آخر",
+    "items": "عناصر",
+    "item": "عنصر",
     "of": "من",
-    "results": "النتائج",
+    "results": "نتائج",
     "perPage": "لكل صفحة",
     "page": "صفحة",
     "loadingMore": "جارٍ التحميل...",
-    "noMoreItems": "لا توجد منتجات أخرى",
+    "noMoreItems": "لا مزيد من العناصر",
     "welcome": "مرحبًا",
-    "thankYou": "شكرًا لك",
-    "forVisiting": "على زيارتك",
+    "thankYou": "شكرًا",
+    "forVisiting": "على الزيارة",
     "seeYouSoon": "نراك قريبًا",
-    "contactSupport": "التواصل مع الدعم",
-    "needHelp": "هل تحتاج إلى مساعدة؟",
+    "contactSupport": "تواصل مع الدعم",
+    "needHelp": "تحتاج مساعدة؟",
     "faq": "الأسئلة الشائعة",
     "terms": "الشروط",
     "privacy": "الخصوصية",
     "cookies": "ملفات تعريف الارتباط",
     "rightsReserved": "جميع الحقوق محفوظة",
-    "developedBy": "طوّره",
+    "developedBy": "تم البناء بواسطة",
     "version": "الإصدار",
     "language": "اللغة",
     "currency": "العملة",
@@ -606,55 +764,55 @@
     "darkMode": "الوضع الداكن",
     "lightMode": "الوضع الفاتح",
     "autoMode": "الوضع التلقائي",
-    "theme": "السمة",
+    "theme": "المظهر",
     "notifications": "الإشعارات",
     "markAllAsRead": "تحديد الكل كمقروء",
     "viewAll": "عرض الكل",
-    "noNewNotifications": "ليس لديك أي إشعارات!",
+    "noNewNotifications": "ليس لديك إشعارات!",
     "NewNotifications": "لديك إشعار جديد",
     "new": "جديد",
     "read": "مقروء",
     "unread": "غير مقروء",
     "profile": "الملف الشخصي",
     "editProfile": "تعديل الملف الشخصي",
-    "changeAvatar": "تغيير الصورة الشخصية",
-    "myWishlist": "قائمة أمنياتي",
+    "changeAvatar": "تغيير الصورة الرمزية",
+    "myWishlist": "مفضلتي",
     "myCart": "سلتي",
-    "checkoutNow": "أكمل الشراء الآن",
-    "applyCoupon": "تطبيق القسيمة",
-    "enterCouponCode": "أدخل رمز القسيمة",
-    "removeCoupon": "إزالة القسيمة",
-    "couponApplied": "تم تطبيق القسيمة",
-    "invalidCoupon": "قسيمة غير صالحة",
+    "checkoutNow": "الدفع الآن",
+    "applyCoupon": "تطبيق الكوبون",
+    "enterCouponCode": "أدخل الكوبون",
+    "removeCoupon": "إزالة الكوبون",
+    "couponApplied": "تم تطبيق الكوبون",
+    "invalidCoupon": "كوبون غير صالح",
     "shippingAddress": "عنوان الشحن",
     "billingAddress": "العنوان",
-    "sameAsShipping": "مثل عنوان الشحن",
+    "sameAsShipping": "نفس عنوان الشحن",
     "paymentMethod": "الدفع",
-    "selectPaymentMethod": "اختر طريقة الدفع",
-    "placeYourOrder": "تأكيد الطلب",
-    "orderPlaced": "تم تقديم الطلب",
+    "selectPaymentMethod": "اختر الدفع",
+    "placeYourOrder": "تقديم الطلب",
+    "orderPlaced": "تم الطلب",
     "thankYouForYourOrder": "شكرًا لطلبك!",
-    "orderNumber": "رقم الطلب",
-    "trackYourOrder": "تتبّع الطلب",
-    "Hello": "Hi",
+    "orderNumber": "رقم الطلب #",
+    "trackYourOrder": "تتبع الطلب",
+    "Hello": "مرحبًا",
     "create_an_account": "إنشاء حساب",
-    "already_have_an_account": "هل لديك حساب؟",
-    "forgot_password": "هل نسيت كلمة المرور؟",
+    "already_have_an_account": "لديك حساب؟",
+    "forgot_password": "نسيت كلمة المرور؟",
     "gender": "الجنس",
     "male": "ذكر",
     "female": "أنثى",
-    "By_clicking_Sign_up_I_agree_to_the": "بإنشائك حسابًا، فإنك توافق على",
-    "password_reset_text": "أدخل عنوان البريد الإلكتروني الموثّق لحسابك، وسنرسل إليك رابطًا لإعادة تعيين كلمة المرور.",
+    "By_clicking_Sign_up_I_agree_to_the": "بالتسجيل، أنت توافق على",
+    "password_reset_text": "أدخل عنوان البريد الإلكتروني الموثق لحسابك وسنرسل لك رابط إعادة تعيين كلمة المرور.",
     "send_password_reset_link": "إرسال",
     "reset_your_password": "إعادة تعيين كلمة المرور",
     "reset_password": "إعادة تعيين كلمة المرور",
-    "reset_password_text": "حدّث كلمة المرور هنا.",
+    "reset_password_text": "قم بتحديث كلمة المرور هنا.",
     "new_password": "كلمة المرور الجديدة",
     "old_password": "كلمة المرور القديمة",
     "confirm_password": "تأكيد كلمة المرور",
-    "error_old_password_incorrect": "كلمة المرور القديمة غير صحيحة",
+    "error_old_password_incorrect": "كلمة المرور القديمة خاطئة",
     "select_country": "اختر الدولة",
-    "please_confirm_your_password": "أكّد كلمة المرور",
+    "please_confirm_your_password": "أكد كلمة المرور",
     "please_enter_your_new_password": "أدخل كلمة المرور الجديدة",
     "please_enter_your_email": "أدخل بريدك الإلكتروني",
     "please_enter_your_password": "أدخل كلمة المرور",
@@ -662,14 +820,14 @@
     "please_enter_your_last_name": "أدخل اسم العائلة",
     "please_enter_your_address": "أدخل العنوان",
     "please_enter_your_city": "أدخل المدينة",
-    "please_enter_your_state": "أدخل المنطقة",
+    "please_enter_your_state": "أدخل الولاية",
     "please_enter_your_country": "اختر الدولة",
     "please_enter_your_zip_code": "أدخل الرمز البريدي",
     "please_enter_your_phone": "أدخل رقم الهاتف",
     "please_enter_your_birthdate": "أدخل تاريخ الميلاد",
     "pleaseSelectShippingMethod": "يرجى اختيار طريقة الشحن.",
-    "please_enter_coupon_code": "يرجى إدخال رمز القسيمة",
-    "invalid_discount_code": "رمز الخصم غير صالح",
+    "please_enter_coupon_code": "يرجى إدخال رمز الكوبون",
+    "invalid_discount_code": "رمز خصم غير صالح",
     "discount_code_applied": "تم تطبيق رمز الخصم",
     "discount": "الخصم",
     "error_invalid_birthdate": "لا يمكن أن يكون تاريخ الميلاد في المستقبل",
@@ -689,7 +847,7 @@
     "from": "من"
   },
   "success": {
-    "subscribed_to_newsletter": "شكرًا لاشتراكك في نشرتنا البريدية!",
+    "subscribed_to_newsletter": "شكرًا لاشتراكك في نشرتنا الإخبارية!",
     "message_sent_successfully": "تم إرسال رسالتك بنجاح!",
     "profile_updated_successfully": "تم تحديث ملفك الشخصي بنجاح!",
     "password_changed_successfully": "تم تغيير كلمة المرور بنجاح!",
@@ -697,10 +855,10 @@
     "review_submitted_successfully": "شكرًا لتقييمك!",
     "item_added_to_cart": "تمت إضافة المنتج إلى السلة!",
     "item_removed_from_cart": "تمت إزالة المنتج من السلة!",
-    "item_added_to_wishlist": "تمت إضافة المنتج إلى قائمة الأمنيات!",
-    "item_removed_from_wishlist": "تمت إزالة المنتج من قائمة الأمنيات!",
-    "coupon_applied_successfully": "تم تطبيق القسيمة بنجاح!",
-    "coupon_removed_successfully": "تمت إزالة القسيمة بنجاح!",
+    "item_added_to_wishlist": "تمت إضافة المنتج إلى المفضلة!",
+    "item_removed_from_wishlist": "تمت إزالة المنتج من المفضلة!",
+    "coupon_applied_successfully": "تم تطبيق الكوبون بنجاح!",
+    "coupon_removed_successfully": "تمت إزالة الكوبون بنجاح!",
     "saved": "تم الحفظ",
     "deleted": "تم الحذف",
     "updated": "تم التحديث",
@@ -713,40 +871,40 @@
     "success_logged_in": "تم تسجيل الدخول",
     "success_account_created": "تم إنشاء الحساب",
     "success_password_reset_link_sent": "تم إرسال رابط إعادة التعيين",
-    "success_password_reset": "إعادة تعيين كلمة المرور",
+    "success_password_reset": "تمت إعادة تعيين كلمة المرور",
     "success_profile_updated": "تم تحديث الملف الشخصي",
     "success_password_changed": "تم تغيير كلمة المرور"
   },
   "errors": {
-    "network_error": "خطأ في الشبكة. تحقق من اتصالك بالإنترنت.",
-    "unknown_error": "خطأ غير معروف. يُرجى المحاولة مرة أخرى.",
-    "form_error": "خطأ في النموذج. تحقق من الحقول.",
-    "unauthorized": "غير مصرح. يُرجى تسجيل الدخول.",
-    "forbidden": "ممنوع. ليست لديك صلاحية لتنفيذ هذا الإجراء.",
-    "not_found": "لم يتم العثور على المورد المطلوب.",
-    "server_error": "خطأ في الخادم. يُرجى المحاولة لاحقًا.",
-    "timeout": "انتهت مهلة الطلب. يُرجى المحاولة مرة أخرى.",
-    "conflict": "تعارض: المورد موجود بالفعل.",
-    "bad_request": "طلب غير صالح. تحقق من البيانات المُرسلة.",
-    "validation_error": "خطأ في التحقق. يرجى تصحيح أخطاء النموذج.",
-    "item_out_of_stock": "المنتج غير متوفر في المخزون، ولا يمكن إضافته إلى السلة.",
-    "error_password_dont_match": "كلمتا المرور غير متطابقتين",
-    "error_email_already_exists": "البريد الإلكتروني مستخدم بالفعل",
-    "error_email_not_exists": "لم يتم العثور على البريد الإلكتروني",
-    "error_invalid_credentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
-    "error_account_disabled": "الحساب معطّل",
-    "error_too_many_requests": "محاولات كثيرة. حاول لاحقًا",
+    "network_error": "خطأ في الشبكة. يرجى التحقق من اتصالك.",
+    "unknown_error": "خطأ غير معروف. يرجى المحاولة مرة أخرى.",
+    "form_error": "خطأ في النموذج. يرجى التحقق من الحقول.",
+    "unauthorized": "غير مصرح. يرجى تسجيل الدخول.",
+    "forbidden": "محظور. ليس لديك إذن لهذا الإجراء.",
+    "not_found": "غير موجود. المورد المطلوب غير موجود.",
+    "server_error": "خطأ في الخادم. يرجى المحاولة لاحقًا.",
+    "timeout": "انتهت مهلة الطلب. يرجى المحاولة مرة أخرى.",
+    "conflict": "تعارض. المورد موجود بالفعل.",
+    "bad_request": "طلب غير صالح. يرجى التحقق من البيانات المرسلة.",
+    "validation_error": "خطأ في التحقق. يرجى تصحيح الأخطاء في النموذج.",
+    "item_out_of_stock": "المنتج غير متوفر. لا يمكن إضافته إلى السلة.",
+    "error_password_dont_match": "كلمات المرور غير متطابقة",
+    "error_email_already_exists": "البريد الإلكتروني موجود بالفعل",
+    "error_email_not_exists": "البريد الإلكتروني غير موجود",
+    "error_invalid_credentials": "بريد إلكتروني أو كلمة مرور غير صحيحة",
+    "error_account_disabled": "الحساب معطل",
+    "error_too_many_requests": "محاولات كثيرة جدًا. حاول لاحقًا",
     "error_weak_password": "كلمة المرور ضعيفة جدًا",
-    "error_invalid_email": "البريد الإلكتروني غير صالح",
-    "error_user_not_found": "لم يتم العثور على المستخدم",
+    "error_invalid_email": "بريد إلكتروني غير صالح",
+    "error_user_not_found": "المستخدم غير موجود",
     "error_network_request_failed": "خطأ في الشبكة",
     "error_something_went_wrong": "حدث خطأ ما",
     "error_invalid_verification_code": "رمز غير صالح",
     "error_verification_code_expired": "انتهت صلاحية الرمز",
-    "error_no_internet_connection": "لا يوجد اتصال بالإنترنت",
-    "error_old_password_incorrect": "كلمة المرور القديمة غير صحيحة",
+    "error_no_internet_connection": "لا يوجد إنترنت",
+    "error_old_password_incorrect": "كلمة المرور القديمة خاطئة",
     "error_gender_must_be_defined": "يجب تحديد الجنس",
-    "please_confirm_your_password": "أكّد كلمة المرور",
+    "please_confirm_your_password": "أكد كلمة المرور",
     "please_enter_your_new_password": "أدخل كلمة المرور الجديدة",
     "please_enter_your_email": "أدخل بريدك الإلكتروني",
     "please_enter_your_password": "أدخل كلمة المرور",
@@ -754,10 +912,10 @@
     "please_enter_your_last_name": "أدخل اسم العائلة",
     "please_enter_your_address": "أدخل العنوان",
     "please_enter_your_city": "أدخل المدينة",
-    "please_enter_your_state": "أدخل المنطقة",
+    "please_enter_your_state": "أدخل الولاية",
     "please_enter_your_country": "اختر الدولة",
     "please_enter_your_zip_code": "أدخل الرمز البريدي",
-    "please_enter_your_phone": "أدخل رقم الهاتف",
+    "please_enter_your_phone": "أدخل الهاتف",
     "please_enter_your_birthdate": "أدخل تاريخ الميلاد",
     "error_invalid_birthdate": "لا يمكن أن يكون تاريخ الميلاد في المستقبل",
     "error_max_name_characters": "الاسم طويل جدًا",
@@ -768,295 +926,481 @@
     "page_not_found_description": "الصفحة التي تبحث عنها غير موجودة."
   },
   "languages": {
-    "en": "الإنجليزية", "es": "الإسبانية", "fr": "الفرنسية", "de": "الألمانية",
-    "it": "الإيطالية", "pt": "البرتغالية", "zh": "الصينية", "ja": "اليابانية",
-    "ko": "الكورية", "ru": "الروسية", "ar": "العربية", "hi": "الهندية"
+    "en": "الإنجليزية",
+    "es": "الإسبانية",
+    "fr": "الفرنسية",
+    "de": "الألمانية",
+    "it": "الإيطالية",
+    "pt": "البرتغالية",
+    "zh": "الصينية",
+    "ja": "اليابانية",
+    "ko": "الكورية",
+    "ru": "الروسية",
+    "ar": "العربية",
+    "hi": "الهندية"
   },
   "countries": {
-    "AF": "أفغانستان", "AX": "جزر آلاند", "AL": "ألبانيا", "DZ": "الجزائر",
-    "AS": "ساموا الأمريكية", "AD": "أندورا", "AO": "أنغولا", "AI": "أنغويلا",
-    "AQ": "القارة القطبية الجنوبية", "AG": "أنتيغوا وبربودا", "AR": "الأرجنتين",
-    "AM": "أرمينيا", "AW": "أروبا", "AU": "أستراليا", "AT": "النمسا",
-    "AZ": "أذربيجان", "BS": "جزر البهاما", "BH": "البحرين", "BD": "بنغلاديش",
-    "BB": "باربادوس", "BY": "بيلاروس", "BE": "بلجيكا", "BZ": "بليز",
-    "BJ": "بنين", "BM": "برمودا", "BT": "بوتان", "BO": "بوليفيا",
-    "BQ": "هولندا الكاريبية", "BA": "البوسنة والهرسك", "BW": "بوتسوانا",
-    "BV": "جزيرة بوفيه", "BR": "البرازيل", "IO": "إقليم المحيط الهندي البريطاني",
-    "BN": "بروناي", "BG": "بلغاريا", "BF": "بوركينا فاسو", "BI": "بوروندي",
-    "CV": "الرأس الأخضر", "KH": "كمبوديا", "CM": "الكاميرون", "CA": "كندا",
-    "KY": "جزر كايمان", "CF": "جمهورية أفريقيا الوسطى", "TD": "تشاد",
-    "CL": "تشيلي", "CN": "الصين", "CX": "جزيرة كريسماس", "CC": "جزر كوكوس",
-    "CO": "كولومبيا", "KM": "جزر القمر", "CG": "الكونغو - برازافيل",
-    "CD": "الكونغو - كينشاسا", "CK": "جزر كوك", "CR": "كوستاريكا",
-    "HR": "كرواتيا", "CU": "كوبا", "CW": "كوراساو", "CY": "قبرص",
-    "CZ": "التشيك", "CI": "ساحل العاج", "DK": "الدنمارك", "DJ": "جيبوتي",
-    "DM": "دومينيكا", "DO": "جمهورية الدومينيكان", "EC": "الإكوادور",
-    "EG": "مصر", "SV": "السلفادور", "GQ": "غينيا الاستوائية", "ER": "إريتريا",
-    "EE": "إستونيا", "SZ": "إسواتيني", "ET": "إثيوبيا", "FK": "جزر فوكلاند",
-    "FO": "جزر فارو", "FJ": "فيجي", "FI": "فنلندا", "FR": "فرنسا",
-    "GF": "غويانا الفرنسية", "PF": "بولينيزيا الفرنسية",
-    "TF": "الأقاليم الجنوبية الفرنسية", "GA": "الغابون", "GM": "غامبيا",
-    "GE": "جورجيا", "DE": "ألمانيا", "GH": "غانا", "GI": "جبل طارق",
-    "GR": "اليونان", "GL": "غرينلاند", "GD": "غرينادا", "GP": "غوادلوب",
-    "GU": "غوام", "GT": "غواتيمالا", "GG": "غيرنزي", "GN": "غينيا",
-    "GW": "غينيا بيساو", "GY": "غيانا", "HT": "هايتي",
-    "HM": "جزيرتا هيرد وماكدونالد", "VA": "مدينة الفاتيكان", "HN": "هندوراس",
-    "HK": "هونغ كونغ", "HU": "المجر", "IS": "آيسلندا", "IN": "الهند",
-    "ID": "إندونيسيا", "IR": "إيران", "IQ": "العراق", "IE": "أيرلندا",
-    "IM": "جزيرة مان", "IL": "إسرائيل", "IT": "إيطاليا", "JM": "جامايكا",
-    "JP": "اليابان", "JE": "جيرزي", "JO": "الأردن", "KZ": "كازاخستان",
-    "KE": "كينيا", "KI": "كيريباتي", "KP": "كوريا الشمالية",
-    "KR": "كوريا الجنوبية", "KW": "الكويت", "KG": "قيرغيزستان",
-    "LA": "لاوس", "LV": "لاتفيا", "LB": "لبنان", "LS": "ليسوتو",
-    "LR": "ليبيريا", "LY": "ليبيا", "LI": "ليختنشتاين", "LT": "ليتوانيا",
-    "LU": "لوكسمبورغ", "MO": "ماكاو", "MG": "مدغشقر", "MW": "ملاوي",
-    "MY": "ماليزيا", "MV": "جزر المالديف", "ML": "مالي", "MT": "مالطا",
-    "MH": "جزر مارشال", "MQ": "مارتينيك", "MR": "موريتانيا",
-    "MU": "موريشيوس", "YT": "مايوت", "MX": "المكسيك", "FM": "ميكرونيزيا",
-    "MD": "مولدوفا", "MC": "موناكو", "MN": "منغوليا", "ME": "الجبل الأسود",
-    "MS": "مونتسرات", "MA": "المغرب", "MZ": "موزمبيق", "MM": "ميانمار",
-    "NA": "ناميبيا", "NR": "ناورو", "NP": "نيبال", "NL": "هولندا",
-    "NC": "كاليدونيا الجديدة", "NZ": "نيوزيلندا", "NI": "نيكاراغوا",
-    "NE": "النيجر", "NG": "نيجيريا", "NU": "نيوي", "NF": "جزيرة نورفولك",
-    "MK": "مقدونيا الشمالية", "MP": "جزر ماريانا الشمالية", "NO": "النرويج",
-    "OM": "عُمان", "PK": "باكستان", "PW": "بالاو", "PS": "الأراضي الفلسطينية",
-    "PA": "بنما", "PG": "بابوا غينيا الجديدة", "PY": "باراغواي", "PE": "بيرو",
-    "PH": "الفلبين", "PN": "جزر بيتكيرن", "PL": "بولندا", "PT": "البرتغال",
-    "PR": "بورتوريكو", "QA": "قطر", "RO": "رومانيا", "RU": "روسيا",
-    "RW": "رواندا", "RE": "ريونيون", "BL": "سان بارتليمي",
-    "SH": "سانت هيلينا", "KN": "سانت كيتس ونيفيس", "LC": "سانت لوسيا",
-    "MF": "سان مارتن", "PM": "سان بيير وميكلون",
-    "VC": "سانت فنسنت والغرينادين", "WS": "ساموا", "SM": "سان مارينو",
-    "ST": "ساو تومي وبرينسيب", "SA": "المملكة العربية السعودية",
-    "SN": "السنغال", "RS": "صربيا", "SC": "سيشل", "SL": "سيراليون",
-    "SG": "سنغافورة", "SX": "سينت مارتن", "SK": "سلوفاكيا", "SI": "سلوفينيا",
-    "SB": "جزر سليمان", "SO": "الصومال", "ZA": "جنوب أفريقيا",
-    "GS": "جورجيا الجنوبية وجزر ساندويتش الجنوبية", "SS": "جنوب السودان",
-    "ES": "إسبانيا", "LK": "سريلانكا", "SD": "السودان", "SR": "سورينام",
-    "SJ": "سفالبارد ويان ماين", "SE": "السويد", "CH": "سويسرا",
-    "SY": "سوريا", "TW": "تايوان", "TJ": "طاجيكستان", "TZ": "تنزانيا",
-    "TH": "تايلاند", "TL": "تيمور الشرقية", "TG": "توغو", "TK": "توكيلاو",
-    "TO": "تونغا", "TT": "ترينيداد وتوباغو", "TN": "تونس", "TR": "تركيا",
-    "TM": "تركمانستان", "TC": "جزر توركس وكايكوس", "TV": "توفالو",
-    "UG": "أوغندا", "UA": "أوكرانيا", "AE": "الإمارات العربية المتحدة",
-    "GB": "المملكة المتحدة", "UM": "جزر الولايات المتحدة النائية",
-    "US": "الولايات المتحدة", "UY": "أوروغواي", "UZ": "أوزبكستان",
-    "VU": "فانواتو", "VE": "فنزويلا", "VN": "فيتنام",
-    "VG": "جزر العذراء البريطانية", "VI": "جزر العذراء الأمريكية",
-    "WF": "واليس وفوتونا", "EH": "الصحراء الغربية", "YE": "اليمن",
-    "ZM": "زامبيا", "ZW": "زيمبابوي"
+    "AF": "أفغانستان",
+    "AX": "جزر أولاند",
+    "AL": "ألبانيا",
+    "DZ": "الجزائر",
+    "AS": "ساموا الأمريكية",
+    "AD": "أندورا",
+    "AO": "أنغولا",
+    "AI": "أنغويلا",
+    "AQ": "القارة القطبية الجنوبية",
+    "AG": "أنتيغوا وبربودا",
+    "AR": "الأرجنتين",
+    "AM": "أرمينيا",
+    "AW": "أروبا",
+    "AU": "أستراليا",
+    "AT": "النمسا",
+    "AZ": "أذربيجان",
+    "BS": "الباهاما",
+    "BH": "البحرين",
+    "BD": "بنغلاديش",
+    "BB": "بربادوس",
+    "BY": "بيلاروسيا",
+    "BE": "بلجيكا",
+    "BZ": "بليز",
+    "BJ": "بنين",
+    "BM": "برمودا",
+    "BT": "بوتان",
+    "BO": "بوليفيا",
+    "BQ": "الجزر الكاريبية الهولندية",
+    "BA": "البوسنة والهرسك",
+    "BW": "بوتسوانا",
+    "BV": "جزيرة بوفيه",
+    "BR": "البرازيل",
+    "IO": "إقليم المحيط الهندي البريطاني",
+    "BN": "بروناي",
+    "BG": "بلغاريا",
+    "BF": "بوركينا فاسو",
+    "BI": "بوروندي",
+    "CV": "الرأس الأخضر",
+    "KH": "كمبوديا",
+    "CM": "الكاميرون",
+    "CA": "كندا",
+    "KY": "جزر كايمان",
+    "CF": "جمهورية أفريقيا الوسطى",
+    "TD": "تشاد",
+    "CL": "تشيلي",
+    "CN": "الصين",
+    "CX": "جزيرة كريسماس",
+    "CC": "جزر كوكوس (كيلينغ)",
+    "CO": "كولومبيا",
+    "KM": "جزر القمر",
+    "CG": "الكونغو - برازافيل",
+    "CD": "الكونغو - كينشاسا",
+    "CK": "جزر كوك",
+    "CR": "كوستاريكا",
+    "HR": "كرواتيا",
+    "CU": "كوبا",
+    "CW": "كوراساو",
+    "CY": "قبرص",
+    "CZ": "التشيك",
+    "CI": "ساحل العاج",
+    "DK": "الدنمارك",
+    "DJ": "جيبوتي",
+    "DM": "دومينيكا",
+    "DO": "جمهورية الدومينيكان",
+    "EC": "الإكوادور",
+    "EG": "مصر",
+    "SV": "السلفادور",
+    "GQ": "غينيا الاستوائية",
+    "ER": "إريتريا",
+    "EE": "إستونيا",
+    "SZ": "إسواتيني",
+    "ET": "إثيوبيا",
+    "FK": "جزر فوكلاند",
+    "FO": "جزر فارو",
+    "FJ": "فيجي",
+    "FI": "فنلندا",
+    "FR": "فرنسا",
+    "GF": "غويانا الفرنسية",
+    "PF": "بولينيزيا الفرنسية",
+    "TF": "الأقاليم الجنوبية الفرنسية",
+    "GA": "الغابون",
+    "GM": "غامبيا",
+    "GE": "جورجيا",
+    "DE": "ألمانيا",
+    "GH": "غانا",
+    "GI": "جبل طارق",
+    "GR": "اليونان",
+    "GL": "غرينلاند",
+    "GD": "غرينادا",
+    "GP": "غوادلوب",
+    "GU": "غوام",
+    "GT": "غواتيمالا",
+    "GG": "غيرنزي",
+    "GN": "غينيا",
+    "GW": "غينيا بيساو",
+    "GY": "غيانا",
+    "HT": "هايتي",
+    "HM": "جزيرة هيرد وجزر ماكدونالد",
+    "VA": "الفاتيكان",
+    "HN": "هندوراس",
+    "HK": "هونغ كونغ",
+    "HU": "المجر",
+    "IS": "آيسلندا",
+    "IN": "الهند",
+    "ID": "إندونيسيا",
+    "IR": "إيران",
+    "IQ": "العراق",
+    "IE": "أيرلندا",
+    "IM": "جزيرة مان",
+    "IL": "إسرائيل",
+    "IT": "إيطاليا",
+    "JM": "جامايكا",
+    "JP": "اليابان",
+    "JE": "جيرزي",
+    "JO": "الأردن",
+    "KZ": "كازاخستان",
+    "KE": "كينيا",
+    "KI": "كيريباتي",
+    "KP": "كوريا الشمالية",
+    "KR": "كوريا الجنوبية",
+    "KW": "الكويت",
+    "KG": "قيرغيزستان",
+    "LA": "لاوس",
+    "LV": "لاتفيا",
+    "LB": "لبنان",
+    "LS": "ليسوتو",
+    "LR": "ليبيريا",
+    "LY": "ليبيا",
+    "LI": "ليختنشتاين",
+    "LT": "ليتوانيا",
+    "LU": "لوكسمبورغ",
+    "MO": "ماكاو",
+    "MG": "مدغشقر",
+    "MW": "مالاوي",
+    "MY": "ماليزيا",
+    "MV": "المالديف",
+    "ML": "مالي",
+    "MT": "مالطا",
+    "MH": "جزر مارشال",
+    "MQ": "مارتينيك",
+    "MR": "موريتانيا",
+    "MU": "موريشيوس",
+    "YT": "مايوت",
+    "MX": "المكسيك",
+    "FM": "ميكرونيزيا",
+    "MD": "مولدوفا",
+    "MC": "موناكو",
+    "MN": "منغوليا",
+    "ME": "الجبل الأسود",
+    "MS": "مونتسرات",
+    "MA": "المغرب",
+    "MZ": "موزمبيق",
+    "MM": "ميانمار (بورما)",
+    "NA": "ناميبيا",
+    "NR": "ناورو",
+    "NP": "نيبال",
+    "NL": "هولندا",
+    "NC": "كاليدونيا الجديدة",
+    "NZ": "نيوزيلندا",
+    "NI": "نيكاراغوا",
+    "NE": "النيجر",
+    "NG": "نيجيريا",
+    "NU": "نييوي",
+    "NF": "جزيرة نورفولك",
+    "MK": "مقدونيا الشمالية",
+    "MP": "جزر ماريانا الشمالية",
+    "NO": "النرويج",
+    "OM": "عُمان",
+    "PK": "باكستان",
+    "PW": "بالاو",
+    "PS": "الأراضي الفلسطينية",
+    "PA": "بنما",
+    "PG": "بابوا غينيا الجديدة",
+    "PY": "باراغواي",
+    "PE": "بيرو",
+    "PH": "الفلبين",
+    "PN": "جزر بيتكيرن",
+    "PL": "بولندا",
+    "PT": "البرتغال",
+    "PR": "بورتوريكو",
+    "QA": "قطر",
+    "RO": "رومانيا",
+    "RU": "روسيا",
+    "RW": "رواندا",
+    "RE": "ريونيون",
+    "BL": "سان بارتيلمي",
+    "SH": "سانت هيلينا",
+    "KN": "سانت كيتس ونيفيس",
+    "LC": "سانت لوسيا",
+    "MF": "سانت مارتن",
+    "PM": "سان بيير وميكلون",
+    "VC": "سانت فينسنت والغرينادين",
+    "WS": "ساموا",
+    "SM": "سان مارينو",
+    "ST": "ساو تومي وبرينسيبي",
+    "SA": "المملكة العربية السعودية",
+    "SN": "السنغال",
+    "RS": "صربيا",
+    "SC": "سيشل",
+    "SL": "سيراليون",
+    "SG": "سنغافورة",
+    "SX": "سينت مارتن",
+    "SK": "سلوفاكيا",
+    "SI": "سلوفينيا",
+    "SB": "جزر سليمان",
+    "SO": "الصومال",
+    "ZA": "جنوب أفريقيا",
+    "GS": "جورجيا الجنوبية وجزر ساندويتش الجنوبية",
+    "SS": "جنوب السودان",
+    "ES": "إسبانيا",
+    "LK": "سريلانكا",
+    "SD": "السودان",
+    "SR": "سورينام",
+    "SJ": "سفالبارد وجان ماين",
+    "SE": "السويد",
+    "CH": "سويسرا",
+    "SY": "سوريا",
+    "TW": "تايوان",
+    "TJ": "طاجيكستان",
+    "TZ": "تنزانيا",
+    "TH": "تايلاند",
+    "TL": "تيمور الشرقية",
+    "TG": "توغو",
+    "TK": "توكيلاو",
+    "TO": "تونغا",
+    "TT": "ترينيداد وتوباغو",
+    "TN": "تونس",
+    "TR": "تركيا",
+    "TM": "تركمانستان",
+    "TC": "جزر توركس وكايكوس",
+    "TV": "توفالو",
+    "UG": "أوغندا",
+    "UA": "أوكرانيا",
+    "AE": "الإمارات العربية المتحدة",
+    "GB": "المملكة المتحدة",
+    "UM": "جزر الولايات المتحدة النائية",
+    "US": "الولايات المتحدة",
+    "UY": "أوروغواي",
+    "UZ": "أوزبكستان",
+    "VU": "فانواتو",
+    "VE": "فنزويلا",
+    "VN": "فيتنام",
+    "VG": "جزر العذراء البريطانية",
+    "VI": "جزر العذراء الأمريكية",
+    "WF": "واليس وفوتونا",
+    "EH": "الصحراء الغربية",
+    "YE": "اليمن",
+    "ZM": "زامبيا",
+    "ZW": "زيمبابوي"
   },
   "aboutPage": {
     "title": "من نحن",
-    "metaDescription": "اكتشف متجرنا، مجموعة مختارة بعناية من المنتجات العملية التي تناسب حياتك اليومية.",
-    "intro": "في متجرنا، نؤمن بأن المنتجات الجيدة يجب أن تجعل الحياة اليومية أكثر سهولة وراحة.",
-    "passion": "يجمع شغفنا بين الجودة والتصميم المدروس والوظائف العملية اليومية. نختار المنتجات بعناية لمساعدتك على الاستمتاع بحياة أبسط.",
+    "metaDescription": "اكتشف منتجات متجرنا المختارة بعناية، بما في ذلك الإلكترونيات والأزياء وأساسيات المنزل والإكسسوارات العملية. نجمع بين التصميم المدروس والوظائف اليومية.",
+    "intro": "في متجرنا، نؤمن أن المنتجات الجيدة يجب أن تجعل الحياة اليومية أبسط وأكثر متعة.",
+    "passion": "شغفنا هو الجمع بين الجودة والتصميم المدروس والوظائف اليومية. نختار المنتجات بعناية لمساعدتك على الاستفادة أكثر من يومك، بتصاميم تندمج بشكل طبيعي في نمط حياتك. كل قطعة في مجموعتنا مختارة لجعل الحياة اليومية أسهل وأكثر سهولة.",
     "visionTitle": "رؤيتنا",
-    "visionText": "نسعى إلى جعل التسوق تجربة سهلة وعملية. ومن خلال منتجات مختارة بعناية، نساعد الناس على إيجاد ما يحتاجونه بثقة أكبر.",
+    "visionText": "نهدف إلى جعل التسوق بسيطًا وعمليًا. من خلال منتجات مختارة بعناية، نساعد الناس على العثور على ما يحتاجونه بثقة أكبر. من أساسيات المنزل إلى الأزياء والإلكترونيات، هدفنا هو جعل الحياة اليومية أسهل.",
     "qualityTitle": "جودة يمكنك الوثوق بها",
-    "qualityText": "نركز على المنتجات التي تجمع بين التصميم العملي والوظائف الموثوقة والاهتمام بالتفاصيل. ونؤمن بأن المنتجات الجيدة يجب أن تكون سهلة الاستخدام وموثوقة ومصممة لتلبية احتياجاتك.",
-    "whyTitle": "لماذا نحن؟",
+    "qualityText": "نركز على المنتجات التي تجمع بين التصميم العملي والوظائف الموثوقة والاهتمام بالتفاصيل. نؤمن أن المنتجات الجيدة يجب أن تكون بديهية وموثوقة ومصممة حول احتياجات الحياة اليومية.",
+    "whyTitle": "لماذا تتسوق معنا؟",
     "why": {
       "items": [
         "منتجات مختارة بعناية",
         "تصاميم أنيقة وعملية",
-        "تجربة تسوّق آمنة",
+        "تجربة تسوق آمنة",
         "خيارات توصيل موثوقة",
-        "دعم مخصص للعملاء"
+        "دعم عملاء مخصص"
       ]
     },
     "modernTitle": "مصمم للحياة العصرية",
-    "modernText": "تجمع مجموعتنا بين التصميم البسيط والمدروس لتناسب أساليب الحياة العصرية. سواء كنت تبحث عن إلكترونيات أو أزياء أو مستلزمات منزلية، ستجد خيارات عملية تلائم احتياجاتك.",
-    "closing": "شكرًا لاختيارك متجرنا — منتجات مدروسة لحياة يومية أكثر سهولة."
+    "modernText": "تجمع مجموعتنا بين التصميم العملي والأسلوب النظيف المدروس لتكمل أنماط الحياة العصرية. سواء كنت تبحث عن الإلكترونيات أو الأزياء أو أساسيات المنزل، نقدم حلولًا عملية لمساعدتك على الاستفادة أكثر من الحياة اليومية.",
+    "closing": "شكرًا لاختيارك لنا — منتجات مدروسة لحياة يومية أبسط."
   },
   "privacyPolicyPage": {
     "seoTitle": "سياسة الخصوصية",
     "title": "سياسة الخصوصية",
-    "intro": "توضح سياسة الخصوصية هذه كيفية جمع موقعنا (ويُشار إليه باسم «الموقع» أو «نحن») معلوماتك الشخصية واستخدامها والإفصاح عنها عند زيارة الموقع أو إجراء عملية شراء منه.",
+    "intro": "تصف سياسة الخصوصية هذه كيف يقوم موقعنا (\"الموقع\" أو \"نحن\") بجمع واستخدام والكشف عن معلوماتك الشخصية عند زيارتك أو إجراء عملية شراء من الموقع.",
     "collectingPersonalInfo": {
       "title": "جمع المعلومات الشخصية",
-      "description": "عند زيارة الموقع، نجمع معلومات معينة عن جهازك وطريقة تفاعلك مع الموقع والمعلومات اللازمة لمعالجة مشترياتك. وقد نجمع أيضًا معلومات إضافية إذا تواصلت معنا للحصول على دعم العملاء. ونقصد بعبارة «المعلومات الشخصية» أي معلومات يمكن أن تحدد هوية شخص بعينه، بما في ذلك المعلومات المذكورة أدناه."
+      "description": "عند زيارتك للموقع، نجمع معلومات معينة عن جهازك وتفاعلك مع الموقع والمعلومات اللازمة لمعالجة مشترياتك. قد نجمع أيضًا معلومات إضافية إذا اتصلت بنا لدعم العملاء. في سياسة الخصوصية هذه، نشير إلى أي معلومات يمكن أن تحدد هوية الفرد بشكل فريد (بما في ذلك المعلومات أدناه) باسم \"المعلومات الشخصية\"."
     },
     "deviceInfo": {
       "title": "معلومات الجهاز",
-      "examples": "تشمل أمثلة المعلومات الشخصية التي نجمعها: إصدار متصفح الويب، وعنوان IP، والمنطقة الزمنية، ومعلومات ملفات تعريف الارتباط، والصفحات أو المنتجات التي تشاهدها، وعبارات البحث، وطريقة تفاعلك مع الموقع.",
-      "purpose": "الغرض من الجمع: عرض الموقع بالشكل المناسب لك وتحليل استخدامه لتحسين أدائه.",
-      "source": "مصدر الجمع: تُجمع هذه المعلومات تلقائيًا عند دخولك إلى الموقع باستخدام ملفات تعريف الارتباط وملفات السجل وإشارات الويب والعلامات أو وحدات البكسل.",
-      "disclosure": "الإفصاح لأغراض تجارية: تُشارك المعلومات مع معالج البيانات التابع لنا."
+      "examples": "أمثلة على المعلومات الشخصية التي يتم جمعها: إصدار متصفح الويب، عنوان IP، المنطقة الزمنية، معلومات ملفات تعريف الارتباط، المواقع أو المنتجات التي تشاهدها، مصطلحات البحث، وكيفية تفاعلك مع الموقع.",
+      "purpose": "الغرض من الجمع: تحميل الموقع بدقة لك وإجراء تحليلات حول استخدام الموقع لتحسين موقعنا.",
+      "source": "مصدر الجمع: يتم جمعها تلقائيًا عند وصولك إلى موقعنا باستخدام ملفات تعريف الارتباط وملفات السجل وإشارات الويب والعلامات والبكسلات.",
+      "disclosure": "الإفصاح لغرض تجاري: تتم مشاركتها مع معالجنا."
     },
     "orderInfo": {
       "title": "معلومات الطلب",
-      "examples": "تشمل أمثلة المعلومات الشخصية التي نجمعها: الاسم وعنوان الفوترة وعنوان الشحن ومعلومات الدفع والبريد الإلكتروني ورقم الهاتف.",
-      "purpose": "الغرض من الجمع: تقديم المنتجات أو الخدمات لك، ومعالجة المدفوعات، وترتيب الشحن، وإصدار الفواتير أو تأكيدات الطلبات، والتواصل معك، وفحص الطلبات للكشف عن المخاطر أو الاحتيال، وتقديم إعلانات أو معلومات تتوافق مع تفضيلاتك.",
-      "source": "مصدر الجمع: تُجمع المعلومات منك مباشرةً.",
-      "disclosure": "الإفصاح لأغراض تجارية: تُشارك المعلومات مع معالج البيانات التابع لنا."
+      "examples": "أمثلة على المعلومات الشخصية التي يتم جمعها: الاسم، عنوان الفاتورة، عنوان الشحن، معلومات الدفع، البريد الإلكتروني، ورقم الهاتف.",
+      "purpose": "الغرض من الجمع: تقديم المنتجات أو الخدمات لك، معالجة معلومات الدفع، ترتيب الشحن، تقديم الفواتير أو تأكيدات الطلب، التواصل معك، فحص الطلبات بحثًا عن المخاطر أو الاحتيال، وتقديم الإعلانات أو المعلومات وفقًا لتفضيلاتك.",
+      "source": "مصدر الجمع: يتم جمعها منك.",
+      "disclosure": "الإفصاح لغرض تجاري: تتم مشاركتها مع معالجنا."
     },
     "customerSupportInfo": {
       "title": "معلومات دعم العملاء",
-      "examples": "تشمل أمثلة المعلومات الشخصية التي نجمعها: الاسم وعنوان الفوترة وعنوان الشحن ومعلومات الدفع والبريد الإلكتروني ورقم الهاتف.",
+      "examples": "أمثلة على المعلومات الشخصية التي يتم جمعها: الاسم، عنوان الفاتورة، عنوان الشحن، معلومات الدفع، البريد الإلكتروني، ورقم الهاتف.",
       "purpose": "الغرض من الجمع: تقديم دعم العملاء.",
-      "source": "مصدر الجمع: تُجمع المعلومات منك مباشرةً."
+      "source": "مصدر الجمع: يتم جمعها منك."
     },
     "sharingPersonalInfo": {
       "title": "مشاركة المعلومات الشخصية",
-      "text": "نشارك معلوماتك الشخصية مع مزوّدي الخدمات لمساعدتنا في تقديم خدماتنا والوفاء بالتزاماتنا التعاقدية تجاهك، كما هو موضح أعلاه. وقد نشاركها، على سبيل المثال، للامتثال للقوانين واللوائح المعمول بها، أو للاستجابة لأوامر الاستدعاء أو التفتيش أو غيرها من الطلبات القانونية، أو لحماية حقوقنا بطرق أخرى."
+      "text": "نشارك معلوماتك الشخصية مع مزودي الخدمة لمساعدتنا في تقديم خدماتنا والوفاء بعقودنا معك، كما هو موضح أعلاه. على سبيل المثال، قد نشارك معلوماتك الشخصية للامتثال للقوانين واللوائح المعمول بها، أو الاستجابة لأوامر الاستدعاء أو أوامر التفتيش أو الطلبات القانونية الأخرى، أو لحماية حقوقنا بطريقة أخرى."
     },
     "behavioralAdvertising": {
-      "title": "الإعلانات الموجّهة حسب السلوك",
-      "text": "نستخدم معلوماتك الشخصية لعرض إعلانات موجّهة أو رسائل تسويقية نعتقد أنها قد تهمك. فعلى سبيل المثال، نستخدم Google Analytics لفهم كيفية استخدام العملاء للموقع. لمزيد من المعلومات عن استخدام Google للمعلومات الشخصية: https://policies.google.com/privacy. لإلغاء الاشتراك: https://tools.google.com/dlpage/gaoptout. كما نشارك شركاء الإعلان معلومات عن استخدامك للموقع والإعلانات."
+      "title": "الإعلانات السلوكية",
+      "text": "نستخدم معلوماتك الشخصية لتزويدك بإعلانات مستهدفة أو اتصالات تسويقية نعتقد أنها قد تهمك. على سبيل المثال، نستخدم Google Analytics لفهم كيفية استخدام العملاء للموقع. مزيد من المعلومات حول استخدام Google للمعلومات الشخصية: https://policies.google.com/privacy. إلغاء الاشتراك: https://tools.google.com/dlpage/gaoptout. نشارك أيضًا معلومات حول استخدامك للموقع والإعلانات مع شركاء الإعلان."
     },
     "usingPersonalInfo": {
       "title": "استخدام المعلومات الشخصية",
-      "text": "نستخدم معلوماتك الشخصية لتقديم خدماتنا، بما في ذلك عرض المنتجات للبيع ومعالجة المدفوعات وشحن الطلبات وتنفيذها وإطلاعك على المنتجات والخدمات والعروض الجديدة."
+      "text": "نستخدم معلوماتك الشخصية لتقديم خدماتنا، بما في ذلك عرض المنتجات للبيع ومعالجة المدفوعات والشحن وتنفيذ الطلبات وإبقائك على اطلاع بالمنتجات والخدمات والعروض الجديدة."
     },
     "lawfulBasis": {
       "title": "الأساس القانوني",
-      "text": "إذا كنت مقيمًا في المنطقة الاقتصادية الأوروبية، فإننا نعالج معلوماتك الشخصية استنادًا إلى أحد الأسس القانونية التالية: موافقتك، أو تنفيذ عقد، أو الالتزامات القانونية، أو المصالح الحيوية، أو مهام المصلحة العامة، أو المصالح المشروعة التي لا تتغلب على حقوقك الأساسية."
+      "text": "إذا كنت مقيمًا في المنطقة الاقتصادية الأوروبية، فإننا نعالج معلوماتك الشخصية وفقًا للأساس القانوني التالي: موافقتك، تنفيذ عقد، التزامات قانونية، مصالح حيوية، مهام المصلحة العامة، أو مصالح مشروعة لا تتجاوز حقوقك الأساسية."
     },
     "retention": {
-      "title": "الاحتفاظ بالبيانات",
-      "text": "عند تقديم طلب عبر الموقع، نحتفظ بمعلوماتك الشخصية ما لم تطلب منا حذفها وحتى يتم ذلك."
+      "title": "الاحتفاظ",
+      "text": "عند تقديم طلب عبر الموقع، نحتفظ بمعلوماتك الشخصية ما لم تطلب منا محوها."
     },
     "automaticDecisionMaking": {
-      "title": "اتخاذ القرارات الآلي",
-      "text": "إذا كنت مقيمًا في المنطقة الاقتصادية الأوروبية، فيحق لك الاعتراض على القرارات الآلية، بما في ذلك إنشاء الملفات التعريفية، إذا كان لها أثر قانوني أو تأثير مهم عليك. ويستخدم معالج البيانات لدينا قدرًا محدودًا من القرارات الآلية لمنع الاحتيال، مثل قوائم الحظر المؤقتة لعناوين IP أو بطاقات الائتمان."
+      "title": "اتخاذ القرارات الآلية",
+      "text": "إذا كنت مقيمًا في المنطقة الاقتصادية الأوروبية، لديك الحق في الاعتراض على اتخاذ القرارات الآلية (بما في ذلك التنميط) ذات التأثير القانوني أو الكبير. يستخدم معالجنا قرارات آلية محدودة لمنع الاحتيال، مثل قوائم الرفض المؤقت لعناوين IP أو بطاقات الائتمان."
     },
     "yourRights": {
       "title": "حقوقك",
-      "gdpr": "يحق للمقيمين في المنطقة الاقتصادية الأوروبية الوصول إلى معلوماتهم الشخصية ونقلها وتصحيحها وتحديثها أو حذفها. يُرجى التواصل معنا لممارسة هذه الحقوق.",
-      "ccpa": "يحق للمقيمين في كاليفورنيا الوصول إلى معلوماتهم الشخصية («حق المعرفة») ونقلها وتصحيحها وتحديثها أو حذفها. ويمكنك تعيين وكيل مخوّل لتقديم الطلبات نيابةً عنك."
+      "gdpr": "لمقيمي المنطقة الاقتصادية الأوروبية الحق في الوصول إلى معلوماتهم الشخصية ونقلها وتصحيحها وتحديثها أو محوها. اتصل بنا لممارسة هذه الحقوق.",
+      "ccpa": "لمقيمي كاليفورنيا الحق في الوصول (\"الحق في المعرفة\") ونقل وتصحيح وتحديث أو محو معلوماتهم الشخصية. يمكنك تعيين وكيل معتمد لتقديم الطلبات."
     },
     "cookies": {
       "title": "ملفات تعريف الارتباط",
-      "text": "ملفات تعريف الارتباط هي ملفات صغيرة تُنزّل على جهازك عند زيارة موقعنا. نستخدم ملفات تعريف الارتباط الوظيفية وملفات الأداء والإعلانات ووسائل التواصل الاجتماعي لتحسين تجربة التصفح وتذكّر تفضيلاتك."
+      "text": "ملفات تعريف الارتباط هي أجزاء صغيرة من المعلومات يتم تنزيلها إلى جهازك عند زيارة موقعنا. نستخدم ملفات تعريف الارتباط الوظيفية والأداء والإعلانات ووسائل التواصل الاجتماعي لتحسين تجربة التصفح وتذكر التفضيلات."
     },
     "doNotTrack": {
-      "title": "عدم التتبّع",
-      "text": "نظرًا لعدم وجود استجابة موحّدة في القطاع لإشارات «عدم التتبّع»، فإننا لا نغيّر ممارسات جمع البيانات عند اكتشاف مثل هذه الإشارة في متصفحك."
+      "title": "عدم التتبع",
+      "text": "نظرًا لعدم وجود استجابة صناعية متسقة لإشارات \"عدم التتبع\"، فإننا لا نغير ممارسات جمع البيانات لدينا إذا تم اكتشاف مثل هذه الإشارة في متصفحك."
     },
     "changes": {
-      "title": "التعديلات",
-      "text": "قد نحدّث سياسة الخصوصية هذه من وقت لآخر لتعكس تغييرات في ممارساتنا أو لأسباب قانونية أو تنظيمية أو تشغيلية."
+      "title": "التغييرات",
+      "text": "قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر لتعكس التغييرات في الممارسات أو لأسباب قانونية أو تنظيمية أو تشغيلية."
     },
     "contact": {
-      "title": "التواصل",
-      "text": "لمزيد من المعلومات حول ممارسات الخصوصية لدينا أو لطرح الأسئلة أو تقديم الشكاوى، يُرجى التواصل معنا عبر البريد الإلكتروني."
+      "title": "اتصل",
+      "text": "لمزيد من المعلومات حول ممارسات الخصوصية لدينا أو الأسئلة أو الشكاوى، اتصل بنا عبر البريد الإلكتروني."
     },
     "lastUpdated": "آخر تحديث: 15 يونيو 2022"
   },
   "returnPolicyPage": {
     "seoTitle": "سياسة الإرجاع",
-    "title": "سياسة الإرجاع واسترداد الأموال",
+    "title": "سياسة الإرجاع والاسترداد",
     "returns": {
       "heading": "الإرجاع:",
-      "text": "يمكنك إرجاع المنتج لاسترداد المبلغ فقط إذا كان بحالة جديدة تمامًا ولم يُفتح، مع تضمين العبوة الأصلية وجميع الملحقات. نعلم أن هذا الشرط قد يبدو صارمًا، لكنه ضروري لضمان إمكانية معالجة الإرجاع وإصدار استرداد كامل. يجب التواصل مع خدمة العملاء قبل إعادة أي منتج واتباع تعليمات الإرجاع التي يقدمها الفريق."
+      "text": "ببساطة، يمكنك إرجاع البضائع لاسترداد الأموال فقط إذا كان المنتج في حالة جديدة تمامًا وغير مفتوح، بما في ذلك عبوته الأصلية وملحقاته. نعلم أن هذا يبدو صارمًا بعض الشيء، لكن بدون هذا الشرط، لن نتمكن من تقديم أسعارنا الرائعة. سنقوم باسترداد الأموال للمنتجات غير المفتوحة حتى 15 - 25 يومًا من استلامك للمنتج. سيتم إصدار جميع عمليات الاسترداد إلى طريقة الدفع الأصلية الخاصة بك وقد تستغرق حتى 7-10 أيام عمل للتطبيق."
     },
     "rejectedRefunds": {
-      "heading": "سيُرفض طلب استرداد الأموال إذا أُعيد المنتج لأحد الأسباب التالية:",
+      "heading": "سيتم رفض استرداد أموالك إذا تم إرجاع منتجاتك للأسباب التالية:",
       "items": [
-        "إذا كان سبب الإرجاع هو تلف العلبة الأصلية للمنتج.",
-        "إذا كان المنتج المُعاد قد فُتح أو أزيل ختمه.",
-        "العيوب الطفيفة في طلاء المجسمات التذكارية، إذ قد تكون متوقعة."
+        "إذا كنت تريد إرجاع منتجك بسبب تلف العلبة الأصلية للمنتج.",
+        "إذا تم فتح المنتج الذي أرجعته وإلغاء ختمه.",
+        "المنتجات ذات مشاكل الطلاء التجميلية البسيطة لأرقام الجوائز لأن هذه أمور متوقعة."
       ]
     },
     "exceptions": {
-      "heading": "الاستثناءات / المنتجات غير القابلة للإرجاع:",
-      "text": "تُعد الطلبات المسبقة مبيعات نهائية ولا يمكن إرجاعها بعد شحنها. إذا استلمت منتجًا معيبًا، فتواصل معنا للحصول على معلومات حول التواصل مع الشركة المصنّعة. لا تُقبل المرتجعات لمجرد وجود تلف في علبة المنتج. وقد تُطبق استثناءات أخرى وفقًا للقانون المعمول به والشروط الموضحة في صفحة المنتج."
+      "heading": "الاستثناءات / العناصر غير القابلة للإرجاع:",
+      "text": "الطلبات المسبقة هي مبيعات نهائية وغير قابلة للإرجاع بمجرد شحنها. إذا استلمت منتجًا معيبًا، يرجى الاتصال بنا للحصول على معلومات حول الاتصال بالشركة المصنعة. العناصر ذات عيوب العلبة والعيوب العامة. يرجى الاتصال بنا إذا كانت لديك أسئلة أو استفسارات حول منتجك المحدد."
     },
     "returnShipping": {
-      "heading": "شحن المرتجعات:",
-      "text": "لإرجاع منتج، يُرجى التواصل مع دعم العملاء وتزويدهم برقم الطلب وسبب الإرجاع. سنوفر لك ملصق الإرجاع إذا تمت الموافقة على طلبك."
+      "heading": "شحن الإرجاع:",
+      "text": "لإرجاع منتج، يرجى الاتصال بدعم العملاء مع رقم طلبك وسبب الإرجاع. سيتم تزويدك بملصق إرجاع إذا تمت الموافقة على طلب الإرجاع الخاص بك."
     },
     "damagesIssues": {
       "heading": "الأضرار والمشكلات",
-      "text": "يُرجى فحص طلبك عند استلامه والتواصل معنا فورًا إذا كان المنتج معيبًا أو تالفًا أو إذا استلمت منتجًا غير صحيح، حتى نتمكن من تقييم المشكلة ومعالجتها."
+      "text": "يرجى فحص طلبك عند الاستلام والاتصال بنا فورًا إذا كان المنتج معيبًا أو تالفًا أو إذا استلمت منتجًا خاطئًا حتى نتمكن من تقييم المشكلة وإصلاحها."
     },
     "refunds": {
-      "heading": "استرداد الأموال",
-      "text": "سنُخطرك عند استلام المنتج المُعاد وفحصه، وسنبلغك ما إذا تمت الموافقة على استرداد المبلغ. إذا تمت الموافقة، فسيُعاد المبلغ تلقائيًا إلى وسيلة الدفع الأصلية خلال 10 أيام عمل. وقد تختلف المدة التي يستغرقها ظهور المبلغ في حسابك بحسب البنك أو مزوّد خدمة الدفع."
+      "heading": "المبالغ المستردة",
+      "text": "سنخطرك بمجرد استلامنا وفحصنا لعملية الإرجاع الخاصة بك، ونخبرك ما إذا تمت الموافقة على الاسترداد. إذا تمت الموافقة، سيتم استرداد المبلغ تلقائيًا إلى طريقة الدفع الأصلية الخاصة بك. يرجى تذكر أن الأمر قد يستغرق بعض الوقت حتى يقوم البنك أو شركة بطاقة الائتمان بمعالجة ونشر المبلغ المسترد."
     }
   },
   "returnFaq": [
     {
       "id": 1,
-      "question": "ما سياسة الإرجاع لديكم؟",
+      "question": "ما هي سياسة الإرجاع الخاصة بكم؟",
       "answer": {
         "paragraphe": [
-          "إذا رغبت في إرجاع طلبك لأي سبب، فنحن هنا لمساعدتك بسهولة. نقبل الإرجاع خلال 30 يومًا من الشراء. يمكن إرجاع المنتج لاسترداد المبلغ بشرط أن يكون غير مستخدم وفي عبوته الأصلية، مع مراعاة الشروط والاستثناءات الموضحة في هذه السياسة."
+          "إذا كنت ترغب في إرجاع طلبك لأي سبب كان، فنحن هنا للمساعدة بدون متاعب! نقدم عمليات إرجاع خلال 30 يومًا من الشراء. يمكنك إرجاع منتجك لاسترداد الأموال إلى طريقة الدفع الأصلية إذا لم يكن المنتج يلبي توقعاتك. ستتم معالجة المبلغ المسترد إلى شكله الأصلي من الدفع خلال 5-7 أيام عمل."
         ],
         "list": [
-          "تُعد منتجات التصفية مبيعات نهائية ولا يمكن إرجاعها أو استبدالها.",
-          "يجب أن تتضمن المنتجات المُعادة معلومات تعريفية وأن تُعاد في عبوتها الأصلية.",
-          "يجب ألا تظهر على المنتجات المُعادة أي علامات واضحة للاستخدام أو التآكل.",
-          "لا تُرد تكلفة الشحن إلا إذا أُرسل إليك منتج خاطئ أو تالف.",
-          "لن نوفر ملصق إرجاع مدفوعًا مسبقًا إلا إذا أُرسل المنتج الخطأ أو تضرر أثناء النقل.",
-          "لا نوفر استبدالًا للملابس. إذا لم يكن المنتج مناسبًا، فأعده لاسترداد المبلغ ثم قدّم طلبًا جديدًا بالمقاس المطلوب. لمزيد من المعلومات، تواصل مع خدمة العملاء."
+          "عناصر التخفيضات هي مبيعات نهائية ولا يمكن إرجاعها أو استبدالها.",
+          "يجب أن تتضمن العناصر المرتجعة معلومات تعريفية وأن يتم إرجاعها في عبوة المنتج الأصلية.",
+          "يجب ألا تحتوي العناصر المرتجعة على أي علامات مرئية للتآكل أو الاستخدام.",
+          "لن يتم استرداد تكلفة الشحن إلا إذا تم إرسال عنصر خاطئ أو تالف إليك.",
+          "لن يتم تقديم ملصق إرجاع مدفوع مسبقًا إلا إذا تم إرسال العنصر الخاطئ، أو تلف العنصر أثناء النقل.",
+          "لا نعالج عمليات استبدال الملابس. إذا لم يناسبك العنصر الذي اشتريته، يرجى إرجاعه لاسترداد الأموال. يمكنك بعد ذلك تقديم طلب جديد للمقاس المطلوب. لمزيد من المعلومات وملصقات RMA، يرجى الاتصال بفريق خدمة العملاء لدينا."
         ]
       }
     },
     {
       "id": 2,
-      "question": "كيف يمكنني إرجاع منتج؟",
+      "question": "كيف ترجع منتجًا؟",
       "answer": {
         "paragraphe": [],
         "list": [
-          "سجّل الدخول إلى حسابك وتواصل مع فريق خدمة العملاء.",
-          "قدّم أكبر قدر ممكن من المعلومات عن المنتجات التي ترغب في إرجاعها أو استبدالها من طلبك.",
-          "يجب ألا تظهر على المنتجات المُعادة أي علامات واضحة للاستخدام أو التآكل.",
-          "اطبع ملصق الشحن المدفوع مسبقًا الذي سيصلك عبر البريد الإلكتروني.",
-          "يرجى ملاحظة أننا لن نوفر ملصق إرجاع مدفوعًا مسبقًا إلا إذا أُرسل المنتج الخطأ أو تضرر أثناء النقل.",
-          "أرسل جميع المنتجات إلينا باستخدام الملصق المرفق."
+          "قم بتسجيل الدخول إلى حسابك واتصل بفريق خدمة العملاء لدينا.",
+          "قدم أكبر قدر ممكن من المعلومات حول المنتجات التي ترغب في إرجاعها أو استبدالها من طلبك.",
+          "يجب ألا تحتوي العناصر المرتجعة على أي علامات مرئية للتآكل أو الاستخدام.",
+          "اطبع ملصق الشحن المدفوع مسبقًا الذي ستتلقاه عبر البريد الإلكتروني.",
+          "يرجى ملاحظة أنه لن يتم تقديم ملصق إرجاع مدفوع مسبقًا إلا إذا تم إرسال العنصر الخاطئ، أو تلف العنصر أثناء النقل.",
+          "أرسل جميع العناصر إلينا باستخدام الملصق المقدم."
         ]
       }
     },
     {
       "id": 3,
-      "question": "وصل المنتج تالفًا، ماذا أفعل؟",
+      "question": "وصل منتجي تالفًا! ماذا يجب أن أفعل؟",
       "answer": {
         "paragraphe": [
-          "نأسف لوصول المنتج تالفًا. نعلم أن ذلك محبط، خصوصًا إذا كنت تنتظر المنتج منذ مدة. يُرجى التواصل معنا مع رقم الطلب وصور واضحة للضرر حتى نتمكن من مراجعة الحالة ومساعدتك."
+          "نأسف لسماع ذلك! نتفهم كم هو مخيب للآمال استلام عنصر تالف - خاصة عنصر انتظرته لأشهر! لسوء الحظ، تحدث الأخطاء وقد تتلف المنتجات أثناء النقل. في حالة حدوث ذلك، يرجى الاتصال بنا مع صور للعنصر التالف وسنقوم باستبداله أو إصدار استرداد جزئي أو كامل. رضاك هو أولويتنا رقم 1!"
         ],
         "list": []
       }
     },
     {
       "id": 4,
-      "question": "ما المنتجات المستثناة من سياسة الإرجاع؟",
+      "question": "ما هي المنتجات المستثناة من سياسة الإرجاع؟",
       "answer": {
         "paragraphe": [],
         "list": [
-          "المنتجات الرقمية، بما في ذلك العضويات وبطاقات الهدايا، غير مؤهلة للإرجاع أو استرداد الأموال. إذا واجهت مشكلة في الوصول إلى منتج رقمي أو استخدامه، فتواصل مع خدمة العملاء.",
-          "قد لا تكون المنتجات المشتراة ضمن عروض التصفية أو البيع النهائي مؤهلة للإرجاع، إلا إذا أوجب القانون خلاف ذلك.",
-          "قد لا تكون المنتجات التي استُخدمت أو رُكّبت أو عُدّلت بعد التسليم مؤهلة للإرجاع، بحسب حالتها وسياسة الإرجاع لدينا.",
-          "إذا وصل المنتج تالفًا أو به عيب، فتواصل معنا في أقرب وقت ممكن لنساعدك ونتوصل إلى حل مناسب.",
-          "قد تنطبق شروط إضافية على بعض المنتجات، وستُذكر في صفحة المنتج المعني عند الاقتضاء."
+          "المنتجات الرقمية، بما في ذلك العضويات وبطاقات الهدايا، غير مؤهلة للاسترداد أو الإرجاع. إذا واجهت أي مشكلة في الوصول إلى منتج رقمي أو استخدامه، يرجى الاتصال بنا وسنكون سعداء بمساعدتك.",
+          "قد لا تكون المنتجات المشتراة كجزء من عروض التخفيضات أو البيع النهائي مؤهلة للإرجاع، باستثناء ما يقتضيه القانون.",
+          "قد لا تكون المنتجات التي تم استخدامها أو تركيبها أو تعديلها بعد التسليم مؤهلة للإرجاع، اعتمادًا على حالة المنتج وسياسة الإرجاع لدينا.",
+          "إذا وصل منتجك تالفًا أو به عيب، يرجى الاتصال بنا في أقرب وقت ممكن حتى نتمكن من مساعدتك وإيجاد حل مناسب.",
+          "قد تنطبق شروط إضافية على منتجات معينة وسيتم الإشارة إليها في صفحة المنتج ذات الصلة حيثما ينطبق ذلك."
         ]
       }
     },
     {
       "id": 5,
-      "question": "المنتج معيب أو تنقصه أجزاء، ماذا أفعل؟",
+      "question": "منتجي به عيب / أجزاء مفقودة. ماذا يجب أن أفعل؟",
       "answer": {
         "paragraphe": [
-          "تواصل معنا مباشرةً وأرفق صورًا وشرحًا للعيب.",
-          "يرجى ملاحظة أن منتجات الفيديو المنزلية لا تأتي بالضرورة مع غلاف خارجي."
+          "اتصل بنا مباشرة مع صور وشرح للعيب.",
+          "يرجى ملاحظة: منتجات الفيديو المنزلي لا تضمن أن تأتي مع غلاف."
         ],
         "list": []
       }
     },
     {
       "id": 6,
-      "question": "ما سياسة استرداد الأموال لديكم؟",
+      "question": "ما هي سياسة الاسترداد الخاصة بكم؟",
       "answer": {
         "paragraphe": [],
         "list": [
-          "بعد إلغاء الطلب أو معالجة الإرجاع، سيُعاد المبلغ إلى وسيلة الدفع الأصلية.",
-          "بعد اكتمال عملية الإرجاع، ستتم معالجة استرداد المبلغ خلال يوم إلى خمسة أيام عمل.",
-          "بعد معالجة الاسترداد، يُرجى الانتظار من 3 إلى 5 أيام عمل لاستردادات PayPal، ومن 3 إلى 10 أيام عمل لبقية وسائل الدفع.",
-          "سنرسل إليك إشعارًا بالبريد الإلكتروني عند إصدار المبلغ المسترد.",
-          "سيُصدر استرداد كامل حتى إذا استُخدمت بطاقة هدايا رقمية من متجرنا لدفع كامل قيمة الطلب أو جزء منها.",
-          "يمكن إلغاء الطلب ورد المبلغ فورًا إذا لم تبدأ معالجة الطرد للشحن بعد.",
-          "بعد بدء معالجة الطرد للشحن، يجب أن يصل إلى وجهته ثم يُعاد إلى المتجر قبل إصدار الاسترداد. يُرجى التواصل مع خدمة العملاء للحصول على المساعدة."
+          "بعد إلغاء الطلب أو معالجة الإرجاع، سيتم إصدار المبلغ المسترد إلى شكله الأصلي من الدفع.",
+          "عند اكتمال إرجاعك، ستتم معالجة المبلغ المسترد خلال 1-5 أيام عمل.",
+          "بعد معالجة المبلغ المسترد، يرجى السماح بـ 3-5 أيام عمل لاسترداد PayPal و3-10 أيام عمل لجميع طرق الدفع الأخرى.",
+          "سنخطرك عبر البريد الإلكتروني عند إصدار المبلغ المسترد.",
+          "سيتم إصدار استرداد كامل حتى إذا تم استخدام بطاقة هدايا رقمية كدفع كامل أو جزئي على الطلب.",
+          "يمكن إلغاء الطلب واسترداده على الفور إذا لم تكن الحزمة قد بدأت المعالجة للشحن.",
+          "بمجرد أن تبدأ الحزمة المعالجة للشحن، يجب تسليمها إلى وجهتها وإرجاعها قبل إصدار المبلغ المسترد. يرجى الاتصال بفريق خدمة العملاء لدينا للحصول على معلومات أكثر تفصيلاً."
         ]
       }
     }
@@ -1064,43 +1408,104 @@
   "shippingPolicy": {
     "seoTitle": "سياسة الشحن",
     "title": "سياسة الشحن",
-    "intro": "نوفر شحنًا مجانيًا عالميًا لجميع منتجاتنا، ونوصل إلى معظم دول العالم.",
-    "deliveryTime": { "title": "مدة التوصيل المقدّرة", "description": "يستغرق التوصيل عادةً من 5 إلى 15 يوم عمل، وقد يصل إلى 30 يوم عمل كحد أقصى بحسب الوجهة." },
-    "tracking": { "title": "تتبّع طلبك", "description": "عند شحن الطلب، ستتلقى رسالة بريد إلكتروني تتضمن رقم التتبّع. وقد تُشحن المنتجات في طرود منفصلة لأسباب لوجستية." },
-    "customFees": { "title": "الرسوم الجمركية", "description": "لسنا مسؤولين عن أي رسوم جمركية قد تُفرض على الشحنة." },
-    "lostOrDelayedPackages": { "title": "الطرود المفقودة أو المتأخرة", "description": "إذا فُقد طردك أو تأخر، يُرجى التواصل معنا مع تزويدنا بمعلومات الطلب." },
-    "contact": { "title": "التواصل", "description": "إذا كانت لديك أسئلة أخرى حول الشحن، فتواصل معنا." }
+    "intro": "نقدم شحنًا عالميًا مجانيًا على جميع منتجاتنا، ونوصل إلى كل دولة تقريبًا في العالم.",
+    "deliveryTime": {
+      "title": "وقت التسليم المتوقع",
+      "description": "يستغرق التوصيل عادةً 5-15 يوم عمل، بحد أقصى 30 يوم عمل حسب الوجهة."
+    },
+    "tracking": {
+      "title": "تتبع طلبك",
+      "description": "عند الشحن، ستتلقى بريدًا إلكترونيًا برقم تتبع. قد يتم شحن العناصر بشكل منفصل لأسباب لوجستية."
+    },
+    "customFees": {
+      "title": "الرسوم الجمركية",
+      "description": "أي رسوم جمركية يتم تكبدها عند الشحن ليست مسؤوليتنا."
+    },
+    "lostOrDelayedPackages": {
+      "title": "الحزم المفقودة أو المتأخرة",
+      "description": "إذا كانت حزمتك مفقودة أو متأخرة، يرجى الاتصال بنا مع معلومات طلبك."
+    },
+    "contact": {
+      "title": "اتصل",
+      "description": "إذا كانت لديك أي أسئلة أخرى حول الشحن، اتصل بنا."
+    }
   },
   "shippingFaq": [
     {
       "id": 1,
-      "question": "كم تبلغ تكلفة الشحن؟",
-      "answer": { "paragraphe": ["تختلف تكاليف الشحن الدولي حسب الوجهة. فيما يلي تفصيل لتكاليف الشحن حسب الوجهة:"], "list": ["كندا: 0–19.99 دولارًا", "أوروبا: 0–40 دولارًا", "أستراليا: 0–43.99 دولارًا", "جميع أنحاء العالم: شحن مجاني لبعض المنتجات"] }
+      "question": "كم تكلفة الشحن؟",
+      "answer": {
+        "paragraphe": [
+          "تختلف تكاليف الشحن الدولي حسب الوجهة. فيما يلي تفصيل لتكاليف الشحن لكل وجهة:"
+        ],
+        "list": [
+          "كندا: 0 - 19.99 دولارًا",
+          "أوروبا: 0 - 40 دولارًا",
+          "أستراليا: 0 - 43.99 دولارًا",
+          "عالميًا: شحن مجاني لبعض المنتجات"
+        ]
+      }
     },
     {
       "id": 2,
-      "question": "ماذا يحدث إذا فُقد الطرد أثناء الشحن؟",
-      "answer": { "paragraphe": ["إذا ظهر أن الطرد قد سُلّم لكنك لم تستلمه، فتواصل مع شركة الشحن وأبلغنا خلال 30 يومًا من تاريخ التسليم.", "إذا تبيّن أن الطرد فُقد بسبب خطأ في التسليم من شركة الشحن، فسنستبدل طلبك.", "إذا فُقد الطرد بسبب عنوان ناقص أو غير صحيح، فلن نتمكن من تقديم استرداد أو استبدال. تقع مسؤولية التأكد من صحة عنوان الشحن وقت الشراء على العميل.", "إذا اكتشفت أن عنوان الشحن غير صحيح أو تغيّر بعد تقديم الطلب، فأبلغنا برقم الطلب والعنوان المحدّث."], "list": [] }
+      "question": "ماذا يحدث إذا فقدت حزمتي أثناء النقل؟",
+      "answer": {
+        "paragraphe": [
+          "إذا ظهرت الحزمة كمُسلَّمة ولكنك لم تستلمها، يرجى الاتصال بالناقل وإخطارنا خلال 30 يومًا من تاريخ التسليم.",
+          "إذا تم تحديد أن الحزمة قد فُقدت بسبب خطأ في التسليم من قبل الناقل، فسنستبدل طلبك.",
+          "إذا فُقدت الحزمة بسبب عنوان غير مكتمل أو غير صحيح، فلا يمكننا تقديم استرداد أو استبدال - العملاء مسؤولون عن التأكد من صحة عنوان الشحن الخاص بهم وقت الشراء. إذا تم إرجاع الحزمة إلينا، ستحتاج إلى دفع رسوم شحن إضافية لإعادة إرسالها.",
+          "إذا وجدت أن عنوان الشحن الخاص بك غير صحيح أو تغير منذ تقديم طلبك، يرجى إخطارنا برقم طلبك/معرفك والعنوان المحدث."
+        ],
+        "list": []
+      }
     },
     {
       "id": 3,
       "question": "متى سيتم شحن طلبي؟",
-      "answer": { "paragraphe": ["تُعالج الطلبات خلال أيام العمل المعتادة (من الاثنين إلى الجمعة، باستثناء العطلات).", "إذا كان المنتج متوفرًا في المخزون، فستتم معالجة الطلب خلال يوم إلى خمسة أيام عمل. وتختلف مدة التوصيل بعد المعالجة بحسب عنوان الشحن. يُرجى مراجعة معلومات الشحن المعروضة أثناء إتمام الشراء للحصول على التقدير الخاص بطلبك.", "بعد شحن المنتج، ستتلقى رسالة بريد إلكتروني تتضمن معلومات التتبّع. وقد لا تتوفر أرقام تتبّع في بعض الحالات الخاصة."], "list": [] }
+      "answer": {
+        "paragraphe": [
+          "ستتم معالجة طلبك خلال أيام العمل العادية (الاثنين إلى الجمعة، باستثناء العطلات).",
+          "إذا كان العنصر متوفرًا في المخزون، ستتم معالجة طلبك خلال 1 إلى 5 أيام عمل. سيختلف وقت التسليم بعد المعالجة بناءً على عنوان الشحن. حاليًا، تتراوح أوقات التسليم بين 5 إلى 15 يوم عمل.",
+          "بمجرد شحن العنصر، ستتلقى بريدًا إلكترونيًا بمعلومات التتبع. في بعض الحالات الخاصة، قد لا تتوفر أرقام التتبع."
+        ],
+        "list": []
+      }
     },
     {
       "id": 4,
-      "question": "هل سيصل طلبي في عدة طرود؟",
-      "answer": { "paragraphe": ["إذا اشتريت منتجات متوفرة في المخزون وتُشحن من مستودعات مختلفة، فقد تصلك على شحنات متعددة."], "list": [] }
+      "question": "هل سأستلم طلبي في حزم متعددة؟",
+      "answer": {
+        "paragraphe": [
+          "إذا قمت بشراء عناصر متوفرة في المخزون يتم شحنها من مستودعات مختلفة، فستتلقى شحنات متعددة."
+        ],
+        "list": []
+      }
     },
     {
       "id": 5,
-      "question": "كيف تُحتسب تكاليف الشحن؟",
-      "answer": { "paragraphe": ["تُحتسب تكاليف الشحن أثناء إتمام الشراء. أضف المنتجات إلى سلتك، وانتقل إلى الدفع، وأدخل عنوان الشحن لعرض تكلفة شحن طلبك."], "list": [] }
+      "question": "كيف يتم حساب أسعار الشحن؟",
+      "answer": {
+        "paragraphe": [
+          "يتم حساب رسوم الشحن أثناء الدفع. يمكنك إضافة عناصر إلى سلتك، والمتابعة إلى الدفع، وإدخال عنوان الشحن الخاص بك لرؤية تكلفة الشحن لطلبك."
+        ],
+        "list": []
+      }
     },
     {
       "id": 6,
-      "question": "ما سياسة استرداد الأموال لديكم؟",
-      "answer": { "paragraphe": [], "list": ["بعد إلغاء الطلب أو معالجة الإرجاع، سيُعاد المبلغ إلى وسيلة الدفع الأصلية.", "بعد اكتمال عملية الإرجاع، ستتم معالجة الاسترداد خلال يوم إلى خمسة أيام عمل.", "بعد معالجة الاسترداد، يُرجى الانتظار من 3 إلى 5 أيام عمل لاستردادات PayPal، ومن 3 إلى 10 أيام عمل لبقية وسائل الدفع.", "سنُخطرك عبر البريد الإلكتروني بمجرد إصدار الاسترداد.", "سيُصدر استرداد كامل حتى إذا استُخدمت بطاقة هدايا رقمية من متجرنا لدفع كامل قيمة الطلب أو جزء منها.", "يمكن إلغاء الطلب ورد المبلغ فورًا إذا لم تبدأ معالجة الطرد للشحن بعد.", "بعد بدء تجهيز الطرد للشحن، يجب تسليمه إلى وجهته ثم إعادته إلى المتجر قبل إصدار الاسترداد. تواصل مع فريق خدمة العملاء إذا احتجت إلى المساعدة."] }
+      "question": "ما هي سياسة الاسترداد الخاصة بكم؟",
+      "answer": {
+        "paragraphe": [],
+        "list": [
+          "بعد إلغاء الطلب أو معالجة الإرجاع، سيتم إصدار المبلغ المسترد إلى طريقة الدفع الأصلية.",
+          "بمجرد اكتمال عملية الإرجاع، ستتم معالجة المبلغ المسترد خلال 1-5 أيام عمل.",
+          "بعد معالجة المبلغ المسترد، يرجى السماح بـ 3-5 أيام عمل لاسترداد PayPal و3-10 أيام عمل لجميع طرق الدفع الأخرى.",
+          "سنخطرك عبر البريد الإلكتروني بمجرد إصدار المبلغ المسترد.",
+          "سيتم إصدار استرداد كامل حتى إذا تم استخدام بطاقة هدايا رقمية كدفع كامل أو جزئي للطلب.",
+          "يمكن إلغاء الطلب واسترداده على الفور إذا لم تكن الحزمة قد بدأت المعالجة للشحن.",
+          "بمجرد أن تبدأ الحزمة المعالجة للشحن، يجب تسليمها إلى وجهتها وإرجاعها قبل إصدار المبلغ المسترد. يرجى الاتصال بفريق خدمة العملاء لدينا للحصول على معلومات أكثر تفصيلاً."
+        ]
+      }
     }
   ],
   "termsOfService": {
@@ -1108,33 +1513,96 @@
     "title": "شروط الخدمة",
     "overview": {
       "title": "نظرة عامة",
-      "p1": "يدير متجرنا هذا الموقع. وتشير عبارات «نحن» و«لنا» و«خاصتنا» في الموقع إلى المتجر. نوفر هذا الموقع، بما في ذلك المعلومات والأدوات والخدمات المتاحة فيه، للمستخدم بشرط موافقته على الشروط والسياسات الواردة هنا.",
-      "p2": "عند زيارة موقعنا أو شراء أي منتج منا، فإنك تستخدم «الخدمة» وتوافق على الالتزام بشروط الخدمة هذه، بما في ذلك الشروط والسياسات الإضافية المشار إليها هنا أو المتاحة عبر الروابط. تنطبق هذه الشروط على جميع مستخدمي الموقع.",
-      "p3": "يُرجى قراءة شروط الخدمة بعناية قبل استخدام الموقع. بدخولك إلى الموقع أو استخدام أي جزء منه، فإنك توافق على هذه الشروط. إذا لم توافق على جميع الشروط، فلا يجوز لك استخدام الموقع أو خدماته.",
-      "p4": "تخضع الميزات أو الأدوات الجديدة التي تُضاف إلى المتجر لشروط الخدمة هذه أيضًا. يمكنك مراجعة أحدث نسخة من الشروط في هذه الصفحة في أي وقت. نحتفظ بحق تحديث أي جزء من هذه الشروط بنشر التغييرات على الموقع."
+      "p1": "يتم تشغيل هذا الموقع بواسطة متجرنا. في جميع أنحاء الموقع، تشير المصطلحات \"نحن\" و\"لنا\" و\"خاصتنا\" إلى متجرنا. نقدم هذا الموقع، بما في ذلك جميع المعلومات والأدوات والخدمات المتاحة من هذا الموقع لك، المستخدم، بشرط قبولك لجميع الشروط والأحكام والسياسات والإشعارات المذكورة هنا.",
+      "p2": "من خلال زيارة موقعنا و/أو شراء شيء منا، فإنك تشارك في \"خدمتنا\" وتوافق على الالتزام بالشروط والأحكام التالية (\"شروط الخدمة\"، \"الشروط\")، بما في ذلك تلك الشروط والأحكام الإضافية والسياسات المشار إليها هنا و/أو المتاحة عبر الارتباط التشعبي. تنطبق شروط الخدمة هذه على جميع مستخدمي الموقع، بما في ذلك على سبيل المثال لا الحصر المستخدمين الذين يتصفحون أو البائعين أو العملاء أو التجار و/أو المساهمين في المحتوى.",
+      "p3": "يرجى قراءة شروط الخدمة هذه بعناية قبل الوصول إلى موقعنا أو استخدامه. من خلال الوصول إلى أي جزء من الموقع أو استخدامه، فإنك توافق على الالتزام بشروط الخدمة هذه. إذا كنت لا توافق على جميع الشروط والأحكام الخاصة بهذه الاتفاقية، فلا يجوز لك الوصول إلى الموقع أو استخدام أي خدمات. إذا كانت شروط الخدمة هذه تعتبر عرضًا، فإن القبول يقتصر صراحةً على شروط الخدمة هذه.",
+      "p4": "أي ميزات أو أدوات جديدة تضاف إلى المتجر الحالي تخضع أيضًا لشروط الخدمة. يمكنك مراجعة أحدث إصدار من شروط الخدمة في أي وقت على هذه الصفحة. نحتفظ بالحق في تحديث أو تغيير أو استبدال أي جزء من شروط الخدمة هذه عن طريق نشر التحديثات و/أو التغييرات على موقعنا. تقع على عاتقك مسؤولية التحقق من هذه الصفحة بشكل دوري بحثًا عن التغييرات. يشكل استمرارك في استخدام أو الوصول إلى الموقع بعد نشر أي تغييرات قبولًا لتلك التغييرات."
     },
     "sections": {
-      "section1": { "title": "القسم 1 - شروط المتجر الإلكتروني", "text": "بموافقتك على شروط الخدمة، فإنك تقر بأنك بلغت سن الرشد القانوني في مكان إقامتك، أو أنك بلغت سن الرشد ومنحتنا موافقتك على السماح لأي من القاصرين الذين تعولهم باستخدام هذا الموقع. لا يجوز لك استخدام منتجاتنا لأي غرض غير قانوني أو غير مصرح به، كما يجب ألا تنتهك القوانين المعمول بها عند استخدام الخدمة." },
-      "section2": { "title": "القسم 2 - الشروط العامة", "text": "نحتفظ بحق رفض تقديم الخدمة لأي شخص ولأي سبب وفي أي وقت. وقد تُنقل المحتويات التي تقدمها، باستثناء معلومات بطاقات الدفع، عبر شبكات مختلفة وقد تُعدّل لتتوافق مع المتطلبات التقنية. وتُنقل معلومات بطاقات الدفع مشفرة أثناء انتقالها عبر الشبكات." },
-      "section3": { "title": "القسم 3 - دقة المعلومات واكتمالها وحداثتها", "text": "لا نتحمل مسؤولية كون المعلومات المتاحة على الموقع غير دقيقة أو غير مكتملة أو غير محدثة. تُقدّم المواد لأغراض معلوماتية عامة فقط، ولا ينبغي الاعتماد عليها وحدها لاتخاذ القرارات. قد يحتوي الموقع على معلومات تاريخية تُقدّم للرجوع إليها فقط، ونحتفظ بحق تعديل محتوى الموقع دون التزام بتحديث كل معلومة." },
-      "section4": { "title": "القسم 4 - تعديلات الخدمة والأسعار", "text": "قد تتغير أسعار منتجاتنا دون إشعار مسبق. نحتفظ بحق تعديل الخدمة أو إيقافها، كليًا أو جزئيًا، في أي وقت ودون إشعار. لا نتحمل المسؤولية تجاهك أو تجاه أي طرف ثالث عن أي تعديل في الخدمة أو تغيير في الأسعار أو تعليقها أو إيقافها." },
-      "section5": { "title": "القسم 5 - المنتجات أو الخدمات (إن وجدت)", "text": "قد تتوفر بعض المنتجات أو الخدمات حصريًا عبر الإنترنت، وقد تكون كمياتها محدودة وتخضع للإرجاع أو الاستبدال وفق سياسة الإرجاع. نبذل جهدًا لعرض ألوان المنتجات وصورها بدقة، لكننا لا نضمن تطابق عرض الشاشة مع اللون الفعلي. نحتفظ بحق تحديد المبيعات حسب الشخص أو المنطقة أو الولاية القضائية، وتغيير أوصاف المنتجات وأسعارها أو إيقاف أي منتج في أي وقت." },
-      "section6": { "title": "القسم 6 - دقة معلومات الفوترة والحساب", "text": "نحتفظ بحق رفض أي طلب تقدمه، كما يجوز لنا تحديد أو إلغاء الكميات المشتراة للشخص أو الأسرة أو الطلب الواحد. وقد تشمل هذه القيود الطلبات المقدمة من الحساب نفسه أو باستخدام وسيلة الدفع نفسها أو عنوان الفوترة أو الشحن نفسه. إذا غيّرنا الطلب أو ألغيناه، فقد نحاول إخطارك عبر البريد الإلكتروني أو عنوان الفوترة أو رقم الهاتف الذي قدمته." },
-      "section7": { "title": "القسم 7 - سياسة الإرجاع", "text": "لمزيد من التفاصيل، يُرجى مراجعة سياسة الإرجاع واسترداد الأموال الخاصة بنا." },
-      "section8": { "title": "القسم 8 - الأدوات الاختيارية", "text": "قد نتيح لك الوصول إلى أدوات تابعة لجهات خارجية لا نراقبها ولا نتحكم فيها. تُقدّم هذه الأدوات «كما هي» و«حسب توفرها»، دون ضمانات أو إقرارات من جانبنا. استخدامك لهذه الأدوات الاختيارية يكون على مسؤوليتك، وعليك مراجعة شروط الجهة الخارجية قبل استخدامها." },
-      "section9": { "title": "القسم 9 - روابط الجهات الخارجية", "text": "قد تتضمن بعض المحتويات أو المنتجات أو الخدمات مواد من جهات خارجية. وقد تقودك الروابط الموجودة على الموقع إلى مواقع لا تتبع لنا. لسنا مسؤولين عن فحص محتوى تلك المواقع أو دقته، ولا نضمنها ولا نتحمل مسؤولية أي منتجات أو خدمات أو مواد أو معاملات متاحة عبرها. يُرجى مراجعة سياسات الجهة الخارجية قبل إجراء أي معاملة." },
-      "section10": { "title": "القسم 10 - تعليقات المستخدمين وملاحظاتهم ومساهماتهم", "text": "إذا أرسلت إلينا، بناءً على طلبنا أو من تلقاء نفسك، أفكارًا أو اقتراحات أو خططًا أو مواد أخرى، فإنك توافق على إمكانية تحريرها أو نسخها أو نشرها أو توزيعها أو ترجمتها أو استخدامها بأي وسيلة دون قيود. لسنا ملزمين بالحفاظ على سريتها أو دفع تعويض عنها أو الرد عليها. نحتفظ بحق إزالة المحتوى الذي نراه غير قانوني أو مسيئًا أو مخالفًا لحقوق الآخرين. أنت مسؤول عن تعليقاتك ودقتها وعن عدم انتهاكها حقوق أي طرف ثالث." },
-      "section11": { "title": "القسم 11 - المعلومات الشخصية", "text": "يخضع تقديمك للمعلومات الشخصية عبر المتجر لسياسة الخصوصية الخاصة بنا." },
-      "section12": { "title": "القسم 12 - الأخطاء وعدم الدقة والسهو", "text": "قد تتضمن المعلومات الموجودة على الموقع أخطاء مطبعية أو معلومات غير دقيقة أو نواقص تتعلق بأوصاف المنتجات أو الأسعار أو العروض أو رسوم الشحن أو أوقات النقل أو التوفر. نحتفظ بحق تصحيح الأخطاء أو تحديث المعلومات أو إلغاء الطلبات إذا كانت المعلومات غير دقيقة، دون إشعار مسبق. ولا نلتزم بتحديث المعلومات إلا إذا كان القانون يوجب ذلك." },
-      "section13": { "title": "القسم 13 - الاستخدامات المحظورة", "text": "يُحظر استخدام الموقع أو محتواه لأي غرض غير قانوني، أو للتحريض على أعمال غير قانونية، أو لانتهاك القوانين واللوائح، أو التعدي على حقوق الملكية الفكرية، أو مضايقة الآخرين أو الإساءة إليهم أو التمييز ضدهم، أو تقديم معلومات كاذبة، أو تحميل برمجيات ضارة، أو جمع معلومات شخصية عن الآخرين، أو إرسال الرسائل المزعجة أو التصيد، أو الالتفاف على ميزات الأمان. يجوز لنا إنهاء إمكانية وصولك إلى الخدمة إذا خالفت هذه المحظورات." },
-      "section14": { "title": "القسم 14 - إخلاء الضمانات وحدود المسؤولية", "text": "لا نضمن أن استخدام الخدمة سيكون دون انقطاع أو في الوقت المناسب أو آمنًا أو خاليًا من الأخطاء، ولا نضمن دقة النتائج أو موثوقيتها. قد نوقف الخدمة لفترات غير محددة أو ننهيها في أي وقت. تستخدم الخدمة والمنتجات المقدمة من خلالها «كما هي» و«حسب توفرها»، ما لم نذكر خلاف ذلك صراحةً. وبالقدر الذي يسمح به القانون، لا يتحمل المتجر أو موظفوه أو شركاؤه أو مورّدوه المسؤولية عن الأضرار المباشرة أو غير المباشرة أو العرضية أو التبعية الناشئة عن استخدام الخدمة أو المنتجات." },
-      "section15": { "title": "القسم 15 - التعويض", "text": "توافق على تعويض المتجر والشركات التابعة والشركاء والمسؤولين والموظفين والوكلاء ومزوّدي الخدمات وحمايتهم من أي مطالبة أو طلب أو أتعاب قانونية معقولة ينشأ عن خرقك لشروط الخدمة أو المستندات المشار إليها فيها أو انتهاكك لأي قانون أو حقوق طرف ثالث." },
-      "section16": { "title": "القسم 16 - قابلية فصل الأحكام", "text": "إذا تقرر أن أي حكم من أحكام شروط الخدمة غير قانوني أو باطل أو غير قابل للتنفيذ، فسيظل ذلك الحكم نافذًا إلى أقصى حد يسمح به القانون، ويُفصل الجزء غير القابل للتنفيذ عن الشروط. ولا يؤثر ذلك في صلاحية الأحكام الأخرى أو قابليتها للتنفيذ." },
-      "section17": { "title": "القسم 17 - الإنهاء", "text": "تظل الالتزامات والمسؤوليات التي نشأت قبل تاريخ الإنهاء سارية بعد إنهاء الاتفاق. تبقى شروط الخدمة نافذة حتى تنهيها أنت أو نحن. يمكنك إنهاؤها بإبلاغنا أنك لم تعد ترغب في استخدام خدماتنا أو بالتوقف عن استخدام الموقع. وإذا رأينا أنك خالفت أي حكم من الشروط، فيجوز لنا إنهاء الاتفاق أو منع وصولك إلى الخدمات دون إشعار مسبق، مع بقاء المبالغ المستحقة عليك واجبة الدفع." },
-      "section18": { "title": "القسم 18 - الاتفاق الكامل", "text": "لا يُعد عدم ممارستنا لأي حق أو حكم من شروط الخدمة تنازلًا عنه. تشكل هذه الشروط، إلى جانب السياسات وقواعد التشغيل المنشورة على الموقع، الاتفاق الكامل بينك وبيننا وتحكم استخدامك للخدمة، وتحل محل أي اتفاقات أو اتصالات أو مقترحات سابقة أو متزامنة، سواء كانت شفوية أو مكتوبة." },
-      "section19": { "title": "القسم 19 - القانون الحاكم", "text": "تخضع شروط الخدمة هذه وأي اتفاقيات منفصلة نقدم بموجبها خدماتنا لقوانين الولايات المتحدة وتُفسّر وفقًا لها." },
-      "section20": { "title": "القسم 20 - تعديلات شروط الخدمة", "text": "يمكنك مراجعة أحدث نسخة من شروط الخدمة في هذه الصفحة في أي وقت. نحتفظ بحق تحديث الشروط أو تغييرها أو استبدال أي جزء منها بنشر التغييرات على موقعنا. تقع على عاتقك مسؤولية مراجعة الموقع دوريًا للاطلاع على التعديلات." },
-      "section21": { "title": "القسم 21 - معلومات التواصل", "text": "يُرجى إرسال الأسئلة المتعلقة بشروط الخدمة عبر البريد الإلكتروني." }
+      "section1": {
+        "title": "القسم 1 - شروط المتجر الإلكتروني",
+        "text": "بالموافقة على شروط الخدمة هذه، فإنك تقر بأنك بلغت سن الرشد في ولايتك أو مقاطعتك، أو أنك بلغت سن الرشد في ولايتك أو مقاطعتك وقد أعطيتنا موافقتك للسماح لأي من معاليك باستخدام هذا الموقع. لا يجوز لك استخدام منتجاتنا لأي غرض غير قانوني أو غير مصرح به ولا يجوز لك، في استخدام الخدمة، انتهاك أي قوانين في ولايتك القضائية (بما في ذلك على سبيل المثال لا الحصر قوانين حقوق النشر). يجب ألا تنقل أي ديدان أو فيروسات أو أي رمز ذي طبيعة مدمرة. سيؤدي أي خرق أو انتهاك لأي من الشروط إلى إنهاء خدماتك على الفور."
+      },
+      "section2": {
+        "title": "القسم 2 - الشروط العامة",
+        "text": "نحتفظ بالحق في رفض الخدمة لأي شخص لأي سبب في أي وقت. أنت تفهم أن محتواك (باستثناء معلومات بطاقة الائتمان) قد يتم نقله دون تشفير ويتضمن (أ) عمليات نقل عبر شبكات مختلفة؛ و (ب) تغييرات للتوافق والتكيف مع المتطلبات التقنية للشبكات أو الأجهزة المتصلة. يتم دائمًا تشفير معلومات بطاقة الائتمان أثناء النقل عبر الشبكات. أنت توافق على عدم إعادة إنتاج أو تكرار أو نسخ أو بيع أو إعادة بيع أو استغلال أي جزء من الخدمة، أو استخدام الخدمة، أو الوصول إلى الخدمة أو أي اتصال على الموقع يتم من خلاله تقديم الخدمة، دون إذن كتابي صريح منا. يتم تضمين العناوين المستخدمة في هذه الاتفاقية للراحة فقط ولن تحد أو تؤثر بأي شكل آخر على هذه الشروط."
+      },
+      "section3": {
+        "title": "القسم 3 - دقة واكتمال وتوقيت المعلومات",
+        "text": "نحن غير مسؤولين إذا كانت المعلومات المتاحة على هذا الموقع غير دقيقة أو كاملة أو حديثة. يتم توفير المواد الموجودة على هذا الموقع للحصول على معلومات عامة فقط ولا ينبغي الاعتماد عليها أو استخدامها كأساس وحيد لاتخاذ القرارات دون استشارة مصادر معلومات أولية أو أكثر دقة أو اكتمالاً أو حداثة. أي اعتماد على المواد الموجودة على هذا الموقع هو على مسؤوليتك الخاصة. قد يحتوي هذا الموقع على某些 معلومات تاريخية. المعلومات التاريخية، بالضرورة، ليست حديثة ويتم تقديمها للرجوع إليها فقط. نحتفظ بالحق في تعديل محتويات هذا الموقع في أي وقت، لكن ليس لدينا أي التزام بتحديث أي معلومات على موقعنا. أنت توافق على أن مسؤوليتك هي مراقبة التغييرات على موقعنا."
+      },
+      "section4": {
+        "title": "القسم 4 - تعديلات الخدمة والأسعار",
+        "text": "تخضع أسعار منتجاتنا للتغيير دون إشعار. نحتفظ بالحق في أي وقت في تعديل أو إيقاف الخدمة (أو أي جزء أو محتوى منها) دون إشعار في أي وقت. لن نكون مسؤولين تجاهك أو تجاه أي طرف ثالث عن أي تعديل أو تغيير في السعر أو تعليق أو إيقاف للخدمة."
+      },
+      "section5": {
+        "title": "القسم 5 - المنتجات أو الخدمات (إن وجدت)",
+        "text": "قد تكون某些 منتجات أو خدمات متاحة حصريًا عبر الإنترنت من خلال الموقع. قد تكون لهذه المنتجات أو الخدمات كميات محدودة وتخضع للإرجاع أو الاستبدال فقط وفقًا لسياسة الإرجاع الخاصة بنا. بذلنا كل جهد لعرض ألوان وصور منتجاتنا التي تظهر في المتجر بأكبر قدر ممكن من الدقة. لا يمكننا ضمان أن يكون عرض شاشتك لأي لون دقيقًا. نحتفظ بالحق ولكننا غير ملزمين بتحديد مبيعات منتجاتنا أو خدماتنا لأي شخص أو منطقة جغرافية أو ولاية قضائية. قد نمارس هذا الحق على أساس كل حالة على حدة. نحتفظ بالحق في تحديد كميات أي منتجات أو خدمات نقدمها. جميع أوصاف المنتجات أو أسعار المنتجات تخضع للتغيير في أي وقت دون إشعار، وفقًا لتقديرنا الوحيد. نحتفظ بالحق في إيقاف أي منتج في أي وقت. أي عرض لأي منتج أو خدمة يتم تقديمه على هذا الموقع باطل حيثما يكون محظورًا. لا نضمن أن جودة أي منتجات أو خدمات أو معلومات أو أي مواد أخرى تشتريها أو تحصل عليها ستلبي توقعاتك، أو أن أي أخطاء في الخدمة سيتم تصحيحها."
+      },
+      "section6": {
+        "title": "القسم 6 - دقة معلومات الفواتير والحساب",
+        "text": "نحتفظ بالحق في رفض أي طلب تقدمه معنا. يجوز لنا، وفقًا لتقديرنا الوحيد، تحديد أو إلغاء الكميات المشتراة لكل شخص أو لكل أسرة أو لكل طلب. قد تشمل هذه القيود الطلبات المقدمة من أو بموجب نفس حساب العميل، ونفس بطاقة الائتمان، و/أو الطلبات التي تستخدم نفس عنوان الفاتورة و/أو الشحن. في حالة إجراء تغيير أو إلغاء طلب، قد نحاول إخطارك عن طريق الاتصال بالبريد الإلكتروني و/أو عنوان الفاتورة/رقم الهاتف المقدم في وقت تقديم الطلب. نحتفظ بالحق في تحديد أو حظر الطلبات التي، وفقًا لتقديرنا الوحيد، يبدو أنها مقدمة من تجار أو بائعين أو موزعين. أنت توافق على تقديم معلومات شراء وحساب حديثة وكاملة ودقيقة لجميع المشتريات التي تتم في متجرنا. أنت توافق على تحديث حسابك والمعلومات الأخرى على الفور، بما في ذلك عنوان بريدك الإلكتروني وأرقام بطاقات الائتمان وتواريخ انتهاء الصلاحية حتى نتمكن من إكمال معاملاتك والاتصال بك حسب الحاجة."
+      },
+      "section7": {
+        "title": "القسم 7 - سياسة الإرجاع",
+        "text": "لمزيد من التفاصيل، يرجى مراجعة سياسة الإرجاع الخاصة بنا."
+      },
+      "section8": {
+        "title": "القسم 8 - الأدوات الاختيارية",
+        "text": "قد نوفر لك الوصول إلى أدوات طرف ثالث لا نراقبها ولا نتحكم فيها ولا نتدخل فيها. أنت تقر وتوافق على أننا نوفر الوصول إلى هذه الأدوات \"كما هي\" و\"كما هي متاحة\" دون أي ضمانات أو تمثيلات أو شروط من أي نوع ودون أي تأييد. لن نكون مسؤولين بأي شكل من الأشكال عن أو فيما يتعلق باستخدامك للأدوات الاختيارية للطرف الثالث. أي استخدام من قبلك للأدوات الاختيارية المقدمة عبر الموقع هو على مسؤوليتك وتقديرك بالكامل ويجب عليك التأكد من أنك على دراية بشروط تقديم الأدوات من قبل مزود (مزودي) الطرف الثالث المعنيين والموافقة عليها. قد نقدم أيضًا، في المستقبل، خدمات و/أو ميزات جديدة عبر الموقع (بما في ذلك إصدار أدوات وموارد جديدة). تخضع هذه الميزات و/أو الخدمات الجديدة أيضًا لشروط الخدمة هذه."
+      },
+      "section9": {
+        "title": "القسم 9 - روابط الطرف الثالث",
+        "text": "قد تتضمن某些 محتوى أو منتجات أو خدمات متاحة عبر خدمتنا مواد من أطراف ثالثة. قد توجهك روابط الطرف الثالث على هذا الموقع إلى مواقع طرف ثالث غير تابعة لنا. نحن غير مسؤولين عن فحص أو تقييم المحتوى أو الدقة ولا نضمن ولن نتحمل أي مسؤولية أو التزام عن أي مواد أو مواقع طرف ثالث، أو عن أي مواد أو منتجات أو خدمات أخرى لأطراف ثالثة. نحن غير مسؤولين عن أي ضرر أو أضرار متعلقة بشراء أو استخدام السلع أو الخدمات أو الموارد أو المحتوى أو أي معاملات أخرى تتم فيما يتعلق بأي مواقع طرف ثالث. يرجى مراجعة سياسات وممارسات الطرف الثالث بعناية والتأكد من فهمها قبل الانخراط في أي معاملة. يجب توجيه الشكاوى أو المطالبات أو المخاوف أو الأسئلة المتعلقة بمنتجات الطرف الثالث إلى الطرف الثالث."
+      },
+      "section10": {
+        "title": "القسم 10 - تعليقات المستخدمين وملاحظاتهم وطلباتهم الأخرى",
+        "text": "إذا قمت، بناءً على طلبنا، بإرسال某些 طلبات محددة (على سبيل المثال مشاركات المسابقات) أو دون طلب منا بإرسال أفكار إبداعية أو اقتراحات أو مقترحات أو خطط أو مواد أخرى، سواء عبر الإنترنت أو بالبريد الإلكتروني أو بالبريد العادي أو غير ذلك (يُشار إليها مجتمعة باسم \"التعليقات\")، فإنك توافق على أنه يجوز لنا، في أي وقت، دون قيود، تحرير أو نسخ أو نشر أو توزيع أو ترجمة واستخدام أي تعليقات ترسلها إلينا بأي وسيلة. نحن لسنا ولسنا ملزمين (1) بالحفاظ على أي تعليقات في سرية؛ (2) بدفع تعويض عن أي تعليقات؛ أو (3) بالرد على أي تعليقات. يجوز لنا، ولكن ليس علينا، مراقبة أو تحرير أو إزالة المحتوى الذي نحدده وفقًا لتقديرنا الوحيد على أنه غير قانوني أو مسيء أو تهديدي أو تشهيري أو افترائي أو إباحي أو فاحش أو غير مقبول بأي شكل آخر أو ينتهك حقوق الملكية الفكرية لأي طرف أو شروط الخدمة هذه. أنت توافق على أن تعليقاتك لن تنتهك أي حقوق لأي طرف ثالث، بما في ذلك حقوق النشر أو العلامات التجارية أو الخصوصية أو الشخصية أو غيرها من الحقوق الشخصية أو الملكية. أنت توافق كذلك على أن تعليقاتك لن تحتوي على مواد تشهيرية أو غير قانونية بأي شكل آخر أو مسيئة أو فاحشة، أو تحتوي على أي فيروس كمبيوتر أو برامج ضارة أخرى يمكن أن تؤثر بأي شكل من الأشكال على تشغيل الخدمة أو أي موقع ذي صلة. لا يجوز لك استخدام عنوان بريد إلكتروني مزيف أو التظاهر بأنك شخص آخر أو تضليلنا أو تضليل أطراف ثالثة بأي شكل آخر بشأن مصدر أي تعليقات. أنت المسؤول الوحيد عن أي تعليقات تقدمها ودقتها. نحن لا نتحمل أي مسؤولية ولا نفترض أي مسؤولية عن أي تعليقات نشرتها أنت أو أي طرف ثالث."
+      },
+      "section11": {
+        "title": "القسم 11 - المعلومات الشخصية",
+        "text": "يخضع تقديمك للمعلومات الشخصية من خلال المتجر لسياسة الخصوصية الخاصة بنا."
+      },
+      "section12": {
+        "title": "القسم 12 - الأخطاء وعدم الدقة والسهو",
+        "text": "في بعض الأحيان قد تكون هناك معلومات على موقعنا أو في الخدمة تحتوي على أخطاء مطبعية أو عدم دقة أو سهو قد تتعلق بأوصاف المنتجات أو التسعير أو العروض الترويجية أو العروض أو رسوم شحن المنتجات أو أوقات العبور أو التوفر. نحتفظ بالحق في تصحيح أي أخطاء أو عدم دقة أو سهو، وتغيير أو تحديث المعلومات أو إلغاء الطلبات إذا كانت أي معلومات في الخدمة أو على أي موقع ذي صلة غير دقيقة في أي وقت دون إشعار مسبق (بما في ذلك بعد تقديم طلبك). لا نتحمل أي التزام بتحديث أو تعديل أو توضيح المعلومات في الخدمة أو على أي موقع ذي صلة، بما في ذلك على سبيل المثال لا الحصر معلومات التسعير، باستثناء ما يقتضيه القانون. لا ينبغي اعتبار أي تاريخ تحديث أو تحديث محدد مطبق في الخدمة أو على أي موقع ذي صلة مؤشرًا على أن جميع المعلومات في الخدمة أو على أي موقع ذي صلة قد تم تعديلها أو تحديثها."
+      },
+      "section13": {
+        "title": "القسم 13 - الاستخدامات المحظورة",
+        "text": "بالإضافة إلى المحظورات الأخرى المنصوص عليها في شروط الخدمة، يُحظر عليك استخدام الموقع أو محتواه: (أ) لأي غرض غير قانوني؛ (ب) لطلب من الآخرين أداء أو المشاركة في أي أعمال غير قانونية؛ (ج) لانتهاك أي لوائح أو قواعد أو قوانين أو مراسيم دولية أو فيدرالية أو إقليمية أو محلية؛ (د) للتعدي على أو انتهاك حقوق الملكية الفكرية الخاصة بنا أو حقوق الملكية الفكرية للآخرين؛ (هـ) لمضايقة أو إساءة أو إهانة أو إيذاء أو تشهير أو قذف أو تحقير أو تخويف أو التمييز على أساس الجنس أو التوجه الجنسي أو الدين أو العرق أو الأصل القومي أو الإعاقة؛ (و) لتقديم معلومات كاذبة أو مضللة؛ (ز) لتحميل أو نقل فيروسات أو أي نوع آخر من التعليمات البرمجية الضارة التي ستستخدم أو قد تستخدم بأي طريقة تؤثر على وظائف أو تشغيل الخدمة أو أي موقع ذي صلة أو مواقع أخرى أو الإنترنت؛ (ح) لجمع أو تتبع المعلومات الشخصية للآخرين؛ (ط) لإرسال بريد عشوائي أو التصيد أو الاحتيال أو التظاهر أو العنكبوت أو الزحف أو الكشط؛ (ي) لأي غرض فاحش أو غير أخلاقي؛ أو (ك) للتدخل في أو التحايل على ميزات الأمان للخدمة أو أي موقع ذي صلة أو مواقع أخرى أو الإنترنت. نحتفظ بالحق في إنهاء استخدامك للخدمة أو أي موقع ذي صلة لانتهاك أي من الاستخدامات المحظورة."
+      },
+      "section14": {
+        "title": "القسم 14 - إخلاء المسؤولية عن الضمانات؛ تحديد المسؤولية",
+        "text": "لا نضمن أو نمثل أو نقر بأن استخدامك لخدمتنا سيكون دون انقطاع أو في الوقت المناسب أو آمن أو خالٍ من الأخطاء. لا نضمن أن النتائج التي قد يتم الحصول عليها من استخدام الخدمة ستكون دقيقة أو موثوقة. أنت توافق على أننا قد نزيل الخدمة من وقت لآخر لفترات غير محددة أو نلغي الخدمة في أي وقت، دون إشعار لك. أنت توافق صراحةً على أن استخدامك للخدمة أو عدم قدرتك على استخدامها هو على مسؤوليتك وحدك. يتم تقديم الخدمة وجميع المنتجات والخدمات المسلمة لك من خلال الخدمة (باستثناء ما هو منصوص عليه صراحةً من قبلنا) \"كما هي\" و\"كما هي متاحة\" لاستخدامك، دون أي تمثيل أو ضمانات أو شروط من أي نوع، صريحة أو ضمنية، بما في ذلك جميع الضمانات أو الشروط الضمنية للقابلية للتسويق، والجودة القابلة للتسويق، والملاءمة لغرض معين، والمتانة، والملكية، وعدم الانتهاك. لا يجوز بأي حال من الأحوال أن يكون متجرنا أو مديرونا أو مسؤولونا أو موظفونا أو الشركات التابعة لنا أو وكلاؤنا أو متعاقدونا أو المتدربون أو موردونا أو مزودو الخدمة أو المرخصون مسؤولين عن أي إصابة أو خسارة أو مطالبة أو أي أضرار مباشرة أو غير مباشرة أو عرضية أو تأديبية أو خاصة أو تبعية من أي نوع، بما في ذلك على سبيل المثال لا الحصر الأرباح المفقودة أو الإيرادات المفقودة أو المدخرات المفقودة أو فقدان البيانات أو تكاليف الاستبدال أو أي أضرار مماثلة، سواء كانت مبنية على العقد أو الضرر (بما في ذلك الإهمال) أو المسؤولية الصارمة أو غير ذلك، الناشئة عن استخدامك لأي من الخدمة أو أي منتجات تم الحصول عليها باستخدام الخدمة، أو لأي مطالبة أخرى تتعلق بأي شكل من الأشكال باستخدامك للخدمة أو أي منتج، بما في ذلك على سبيل المثال لا الحصر أي أخطاء أو سهو في أي محتوى، أو أي خسارة أو ضرر من أي نوع يتم تكبدها نتيجة لاستخدام الخدمة أو أي محتوى (أو منتج) تم نشره أو نقله أو جعله متاحًا بأي شكل آخر عبر الخدمة، حتى لو تم إخطارهم بإمكانية حدوث ذلك. نظرًا لأن بعض الولايات أو الولايات القضائية لا تسمح باستبعاد أو تحديد المسؤولية عن الأضرار التبعية أو العرضية، في مثل هذه الولايات أو الولايات القضائية، ستكون مسؤوليتنا محدودة إلى أقصى حد يسمح به القانون."
+      },
+      "section15": {
+        "title": "القسم 15 - التعويض",
+        "text": "أنت توافق على تعويض والدفاع عن وحماية متجرنا وشركتنا الأم والشركات التابعة لنا والشركاء والمسؤولين والمديرين والوكلاء والمتعاقدين والمرخصين ومزودي الخدمة والمقاولين من الباطن والموردين والمتدربين والموظفين، من أي مطالبة أو طلب، بما في ذلك أتعاب المحاماة المعقولة، التي يقدمها أي طرف ثالث بسبب أو ناشئة عن خرقك لشروط الخدمة هذه أو المستندات التي تتضمنها بالإشارة أو انتهاكك لأي قانون أو حقوق طرف ثالث."
+      },
+      "section16": {
+        "title": "القسم 16 - قابلية الفصل",
+        "text": "في حالة تحديد أن أي حكم من شروط الخدمة هذه غير قانوني أو باطل أو غير قابل للتنفيذ، فإن هذا الحكم يظل مع ذلك قابلاً للتنفيذ إلى أقصى حد يسمح به القانون المعمول به، ويعتبر الجزء غير القابل للتنفيذ منفصلاً عن شروط الخدمة هذه، ولا يؤثر هذا التحديد على صحة وقابلية تنفيذ أي أحكام أخرى متبقية."
+      },
+      "section17": {
+        "title": "القسم 17 - الإنهاء",
+        "text": "تظل التزامات ومسؤوليات الأطراف المتكبدة قبل تاريخ الإنهاء سارية بعد إنهاء هذه الاتفاقية لجميع الأغراض. تكون شروط الخدمة هذه سارية ما لم يتم إنهاؤها من قبلك أو من قبلنا. يمكنك إنهاء شروط الخدمة هذه في أي وقت عن طريق إخطارنا بأنك لم تعد ترغب في استخدام خدماتنا، أو عندما تتوقف عن استخدام موقعنا. إذا رأينا، وفقًا لتقديرنا الوحيد، أنك فشلت، أو نشك في أنك فشلت، في الامتثال لأي شرط أو حكم من شروط الخدمة هذه، يجوز لنا أيضًا إنهاء هذه الاتفاقية في أي وقت دون إشعار وستظل مسؤولاً عن جميع المبالغ المستحقة حتى تاريخ الإنهاء بما في ذلك؛ و/أو وفقًا لذلك قد نمنعك من الوصول إلى خدماتنا (أو أي جزء منها)."
+      },
+      "section18": {
+        "title": "القسم 18 - الاتفاقية الكاملة",
+        "text": "لا يشكل فشلنا في ممارسة أو إنفاذ أي حق أو حكم من شروط الخدمة هذه تنازلاً عن هذا الحق أو الحكم. تشكل شروط الخدمة هذه وأي سياسات أو قواعد تشغيل ننشرها على هذا الموقع أو فيما يتعلق بالخدمة الاتفاقية والتفاهم الكاملين بينك وبيننا وتحكم استخدامك للخدمة، وتحل محل أي اتفاقيات واتصالات ومقترحات سابقة أو معاصرة، سواء كانت شفهية أو مكتوبة، بينك وبيننا (بما في ذلك على سبيل المثال لا الحصر أي إصدارات سابقة من شروط الخدمة). لا يجوز تفسير أي غموض في تفسير شروط الخدمة هذه ضد الطرف الصائغ."
+      },
+      "section19": {
+        "title": "القسم 19 - القانون الحاكم",
+        "text": "تخضع شروط الخدمة هذه وأي اتفاقيات منفصلة نقدم بموجبها الخدمات لك وتُفسر وفقًا لقوانين الولايات المتحدة."
+      },
+      "section20": {
+        "title": "القسم 20 - التغييرات على شروط الخدمة",
+        "text": "يمكنك مراجعة أحدث إصدار من شروط الخدمة في أي وقت على هذه الصفحة. نحتفظ بالحق، وفقًا لتقديرنا الوحيد، في تحديث أو تغيير أو استبدال أي جزء من شروط الخدمة هذه عن طريق نشر التحديثات والتغييرات على موقعنا. تقع على عاتقك مسؤولية التحقق من موقعنا بشكل دوري بحثًا عن التغييرات."
+      },
+      "section21": {
+        "title": "القسم 21 - معلومات الاتصال",
+        "text": "يجب إرسال الأسئلة حول شروط الخدمة إلينا عبر البريد الإلكتروني."
+      }
     }
   }
 }

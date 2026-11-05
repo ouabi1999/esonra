@@ -124,7 +124,7 @@ const FixedPurchaseBar = styled.div`
 
 
   right: 0;
-  bottom: 60px;
+  bottom: 0;
 
   z-index: 1000;
 

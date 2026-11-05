@@ -429,7 +429,7 @@ const onClose = ()=>{
           shippingInfo={shippingInfo}
         />
       )}
-        <NewArrival products={similarProducts} name="mayAlsoLike" isAuto={false} />
+        {/*<NewArrival products={similarProducts} name="mayAlsoLike" isAuto={false} />*/}
       </>
       )}
      <DesignSection/>

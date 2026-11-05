@@ -94,7 +94,7 @@ const Footer = () => {
 
             <Links>
               <SocialLink
-                href="https://www.facebook.com/profile.php?id=61571681156358"
+                href="https://www.facebook.com/profile.php?id=61591850604991"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -106,7 +106,7 @@ const Footer = () => {
               </SocialLink>
 
               <SocialLink
-                href="https://www.instagram.com/en.ouza"
+                href="https://www.instagram.com/es.onra"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -117,8 +117,8 @@ const Footer = () => {
                 </span>
               </SocialLink>
 
-              <SocialLink
-                href="https://www.tiktok.com/@en.ouza"
+              {/*<SocialLink
+                href="https://www.tiktok.com/@es.onra"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -127,7 +127,7 @@ const Footer = () => {
                 <span>
                   {t("footer.followUs.tiktok")}
                 </span>
-              </SocialLink>
+              </SocialLink>*/}
             </Links>
           </FooterColumn>
 
