@@ -179,7 +179,7 @@ function getRating(rate) {
 
 function getCustomerName(rate) {
   const firstName = rate?.user?.firstName?.trim() || "";
-  const lastName = rate?.user?.lastName?.trim().slice(0, 2) || "";
+  const lastName = rate?.user?.lastName?.trim().slice(0, 1) || "";
 
   const name = [firstName, lastName].filter(Boolean).join(" ");
 

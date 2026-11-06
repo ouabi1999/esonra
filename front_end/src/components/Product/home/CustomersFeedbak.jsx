@@ -511,7 +511,7 @@ const CustomersFeedback = () => {
 
                 const customerName = firstName
 
-                  ? `${firstName} ${lastName.slice(0, 2)}${
+                  ? `${firstName} ${lastName.slice(0, 1)}${
 
                       lastName ? "." : ""
 
