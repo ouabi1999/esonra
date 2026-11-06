@@ -995,7 +995,7 @@ const ProductImg = styled.div`
 
     width: 100%;
 
-    height: 420px;
+    height: 495px;
 
     min-height: 0;
      width: calc(100% + 40px);
