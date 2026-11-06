@@ -64,8 +64,8 @@ const MainSlider = () => {
       </Overlay>
 
       <ShopNowButton
-        to="/collections?category=table_lamps"
-        onClick={() => dispatch(toggleCategory("table_lamps"))}
+        to="/collections"
+        onClick={() => dispatch(toggleCategory(""))}
       >
         {t("profile.start_shopping")}
       </ShopNowButton>
