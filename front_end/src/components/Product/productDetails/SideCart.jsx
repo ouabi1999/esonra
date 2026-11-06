@@ -99,7 +99,7 @@ function SideCart(props) {
               </SmallLabel>
 
               <ShippingValue>
-                5-7 {t("purchaseOptions.business_days")}
+              {shippingInfo.from} - {shippingInfo.to} {t("common.days")}
               </ShippingValue>
             </ShippingContent>
           </ShippingLeft>

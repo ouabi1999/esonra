@@ -54,8 +54,8 @@ function ProductDetailsPage() {
   const [shippingInfo, setShippingInfo] = useState({
     date1: defaultDate1.toDateString(),
     date2: defaultDate2.toDateString(),
-    from: 5,
-    to: 7,
+    from: 1,
+    to: 5,
     cost: 0,
     methodName: t("purchaseOptions.free_Shipping"),
   });

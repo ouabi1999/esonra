@@ -86,7 +86,7 @@ function ProductCart() {
       <div className="header-container">
         <div>
           <span className="checkout">
-            ENOUZA — {t("common.checkout")}
+            ESONRA — {t("common.checkout")}
           </span>
         </div>
       </div>

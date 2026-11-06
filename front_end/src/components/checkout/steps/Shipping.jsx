@@ -28,8 +28,8 @@ const DEFAULT_SHIPPING_METHODS = [
   {
     methodName: "Standard Shipping",
     cost: 0,
-    from: 5,
-    to: 10,
+    from: 1,
+    to: 5,
   },
 ];
 

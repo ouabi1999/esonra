@@ -75,7 +75,7 @@ function SideBar(props) {
         <h4>{t("footer.followUs.title")}</h4>
         <SocialMedia>
           <a
-            href="https://www.facebook.com/profile.php?id=61571681156358"
+            href="https://www.facebook.com/profile.php?id=61591850604991"
             target="_blank"
             rel="noreferrer"
           >
@@ -83,7 +83,7 @@ function SideBar(props) {
           </a>
 
           <a
-            href="https://www.tiktok.com/@en.ouza"
+            href="https://www.tiktok.com/@es.onra"
             target="_blank"
             rel="noreferrer"
           >
@@ -91,7 +91,7 @@ function SideBar(props) {
           </a>
 
           <a
-            href="https://www.instagram.com/en.ouza"
+            href="https://www.instagram.com/es.onra"
             target="_blank"
             rel="noreferrer"
           >

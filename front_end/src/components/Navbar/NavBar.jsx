@@ -741,7 +741,7 @@ const BrandLogo = styled.div`
     font-size: 24px;
 
     img {
-      height: 38px;
+      height: 20px;
       width: auto;
     }
   }
@@ -750,7 +750,7 @@ const BrandLogo = styled.div`
     font-size: 20px;
 
     img {
-      height: 32px;
+      height: 15px;
       width: auto;
     }
   }
