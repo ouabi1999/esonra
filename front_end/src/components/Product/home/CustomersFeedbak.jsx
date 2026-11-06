@@ -1167,461 +1167,239 @@ const ReviewSlide = styled.div`
 
 
 
+/* =========================================================
+   REVIEW CARD
+========================================================= */
+
 const ReviewCard = styled.article`
-
   position: relative;
-
   width: 100%;
-
-  height: 600px;
-
+  height: 100%;
+  min-height: 460px;
   overflow: hidden;
-
   display: flex;
-
   flex-direction: column;
-
   background: #fff;
-
-  border: 1px solid #e5e3df;
-
+  border: 1px solid #eae7df;
+  border-radius: 12px;
   box-sizing: border-box;
-
-
 
   transition:
-
     transform 0.3s ease,
-
     box-shadow 0.3s ease,
-
     border-color 0.3s ease;
 
-
-
   &:hover {
-
-    transform: translateY(-3px);
-
-    border-color: #dedbd5;
-
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
-
+    transform: translateY(-4px);
+    border-color: #ded7c8;
+    box-shadow: 0 12px 32px rgba(35, 32, 24, 0.08);
   }
-
-
 
   @media (max-width: 550px) {
-
-    height: 590px;
-
+    min-height: 0;
   }
-
 `;
 
-
-
 /* =========================================================
-
    IMAGE
-
-\========================================================= */
-
-
+========================================================= */
 
 const ImageWrapper = styled.div`
-
   position: relative;
-
   width: 100%;
-
-  height: 350px;
-
+  aspect-ratio: 1 / 1;
   flex-shrink: 0;
-
   overflow: hidden;
-
   background: #f4f2ed;
-
   cursor: pointer;
-
-
 
   &:focus-visible {
-
-    outline: 2px solid #c9a35c;
-
+    outline: 2px solid #38745b;
     outline-offset: -3px;
-
   }
-
 `;
-
-
 
 const ReviewImage = styled.img`
-
   display: block;
-
   width: 100%;
-
   height: 100%;
-
   object-fit: cover;
-
   cursor: pointer;
-
   transition: transform 0.5s ease;
 
-
-
   ${ReviewCard}:hover & {
-
-    transform: scale(1.02);
-
+    transform: scale(1.03);
   }
-
 `;
-
-
 
 const ImageCount = styled.span`
-
   position: absolute;
-
-  right: 14px;
-
-  bottom: 14px;
-
+  right: 12px;
+  bottom: 12px;
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
-  min-width: 32px;
-
-  height: 28px;
-
+  min-width: 30px;
+  height: 26px;
   padding: 0 8px;
-
+  border-radius: 6px;
   background: rgba(255, 255, 255, 0.94);
-
   color: #1d1d1b;
-
   font-size: 11px;
-
   font-weight: 600;
-
   backdrop-filter: blur(8px);
-
 `;
 
-
-
 /* =========================================================
-
    REVIEW CONTENT
-
-\========================================================= */
-
-
+========================================================= */
 
 const ReviewContent = styled.div`
-
   flex: 1;
-
   min-height: 0;
-
-  padding: 28px 28px 24px;
-
+  padding: 20px 20px 18px;
   display: flex;
-
   flex-direction: column;
-
   background: #fff;
-
   box-sizing: border-box;
 
-
-
   @media (max-width: 550px) {
-
-    padding: 24px 22px 22px;
-
+    padding: 18px 18px 16px;
   }
-
 `;
 
-
-
 /* =========================================================
-
    RATING ROW
-
-\========================================================= */
-
-
+========================================================= */
 
 const RatingRow = styled.div`
-
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
   width: 100%;
-
-  gap: 12px;
-
+  gap: 10px;
 `;
-
-
 
 const ReviewRating = styled.div`
-
   display: flex;
-
   align-items: center;
-
   gap: 2px;
-
-  font-size: 16px;
-
+  font-size: 14px;
   line-height: 1;
-
   white-space: nowrap;
-
   flex-shrink: 0;
-
-
 
   .star {
-
-    color: #d8d5ce;
-
+    color: #e5e0d8;
   }
-
-
 
   .star.active {
-
-    color: #38745B;
-
+    color: #38745b;
   }
-
 `;
-
-
 
 const RatingScore = styled.span`
-
-  margin-left: 5px;
-
-  font-size: 12px;
-
+  margin-left: 4px;
+  font-size: 11px;
   font-weight: 600;
-
-  letter-spacing: 0;
-
   color: #555;
-
 `;
 
-
-
 /* =========================================================
-
    VERIFIED PURCHASE
-
-\========================================================= */
-
-
+========================================================= */
 
 const Verified = styled.span`
-
   display: flex;
-
   align-items: center;
-
-  gap: 7px;
-
+  gap: 6px;
   font-size: 10px;
-
-  font-weight: 600;
-
-  letter-spacing: 0.8px;
-
+  font-weight: 500;
   color: #777;
-
   white-space: nowrap;
-
 `;
-
-
 
 const Check = styled.span`
-
   display: inline-flex;
-
   align-items: center;
-
   justify-content: center;
-
-  width: 14px;
-
-  height: 14px;
-
+  width: 7px;
+  height: 7px;
   flex-shrink: 0;
-
   border-radius: 50%;
-
-  background: #e9e5dc;
-
-  color: #6f654e;
-
-  font-size: 10px;
-
+  background: #38745b;
+  color: transparent;
+  font-size: 0;
 `;
 
-
-
 /* =========================================================
-
    REVIEW TEXT
-
-\========================================================= */
-
-
+========================================================= */
 
 const ReviewText = styled.p`
-
-  margin: 22px 0 18px;
-
+  margin: 16px 0 14px;
   font-family: Arial, sans-serif;
-
-  font-size: 14px;
-
+  font-size: 13px;
   line-height: 1.75;
-
-  color: #303030;
-
-
+  color: #45443f;
 
   display: -webkit-box;
-
   -webkit-box-orient: vertical;
-
-  -webkit-line-clamp: 3;
-
+  -webkit-line-clamp: 5;
   overflow: hidden;
-
   text-overflow: ellipsis;
-
 `;
-
-
 
 /* =========================================================
-
    CUSTOMER
-
-\========================================================= */
-
-
+========================================================= */
 
 const Customer = styled.div`
-
   margin-top: auto;
-
-  padding-top: 18px;
-
-  border-top: 1px solid #e7e5e1;
-
+  padding-top: 16px;
+  border-top: 1px solid #efede8;
   display: flex;
-
   align-items: center;
-
-  gap: 14px;
-
+  gap: 11px;
 `;
-
-
 
 const CustomerAvatar = styled.div`
-
-  width: 42px;
-
-  height: 42px;
-
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
-
   border-radius: 50%;
-
   background: #1d1d1b;
-
   color: #fff;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
-  font-size: 14px;
-
+  font-size: 12px;
   font-weight: 600;
-
   text-transform: uppercase;
-
 `;
-
-
 
 const CustomerInfo = styled.div`
-
   display: flex;
-
   flex-direction: column;
-
   gap: 4px;
-
   min-width: 0;
-
 `;
-
-
 
 const CustomerName = styled.span`
-
   display: block;
-
-  font-size: 14px;
-
+  font-size: 12px;
   font-weight: 600;
-
-  color: #171717;
-
+  color: #25241f;
   white-space: nowrap;
-
   overflow: hidden;
-
   text-overflow: ellipsis;
   text-transform: capitalize;
-
 `;
 
-
-
 const CustomerDate = styled.span`
-
   display: block;
-
-  font-size: 11px;
-
+  font-size: 10px;
   color: #999;
-
 `;
 
 

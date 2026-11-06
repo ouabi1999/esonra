@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import {  useSearchParams } from "react-router-dom";
 import Pagination from "@mui/material/Pagination";
 
 import ApiInstance from "../../common/baseUrl";
-import ReviewImagePopup from "../components/Product/aboutProduct/reviews/ReviewImagePopup";
 import { optimizeCloudinaryImage } from "../utilis/cloudinary";
+import ReviewImagePopup from "../components/Product/aboutProduct/reviews/ReviewImagePopup";
 const ReviewsPage = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
-
   const [reviews, setReviews] = useState([]);
   const [review, setReview] = useState({});
   const [selected, setSelected] = useState({
@@ -19,7 +17,7 @@ const ReviewsPage = () => {
     index: null,
   });
 
-  const [expanded, setExpanded] = useState(false);
+  const [expandedReviewId, setExpandedReviewId] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const [totalReviews, setTotalReviews] = useState(0);
@@ -59,20 +57,16 @@ const ReviewsPage = () => {
         */
 
         const data = response.data;
+        
 
-        const results = Array.isArray(data)
-          ? data
-          : Array.isArray(data?.results)
-          ? data.results
-          : [];
-
-        const count = Array.isArray(data)
-          ? data.length
-          : Number(data?.count) || 0;
-
+        const results = Array.isArray(data?.results) ? data.results : [];
+        const count = Number(data?.count || 0);
         setReviews(results);
         setTotalReviews(count);
-        setTotalPages(Math.max(1, Math.ceil(count / PAGE_SIZE)));
+        setTotalPages(
+          Number(data?.total_pages) || Math.max(1, Math.ceil(count / PAGE_SIZE))
+        );
+        
       } catch (error) {
         console.error("Ratings error:", error);
 
@@ -102,9 +96,10 @@ const ReviewsPage = () => {
       window.scrollTo({
         top: 0,
         left: 0,
-        behavior: "auto",
+        behavior: "smooth",
       });
     }, [currentPage]);
+    
 
   /* =========================================================
      PAGE CHANGE
@@ -256,8 +251,11 @@ const ReviewsPage = () => {
 
               const customerName =
                 `${item?.user?.firstName || ""} ${
-                  item?.user?.lastName.slice(0, 1) || ""
+                  item?.user?.lastName?.slice(0, 1) || ""
                 }`.trim() || "Customer";
+
+              const isExpanded = expandedReviewId === item.id;
+              const reviewText = item?.review?.text || "";
 
               return (
                 <ReviewCard key={item.id}>
@@ -277,6 +275,7 @@ const ReviewsPage = () => {
                           event.key === "Enter" ||
                           event.key === " "
                         ) {
+                          event.preventDefault();
                           setRate(item, 0);
                         }
                       }}
@@ -341,22 +340,21 @@ const ReviewsPage = () => {
                       </Verified>
                     </TopRow>
 
-                    <ReviewText
-                      $expanded={expanded}
-                    >
-                      {item?.review?.text || ""}
+                    <ReviewText $expanded={isExpanded}>
+                      {reviewText}
                     </ReviewText>
 
-                    {item?.review?.text?.length > 220 && (
+                    {reviewText.length > 220 && (
                       <ReadMore
                         type="button"
+                        aria-expanded={isExpanded}
                         onClick={() =>
-                          setExpanded((prev) => !prev)
+                          setExpandedReviewId((prev) =>
+                            prev === item.id ? null : item.id
+                          )
                         }
                       >
-                        {expanded
-                          ? "Show less"
-                          : "Read more"}
+                        {isExpanded ? "Show less" : "Read more"}
                       </ReadMore>
                     )}
 
@@ -412,23 +410,20 @@ const ReviewsPage = () => {
         {/* =====================================================
             MATERIAL UI PAGINATION
         ===================================================== */}
-
-        {!loading && totalPages > 1 && (
-          <PaginationWrapper>
-            <Pagination
-              count={totalPages}
-              page={currentPage}
-              onChange={changePage}
-              color="standard"
-              shape="rounded"
-              siblingCount={1}
-              boundaryCount={1}
-              aria-label={t(
-                "customersFeedback.pagination"
-              )}
-            />
-          </PaginationWrapper>
-        )}
+{!loading && reviews.length > 0 && totalPages > 1 && (
+  <PaginationWrapper>
+    <Pagination
+      count={totalPages}
+      page={Math.min(currentPage, totalPages)}
+      onChange={changePage}
+      color="standard"
+      shape="rounded"
+      siblingCount={1}
+      boundaryCount={1}
+      aria-label={t("customersFeedback.pagination")}
+    />
+  </PaginationWrapper>
+)}
       </ReviewsSection>
 
       {/* =====================================================
@@ -547,7 +542,7 @@ const RatingSummary = styled.div`
 const RatingStars = styled.span`
   font-size: 14px;
   letter-spacing: 2px;
-  color: #1d1d1b;
+  color: #38745b;
 `;
 
 const ReviewCount = styled.span`
@@ -571,20 +566,23 @@ const ReviewsSection = styled.section`
 
 const ReviewsGrid = styled.div`
   display: grid;
-  justify-content:center;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 24px;
 
-  grid-template-columns: repeat(4, minmax(0, 0.5fr));
-
-  gap: 28px;
-
-  @media (max-width: 1100px) {
-    grid-template-columns: repeat(3, minmax(0, 0.5fr));
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
   }
 
-  @media (max-width: 600px) {
-    grid-template-columns: 0.8fr;
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
 
-    gap: 22px;
+  @media (max-width: 520px) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
   }
 `;
 
@@ -594,30 +592,28 @@ const ReviewsGrid = styled.div`
 
 const ReviewCard = styled.article`
   min-width: 0;
-
-  height: 510px;
-
+  min-height: 460px;
   display: flex;
   flex-direction: column;
-
-  background: #fff;
-
-  border: 1px solid #eceae5;
-
   overflow: hidden;
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  background: #fff;
+  border: 1px solid #eae7df;
+  border-radius: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 
   &:hover {
-    transform: translateY(-3px);
-
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    transform: translateY(-4px);
+    border-color: #ded7c8;
+    box-shadow: 0 12px 32px rgba(35, 32, 24, 0.08);
   }
 
-  @media (max-width: 600px) {
-    height: 500px;
+  @media (max-width: 520px) {
+    min-height: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+    &:hover { transform: none; }
   }
 `;
 
@@ -627,34 +623,32 @@ const ReviewCard = styled.article`
 
 const ReviewImageWrapper = styled.div`
   position: relative;
-
-  height: 300px;
-  min-height: 300px;
-
+  width: 100%;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
-
-  background: #f1efe9;
-
+  background: #f5f3ee;
   cursor: pointer;
 
   &:focus-visible {
-    outline: 2px solid #1d1d1b;
-    outline-offset: -2px;
+    outline: 2px solid #38745b;
+    outline-offset: -3px;
   }
 `;
 
 const ReviewImage = styled.img`
   display: block;
-
   width: 100%;
   height: 100%;
-
   object-fit: cover;
-
-  transition: transform 0.6s ease;
+  transition: transform 0.4s ease;
 
   ${ReviewImageWrapper}:hover & {
-    transform: scale(1.025);
+    transform: scale(1.04);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+    ${ReviewImageWrapper}:hover & { transform: none; }
   }
 `;
 
@@ -684,26 +678,20 @@ const ImageCount = styled.span`
 `;
 
 const NoImage = styled.div`
-  min-height: 300px;
- width:100%;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(135deg, #f2f0eb, #e9e6df);
 
-  background:
-    linear-gradient(
-      135deg,
-      #f2f0eb,
-      #e9e6df
-    );
-    img{
-     display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-    }
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 
 
@@ -714,114 +702,97 @@ const NoImage = styled.div`
 
 const ReviewContent = styled.div`
   flex: 1;
-
+  min-width: 0;
+  min-height: 0;
   display: flex;
   flex-direction: column;
+  padding: 20px 20px 18px;
 
-  padding: 22px 24px 20px;
-
-  min-height: 0;
+  @media (max-width: 520px) {
+    padding: 18px 18px 16px;
+  }
 `;
 
 const TopRow = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  gap: 12px;
-
-  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
 `;
 
 const Stars = styled.div`
   display: flex;
-
   flex-shrink: 0;
+  gap: 2px;
 `;
 
 const Star = styled.span`
   font-size: 14px;
-
-  color: ${({ active }) =>
-    active ? "#1d1d1b" : "#d8d5ce"};
+  line-height: 1;
+  color: ${({ active }) => (active ? "#38745b" : "#e5e0d8")};
 `;
 
 const Verified = styled.div`
   display: flex;
   align-items: center;
-
   gap: 6px;
-
   font-size: 9px;
   font-weight: 600;
-
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-
-  color: #777;
+  color: #68786c;
 `;
 
 const VerifiedDot = styled.span`
   width: 6px;
   height: 6px;
-
+  flex-shrink: 0;
   border-radius: 50%;
-
-  background: #777;
+  background: #38745b;
 `;
 
 const ReviewText = styled.p`
   margin: 0;
-
-  color: #444;
-
-  font-size: 14px;
-  line-height: 1.7;
-
+  color: #45443f;
+  font-size: 13px;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-
   overflow: hidden;
 
   ${({ $expanded }) =>
-    !$expanded &&
-    `
-      -webkit-line-clamp: 5;
-    `}
+    !$expanded && `-webkit-line-clamp: 5;`}
 `;
 
 const ReadMore = styled.button`
   align-self: flex-start;
-
   margin-top: 8px;
-
-  padding: 0;
-
+  padding: 2px 0;
   border: 0;
   background: transparent;
-
   font-family: inherit;
-
-  color: #1d1d1b;
-
+  color: #38745b;
   font-size: 11px;
-  font-weight: 600;
-
+  font-weight: 700;
   cursor: pointer;
-
   text-decoration: underline;
   text-underline-offset: 3px;
+
+  &:focus-visible {
+    outline: 2px solid #38745b;
+    outline-offset: 3px;
+  }
 `;
 
 const Customer = styled.div`
   display: flex;
   align-items: center;
-
   gap: 11px;
-
   margin-top: auto;
-  padding-top: 18px;
-
+  padding-top: 16px;
   border-top: 1px solid #efede8;
 `;
 
@@ -978,8 +949,8 @@ const PaginationWrapper = styled.div`
 ============================================================= */
 
 const SkeletonImage = styled.div`
-  height: 300px;
-  min-height: 300px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
 
   background: linear-gradient(
     90deg,
