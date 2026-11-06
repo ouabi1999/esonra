@@ -25,6 +25,7 @@ export default function CheckoutForm() {
   const stripe = useStripe();
   const elements = useElements();
   const { formData } = useContext(OrderContext);
+  const navigate = useNavigate();
 
   const { total } = useContext(FormContext);
    const shippingPrice = Number(
@@ -107,7 +108,6 @@ export default function CheckoutForm() {
   };
 
   const createCashOnDeliveryOrder = async () => {
-    console.log(formData);
     if (isLoadingCOD || !cartItems?.length) return;
 
     setIsLoadingCOD(true);
@@ -133,11 +133,10 @@ export default function CheckoutForm() {
         total_price: formData.totalPrice,
         ordered_items: JSON.stringify(ordered_items)
       });
-
-      console.log("COD order created successfully.");
+       navigate("/order-success");
     } catch (error) {
       console.error("COD order error:", error);
-
+       
       setMessage(
         error.response?.data?.detail ||
           t("checkoutPage.orderCreationError")
