@@ -29,7 +29,7 @@ function ProductLayout({
 
   shippingMethodIndex,
 }) {
-  const productData = useSelector(
+ const productData = useSelector(
     (state) => state.product.productData
   );
 
@@ -49,13 +49,13 @@ function ProductLayout({
   const [availableAttributes, setAvailableAttributes] =
     useState({});
 
-  const [picsDetailsIndex, setPicsDetailsIndex] = useState(0);
+  const [picsDetailsIndex, setPicsDetailsIndex] = useState(null);
  
   const [isPicsDetailsActive, setIsPicsDetailsActive] =
   useState(!hasSkuIndex);
 
 const [isColorActive, setIsColorActive] =
-  useState(hasSkuIndex);
+  useState(hasSkuIndex || true);
 
   const {i18n} = useTranslation()
  
@@ -73,7 +73,6 @@ const [isColorActive, setIsColorActive] =
   if (!productData) {
     return null;
   }
-
  
  
   return (

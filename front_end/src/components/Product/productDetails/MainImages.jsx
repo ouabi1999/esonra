@@ -481,14 +481,8 @@ function MainImages(props) {
 
 
 
-            {/* =================================================
 
-                BOTTOM LEFT PROGRESS
-
-            ================================================= */}
-
-
-
+           
             <ProgressContainer>
 
               <CurrentNumber>
@@ -543,8 +537,6 @@ function MainImages(props) {
 
             </ProgressContainer>
 
-
-
             {/* =================================================
 
                 BOTTOM RIGHT VIEW BUTTON
@@ -567,11 +559,7 @@ function MainImages(props) {
 
 
 
-              <ViewText>
-
-                {t("common.view")}
-
-              </ViewText>
+              
 
             </FullscreenButton>
 
@@ -836,7 +824,6 @@ export default MainImages;
 
 const Container = styled.div`
   width: 100%;
-  margin-bottom: 28px;
 `;
 
 
@@ -1063,25 +1050,28 @@ const MainImage = styled.img`
 ========================================================= */
 
 const ProgressContainer = styled.div`
+display:none;
   position: absolute;
-
   top: 15px;
 
   left: 15px;
 
   z-index: 1;
 
-  display: flex;
 
   align-items: center;
 
   gap: 10px;
-width:80px;
+  width:80px;
   pointer-events: none;
   background: rgba(232, 241, 241, 0.13);
 
 
   padding:4px;
+
+   @media (max-width: 500px) {
+    display: flex;
+  }
 
   
 `;
@@ -1157,7 +1147,6 @@ const ProgressBar = styled.span`
   transition: width 0.35s ease;
 `;
 
-
 /* =========================================================
    VIEW BUTTON
 ========================================================= */
@@ -1183,12 +1172,11 @@ const FullscreenButton = styled.button`
 
   border: 1px solid rgba(26, 25, 23, 0.12);
 
-    background: rgba(232, 241, 241, 0.13);
+    background: rgb(255, 255, 255);
 
 
   backdrop-filter: blur(10px);
 
-  -webkit-backdrop-filter: blur(10px);
 
   color: #1a1917;
 
@@ -1212,7 +1200,7 @@ const FullscreenButton = styled.button`
   }
 
   @media (max-width: 768px) {
-\
+
 
     height: 20px;
 
@@ -1269,7 +1257,7 @@ const NavigationButton = styled.button`
 
   border: 1px solid rgba(26, 25, 23, 0.1);
 
-  background: rgba(232, 241, 241, 0.13);
+  background: rgb(255, 255, 255);
 
   backdrop-filter: blur(10px);
 
