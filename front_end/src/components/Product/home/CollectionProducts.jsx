@@ -352,7 +352,7 @@ const ProductContainer = styled.div`
     align-items: start;
   }
 
-  @media (max-width: 1200px) {
+ @media (max-width: 1200px) {
     .grid-container {
       grid-template-columns: repeat(
         4,
@@ -383,15 +383,15 @@ const ProductContainer = styled.div`
 
       gap: 25px 10px;
 
-      padding: 6px;
     }
   }
 
   @media (max-width: 490px) {
+  
     .grid-container {
-      gap: 22px 7px;
+       width:100%;
+      gap: 25px 7px;
 
-      padding: 4px;
     }
   }
 `;
