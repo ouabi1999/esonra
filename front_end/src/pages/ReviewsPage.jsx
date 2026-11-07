@@ -478,25 +478,9 @@ const BackButton = styled.button`
   }
 `;
 
-const BackArrow = styled.span`
-  font-size: 17px;
-  line-height: 1;
-`;
-
-const Eyebrow = styled.div`
-  margin-bottom: 17px;
-
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-
-  color: #777;
-
-  text-transform: uppercase;
-`;
 
 const Title = styled.h1`
-  margin: 0;
+  margin-bottom: 18px;
 
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(36px, 3vw, 50px);
@@ -506,14 +490,7 @@ const Title = styled.h1`
   color: #1d1d1b;
 `;
 
-const Description = styled.p`
-  margin: 22px auto 0;
 
-  font-size: 15px;
-  line-height: 1.7;
-
-  color: #777;
-`;
 
 const RatingSummary = styled.div`
   display: flex;

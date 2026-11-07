@@ -245,7 +245,6 @@ const handlePageChange = (page) => {
         </ReviewsList>
       ) : (
         <EmptyReviews>
-          <EmptyMark>ENOUZA</EmptyMark>
           <EmptyTitle>
             {translate("no_reviews", "No reviews yet")}
           </EmptyTitle>
