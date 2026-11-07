@@ -530,13 +530,14 @@ const ParentContainer = styled.div`
     display: flex;
     align-items: center;
     position: fixed;
-    top: 35px;
+    top: 34px;
+    
     inset-inline: 0;
     z-index: 3;
     height: 50px;
     padding: 8px 14px;
     box-sizing: border-box;
-    background: ${colors.primary};
+    background: ${colors.border};
     border-bottom: 1px solid ${colors.border};
     box-shadow: 0 8px 25px rgba(7, 27, 27, 0.08);
   }
@@ -718,7 +719,7 @@ const BrandLogo = styled.div`
   line-height: 1;
 
   img {
-    height: 19px;
+    height: 60px;
     width: auto;
     max-width: 100%;
     object-fit: contain;
@@ -741,7 +742,7 @@ const BrandLogo = styled.div`
     font-size: 24px;
 
     img {
-      height: 20px;
+      height: 45px;
       width: auto;
     }
   }
@@ -750,7 +751,7 @@ const BrandLogo = styled.div`
     font-size: 20px;
 
     img {
-      height: 15px;
+      height: 40px;
       width: auto;
     }
   }

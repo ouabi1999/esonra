@@ -180,25 +180,12 @@ const ReviewsPage = () => {
       ===================================================== */}
 
       <Header>
-       
-
-        <Eyebrow>
-          <bdi>
-            {t("customersFeedback.eyebrow")}
-          </bdi>
-        </Eyebrow>
-
         <Title>
-          <bdi>
-            {t("customersFeedback.title")}
+           <bdi>
+            {t("customersFeedback.description")}
           </bdi>
         </Title>
 
-        <Description>
-          <bdi>
-            {t("customersFeedback.description")}
-          </bdi>
-        </Description>
 
         {!loading && totalReviews > 0 && (
           <RatingSummary>

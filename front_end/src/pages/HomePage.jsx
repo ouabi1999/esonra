@@ -99,8 +99,8 @@ function HomePage() {
       </script>
 
       <AdvertiseMain />
+      <DesignSection />
 
-      <HeroSection />
 
       <SectionPlaceholder>
         <Suspense fallback={null}>
@@ -116,7 +116,7 @@ function HomePage() {
 
       <CollectionSection />
 
-      <DesignSection />
+      <HeroSection />
 
       {/*<MatricsSection />*/}
 

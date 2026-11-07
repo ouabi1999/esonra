@@ -17,10 +17,10 @@ const MainSlider = () => {
   const dispatch = useDispatch();
 
   const videoUrl =
-    "https://res.cloudinary.com/dzpzy1o1y/video/upload/v1790536327/Aure_Portable_Lamp_Travertine_Stone_Linen_-_Blossholm_3_c7eahz.mp4";
+    "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1794061405/esonra_mobile_square_compressed_qccmka.webp";
 
   const posterUrl =
-    "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1793746100/esonra/products/camping-stove-lightweight_en2yws.webp";
+    "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1793799443/vecteezy_stunning-luxury-interior-created-with-technology_25379385_l35ixb.jpg";
 
   const optimizedPoster = optimizeCloudinaryImage(posterUrl, {
     width: 1820,
@@ -28,22 +28,15 @@ const MainSlider = () => {
 
   return (
     <Container>
-      <video
+      <img
+        src={optimizedPoster}
+        alt="ESONRA product collection"
         className="video"
-        ref={videoRef}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="none"
-        poster={optimizedPoster}
+       
         aria-label="ESONRA smart tracking products"
-      >
-        <source
-          src={optimizeCloudinaryVideo(videoUrl)}
-          type="video/mp4"
-        />
-      </video>
+       />
+        
+      
 
       <Poster
         src={optimizedPoster}

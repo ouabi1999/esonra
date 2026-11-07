@@ -38,7 +38,7 @@ const DesignSection = () => {
   ];
 
   const imageURL =
-    "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1793746100/esonra/products/arabic-portable-gas-stove-infographic_s44f5e.webp";
+    "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1794062278/Arabic_pay-on-delivery_trust_banner_fvvz5q.png";
 
   return (
     <DesignContainer maxWidth={false}>

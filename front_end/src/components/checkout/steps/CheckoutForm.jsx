@@ -36,7 +36,7 @@ export default function CheckoutForm() {
 
   const cartItems = useSelector((state) => state.cart.cartItems);
   const { t } = useTranslation();
-  const [paymentMethod, setPaymentMethod] = useState("card");
+  const [paymentMethod, setPaymentMethod] = useState("cod");
   const [isLoading, setIsLoading] = useState(false);
   const [isLoadingCOD, setIsLoadingCOD] = useState(false);
   const [message, setMessage] = useState("");

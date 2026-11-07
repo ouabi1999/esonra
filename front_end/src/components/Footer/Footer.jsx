@@ -52,7 +52,7 @@ const Footer = () => {
           <BrandSection>
             <BrandLogo>
             <bdi style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-            <img src="../ESONRAWordmark.png" alt="logo" style={{height:"19px"}}/>
+            <img src="../ESONRAWordmark.png" alt="logo" style={{height:"60px"}}/>
            
             </bdi>
             </BrandLogo>

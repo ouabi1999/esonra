@@ -333,29 +333,14 @@ const CustomersFeedback = () => {
 
         <Header>
 
-          <Eyebrow>
-
-            <bdi>{t("customersFeedback.eyebrow")}</bdi>
-
-          </Eyebrow>
+         
 
 
 
           <Title>
-
-            <bdi>{t("customersFeedback.title")}</bdi>
+               <bdi>{t("customersFeedback.description")}</bdi>
 
           </Title>
-
-
-
-          <Description>
-
-            <bdi>{t("customersFeedback.description")}</bdi>
-
-          </Description>
-
-
 
           {!loading && reviews.length > 0 && (
 
