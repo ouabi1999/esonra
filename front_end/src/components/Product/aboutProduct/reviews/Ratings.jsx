@@ -90,7 +90,6 @@ function Ratings({
           </ReviewCount>
 
           <Verified>
-            <VerifiedDot />
 
             {t(
               "productInfo.all_from_verified_purchases",

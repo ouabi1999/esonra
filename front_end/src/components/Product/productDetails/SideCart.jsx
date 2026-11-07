@@ -193,7 +193,7 @@ function SideCart(props) {
 
         {/* cod offer*/}
           <div style={{ display:"flex", justifyContent:"center", width:"100%", margin:"auto",fontSize:"20px", color:"#b61813"}}>
-          <span >{t("trust.payAfterDelivery.text")}</span>
+          <span >{t("checkoutPage.payWhenDelivered")}</span>
         </div>
       </QuantitySection>
        

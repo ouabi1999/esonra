@@ -434,7 +434,7 @@ const onClose = ()=>{
      <DesignSection/>
     
         <NewArrival products={similarProducts}    isLoading={similarProductsLoading}
- name=" mayAlsoLike" isAuto={false} />
+             name="mayAlsoLike" isAuto={false} />
       
     </Page>
 
