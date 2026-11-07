@@ -28,7 +28,7 @@ const PAGE_SIZE = 14;
 
 const PLACEHOLDER_IMAGE =
 
-  "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1786734712/ChatGPT_Image_Aug_14_2026_09_11_32_PM_lok4wr.png";
+  "https://res.cloudinary.com/dzpzy1o1y/image/upload/v1794077392/review-placeholder-optimized_rl4cxc.webp";
 
 
 

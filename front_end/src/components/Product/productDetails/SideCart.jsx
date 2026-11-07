@@ -190,13 +190,20 @@ function SideCart(props) {
             </Warning>
           </ClickAwayListener>
         </QuantityArea>
-      </QuantitySection>
 
+        {/* cod offer*/}
+          <div style={{ display:"flex", justifyContent:"center", width:"100%", margin:"auto",fontSize:"20px", color:"#b61813"}}>
+          <span >{t("trust.payAfterDelivery.text")}</span>
+        </div>
+      </QuantitySection>
+       
+       
       {/* =====================================================
           PURCHASE BUTTONS
       ===================================================== */}
-
+        
       <PurchaseSection ref=  {purchaseRef}>
+        
         <BuyButton
           dir={i18n.dir() === "ltr" ? "ltr" : "rtl"}
           className={!available ? "out-of-stock" : ""}
@@ -765,7 +772,6 @@ const PurchaseSection = styled.div`
 
   gap: 10px;
 
-  margin-top: 2px;
 
   @media (max-width: 400px) {
     grid-template-columns: 1fr;

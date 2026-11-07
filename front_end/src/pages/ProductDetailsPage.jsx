@@ -141,33 +141,33 @@ useEffect(() => {
   }, [slug]);
 
 
-  // filter by similar products
-  const get_similar_products = async (category) => {
-    try {
-      const response = await ApiInstance.get("product-search/", {
-        params: {
-          category : category || "table lamps",
-          per_page: 6,
-        },
-      });
+  const [similarProductsLoading, setSimilarProductsLoading] = useState(false);
 
-      const products = response.data?.results || [];
-       if (products.length > 1){
-         setSimilarProducts(
-           products.filter(
-             (product) => product.id !== productData?.id
-           )
-         );
-      
-       }else{
-         setSimilarProducts( products)
+const get_similar_products = async (category) => {
+  setSimilarProductsLoading(true);
 
-       }
-    } catch (error) {
-      console.error("Failed to get similar products:", error);
-    }
-  };
+  try {
+    const response = await ApiInstance.get("product-search/", {
+      params: {
+        category: category || "table lamps",
+        per_page: 6,
+      },
+    });
 
+    const products = Array.isArray(response.data?.results)
+      ? response.data.results
+      : [];
+
+    setSimilarProducts(
+      products.filter((product) => product.id !== productData?.id)
+    );
+  } catch (error) {
+    console.error("Failed to get similar products:", error);
+    setSimilarProducts([]);
+  } finally {
+    setSimilarProductsLoading(false);
+  }
+};
   useEffect(() => {
     if (!productData?.category) return;
 
@@ -429,12 +429,12 @@ const onClose = ()=>{
           shippingInfo={shippingInfo}
         />
       )}
-        {/*<NewArrival products={similarProducts} name="mayAlsoLike" isAuto={false} />*/}
       </>
       )}
      <DesignSection/>
     
-     <CustomersFeedback/>
+        <NewArrival products={similarProducts}    isLoading={similarProductsLoading}
+ name=" mayAlsoLike" isAuto={false} />
       
     </Page>
 

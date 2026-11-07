@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { optimizeCloudinaryImage } from "../../utilis/cloudinary";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {colors} from "../../utilis/colors"
+import { colors } from "../../utilis/colors";
 import "swiper/css";
 import CurrencyPrice from "../../../common/CurrencyPrice";
 
@@ -14,71 +14,50 @@ function NewArrival({
   name,
   label,
   isAuto = false,
+  isLoading = false,
 }) {
   const { t, i18n } = useTranslation();
-
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
   const swiperRef = useRef(null);
 
+  const productList = Array.isArray(products) ? products : [];
   const isArabic = i18n.dir() === "rtl";
 
-
+  // Request finished and returned no products: hide the whole section.
+  if (!isLoading && productList.length === 0) {
+    return null;
+  }
 
   return (
     <Section dir="ltr">
       <Container>
-
-        {/* ============================
-            HEADER
-        ============================ */}
-
         <Header>
-          <Title>
-            {t(`homePage.${name}`)}
-          </Title>
+          <Title>{t(`homePage.${name}`)}</Title>
         </Header>
-
-        {/* ============================
-            NAVIGATION
-        ============================ */}
 
         <NavigationArea>
           <button
-            ref={prevRef}
             type="button"
-            className="best-sellers-prev"
             aria-label="Previous products"
-            onClick={() => {
-              swiperRef.current?.slidePrev();
-            }}
+            onClick={() => swiperRef.current?.slidePrev()}
           >
             <Arrow $direction="prev" />
           </button>
 
           <button
-            ref={nextRef}
             type="button"
-            className="best-sellers-next"
             aria-label="Next products"
-            onClick={() => {
-              swiperRef.current?.slideNext();
-            }}
+            onClick={() => swiperRef.current?.slideNext()}
           >
             <Arrow $direction="next" />
           </button>
         </NavigationArea>
 
-        {/* ============================
-            PRODUCTS
-        ============================ */}
-
         <SwiperWrapper>
           <Swiper
             className="mySwiper"
-            loop={products.length > 4}
+            loop={!isLoading && productList.length > 4}
             autoplay={
-              isAuto
+              isAuto && !isLoading && productList.length > 1
                 ? {
                     delay: 3000,
                     disableOnInteraction: false,
@@ -96,241 +75,147 @@ function NewArrival({
                 slidesPerView: 1.6,
                 spaceBetween: 18,
               },
-
               600: {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },
-
               768: {
                 slidesPerView: 3,
                 spaceBetween: 22,
               },
-
               1024: {
                 slidesPerView: 4,
                 spaceBetween: 24,
               },
-
               1440: {
                 slidesPerView: 4,
                 spaceBetween: 28,
               },
             }}
           >
-            {products.length > 0 ? (
-              products.map((item, index) => {
-                const mainSku = item.skuInfo?.[0];
-
-                const image =
-                  item.multimediaInfo?.main_image;
-
-                const imageUrls =
-                  item.multimediaInfo?.image_urls || [];
-
-                const secondaryImage =
-                  imageUrls.find(
-                    (img) => img && img !== image
-                  ) || image;
-
-                const productName =
-                  item.name?.[i18n.language] ||
-                  item.name?.en ||
-                  "ESONRA TRACKER";
-
-                const ratings = item.ratings || [];
-
-                const avgRating =
-                  ratings.length > 0
-                    ? (
-                        ratings.reduce(
-                          (total, rating) =>
-                            total +
-                            Number(rating.stars || 0),
-                          0
-                        ) / ratings.length
-                      ).toFixed(1)
-                    : null;
-
-                const sellingPrice = Number(
-                  mainSku?.sellingPrice || 0
-                );
-
-                const comparePrice = Number(
-                  mainSku?.comparePrice || 0
-                );
-
-                const hasDiscount =
-                  comparePrice > sellingPrice &&
-                  sellingPrice > 0;
-
-                const discountPercentage = hasDiscount
-                  ? Math.round(
-                      ((comparePrice - sellingPrice) /
-                        comparePrice) *
-                        100
-                    )
-                  : null;
-
-                const hasFreeShipping =
-                  item.available_shipping?.some(
-                    (shipping) =>
-                      shipping.type === "Free"
-                  );
-
-                return (
-                  <SwiperSlide key={item.id}>
-                    <ProductCard>
-
-                      {/* ============================
-                          IMAGE
-                      ============================ */}
-
-                      <ProductLink
-                        to={`/product/${item.slug}`}
-                      >
-                        <ImageWrapper>
-
-                          {/* PRIMARY IMAGE */}
-
-                          <ProductImage
-                            src={optimizeCloudinaryImage(
-                              image,
-                              {width: 800}
-                            )}
-                            alt={productName}
-                            width="800"
-                            height="976"
-                            $secondary={false}
-                            fetchpriority="high"
-                          />
-
-                          {/* SECONDARY IMAGE */}
-
-                          {secondaryImage && (
-                            <ProductImage
-                              src={optimizeCloudinaryImage(
-                                secondaryImage,
-                                {width: 800}
-                              )}
-                              alt={`${productName} alternate view`}
-                              fetchpriority="high"
-                              width="800"
-                              height="976"
-                              $secondary
-                            />
-                          )}
-
-                          {/* ============================
-                              TOP LABELS
-                          ============================ */}
-
-                          <ProductLabels
-                            $isArabic={isArabic}
-                          >
-                            {hasDiscount && (
-                              <SaveLabel>
-                                -{discountPercentage}%
-                              </SaveLabel>
-                            )}
-
-                            {label && (
-                              <Label>
-                                {t(
-                                  `homePage.${label}`
-                                )}
-                              </Label>
-                            )}
-                          </ProductLabels>
-
-                         
-
-                        
-
-                         
-
-                        </ImageWrapper>
-                      </ProductLink>
-
-                      {/* ============================
-                          CENTERED PRODUCT INFO
-                      ============================ */}
-
-                      <ProductInfo>
-
-                        <ProductName>
-                          {productName}
-                        </ProductName>
-
-                        <PriceGroup>
-                          <CurrentPrice>
-                            <CurrencyPrice
-                              price={sellingPrice}
-                            />
-                          </CurrentPrice>
-
-                          {hasDiscount && (
-                            <ComparePrice>
-                              <CurrencyPrice
-                                price={comparePrice}
-                              />
-                            </ComparePrice>
-                          )}
-                        </PriceGroup>
-                       {/*  {avgRating && (
-                          <Rating>
-                            <StarIcon />
-
-                            <span>
-                              {avgRating}
-                            </span>
-
-                            <ReviewCount>
-                              {ratings.length}
-                            </ReviewCount>
-                          </Rating>
-                        )}
-                        */}
-
-                        {hasFreeShipping && (
-                          <Shipping>
-                            {t(
-                              "common.free_shipping"
-                            )}
-                          </Shipping>
-                        )}
-
-                      </ProductInfo>
-
-                    </ProductCard>
-                  </SwiperSlide>
-                );
-              })
-            ) : (
-              <>
-                {[1, 2, 3, 4, 5].map((item) => (
-                  <SwiperSlide key={item}>
+            {isLoading
+              ? [1, 2, 3, 4, 5].map((item) => (
+                  <SwiperSlide key={`skeleton-${item}`}>
                     <SkeletonCard>
-
                       <SkeletonImage />
-
                       <SkeletonInfo>
                         <SkeletonName />
-
                         <SkeletonBottom>
                           <SkeletonPrice />
                           <SkeletonRating />
                         </SkeletonBottom>
                       </SkeletonInfo>
-
                     </SkeletonCard>
                   </SwiperSlide>
-                ))}
-              </>
-            )}
+                ))
+              : productList.map((item) => {
+                  const mainSku = item.skuInfo?.[0];
+                  const image = item.multimediaInfo?.main_image;
+                  const imageUrls = item.multimediaInfo?.image_urls || [];
+
+                  const secondaryImage =
+                    imageUrls.find((img) => img && img !== image) || image;
+
+                  const productName =
+                    item.name?.[i18n.language] ||
+                    item.name?.en ||
+                    "ESONRA TRACKER";
+
+                  const sellingPrice = Number(
+                    mainSku?.sellingPrice || 0
+                  );
+
+                  const comparePrice = Number(
+                    mainSku?.comparePrice || 0
+                  );
+
+                  const hasDiscount =
+                    comparePrice > sellingPrice && sellingPrice > 0;
+
+                  const discountPercentage = hasDiscount
+                    ? Math.round(
+                        ((comparePrice - sellingPrice) / comparePrice) * 100
+                      )
+                    : null;
+
+                  const hasFreeShipping =
+                    item.available_shipping?.some(
+                      (shipping) => shipping.type === "Free"
+                    ) || false;
+
+                  return (
+                    <SwiperSlide key={item.id}>
+                      <ProductCard>
+                        <ProductLink to={`/product/${item.slug}`}>
+                          <ImageWrapper>
+                            {image && (
+                              <ProductImage
+                                src={optimizeCloudinaryImage(image, {
+                                  width: 800,
+                                })}
+                                alt={productName}
+                                width="800"
+                                height="976"
+                                $secondary={false}
+                                fetchPriority="high"
+                              />
+                            )}
+
+                            {secondaryImage && secondaryImage !== image && (
+                              <ProductImage
+                                src={optimizeCloudinaryImage(
+                                  secondaryImage,
+                                  { width: 800 }
+                                )}
+                                alt={`${productName} alternate view`}
+                                width="800"
+                                height="976"
+                                $secondary
+                                fetchPriority="high"
+                              />
+                            )}
+
+                            <ProductLabels $isArabic={isArabic}>
+                              {hasDiscount && (
+                                <SaveLabel>
+                                  -{discountPercentage}%
+                                </SaveLabel>
+                              )}
+
+                              {label && (
+                                <Label>{t(`homePage.${label}`)}</Label>
+                              )}
+                            </ProductLabels>
+                          </ImageWrapper>
+                        </ProductLink>
+
+                        <ProductInfo>
+                          <ProductName>{productName}</ProductName>
+
+                          <PriceGroup>
+                            <CurrentPrice>
+                              <CurrencyPrice price={sellingPrice} />
+                            </CurrentPrice>
+
+                            {hasDiscount && (
+                              <ComparePrice>
+                                <CurrencyPrice price={comparePrice} />
+                              </ComparePrice>
+                            )}
+                          </PriceGroup>
+
+                          {hasFreeShipping && (
+                            <Shipping>
+                              {t("common.free_shipping")}
+                            </Shipping>
+                          )}
+                        </ProductInfo>
+                      </ProductCard>
+                    </SwiperSlide>
+                  );
+                })}
           </Swiper>
         </SwiperWrapper>
-
       </Container>
     </Section>
   );
@@ -338,13 +223,12 @@ function NewArrival({
 
 export default NewArrival;
 
-
 /* SECTION */
 const Section = styled.section`
   width: 100%;
-  background: ${colors.background};
   padding: 96px 0 105px;
   overflow: hidden;
+  background: ${colors.background};
 
   @media (max-width: 600px) {
     padding: 56px 0 64px;
@@ -378,7 +262,6 @@ const Title = styled.h2`
   margin: 0;
   color: ${colors.primary};
   font-family: Arial, sans-serif;
-
   font-size: clamp(1.4rem, 2vw, 3rem);
   font-weight: 600;
   line-height: 1.15;
@@ -397,18 +280,18 @@ const NavigationArea = styled.div`
   direction: ltr;
 
   button {
+    display: flex;
     position: relative;
+    align-items: center;
+    justify-content: center;
     width: 42px;
     height: 42px;
     padding: 0;
     border: 1px solid ${colors.border};
     border-radius: 50%;
     background: ${colors.surface};
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
     color: ${colors.primary};
+    cursor: pointer;
     transition:
       background 0.25s ease,
       border-color 0.25s ease,
@@ -416,10 +299,9 @@ const NavigationArea = styled.div`
       transform 0.25s ease;
 
     &:hover {
-      background: ${colors.accent};
-      border-color: ${colors.accent};
-      color: ${colors.primary};
       transform: translateY(-2px);
+      border-color: ${colors.accent};
+      background: ${colors.accent};
     }
 
     &:active {
@@ -448,9 +330,7 @@ const Arrow = styled.span`
     $direction === "prev" ? "rotate(-135deg)" : "rotate(45deg)"};
 
   ${({ $direction }) =>
-    $direction === "prev"
-      ? "margin-left: 3px;"
-      : "margin-right: 3px;"}
+    $direction === "prev" ? "margin-left: 3px;" : "margin-right: 3px;"}
 `;
 
 /* SWIPER */
@@ -496,8 +376,8 @@ const ImageWrapper = styled.div`
   width: 100%;
   aspect-ratio: 0.82;
   overflow: hidden;
-  background: ${colors.surfaceHover || colors.background};
   isolation: isolate;
+  background: ${colors.surfaceHover || colors.background};
   cursor: pointer;
 `;
 
@@ -509,24 +389,15 @@ const ProductImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: ${({ $secondary }) => ($secondary ? 0 : 1)};
+  transform: scale(1);
   transition:
     opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 
-  opacity: ${({ $secondary }) => ($secondary ? 0 : 1)};
-  transform: scale(1);
-
   ${ProductCard}:hover & {
     transform: scale(1.025);
-
-    ${({ $secondary }) =>
-      $secondary
-        ? `
-          opacity: 1;
-        `
-        : `
-          opacity: 0;
-        `}
+    opacity: ${({ $secondary }) => ($secondary ? 1 : 0)};
   }
 
   @media (max-width: 768px) {
@@ -547,17 +418,12 @@ const ProductImage = styled.img`
 const ProductLabels = styled.div`
   position: absolute;
   top: 15px;
-
-  ${({ $isArabic }) =>
-    $isArabic
-      ? "right: 15px;"
-      : "left: 15px;"}
-
+  ${({ $isArabic }) => ($isArabic ? "right: 15px;" : "left: 15px;")}
+  z-index: 4;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 7px;
-  z-index: 4;
   pointer-events: none;
 `;
 
@@ -596,43 +462,19 @@ const SaveLabel = styled.span`
   white-space: nowrap;
 `;
 
-/* PRODUCT INDEX */
-const ProductIndex = styled.span`
-  position: absolute;
-  right: 15px;
-  bottom: 14px;
-  z-index: 3;
-  color: ${colors.surface};
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 9px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  mix-blend-mode: difference;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-
-  ${ProductCard}:hover & {
-    opacity: 0;
-  }
-
-  @media (max-width: 768px) {
-    opacity: 0.8;
-  }
-`;
-
 /* PRODUCT INFORMATION */
 const ProductInfo = styled.div`
-  padding-top: 20px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
+  text-align: center;
 `;
 
 /* PRODUCT NAME */
 const ProductName = styled.h3`
-  margin: 0;
   max-width: 95%;
+  margin: 0;
   color: ${colors.text};
   font-family: "Inter", Arial, sans-serif;
   font-size: 0.85rem;
@@ -671,37 +513,6 @@ const ComparePrice = styled.span`
   font-weight: 400;
   text-decoration: line-through;
   white-space: nowrap;
-`;
-
-/* RATING */
-const Rating = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  margin-top: 9px;
-  color: ${colors.textSecondary};
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 0.68rem;
-
-  svg {
-    width: 12px;
-    height: 12px;
-    color: ${colors.accent};
-  }
-`;
-
-/* REVIEW COUNT */
-const ReviewCount = styled.span`
-  color: ${colors.textSecondary};
-
-  &::before {
-    content: "(";
-  }
-
-  &::after {
-    content: ")";
-  }
 `;
 
 /* FREE SHIPPING */
@@ -745,10 +556,10 @@ const SkeletonImage = styled.div`
 
 /* SKELETON INFORMATION */
 const SkeletonInfo = styled.div`
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
 `;
 
 /* SKELETON NAME */

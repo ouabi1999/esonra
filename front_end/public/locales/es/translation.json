@@ -399,7 +399,7 @@
       "description": "Estamos aquí para ayudarte"
     },
     "moneyBack": {
-      "title": "Devolución del dinero",
+      "title": "Reembolso",
       "description": "Garantía de 30 días"
     },
     "safe_Payment": {
@@ -526,7 +526,7 @@
       "text": "Entrega internacional en 2–5 días"
     },
     "returns": {
-      "title": "Devoluciones durante 100 días",
+      "title": "Devolución fácil",
       "text": "Devoluciones fáciles en un plazo de 100 días"
     },
     "warranty": {
@@ -540,6 +540,7 @@
     "orderProcessingMessage": "Gracias por comprar con nosotros. Estamos preparando tu pedido.",
     "backToHome": "Volver al inicio"
   },
+
   "checkout": {
     "loggedInContinue": "Tu cuenta está lista. Continúa para introducir tus datos de facturación."
   },
