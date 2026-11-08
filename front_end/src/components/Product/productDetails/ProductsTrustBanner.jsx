@@ -2,15 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 
-import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
-import Inventory2OutlinedIcon from "@mui/icons-material/Inventory2Outlined";
+
 import WorkspacePremiumOutlinedIcon from "@mui/icons-material/WorkspacePremiumOutlined";
 import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
-import ReplayIcon from "@mui/icons-material/Replay";
 import VolunteerActivismOutlinedIcon from "@mui/icons-material/VolunteerActivismOutlined";
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-
-
+import PaymentsIcon from '@mui/icons-material/Payments';
+import PublishedWithChangesIcon from '@mui/icons-material/PublishedWithChanges';
 const ProductTrustBanner = () => {
   const { t } = useTranslation();
 
@@ -101,37 +98,10 @@ const ProductTrustBanner = () => {
       {/* ================= BENEFITS ================= */}
 
       <TrustGrid>
-        <TrustItem>
-          <IconWrapper>
-            <LocalShippingOutlinedIcon className="icons" aria-hidden="true" />
-          </IconWrapper>
+        
 
-          <TrustTitle>
-            {t("trust.freeShipping.title")}
-          </TrustTitle>
-        </TrustItem>
-
-        <TrustItem>
-          <IconWrapper>
-            <AttachMoneyIcon className="icons" aria-hidden="true" />
-          </IconWrapper>
-
-          <TrustTitle>
-            {t("buyerTrustServices.moneyBack.title")}
-          </TrustTitle>
-        </TrustItem>
-
-        <TrustItem>
-          <IconWrapper>
-            <ReplayIcon className="icons" aria-hidden="true" />
-          </IconWrapper>
-
-          <TrustTitle>
-            {t("trust.returns.title")}
-          </TrustTitle>
-        </TrustItem>
-
-        <TrustItem>
+       
+       <TrustItem>
           <IconWrapper>
             <WorkspacePremiumOutlinedIcon
               className="icons"
@@ -143,11 +113,30 @@ const ProductTrustBanner = () => {
             {t("trust.warranty.title")}
           </TrustTitle>
         </TrustItem>
+       
+        <TrustItem>
+          <IconWrapper>
+            <PaymentsIcon className="icons" aria-hidden="true" />
+          </IconWrapper>
+
+          <TrustTitle>
+            {t("buyerTrustServices.moneyBack.title")}
+          </TrustTitle>
+        </TrustItem>
+        
+        <TrustItem>
+          <IconWrapper>
+            <PublishedWithChangesIcon className="icons" aria-hidden="true" style={{ transform: "scaleX(-1)" }} />
+          </IconWrapper>
+
+          <TrustTitle>
+            {t("trust.returns.title")}
+          </TrustTitle>
+        </TrustItem>
       </TrustGrid>
     </Banner>
   );
 };
-
 export default ProductTrustBanner;
 
 /* =====================================================
