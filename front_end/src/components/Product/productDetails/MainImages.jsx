@@ -103,8 +103,6 @@ function MainImages(props) {
 
     if (!activeImage) return;
 
-
-
     setIsFullscreen(true);
 
   };
@@ -1191,13 +1189,7 @@ const FullscreenButton = styled.button`
     font-size: 17px;
   }
 
-  &:hover {
-    background: #aa8f5a;
-    color: #ffffff;
   
-
-    transform: translateY(-1px);
-  }
 
   @media (max-width: 768px) {
 
@@ -1208,23 +1200,11 @@ const FullscreenButton = styled.button`
 
     gap: 6px;
 
-    svg {
-      font-size: 16px;
-    }
   }
 `;
 
-const ViewText = styled.span`
-  font-size: 8px;
 
-  font-weight: 600;
 
-  letter-spacing: 0.18em;
-
-  @media (max-width: 500px) {
-    display: none;
-  }
-`;
 
 
 /* =========================================================
@@ -1312,7 +1292,7 @@ const FullscreenOverlay = styled(motion.div)`
 
   inset: 0;
 
-  z-index: 1;
+  z-index: 999;
 
   width: 100%;
   height: 100%;
@@ -1342,7 +1322,7 @@ const FullscreenTop = styled.div`
   left: 0;
   right: 0;
 
-  z-index: 1;
+  z-index: 999;
 
   height: 78px;
 
