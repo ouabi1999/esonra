@@ -337,14 +337,7 @@ const NavigationArea = styled.div`
   }
 
   @media (max-width: 600px) {
-    position: static;
-    transform: none;
-    justify-content: center;
-
-    button {
-      width: 38px;
-      height: 38px;
-    }
+   display:none;
   }
 `;
 
