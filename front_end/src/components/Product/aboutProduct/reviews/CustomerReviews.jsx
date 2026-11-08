@@ -125,13 +125,15 @@ const handlePageChange = (page) => {
                   </Avatar>
 
                   <IdentityInfo>
-                    <CustomerName dir = {"ltr"}>
+                    <bdi>
+                    <CustomerName>
                       {`${rate?.user?.firstName || "Customer"} ${
                         rate?.user?.lastName
                           ? `${rate.user.lastName.charAt(0)}.`
                           : ""
                       }`}
                     </CustomerName>
+                    </bdi>
 
                     <VerifiedLabel>
                       <VerifiedMark />
@@ -170,7 +172,9 @@ const handlePageChange = (page) => {
                   </ReviewMeta>
 
                   {rate?.review?.text && (
+                    <bdi>
                     <ReviewText>{rate.review.text}</ReviewText>
+                    </bdi>
                   )}
 
                   {reviewImages.length > 0 && (
