@@ -30,27 +30,29 @@ function NewArrival({
   return (
     <Section dir="ltr">
       <Container>
-        <Header>
-          <Title>{t(`homePage.${name}`)}</Title>
-        </Header>
+        <SectionHeaderRow>
+          <Header>
+            <Title>{t(`homePage.${name}`)}</Title>
+          </Header>
 
-        <NavigationArea>
-          <button
-            type="button"
-            aria-label="Previous products"
-            onClick={() => swiperRef.current?.slidePrev()}
-          >
-            <Arrow $direction="prev" />
-          </button>
+          <NavigationArea>
+            <button
+              type="button"
+              aria-label="Previous products"
+              onClick={() => swiperRef.current?.slidePrev()}
+            >
+              <Arrow $direction="prev" />
+            </button>
 
-          <button
-            type="button"
-            aria-label="Next products"
-            onClick={() => swiperRef.current?.slideNext()}
-          >
-            <Arrow $direction="next" />
-          </button>
-        </NavigationArea>
+            <button
+              type="button"
+              aria-label="Next products"
+              onClick={() => swiperRef.current?.slideNext()}
+            >
+              <Arrow $direction="next" />
+            </button>
+          </NavigationArea>
+        </SectionHeaderRow>
 
         <SwiperWrapper>
           <Swiper
@@ -246,14 +248,30 @@ const Container = styled.div`
 `;
 
 /* HEADER */
-const Header = styled.div`
+const SectionHeaderRow = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  min-height: 42px;
   margin-bottom: 34px;
 
   @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 14px;
+    min-height: auto;
     margin-bottom: 24px;
+  }
+`;
+
+const Header = styled.div`
+  width: min(700px, calc(100% - 110px));
+  margin: 0 auto;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    width: 100%;
   }
 `;
 
@@ -272,11 +290,15 @@ const Title = styled.h2`
 
 /* NAVIGATION */
 const NavigationArea = styled.div`
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 8px;
-  margin-bottom: 20px;
+  margin: 0;
   direction: ltr;
 
   button {
@@ -314,8 +336,15 @@ const NavigationArea = styled.div`
     }
   }
 
-  @media (max-width: 400px) {
-    display: none;
+  @media (max-width: 600px) {
+    position: static;
+    transform: none;
+    justify-content: center;
+
+    button {
+      width: 38px;
+      height: 38px;
+    }
   }
 `;
 
