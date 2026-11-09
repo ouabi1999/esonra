@@ -312,7 +312,7 @@ const get_similar_products = async (category) => {
         value: price * quantity,
         items:[{
           item_id: productId || item?.id,
-          item_name: name?.en || "Luxury Lamp",
+          item_name: name?.en || "product",
           price: price || 0,
           quantity: quantity || 1,
       }],
