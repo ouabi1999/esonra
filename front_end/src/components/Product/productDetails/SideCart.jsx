@@ -1,22 +1,19 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 
-import DeliveryDiningIcon from "@mui/icons-material/DeliveryDining";
-import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
-import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
 import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
 import AutoAwesomeMotionOutlinedIcon from "@mui/icons-material/AutoAwesomeMotionOutlined";
 
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 import { useTranslation } from "react-i18next";
-import {useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 import ProductTrustBanner from "./ProductsTrustBanner";
 import FixedAddBuyButtons from "./FixedAddBuyButtons";
 import { colors } from "../../../utilis/colors";
+
 function SideCart(props) {
   const purchaseRef = useRef(null);
-
 
   const productData = useSelector((state) => state.product.productData);
 
@@ -35,13 +32,15 @@ function SideCart(props) {
     quantity,
     add_item_to_cart,
     buy_Now_item,
-  
-    shippingMethodIndex,
+
     currentSku,
     setShippingInfo,
   } = props;
 
- const available = currentSku?.available_stock ? currentSku?.available_stock : ""
+  const available = currentSku?.available_stock
+    ? currentSku?.available_stock
+    : "";
+
   /*
    * Keep your original warning behavior
    */
@@ -80,17 +79,10 @@ function SideCart(props) {
       ===================================================== */}
 
       <Section>
-
-
-        
-
-
-        {/* DELIVERY DATE */}
-
         <ShippingRow>
           <ShippingLeft>
             <IconBox>
-             <LocalShippingOutlinedIcon />
+              <LocalShippingOutlinedIcon />
             </IconBox>
 
             <ShippingContent>
@@ -99,45 +91,27 @@ function SideCart(props) {
               </SmallLabel>
 
               <ShippingValue>
-              {shippingInfo.from} - {shippingInfo.to} {t("common.days")}
+                {shippingInfo.from} - {shippingInfo.to}{" "}
+                {t("common.days")}
               </ShippingValue>
             </ShippingContent>
           </ShippingLeft>
-
-
         </ShippingRow>
       </Section>
 
-      {/* =====================================================
-          SECURITY
-      ===================================================== */}
 
-      <SecuritySection>
-        <SecurityIcon>
-          <VerifiedUserOutlinedIcon />
-        </SecurityIcon>
-
-        <SecurityContent>
-          <SecurityTitle>
-            {t("purchaseOptions.Security_&_Privacy.header")}
-          </SecurityTitle>
-
-          <SecurityText>
-            {t("purchaseOptions.Security_&_Privacy.text")}
-          </SecurityText>
-        </SecurityContent>
-      </SecuritySection>
+      
 
       {/* =====================================================
-          QUANTITY
+          QUANTITY + ADD TO CART (inline row)
       ===================================================== */}
 
       <QuantitySection>
         <QuantityHeader>
           <QuantityTitle>
             <IconBox>
-            <AutoAwesomeMotionOutlinedIcon />
-              </IconBox>
+              <AutoAwesomeMotionOutlinedIcon />
+            </IconBox>
             <span>{t("purchaseOptions.Quantity")}</span>
           </QuantityTitle>
 
@@ -151,39 +125,56 @@ function SideCart(props) {
         </QuantityHeader>
 
         <QuantityArea>
-          <QuantityControls>
-            <QuantityButton
-              type="button"
-              onClick={subtractQuantity}
-              disabled={quantity <= 1}
-            >
-              −
-            </QuantityButton>
+          <QuantityRow>
+            <QuantityControls>
+              <QuantityButton
+                type="button"
+                onClick={subtractQuantity}
+                disabled={quantity <= 1}
+              >
+                −
+              </QuantityButton>
 
-            <QuantityValue>
-              {quantity}
-            </QuantityValue>
+              <QuantityValue>{quantity}</QuantityValue>
 
-            <QuantityButton
+              <QuantityButton type="button" onClick={addQuantity}>
+                +
+              </QuantityButton>
+            </QuantityControls>
+
+            <AddButton
+              ref={purchaseRef}
               type="button"
-              onClick={addQuantity}
+              dir={i18n.dir() === "ltr" ? "ltr" : "rtl"}
+              className={!available ? "out-of-stock" : ""}
+              disabled={!available}
+              onClick={() =>
+                add_item_to_cart(
+                  currentSku,
+                  productData?.id,
+                  shippingInfo,
+                  productData?.name
+                )
+              }
             >
-              +
-            </QuantityButton>
-          </QuantityControls>
+              <span>
+                {available < 1
+                  ? t("productPage.soldOut")
+                  : t("common.addToCart")}
+              </span>
+
+             
+            </AddButton>
+          </QuantityRow>
 
           <ClickAwayListener
             mouseEvent="onMouseDown"
             touchEvent="onTouchEnd"
-            onClickAway={() =>
-              setMaxOrderWorning(false)
-            }
+            onClickAway={() => setMaxOrderWorning(false)}
           >
             <Warning
               className={
-                maxOrderWorning
-                  ? "max-order-warning"
-                  : "not-show"
+                maxOrderWorning ? "max-order-warning" : "not-show"
               }
             >
               {t("purchaseOptions.max-order-warning")}
@@ -191,108 +182,42 @@ function SideCart(props) {
           </ClickAwayListener>
         </QuantityArea>
 
-        {/* cod offer*/}
-          <div style={{ display:"flex", justifyContent:"center", width:"100%", margin:"auto",fontSize:"20px", color:"#b61813"}}>
-          <span >{t("checkoutPage.payWhenDelivered")}</span>
+        {/* COD offer */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            width: "100%",
+            margin: "auto",
+            fontSize: "20px",
+            color: "#b61813",
+          }}
+        >
+          <span>{t("checkoutPage.payWhenDelivered")}</span>
         </div>
       </QuantitySection>
-       
-       
-      {/* =====================================================
-          PURCHASE BUTTONS
-      ===================================================== */}
-        
-      <PurchaseSection ref=  {purchaseRef}>
-        
-        <BuyButton
-          dir={i18n.dir() === "ltr" ? "ltr" : "rtl"}
-          className={!available ? "out-of-stock" : ""}
-          type="button"
-          disabled={available < 1}
-          onClick={() =>
-            buy_Now_item(
-              currentSku,
-              productData?.id,
-              shippingInfo,
-              productData?.name
-            )
-          }
-        >
-          <span>{available < 1 ? t("productPage.soldOut"):t("common.buyNow") }</span>
-          <ArrowForwardIosOutlinedIcon
-            style={{
-              rotate:
-                i18n.dir() === "ltr"
-                  ? "0deg"
-                  : "180deg",
-            }}
-          />
-        </BuyButton>
 
-        <AddButton
-          type="button"
-          disabled={!available}
-          onClick={() =>
-            add_item_to_cart(
-              currentSku,
-              productData?.id,
-              shippingInfo,
-              productData?.name
-            )
-          }
-        >
-          <span>{t("common.addToCart")}</span>
-        </AddButton>
-      </PurchaseSection>
       <FixedAddBuyButtons
-      currentSku={ currentSku}
-  productData ={ productData}
-  shippingInfo = {shippingInfo}
-  buy_Now_item ={buy_Now_item}
-   add_item_to_cart = {add_item_to_cart}
-  purchaseRef = {purchaseRef}
-      
+        currentSku={currentSku}
+        productData={productData}
+        shippingInfo={shippingInfo}
+        buy_Now_item={buy_Now_item}
+        add_item_to_cart={add_item_to_cart}
+        purchaseRef={purchaseRef}
       />
+
       {/* =====================================================
           TRUST FOOTER
       ===================================================== */}
 
       <SecureCheckout>
-
-
-
         <ProductTrustBanner />
-
       </SecureCheckout>
     </Container>
   );
 }
 
 export default SideCart;
-const SecureCheckout = styled.div`
-  margin-top: 18px;
-
-  padding-top: 15px;
-
-  border-top: 1px solid #eee9e2;
-
-  text-align: center;
-`;
-
-const SecureImage = styled.img`
-  display: block;
-
-  width: 100%;
-
-  max-width: 600px;
-
-  height: auto;
-
-  margin: 0 auto;
-
-  opacity: 0.9;
-  border-radius:8px;
-`;
 
 /* =========================================================
    MAIN CONTAINER
@@ -316,78 +241,7 @@ const Container = styled.div`
 const Section = styled.div`
   width: 100%;
 
-  padding-bottom: 18px;
 
-  border-bottom: 1px solid #e9e4dc;
-`;
-
-const SectionHeader = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  gap: 15px;
-
-  margin-bottom: 16px;
-`;
-
-const SectionTitle = styled.div`
-  display: flex;
-  align-items: center;
-
-  gap: 8px;
-
-  font-size: 0.82rem;
-  font-weight: 600;
-
-  color: #252525;
-
-  .section-icon {
-    font-size: 18px;
-    color: #9b815f;
-  }
-`;
-
-const CountrySelector = styled.div`
-  position: relative;
-
-  display: flex;
-  align-items: center;
-
-  gap: 6px;
-
-  select {
-    appearance: none;
-    -webkit-appearance: none;
-
-    border: 0;
-    outline: 0;
-
-    background: transparent;
-
-    padding: 3px 18px 3px 2px;
-
-    max-width: 100px;
-
-    font-size: 0.78rem;
-    color: #333;
-
-    cursor: pointer;
-  }
-`;
-
-const ArrowDown = styled.span`
-  position: absolute;
-
-  right: 2px;
-
-  pointer-events: none;
-
-  font-size: 14px;
-
-  color: #777;
-
-  transform: translateY(-2px);
 `;
 
 /* =========================================================
@@ -433,7 +287,6 @@ const IconBox = styled.div`
 
   background: ${colors.background};
 
-
   color: ${colors.accent};
 
   svg {
@@ -473,145 +326,25 @@ const ShippingValue = styled.span`
   color: #2b2b2b;
 `;
 
-const ShippingChangeButton = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  flex-shrink: 0;
 
-  width: 30px;
-  height: 30px;
 
-  border: 0;
 
-  background: transparent;
 
-  color: #777;
 
-  cursor: pointer;
 
-  transition:
-    color 180ms ease,
-    transform 180ms ease;
 
-  svg {
-    font-size: 15px;
-  }
 
-  &:hover {
-    color: #9b815f;
 
-    transform: translateX(2px);
-  }
-`;
-
-const DeliveryBadge = styled.div`
-  display: flex;
-  align-items: center;
-
-  gap: 5px;
-
-  flex-shrink: 0;
-
-  padding: 5px 8px;
-
-  border: 1px solid #e5ded4;
-
-  border-radius: 20px;
-
-  background: #faf8f5;
-
-  color: #777;
-
-  font-size: 0.62rem;
-
-  white-space: nowrap;
-
-  span {
-    color: #9b815f;
-
-    font-weight: 700;
-  }
-
-  @media (max-width: 480px) {
-    display: none;
-  }
-`;
 
 /* =========================================================
-   SECURITY
-========================================================= */
-
-const SecuritySection = styled.div`
-  display: flex;
-  align-items: flex-start;
-
-  gap: 11px;
-
-  padding: 18px 0;
-
-  border-bottom: 1px solid #e9e4dc;
-`;
-
-const SecurityIcon = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  flex-shrink: 0;
-
-  width: 30px;
-  height: 30px;
-
-  border-radius: 50%;
-
- border: 1px solid ${colors.border};
-
-  border-radius: 50%;
-
-  background: ${colors.background};
-
-
-  color: ${colors.accent};
-
-  svg {
-    font-size: 17px;
-  }
-`;
-
-const SecurityContent = styled.div`
-  min-width: 0;
-`;
-
-const SecurityTitle = styled.div`
-  margin-bottom: 5px;
-
-  font-size: 0.8rem;
-
-  font-weight: 600;
-
-  color: #292929;
-`;
-
-const SecurityText = styled.p`
-  margin: 0;
-
-  max-width: 600px;
-
-  font-size: 0.7rem;
-
-  line-height: 1.6;
-
-  color: #88827b;
-`;
-
-/* =========================================================
-   QUANTITY
+   QUANTITY + ADD TO CART
 ========================================================= */
 
 const QuantitySection = styled.div`
-  padding: 18px 0 20px;
+  padding: 18px 0 18px;
+
+  border-bottom: 1px solid #e9e4dc;
 `;
 
 const QuantityHeader = styled.div`
@@ -635,11 +368,9 @@ const QuantityTitle = styled.div`
   font-weight: 600;
 
   color: #292929;
- 
 
   svg {
     font-size: 18px;
-
   }
 `;
 
@@ -655,16 +386,31 @@ const QuantityArea = styled.div`
   display: flex;
   flex-direction: column;
 
-  align-items: flex-start;
+  align-items: stretch;
 
   min-height: 48px;
+`;
+
+const QuantityRow = styled.div`
+  display: flex;
+  align-items: stretch;
+
+  gap: 10px;
+
+  width: 100%;
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
 `;
 
 const QuantityControls = styled.div`
   display: flex;
   align-items: center;
 
-  height: 38px;
+  height: 48px;
+
+  flex-shrink: 0;
 
   border: 1px solid #ddd7ce;
 
@@ -680,8 +426,8 @@ const QuantityButton = styled.button`
   align-items: center;
   justify-content: center;
 
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 48px;
 
   padding: 0;
 
@@ -702,7 +448,7 @@ const QuantityButton = styled.button`
   &:hover:not(:disabled) {
     background: #f1ede7;
 
-    color: #9b815f;
+    color: ${colors.accent};
   }
 
   &:disabled {
@@ -718,7 +464,7 @@ const QuantityValue = styled.span`
   justify-content: center;
 
   width: 44px;
-  height: 38px;
+  height: 48px;
 
   border-left: 1px solid #ddd7ce;
   border-right: 1px solid #ddd7ce;
@@ -761,191 +507,109 @@ const Warning = styled.span`
 `;
 
 /* =========================================================
-   PURCHASE BUTTONS
+   ADD TO CART (inline, fills remaining row width)
 ========================================================= */
 
-const PurchaseSection = styled.div`
-  
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: 10px;
-
-
-  @media (max-width: 400px) {
-    grid-template-columns: 1fr;
-  }
-     .out-of-stock {
-  position: relative;
-}
-
-.out-of-stock::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: #000000;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-8deg);
-  pointer-events: none;
-}
-  span{
-
-    text-transform:uppercase;
-  }
-`;
-
-const BuyButton = styled.button`
+const AddButton = styled.button`
   position: relative;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 
-  gap: 8px;
+  flex: 1 1 auto;
 
-  min-height: 50px;
+  min-width: 0;
+  min-height: 48px;
+  padding: 12px 22px;
 
-  border: 1px solid ${colors.border};
-
+  border: 1px solid ${colors.accent};
   border-radius: 3px;
 
   background: ${colors.accent};
-
   color: #fff;
 
-  font-size: 0.79rem;
-
+  font-size: 0.82rem;
   font-weight: 600;
-
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
   cursor: pointer;
 
   transition:
     background 180ms ease,
     border-color 180ms ease,
-    transform 180ms ease;
+    transform 180ms ease,
+    box-shadow 180ms ease;
 
   svg {
-    font-size: 14px;
-
+    font-size: 13px;
+    flex-shrink: 0;
     transition: transform 180ms ease;
   }
 
-  &:hover {
-    background: #5a8452;
-
-    border-color: ${colors.accentHover};;
+  &:hover:not(:disabled) {
+    background: ${colors.accentHover};
+    border-color: ${colors.accentHover};
+    box-shadow: 0 4px 14px rgba(90, 132, 82, 0.25);
 
     svg {
-      transform: translateX(2px);
+      transform: translateX(3px);
     }
   }
 
-  &:active {
+  &:active:not(:disabled) {
     transform: scale(0.99);
   }
-    &:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
- 
-`;
 
-const AddButton = styled.button`
-  min-height: 50px;
-
-  border: 1px solid #252525;
-
-  border-radius: 3px;
-
-  background: #252525;
-
-  color: #fff;
-
-  font-size: 0.79rem;
-
-  font-weight: 600;
-
-  letter-spacing: 0.04em;
-
-  cursor: pointer;
-
-  transition:
-    background 180ms ease,
-    border-color 180ms ease;
-
-  &:hover {
-    background: #111;
-
-    border-color: #111;
+  &:focus-visible {
+    outline: 2px solid ${colors.accent};
+    outline-offset: 3px;
   }
-     &:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
+
+  &:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+
+  /* out-of-stock diagonal line */
+  &.out-of-stock::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-8deg);
+    pointer-events: none;
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+
+    svg {
+      transition: none;
+    }
+  }
 `;
 
 /* =========================================================
    TRUST FOOTER
 ========================================================= */
 
-const TrustFooter = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const SecureCheckout = styled.div`
+  margin-top: 18px;
 
-  flex-wrap: wrap;
+  padding-top: 15px;
 
-  gap: 7px;
-
-  margin-top: 15px;
-
-  padding-top: 13px;
-
-  border-top: 1px solid #eeeae4;
-
-  color: #8b867f;
-
-  font-size: 0.64rem;
-
-  line-height: 1.5;
+  border-top: 1px solid #eee9e2;
 
   text-align: center;
-`;
-
-const TrustItem = styled.div`
-  display: flex;
-  align-items: center;
-
-  gap: 5px;
-`;
-
-const TrustCheck = styled.span`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 15px;
-  height: 15px;
-
-  border: 1px solid #b09a7c;
-
-  border-radius: 50%;
-
-  color: #9b815f;
-
-  font-size: 9px;
-`;
-
-const TrustDivider = styled.span`
-  width: 3px;
-  height: 3px;
-
-  border-radius: 50%;
-
-  background: #cfc8bf;
 `;
