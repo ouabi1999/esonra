@@ -393,14 +393,12 @@ const QuantityArea = styled.div`
 const QuantityRow = styled.div`
   display: flex;
   align-items: stretch;
-
+  flex-wrap:nowrap;
   gap: 10px;
 
   width: 100%;
 
-  @media (max-width: 400px) {
-    flex-direction: column;
-  }
+ 
 `;
 
 const QuantityControls = styled.div`
