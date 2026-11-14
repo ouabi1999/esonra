@@ -344,7 +344,6 @@ const ShippingValue = styled.span`
 const QuantitySection = styled.div`
   padding: 18px 0 18px;
 
-  border-bottom: 1px solid #e9e4dc;
 `;
 
 const QuantityHeader = styled.div`
