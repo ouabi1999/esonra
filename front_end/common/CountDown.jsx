@@ -6,7 +6,7 @@ import { colors } from "../src/utilis/colors"
 // =========================================================
 // OFFER CONFIGURATION
 // =========================================================
-const OFFER_DEADLINE = new Date("2026-11-30T23:59:59+01:00").getTime();
+const OFFER_DEADLINE = new Date("2026-11-15T23:59:59+01:00").getTime();
 
 const Countdown = ({ title = "specialOffer" }) => {
   const [timeLeft, setTimeLeft] = useState(null);
